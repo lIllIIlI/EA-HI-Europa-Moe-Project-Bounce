@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Taskforce 404" identifier="404uniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="404 Uniform Icon" texture="%ModDir%/Content/Items/New/GRF/GRF_icon.png" sourcerect="0,0,64,57" origin="0.5,0.5" />
+    <Sprite name="404 Uniform" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="404 Uniform Torso" texture="404uniform_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Right Hand" texture="404uniform_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Left Hand" texture="404uniform_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Left Lower Arm" texture="404uniform_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Right Lower Arm" texture="404uniform_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Left Upper Arm" texture="404uniform_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Right Upper Arm" texture="404uniform_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Waist" texture="404uniform_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Right Thigh" texture="404uniform_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Left Thigh" texture="404uniform_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Right Leg" texture="404uniform_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Left Leg" texture="404uniform_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Right Shoe" texture="404uniform_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Left Shoe" texture="404uniform_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="404 Uniform Boob" texture="404uniform_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="Operation Group Griffin" identifier="GKuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="GK Uniform Icon" texture="%ModDir%/Content/Items/New/GRF/GRF_icon.png" sourcerect="0,0,64,57" origin="0.5,0.5" />
+    <Sprite name="GK Uniform" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="GK Uniform Torso" texture="GKuniform_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Right Hand" texture="GKuniform_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Left Hand" texture="GKuniform_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Left Lower Arm" texture="GKuniform_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Right Lower Arm" texture="GKuniform_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Left Upper Arm" texture="GKuniform_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Right Upper Arm" texture="GKuniform_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Waist" texture="GKuniform_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Right Thigh" texture="GKuniform_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Left Thigh" texture="GKuniform_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Right Leg" texture="GKuniform_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Left Leg" texture="GKuniform_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Right Shoe" texture="GKuniform_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Left Shoe" texture="GKuniform_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="GK Uniform Boob" texture="GKuniform_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="IOP Light Exoskeleton" identifier="exoskeleton_light" category="Equipment" tags="mediumitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="wreckengcab,abandonedengcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="750">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="0" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="steel" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <InventoryIcon name="Exoskeleton Light Icon" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
+    <Sprite name="Exoskeleton Light" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
+      <sprite name="Exoskeleton Light Torso" texture="exoskeleton_light.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Right Hand" texture="exoskeleton_light.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Left Hand" texture="exoskeleton_light.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Left Lower Arm" texture="exoskeleton_light.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Right Lower Arm" texture="exoskeleton_light.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Left Upper Arm" texture="exoskeleton_light.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Right Upper Arm" texture="exoskeleton_light.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Waist" texture="exoskeleton_light.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Right Thigh" texture="exoskeleton_light.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Left Thigh" texture="exoskeleton_light.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Right Leg" texture="exoskeleton_light.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Left Leg" texture="exoskeleton_light.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Right Shoe" texture="exoskeleton_light.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Light Left Shoe" texture="exoskeleton_light.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <StatusEffect type="OnWearing" target="This,Character" UseHullOxygen="true" SpeedMultiplier="1.45" setvalue="true" disabledeltatime="true" comparison="Or">
+        <RequiredItem items="mobilebattery" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.01" interval="1" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="mobilebattery" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" comparison="Or"></StatusEffect>
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" />
+      <StatValue stattype="FlowResistance" value="0.9" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.3" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="battery" containedstateindicatorslot="0">
+      <Containable items="mobilebattery" hide="true" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/InventoryUIAtlas.png" sourcerect="888,278,62,44" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mountableweapon,smallitem"></Containable>
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="IOP Standard Exoskeleton" identifier="exoskeleton_standard" category="Equipment" tags="mediumitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="wreckengcab,abandonedengcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="750">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="0" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="steel" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <InventoryIcon name="Exoskeleton Standard Icon" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
+    <Sprite name="Exoskeleton Standard" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
+      <sprite name="Exoskeleton Standard Torso" texture="exoskeleton_standard.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Right Hand" texture="exoskeleton_standard.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Left Hand" texture="exoskeleton_standard.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Left Lower Arm" texture="exoskeleton_standard.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Right Lower Arm" texture="exoskeleton_standard.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Left Upper Arm" texture="exoskeleton_standard.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Right Upper Arm" texture="exoskeleton_standard.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Waist" texture="exoskeleton_standard.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Right Thigh" texture="exoskeleton_standard.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Left Thigh" texture="exoskeleton_standard.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Right Leg" texture="exoskeleton_standard.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Left Leg" texture="exoskeleton_standard.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Right Shoe" texture="exoskeleton_standard.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <sprite name="Exoskeleton Standard Left Shoe" texture="exoskeleton_standard.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
+      <StatusEffect type="OnWearing" target="This,Character" UseHullOxygen="true" SpeedMultiplier="1.2" setvalue="true" disabledeltatime="true" comparison="Or">
+        <RequiredItem items="mobilebattery" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.04" interval="1" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="mobilebattery" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" comparison="Or"></StatusEffect>
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" />
+      <StatValue stattype="FlowResistance" value="0.9" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="battery" containedstateindicatorslot="0">
+      <Containable items="mobilebattery" hide="true" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/InventoryUIAtlas.png" sourcerect="888,278,62,44" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mountableweapon,smallitem"></Containable>
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="Beret" identifier="beret" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
+    <Inventoryicon texture="%ModDir%/Content/Items/New/GRF/beret.png" scale="0.5" depth="0.6" sourcerect="0,0,100,50" origin="0.5,0.5" />
+    <Sprite name="beret" texture="%ModDir%/Content/Items/New/GRF/beret.png" scale="0.4" depth="0.6" sourcerect="0,0,100,50" origin="0.5,0.5" />
+    <Body width="50" height="25" density="15" />
+    <Price baseprice="150" minavailable="1">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Beret" texture="%ModDir%/Content/Items/New/GRF/beret.png" limb="Head" inheritlimbdepth="true" inheritscale="false" scale="0.32" ignorelimbscale="true" hidelimb="false" sourcerect="0,0,100,50" origin="0.54,1.33" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" deflectprojectiles="true" />
+    </Wearable>
+  </Item>
+</Items>

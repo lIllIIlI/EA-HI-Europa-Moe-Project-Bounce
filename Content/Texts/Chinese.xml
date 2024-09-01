@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <entityname.militarybackpack>行军包</entityname.militarybackpack>
+  <entitydescription.militarybackpack>防水行军背包，拥有较大储量，但会略微减慢移动速度。</entitydescription.militarybackpack>
+  <entityname.beltpack>腰包</entityname.beltpack>
+  <entitydescription.beltpack>可以携带部分随身物品。</entitydescription.beltpack>
+  <entityname.EMSpack>EMS医疗挎包</entityname.EMSpack>
+  <entitydescription.EMSpack>用于提供紧急医疗服务的专业挎包。</entitydescription.EMSpack>
+  <entityname.Toolkit>专业技工腰包</entityname.Toolkit>
+  <entitydescription.Toolkit>专业技工所偏爱的腰包，可以让使用者更加便捷地维护设备。</entitydescription.Toolkit>
+  <entityname.duffelpack>帆布包</entityname.duffelpack>
+  <entitydescription.duffelpack>经过修缮后可以装运弹药的帆布包，但不方便携带。另外，你最好已经妥善处理了那个倒霉蛋的遗物。</entitydescription.duffelpack>
+  <entityname.rigging>胸挂套件</entityname.rigging>
+  <entitydescription.rigging>可以携带不少随身物品的简易索具。</entitydescription.rigging>
+  <entityname.chiyuan>“驰援”轻型护具</entityname.chiyuan>
+  <entitydescription.chiyuan>能携带一些随身物品的突击型背心，具有一定防护能力。</entitydescription.chiyuan>
+  <entityname.Wf_SaltedFish>尚方宝剑</entityname.Wf_SaltedFish>
+  <entitydescription.Wf_SaltedFish>才不是咸鱼！</entitydescription.Wf_SaltedFish>
+  <entityname.mosquito_swatter>电蚊拍</entityname.mosquito_swatter>
+  <entitydescription.mosquito_swatter>这里没蚊子，但把这玩意的电压调高后或许能把它当起搏器用？</entitydescription.mosquito_swatter>
+  <entityname.masksmanrifle>射手步枪</entityname.masksmanrifle>
+  <entitydescription.masksmanrifle>经过较大幅度改装的突击步枪，仍然使用突击步枪弹夹，降低了射速，但大幅提高了精确度和伤害。</entitydescription.masksmanrifle>
+  <entityname.Kaltsituniform>罗德岛医疗主管服装</entityname.Kaltsituniform>
+  <entitydescription.Kaltsituniform>Mon3ter禁止登船。</entitydescription.Kaltsituniform>
+  <entityname.HeiTieuniform>黑钢制服</entityname.HeiTieuniform>
+  <entitydescription.HeiTieuniform>黑钢国际，为您护航。</entitydescription.HeiTieuniform>
+  <entityname.penguin_logistics>企鹅物流制服</entityname.penguin_logistics>
+  <entitydescription.penguin_logistics>“能达到目的，就可以尽一切手段。”</entitydescription.penguin_logistics>
+  <entityname.RodesResearcherUniform>天灾学者服装</entityname.RodesResearcherUniform>
+  <entitydescription.RodesResearcherUniform>多数时候天灾远没有人祸可怕。</entitydescription.RodesResearcherUniform>
+  <entityname.LungMen>龙门近卫局制服</entityname.LungMen>
+  <entitydescription.LungMen>“德才兼备。”</entitydescription.LungMen>
+  <entityname.AbyssalHunterHat>深海猎人宽沿帽</entityname.AbyssalHunterHat>
+  <entitydescription.AbyssalHunterHat>“……我们去猎杀巨兽吧。”</entitydescription.AbyssalHunterHat>
+  <entityname.404uniform>“404”特勤队服装</entityname.404uniform>
+  <entitydescription.404uniform>404 not found</entitydescription.404uniform>
+  <entityname.GKuniform>“格里芬”行动组服装</entityname.GKuniform>
+  <entitydescription.GKuniform>16Lab直属</entitydescription.GKuniform>
+  <entityname.exoskeleton_light>IOP轻型高出力外骨骼</entityname.exoskeleton_light>
+  <entitydescription.exoskeleton_light>需要电池运作的外骨骼，可以在增强使用者运动能力的同时提供一定程度的防护。</entitydescription.exoskeleton_light>
+  <entityname.exoskeleton_standard>IOP标准战斗外骨骼</entityname.exoskeleton_standard>
+  <entitydescription.exoskeleton_standard>需要电池运作的外骨骼，专注于在战斗中对使用者提供保护的机械系统。</entitydescription.exoskeleton_standard>
+  <entityname.beret>贝雷帽</entityname.beret>
+  <entitydescription.beret>“指挥官，有我就够了……”</entitydescription.beret>
+  <entityname.doctorsuniform3>卫生员制服</entityname.doctorsuniform3>
+  <entitydescription.doctorsuniform3>一套医护人员制服。</entitydescription.doctorsuniform3>
+  <entityname.shengxuanuniform>圣宣</entityname.shengxuanuniform>
+  <entitydescription.shengxuanuniform>化身浪潮的先驱。</entitydescription.shengxuanuniform>
+  <entityname.lightarmor>战斗防护服</entityname.lightarmor>
+  <entitydescription.lightarmor>应用先进技术的轻量化战斗服，可以为使用者提供战斗能力加成和贴身防护。</entitydescription.lightarmor>
+  <entityname.firmament>“苍穹”战术头盔</entityname.firmament>
+  <entitydescription.firmament>可以搭载多种仪器的战术头盔，集成自注射药物功能，有黑白两种颜色。</entitydescription.firmament>
+  <entityname.firmament_b>“苍穹”战术头盔</entityname.firmament_b>
+  <entitydescription.firmament_b>可以搭载多种仪器的战术头盔，集成自注射药物功能，有黑白两种颜色。</entitydescription.firmament_b>
+  <entityname.flashhelmet>“烛光”轻型头盔</entityname.flashhelmet>
+  <entitydescription.flashhelmet>带有头灯的轻量头盔。</entitydescription.flashhelmet>
+  <entityname.clowndivingmask_alt>小丑潜水面具</entityname.clowndivingmask_alt>
+  <entitydescription.clowndivingmask_alt>（穿戴位置不同）一个结合了潜水面罩的小丑面罩，允许使用者既能在水中打闹又能呼吸。</entitydescription.clowndivingmask_alt>
+  <entityname.maidclothes1>女仆装</entityname.maidclothes1>
+  <entitydescription.maidclothes1>“……那是另外的价钱。”</entitydescription.maidclothes1>
+  <entityname.maidclothes2>神社制服</entityname.maidclothes2>
+  <entitydescription.maidclothes2>即使在这里，也有神职人员。</entitydescription.maidclothes2>
+  <entityname.maidheaddress>花边发带</entityname.maidheaddress>
+  <entitydescription.maidheaddress></entitydescription.maidheaddress>
+  <entityname.Wf_Admiral_Katana>太刀</entityname.Wf_Admiral_Katana>
+  <entitydescription.Wf_Admiral_Katana>刀光剑影</entitydescription.Wf_Admiral_Katana>
+  <entityname.Wf_Admiral_Wakizashi>胁差</entityname.Wf_Admiral_Wakizashi>
+  <entitydescription.Wf_Admiral_Wakizashi>寸短寸险</entitydescription.Wf_Admiral_Wakizashi>
+  <entityname.Wf_Admiral_Katana_kai>热能太刀</entityname.Wf_Admiral_Katana_kai>
+  <entitydescription.Wf_Admiral_Katana_kai>...充能完成...</entitydescription.Wf_Admiral_Katana_kai>
+  <entityname.Wf_Admiral_Wakizashi_kai>热能胁差</entityname.Wf_Admiral_Wakizashi_kai>
+  <entitydescription.Wf_Admiral_Wakizashi_kai>小心烫伤</entitydescription.Wf_Admiral_Wakizashi_kai>
+  <entityname.Wf_Blame_harpoongun>电基鱼叉发射器</entityname.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun>深海中带回的不明人造物品，传说中电基渔师的武器，透过电磁力发射的鱼叉具有极高的穿透力，似乎兼容我们使用的标准电池。</entitydescription.Wf_Blame_harpoongun>
+  <entityname.Wf_Blame_spear>电基鱼叉</entityname.Wf_Blame_spear>
+  <entitydescription.Wf_Blame_spear>传说中电基渔师的武器，硬度极高</entitydescription.Wf_Blame_spear>
+  <entityname.Wf_Blame_batterycell>电基鱼叉发射器电池</entityname.Wf_Blame_batterycell>
+  <entitydescription.Wf_Blame_batterycell>电基鱼叉发射器配套的电池，无法兼容我们的电器与充电器，仅供电基鱼叉发射器使用</entitydescription.Wf_Blame_batterycell>
+  <entityname.pistol>手枪</entityname.pistol>
+  <entitydescription.pistol>另一种治疗思路</entitydescription.pistol>
+  <entityname.pistolmagazine>手枪弹匣</entityname.pistolmagazine>
+  <entitydescription.pistolmagazine>可装填13发标准手枪弹</entitydescription.pistolmagazine>
+  <entityname.smallriotshield>小型防暴盾</entityname.smallriotshield>
+  <entitydescription.smallriotshield>可以单手握持的小型防暴盾牌，可以与手枪搭配。</entitydescription.smallriotshield>
+  <entityname.shotgun_sawedoff>截短霰弹枪</entityname.shotgun_sawedoff>
+  <entitydescription.shotgun_sawedoff>“它能够发射子弹，这就够了。”</entitydescription.shotgun_sawedoff>
+  <entityname.ceremonialsword_heavy>重型仪式剑</entityname.ceremonialsword_heavy>
+  <entitydescription.ceremonialsword_heavy>一把装饰精美的双手剑，需要使用者有足够的技能使用它。</entitydescription.ceremonialsword_heavy>
+  <entityname.EAHI_autoinjectorheadset>高级自注射耳机</entityname.EAHI_autoinjectorheadset>
+  <entitydescription.EAHI_autoinjectorheadset>东亚重工研发的集成自注射耳机，集成健康扫描、智能医疗注射之外，可破解大多数联盟保险。智能医疗会自动选择最适合当前需要的药物注射。</entitydescription.EAHI_autoinjectorheadset>
+  <entityname.Wf_pucs>EPSP防护服</entityname.Wf_pucs>
+  <entitydescription.Wf_pucs>特殊设计的PUCS防护服，在潜水任务之外也可以让使用者更加便捷地巡检潜艇。</entitydescription.Wf_pucs>
+  <entityname.Wf_New_XDS-01>XDS-01异星深潜系统</entityname.Wf_New_XDS-01>
+  <entitydescription.Wf_New_XDS-01>用木卫二深海中发现的不明义体改造成的潜水服，其性能超过了任何木卫二上流通的潜水服。</entitydescription.Wf_New_XDS-01>
+  <entityname.Wf_New_XDS-01_Engine>XDS-01深潜推进器</entityname.Wf_New_XDS-01_Engine>
+  <entitydescription.Wf_New_XDS-01_Engine>用木卫二深海中发现的不明义体改造成的推进器，启用后可以大幅增加潜水员在水中的移动速度，原理不明。</entitydescription.Wf_New_XDS-01_Engine>
+  <entityname.Wf_debris>不明义体残骸</entityname.Wf_debris>
+  <entitydescription.Wf_debris>深海中发现的不明义体，外观与人类拥有极高的相似度，也许可以将其改造为潜水服使用。</entitydescription.Wf_debris>
+  <entityname.Wf_Research_Box>保险箱</entityname.Wf_Research_Box>
+  <entitydescription.Wf_Research_Box>深海中发现的保险箱，在不起眼的地方隐约能看到联盟的标记。</entitydescription.Wf_Research_Box>
+  <entityname.Wf_Research_chip>XDS-01设计图分离芯片</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip>联盟保险箱中发现XDS-01设计图的分离芯片，使用了读取后即销毁被读取部分数据的设计。</entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_Log>XDS-01研究日志</entityname.Wf_Research_Log>
+  <entitydescription.Wf_Research_Log>联盟保险箱中发现XDS-01的研究日志，内容已损坏无法阅读，但联盟可能会高价回收它。</entitydescription.Wf_Research_Log>
+  <entityname.loudspeaker>喇叭</entityname.loudspeaker>
+  <entitydescription.loudspeaker>傻↑逼↓</entitydescription.loudspeaker>
+  <entityname.loudspeaker1>喇叭</entityname.loudspeaker1>
+  <entitydescription.loudspeaker1>好！很有精神！</entitydescription.loudspeaker1>
+  <entityname.loudspeaker2>喇叭</entityname.loudspeaker2>
+  <entitydescription.loudspeaker2>这么小声还想开军舰！？</entitydescription.loudspeaker2>
+  <entityname.loudspeaker3>喇叭</entityname.loudspeaker3>
+  <entitydescription.loudspeaker3>无  能  狂  怒</entitydescription.loudspeaker3>
+  <entityname.loudspeaker4>喇叭</entityname.loudspeaker4>
+  <entitydescription.loudspeaker4>enemy spotted</entitydescription.loudspeaker4>
+  <entityname.ironpipe>钢管</entityname.ironpipe>
+  <entitydescription.ironpipe>一根普通的钢管，也许有别的作用？</entitydescription.ironpipe>
+  <entityname.vodka>伏特加</entityname.vodka>
+  <entitydescription.vodka>“这才是真正的好东西。”</entitydescription.vodka>
+
+  <!-- Custom -->
+  <entityname.gravpistol>重力激光散射器</entityname.gravpistol>
+  <entitydescription.gravpistol>重力激光散射器是一把发射引力子的能量武器，可穿透一切已知的材料与护甲. 其构造非常复杂，后坐力更是有如迅猛龙冲击一般强烈，请小心射击.</entitydescription.gravpistol>
+
+  <entityname.gravbeamammo>引力激光电池</entityname.gravbeamammo>
+  <entitydescription.gravbeamammo>它散发着稳定、强烈集中的引力能量. 这种能量足以穿透与毁灭任何已知的物质.</entitydescription.gravbeamammo>
+
+  <entityname.dominator>45MW.TRG 支配者</entityname.dominator>
+  <entitydescription.dominator>“支配者”便携式神经诊断与压制系统是一把旧地球政府配发的警用手枪. 可快速连续的毁灭镇压多个目标.</entitydescription.dominator>
+
+  <entityname.dominatorammo>支配者歼灭型能量电池</entityname.dominatorammo>
+  <entitydescription.dominatorammo>电池类型: 致命性歼灭电池. 请谨慎瞄准以歼灭目标.</entitydescription.dominatorammo>
+
+  <entityname.dominatorammo2>支配者瘫痪型能量电池</entityname.dominatorammo2>
+  <entitydescription.dominatorammo2>电池类型: 非致命麻醉电池. 请冷静瞄准以制服目标.</entitydescription.dominatorammo2>
+
+  <entityname.dominatorammo3>支配者涅灭型能量电池</entityname.dominatorammo3>
+  <entitydescription.dominatorammo3>电池类型: 毁灭分解电池. 目标将被直接化成分子. 请以最大限度的谨慎瞄准.</entitydescription.dominatorammo3>
+
+
+  <afflictionname.eliminator>致命性歼灭者</afflictionname.eliminator>
+
+  <eventtext.DRF.1>"嘘嘘嘘! 嘿小伙子，来这儿看下，我这有点有意思的玩意儿."</eventtext.DRF.1>
+  <eventtext.DRF.o1>听他继续</eventtext.DRF.o1>
+  <eventtext.DRF.o4>无视</eventtext.DRF.o4>
+
+  <eventtext.DRF.o1.c1>"一把旧地球政府配发的强大能量武器，过了这个村可就没这个店咯... 我便宜卖给你，咋样?"</eventtext.DRF.o1.c1>
+  <eventtext.DRF.o2>"这玩意咋在这??"</eventtext.DRF.o2>
+  <eventtext.DRF.notbuy>"我对危险的事物可没什么兴趣. 这玩意要在我脸上炸了咋整!"</eventtext.DRF.notbuy>
+  <eventtext.DRF.notbuy2>"真失望, 要联盟抓着你个走私狗别他妈提到我."</eventtext.DRF.notbuy2>
+
+  <eventtext.DRF.o2.c1>".... 安静嗷，你可得仔细听好 ..."
+  "资料回收协会. 你知道不? 那是个在联盟手下工作的专门回收已遗失科技的协会."
+  "最近, 回收协会成功的还原了一把旧地球的能量武器."
+  "当然, 他们没造出把新的来, 就是把老枪修好了而已. 但那也得算是个伟大进步了."</eventtext.DRF.o2.c1>
+
+  <eventtext.DRF.o2.c2>"我就解释这么点，你也别多问."
+
+  (叹口气)
+
+  "我就卖你5000MK怎么样."</eventtext.DRF.o2.c2>
+
+  <eventtext.DRF.o3>"行，我买了"</eventtext.DRF.o3>
+
+  <eventtext.DRF.suc1>"牛! 那我可先跑路了! 你也赶紧溜，枪藏藏好, 联盟在挨家挨户的搜这玩意儿呢."
+  他们给了你把小巧, 散发着红光又看着精良的手枪. 这玩意威力得有多大啊.</eventtext.DRF.suc1>
+  <eventtext.DRF.suc2>"牛! 那我可先跑路了! 你也赶紧溜，枪藏藏好, 联盟在挨家挨户的搜这玩意儿呢。"
+  他们给了你把蓝色的手枪... 手枪在你的口袋里轻声的低语着什么. 等下，这手枪还会说话?! </eventtext.DRF.suc2>
+
+  <eventtext.DRF.nomney>"啥？没钱了? 害，这年头谁日子都不好过啊...  你从来没见过我，明白?!"</eventtext.DRF.nomney>
+  <eventtext.DRF.sec>你递过一沓厚厚的纸钞, 但隔壁走廊传来了警卫的喧哗，以及渐渐逼近的重踏脚步声.
+
+  "操！他们怎么找过来的!?"
+
+  枪一下被扔到你的手上, 那个男人翻过一个箱子，有如黑人一般消失在阴暗的走廊之中
+  有点儿他娘的不对劲啊! </eventtext.DRF.sec>
+
+  <eventtext.DRF.out>"唉，那不好意思了."</eventtext.DRF.out>
+  <eventtext.DRF.fight>"在我叫警卫之前把它交给我! ! "</eventtext.DRF.fight>
+
+  <eventtext.DRF.fight2>"操！你他妈的疯了么！ "
+
+  在你的叫喊声之中, 他的脸上露出了些许的不堪与愤怒.
+  然后走私者拿出了一把蓝色的手枪对准了你 !
+
+  </eventtext.DRF.fight2>
+</infotexts>

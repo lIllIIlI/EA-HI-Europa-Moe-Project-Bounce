@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="true" translatedname="Русский">
+  <entityname.militarybackpack>Военный рюкзак</entityname.militarybackpack>
+  <entitydescription.militarybackpack>Рюкзак с большим инвентарем, водонепроницаемый, но немного замедляет скорость пользователя.</entitydescription.militarybackpack>
+  <entityname.beltpack>Пояс сумки</entityname.beltpack>
+  <entitydescription.beltpack>Может нести больше вещей, чем пояса инструментов</entitydescription.beltpack>
+  <entityname.EMSpack>СМП медицинская сумка</entityname.EMSpack>
+  <entitydescription.EMSpack>Сумка для скорой медицинской помощи, способена повышать медицинский уровень пользователя.</entitydescription.EMSpack>
+  <entityname.Toolkit>Инструментарий</entityname.Toolkit>
+  <entitydescription.Toolkit>Удобный пояс инструментов, способен повышать механический и электронный уровени пользователя.</entitydescription.Toolkit>
+  <entityname.duffelpack>Вещевая сумка</entityname.duffelpack>
+  <entitydescription.duffelpack>Вещевая сумка способена носить коробки пуль. Кроме того, тебе лучше уже позаботилось о вещах этого несчастного парня.</entitydescription.duffelpack>
+  <entityname.rigging>Такелаж</entityname.rigging>
+  <entitydescription.rigging>Простой жилет, который способен носить ваши вещи.</entitydescription.rigging>
+  <entityname.chiyuan>"Чи Юань" легкий бронежилет</entityname.chiyuan>
+  <entitydescription.chiyuan>Бронежилет предназначен для штурмовых действий. Может носить некоторые вещи.</entitydescription.chiyuan>
+  <entityname.Wf_SaltedFish>Солёная рыба</entityname.Wf_SaltedFish>
+  <entitydescription.Wf_SaltedFish>"Я НЕ СОЛЁНОЙ РЫБЫ!"</entitydescription.Wf_SaltedFish>
+  <entityname.mosquito_swatter>Мухобойка комаров</entityname.mosquito_swatter>
+  <entitydescription.mosquito_swatter>Здесь нет комаров, но, может быть, можно использовать его в качестве кардиостимулятора после увеличения напряжения?</entitydescription.mosquito_swatter>
+  <entityname.masksmanrifle>Снайперская винтовка</entityname.masksmanrifle>
+  <entitydescription.masksmanrifle>Разработана штурмовая винтовка. Более медленная скорострельность с более высокой точностью и уроном.</entitydescription.masksmanrifle>
+  <entityname.404uniform>Целевая группа "404"</entityname.404uniform>
+  <entitydescription.404uniform>404 не найдено</entitydescription.404uniform>
+  <entityname.GKuniform>Оперативная группа «Гриффин»</entityname.GKuniform>
+  <entitydescription.GKuniform>16Lab</entitydescription.GKuniform>
+  <entityname.exoskeleton_light>IOP Легкий экзоскелет</entityname.exoskeleton_light>
+  <entitydescription.exoskeleton_light>Повышает мобильность пользователя, обеспечивая при этом защиту. Нужен аккумулятор.</entitydescription.exoskeleton_light>
+  <entityname.exoskeleton_standard>IOP Стандартный экзоскелет</entityname.exoskeleton_standard>
+  <entitydescription.exoskeleton_standard>Защищает пользователя в бою. Нужен аккумулятор.</entitydescription.exoskeleton_standard>
+  <entityname.beret>Берет</entityname.beret>
+  <entitydescription.beret>"Shiki kan, этого достаточно, чтобы я был..."</entitydescription.beret>
+  <entityname.Kaltsituniform>Костюм врача Острова Родос</entityname.Kaltsituniform>
+  <entitydescription.Kaltsituniform>"Mon3ters на борт не допускаются."</entitydescription.Kaltsituniform>
+  <entityname.HeiTieuniform>Чёрная Стиль костюм</entityname.HeiTieuniform>
+  <entitydescription.HeiTieuniform>"Чёрная Стиль, к вашим услугам."</entitydescription.HeiTieuniform>
+  <entityname.penguin_logistics>Пингвин Логистика костюм</entityname.penguin_logistics>
+  <entitydescription.penguin_logistics>"Для достижения поставленных целей можно использовать любые методы."</entitydescription.penguin_logistics>
+  <entityname.RodesResearcherUniform>Исследовательский костюм Острова Родос</entityname.RodesResearcherUniform>
+  <entitydescription.RodesResearcherUniform>"Вообще говоря, люди приносят больше вреда, чем природных катастрофов."</entitydescription.RodesResearcherUniform>
+  <entityname.LungMen>Костюм Охранного Отдела Лунмэнь</entityname.LungMen>
+  <entitydescription.LungMen>"И способности, и политическая честность."</entitydescription.LungMen>
+  <entityname.AbyssalHunterHat>Шляпа Охотника Бездны</entityname.AbyssalHunterHat>
+  <entitydescription.AbyssalHunterHat>"... Давайте отправимся на охоту за чудовищами."</entitydescription.AbyssalHunterHat>
+  <entityname.doctorsuniform3>Гигиенист костюм</entityname.doctorsuniform3>
+  <entitydescription.doctorsuniform3></entitydescription.doctorsuniform3>
+  <entityname.shengxuanuniform>Шеньсюань</entityname.shengxuanuniform>
+  <entitydescription.shengxuanuniform>Хорошо скроенный элегантный костюм.</entitydescription.shengxuanuniform>
+  <entityname.lightarmor>Легкая боевая броня</entityname.lightarmor>
+  <entitydescription.lightarmor>Легкий боевой костюм с передовыми технологиями, способена повышать оружейный уровень пользователя и представить ему защиту.</entitydescription.lightarmor>
+  <entityname.firmament>Небосвод Шлем</entityname.firmament>
+  <entitydescription.firmament>Шлем, способный нести два снаряжения, может вводить лекарство, когда состояние здоровья пользователя ухудшается. Имеет белую и черную версии.</entitydescription.firmament>
+  <entityname.firmament_b>Небосвод Шлем</entityname.firmament_b>
+  <entitydescription.firmament_b>Шлем, способный нести два снаряжения, может вводить лекарство, когда состояние здоровья пользователя ухудшается. Имеет белую и черную версии.</entitydescription.firmament_b>
+  <entityname.flashhelmet>Вспышка Шлем</entityname.flashhelmet>
+  <entitydescription.flashhelmet>Лёгкий шлем с электрофонарям.</entitydescription.flashhelmet>
+  <entityname.clowndivingmask_alt>Подводная маска клоуна</entityname.clowndivingmask_alt>
+  <entitydescription.clowndivingmask_alt>(Положение ношения разно) Сочетание подводной и клоунской масок, позволяющая и паясничать, и дышать под водой.</entitydescription.clowndivingmask_alt>
+  <entityname.maidclothes1>Дева костюм</entityname.maidclothes1>
+  <entitydescription.maidclothes1></entitydescription.maidclothes1>
+  <entityname.maidclothes2>Святыня костюм</entityname.maidclothes2>
+  <entitydescription.maidclothes2></entitydescription.maidclothes2>
+  <entityname.maidheaddress>Головной убор</entityname.maidheaddress>
+  <entitydescription.maidheaddress></entitydescription.maidheaddress>
+  <entityname.Wf_Admiral_Katana>Катана</entityname.Wf_Admiral_Katana>
+  <entitydescription.Wf_Admiral_Katana></entitydescription.Wf_Admiral_Katana>
+  <entityname.Wf_Admiral_Wakizashi>Вакидзаси</entityname.Wf_Admiral_Wakizashi>
+  <entitydescription.Wf_Admiral_Wakizashi></entitydescription.Wf_Admiral_Wakizashi>
+  <entityname.Wf_Admiral_Katana_kai>Катана_кай</entityname.Wf_Admiral_Katana_kai>
+  <entitydescription.Wf_Admiral_Katana_kai></entitydescription.Wf_Admiral_Katana_kai>
+  <entityname.Wf_Admiral_Wakizashi_kai>Вакидзаси_кай</entityname.Wf_Admiral_Wakizashi_kai>
+  <entitydescription.Wf_Admiral_Wakizashi_kai></entitydescription.Wf_Admiral_Wakizashi_kai>
+  <entityname.Wf_Blame_harpoongun>Вина Подводное ружье</entityname.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun></entitydescription.Wf_Blame_harpoongun>
+  <entityname.Wf_Blame_spear>Вина Гарпун</entityname.Wf_Blame_spear>
+  <entitydescription.Wf_Blame_spear></entitydescription.Wf_Blame_spear>
+  <entityname.Wf_Blame_batterycell>Вина батарея</entityname.Wf_Blame_batterycell>
+  <entitydescription.Wf_Blame_batterycell>Только для Вина Подводного ружья</entitydescription.Wf_Blame_batterycell>
+  <entityname.pistol>Пистолет</entityname.pistol>
+  <entitydescription.pistol>"Вылечить инфекцию, одна пуля за одного раза."</entitydescription.pistol>
+  <entityname.pistolmagazine>Магазинная коробка для пистолета</entityname.pistolmagazine>
+  <entitydescription.pistolmagazine>13 пули</entitydescription.pistolmagazine>
+  <entityname.smallriotshield>Малый полицейский щит</entityname.smallriotshield>
+  <entitydescription.smallriotshield>Вы можете пользоваться им с пистолетом.</entitydescription.smallriotshield>
+  <entityname.shotgun_sawedoff>Пиленый короткий дробовик</entityname.shotgun_sawedoff>
+  <entitydescription.shotgun_sawedoff>"Он способен стрелять пулями, и это достаточно."</entitydescription.shotgun_sawedoff>
+  <entityname.ceremonialsword_heavy>Церемониальный Великий Меч</entityname.ceremonialsword_heavy>
+  <entitydescription.ceremonialsword_heavy>Хорошо украшенный большой меч, требует навыков владения им.</entitydescription.ceremonialsword_heavy>
+  <entityname.EAHI_autoinjectorheadset>[EA-HI] Гарнитура с инжектором</entityname.EAHI_autoinjectorheadset>
+  <entitydescription.EAHI_autoinjectorheadset></entitydescription.EAHI_autoinjectorheadset>
+  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
+  <entitydescription.Wf_pucs></entitydescription.Wf_pucs>
+  <entityname.Wf_New_XDS-01>XDS-01</entityname.Wf_New_XDS-01>
+  <entitydescription.Wf_New_XDS-01></entitydescription.Wf_New_XDS-01>
+  <entityname.Wf_New_XDS-01_Engine>XDS-01 Двигатель</entityname.Wf_New_XDS-01_Engine>
+  <entitydescription.Wf_New_XDS-01_Engine></entitydescription.Wf_New_XDS-01_Engine>
+  <entityname.Wf_debris>Развалины</entityname.Wf_debris>
+  <entitydescription.Wf_debris></entitydescription.Wf_debris>
+  <entityname.Wf_Research_Box>Исследовательская коробка</entityname.Wf_Research_Box>
+  <entitydescription.Wf_Research_Box></entitydescription.Wf_Research_Box>
+  <entityname.Wf_Research_chip>XDS-01 Исследовательский клип</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip></entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_Log>XDS-01 Данные исследования</entityname.Wf_Research_Log>
+  <entitydescription.Wf_Research_Log></entitydescription.Wf_Research_Log>
+  <entityname.loudspeaker>Громкоговоритель</entityname.loudspeaker>
+  <entitydescription.loudspeaker>傻↑逼↓</entitydescription.loudspeaker>
+  <entityname.loudspeaker1>Громкоговоритель</entityname.loudspeaker1>
+  <entitydescription.loudspeaker1>好！很有精神！</entitydescription.loudspeaker1>
+  <entityname.loudspeaker2>Громкоговоритель</entityname.loudspeaker2>
+  <entitydescription.loudspeaker2>这么小声还想开军舰！？</entitydescription.loudspeaker2>
+  <entityname.loudspeaker3>Громкоговоритель</entityname.loudspeaker3>
+  <entitydescription.loudspeaker3>无  能  狂  怒</entitydescription.loudspeaker3>
+  <entityname.loudspeaker4>Громкоговоритель</entityname.loudspeaker4>
+  <entitydescription.loudspeaker4>enemy spotted</entitydescription.loudspeaker4>
+  <entityname.ironpipe>Железная труба</entityname.ironpipe>
+  <entitydescription.ironpipe>Может быть, мы можем использовать его в каких-то других ситуаций?</entitydescription.ironpipe>
+  <entityname.vodka>Водка</entityname.vodka>
+  <entitydescription.vodka>"Это лучшая вещь под этим морем, товарищ."</entitydescription.vodka>
+
+  <!-- Custom -->
+
+  <entityname.gravpistol>ИГЛа (Излучатель гравитационного луча)</entityname.gravpistol>
+  <entitydescription.gravpistol>ИГЛа — это гравитронное энергетическое оружие, способное пробить все известные материалы и броню. Его конструкция очень сложна.Отдача сопоставима с ударом грязевого раптора.</entitydescription.gravpistol>
+  
+  <entityname.gravbeamammo>Гравитационно-лучевая ячейка</entityname.gravbeamammo>
+  <entitydescription.gravbeamammo>Содержит стабильную, сфокусированную энергию гравитона, способной рассеивать и уничтожать все виды известной материи.</entitydescription.gravbeamammo>
+  
+  <entityname.dominator>Портативная Система Психологической Диагностики и Подавления «Доминатор»</entityname.dominator>
+  <entitydescription.dominator>Портативная система психологической диагностики и подавления «Доминатор» — это пистолет правоохранительных органов, использовавшийся правительством Земли. Он может быстро устранить несколько угроз.</entitydescription.dominator>
+  
+  <entityname.dominatorammo>Энергоячейка «Элиминатора-Доминатора»</entityname.dominatorammo>
+  <entitydescription.dominatorammo>Охранная ячейка: Смертельный патрон. Пожалуйста, прицеливайтесь тщательно и уничтожайте только вашу цель.</entitydescription.dominatorammo>
+  
+  <entityname.dominatorammo2>Парализующая энергоячейка «Доминатора»</entityname.dominatorammo2>
+  <entitydescription.dominatorammo2>Охранная ячейка: нелетальный парализатор.Цельтесь тщательно и подчините себе цель.</entitydescription.dominatorammo2>
+  
+  <entityname.dominatorammo3>Разлагающая энергоячейка «Доминатора»</entityname.dominatorammo3>
+  <entitydescription.dominatorammo3>Охранная ячейка: уничтожитель через разложение. Цель будет полностью уничтожена. Пожалуйста, используйте с максимальной осторожностью.</entitydescription.dominatorammo3>
+  
+  
+  <afflictionname.eliminator>Летальный «Доминатор»!</afflictionname.eliminator>
+  
+  <eventtext.DRF.1>"Псст! Эй, незнакомец. Иди сюда, у меня есть кое-что интересное."</eventtext.DRF.1>
+  <eventtext.DRF.o1>Послушаться его</eventtext.DRF.o1>
+  <eventtext.DRF.o4>Игнорировать</eventtext.DRF.o4>
+  
+  <eventtext.DRF.o1.c1>"Мощное энергетическое оружие, использовавшийся правительством Земли. Вы нигде не найдете его... Я снижу вам цену. Как вам?"</eventtext.DRF.o1.c1>
+  <eventtext.DRF.o2>"Как оно сюда попало?"</eventtext.DRF.o2>
+  <eventtext.DRF.notbuy>"Я не заинтересован в опасных вещах. Эта штука убьет меня!"</eventtext.DRF.notbuy>
+  <eventtext.DRF.notbuy2>"Да конечно, чтобы потом, когда тебя схватит Коалиция, ты и меня сдал!"</eventtext.DRF.notbuy2>
+  
+  <eventtext.DRF.o2.c1>".... Заткнись и слушай внимательно."
+  "Фонд восстановления данных. Ну ты знаешь, ФВД, верно? Организация, изучающая забытые технологии под контролем Коалиции."
+  "Недавно, ФВД достиг успеха в восстановлении энергетического оружия Земли."
+  "Конечно не новый, просто сломанный починили, но это большое достижение."</eventtext.DRF.o2.c1>
+  
+  <eventtext.DRF.o2.c2>"И... Это все, не спрашивай."
+  
+  (вздыхает на мгновение)
+  
+  "Я предлагаю вам сделку. Всего 5000 кредитов."</eventtext.DRF.o2.c2>
+  
+  <eventtext.DRF.o3>"Да. Я пожалуй куплю это"</eventtext.DRF.o3>
+  
+  <eventtext.DRF.suc1>"Хорошо! Я пошел! Вам лучше убираться и держать это спрятанным до тех пор, пока вы не уйдете, Коалиция переворачивает каждый камень в поисках этого".
+  Торговец вручил вам маленький, гладкий пистолет, излучающий красное свечение. Интересно, насколько он мощный на самом деле.</eventtext.DRF.suc1>
+  <eventtext.DRF.suc2>"Хорошо! Я пошел! Вам лучше убираться и держать это спрятанным до тех пор, пока вы не уйдете, Коалиция переворачивает каждый камень в поисках этого".
+  Тебе вручили синеватый пистолет... Пистолет тихо бормочет в кармане, он говорящий?! </eventtext.DRF.suc2>
+  
+  <eventtext.DRF.nomney>"Недостаточно денег? Думаю, команды подлодок не получают много денег в наши дни..  Ты меня не видел, понял?!"</eventtext.DRF.nomney>
+  <eventtext.DRF.sec>Вы отдаете деньги, слышно, как в соседнем коридоре кричат ​​и топают охранники.
+  
+  "Черт, как они меня нашли!?"
+  
+  Бросив в вас пистолет, мужчина перелезает через ближайшие ящики и исчезает за дверным проемом.
+  Что-то здесь не так! </eventtext.DRF.sec>
+  
+  <eventtext.DRF.out>"Чтож, прости за это"</eventtext.DRF.out>
+  <eventtext.DRF.fight>"Дай мне это прежде чем я сообщу охране ! ! "</eventtext.DRF.fight>
+  
+  <eventtext.DRF.fight2>"Блядь!!! Ты сумашедший?? "
+  
+  Когда вы кричите, на его лице появляются признаки смущения и гнева.
+  Контрабандист достает из пальто светящийся голубоватым огнем пистолет и целится в вас!
+  
+  </eventtext.DRF.fight2>
+  
+</infotexts>

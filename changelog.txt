@@ -1,0 +1,62 @@
+Re added the incomplete Wf_pucs_R/B/D diving suits (and made male versions of them)
+Fix feet so some diving suits are not hovering 2 inches off the floor
+The modded npcs shouldnt be naked now
+Added item descriptions for missing items
+add status effect back to blame harpoongun
+add more names
+
+6/18/24 - Update for v1.5.7.0
+
+- Slipsuit buffs
+- PUCS buffs
+- assaultrifle/autoshotgun changes
+- cargoscooter storage buff
+
+
+6/20/24 
+Feet offset changes:
+- Fixed alll swimsuit sprites
+- Fixed SpecOps EPSP sprite
+
+- Fixed succubus set nippy slip, and heels
+
+6/21/24
+
+- Added a cooldown to Loudspeakers...
+- Fixed DeepDive sprite for male
+- Tried to nerf the stungun exploit
+
+6/23/24
+- Fixed Shenxuan, BSQP(White Cheonsam), Armor but better i guess, HGIS, Gothic, Exotic_Armor_suit clothing offsets (and heels)
+- Doubled the spawn chances of the rare research clips and debris. (0.01 -> 0.02)
+
+6/29/24
+- Fixed shenxuan's stats to give husk immunity and regen again
+- Readded a bunch of commented out clothing, they should spawn in wrecks again.
+
+7/10/24
+- Made this mod work with Dynamic Europa and Enhanced Armaments
+- Added booba physics to almost everything based on https://steamcommunity.com/sharedfiles/filedetails/?id=2935181237
+  ...that was 1000+ lines i had to look over
+- Nerfed exoskeletons a bit, increased battery life.
+- Adjusted EPSP resists
+- added back 3dprinter and alien blood -> Gene
+
+7/11/24
+- Added new grenades for fun times
+- Husk Maid outfit, because
+- Fixed the beret sprite, does not loop around the head multiple times now
+
+7/13/24
+- fix sprites
+
+7/18/24
+- Fixed reported clothing 
+- Fixed the leftover Extract It! files
+- Did not want to make a separate patch so i added in changes to flashlight which mitigates the bug in Enhanced Immersion's flashlight. Battery should not drain all the time when equipped to weapons.
+
+8/19/24
+- added new weapon + event from a dead mod (DRF)
+- other stuff i forgot
+- modified the XDS a bit
+- Parity with original EA-HI mod, Faction rework in progress.

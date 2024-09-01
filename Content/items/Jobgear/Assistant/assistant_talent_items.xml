@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <Items>
+    <Item name="" identifier="clowndivingmask" variantof="divingmask" tags="smallitem,clownmask,diving,lightdiving">
+      <Price baseprice="150" sold="false" canbespecial="false" />
+      <PreferredContainer primary="divingcab,supplycab" amount="0" />
+      <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/TalentGear.png" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
+      <InventoryIcon />
+      <Body width="5" radius="25" />
+      <!-- clear old fabrication and deconstruction elements, replace with new ones -->
+      <Fabricate />
+      <Deconstruct />
+      <Deconstruct time="10">
+        <Item identifier="divingmask" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+        <RequiredItem identifier="clownmask" />
+        <RequiredItem identifier="divingmask" />
+      </Fabricate>
+      <Wearable>
+        <sprite name="Clown Diving Mask Wearable" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" sourcerect="417,303,39,75" origin="0.1,0.6" />
+        <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+      </Wearable>
+    </Item>
+    
+    <Item name="Clown Divingmask Alt" variantof="clowndivingmask" identifier="clowndivingmask_alt" tags="smallitem,clothing,clownmask,diving,lightdiving" >
+      <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="334,301,40,56" origin="0.5,0.5" scale="0.5" />
+      <Body width="5" radius="25" density="15" />
+      <Deconstruct time="10">
+        <Item identifier="clowndivingmask" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredItem identifier="clowndivingmask" />
+        <RequiredItem />
+      </Fabricate>
+      <Wearable>
+        <sprite name="Clown Diving Mask Wearable Alt" texture="%ModDir%/Content/Items/JobGear/Assistant/clowndivingmask_alt.png" limb="Head" inheritlimbdepth="true" inheritscale="true" scale="0.5" ignorelimbscale="true" sourcerect="0,0,88,112" origin="0.75,0.65" />
+      </Wearable>
+    </Item>
+
+    <Item name="" identifier="handhelditemfinder" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="storagecab" />
+      <Price baseprice="140" sold="false">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+      <Deconstruct time="15">
+        <Item identifier="copper" />
+        <Item identifier="plastic" amount="2" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+        <RequiredSkill identifier="mechanical" level="20" />
+        <RequiredSkill identifier="electrical" level="20" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="445,228,34,28" depth="0.55" origin="0.5,0.5" />
+      <Body width="34" height="28" density="8" />
+      <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+      <MiniMap enableitemfinder="true" enablehullcondition="false" EnableElectricalView="false" EnableHullStatus="false" drawhudwhenequipped="true" displaybordersize="-0.1" characterusable="false" allowuioverlap="true">
+        <GuiFrame relativesize="0.4,0.4" anchor="CenterLeft" relativeoffset="0.006,-0.01" style="ItemUI" />
+      </MiniMap>
+    </Item>
+
+    <Item name="" identifier="ceremonialsword" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <PreferredContainer primary="secarmcab" secondary="armcab" />
+      <Price baseprice="340" sold="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+        <Price storeidentifier="merchantmine" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="titaniumaluminiumalloy" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiresrecipe="true" requiredtime="30">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      </Fabricate>
+      <Sprite texture="%ModDir%/Content/Items/JobGear/Assistant/ceremonialsword.png" sourcerect="0,0,168,27" depth="0.55" origin="0.5,0.5" />
+      <Body width="168" height="27" density="30" />
+      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-35,0" holdangle="30" aimangle="20" reload="0.75" range="75" combatPriority="30" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="6" structuredamage="1" structuresoundtype="StructureSlash">
+          <Affliction identifier="lacerations" strength="19" />
+          <Affliction identifier="bleeding" strength="14" />
+          <Affliction identifier="stun" strength="0.25" />
+        </Attack>
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnSuccess" target="This" reload="0.4" setvalue="true">
+          <Conditional reload="gt 0.4" />
+        </StatusEffect>
+        <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredSkill identifier="helm" level="50" />
+        <RequiredSkill identifier="electrical" level="50" />
+        <RequiredSkill identifier="mechanical" level="50" />
+        <RequiredSkill identifier="medical" level="50" />
+        <!--Reset the reload speed-->
+        <StatusEffect type="OnUse" target="This" reload="0.75" setvalue="true" delay="1" />
+      </MeleeWeapon>
+      <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.15" />
+      </Quality>
+      <SkillRequirementHint identifier="weapons" level="50" />
+      <SkillRequirementHint identifier="helm" level="50" />
+      <SkillRequirementHint identifier="electrical" level="50" />
+      <SkillRequirementHint identifier="mechanical" level="50" />
+      <SkillRequirementHint identifier="medical" level="50" />
+    </Item>
+    <Item name="Heavy Ceremonial Sword" identifier="ceremonialsword_heavy" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <PreferredContainer primary="secarmcab" secondary="armcab" />
+      <Price baseprice="510" sold="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+        <Price storeidentifier="merchantmine" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="titaniumaluminiumalloy" amount="2" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="30">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="ceremonialsword" amount="2" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      </Fabricate>
+      <Sprite texture="%ModDir%/Content/Items/JobGear/Assistant/ceremonialsword_heavy.png" sourcerect="0,0,250,60" depth="0.55" origin="0.5,0.5" />
+      <Body width="250" height="60" density="30" />
+      <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="15,0" handle1="-48,0" handld2="-35,0" holdangle="30" aimangle="10" reload="1.25" range="175" combatPriority="30" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="6" structuredamage="1" structuresoundtype="StructureSlash">
+          <Affliction identifier="lacerations" strength="40" />
+          <Affliction identifier="bleeding" strength="30" />
+          <Affliction identifier="stun" strength="0.75" />
+        </Attack>
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnSuccess" target="This" reload="0.75" setvalue="true">
+          <Conditional reload="gt 0.4" />
+        </StatusEffect>
+        <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+        <RequiredSkill identifier="weapons" level="50" />
+        <RequiredSkill identifier="helm" level="50" />
+        <RequiredSkill identifier="electrical" level="50" />
+        <RequiredSkill identifier="mechanical" level="50" />
+        <RequiredSkill identifier="medical" level="50" />
+        <!--Reset the reload speed-->
+        <StatusEffect type="OnUse" target="This" reload="1.25" setvalue="true" delay="1" />
+      </MeleeWeapon>
+      <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.15" />
+      </Quality>
+      <SkillRequirementHint identifier="weapons" level="60" />
+      <SkillRequirementHint identifier="helm" level="60" />
+      <SkillRequirementHint identifier="electrical" level="60" />
+      <SkillRequirementHint identifier="mechanical" level="60" />
+      <SkillRequirementHint identifier="medical" level="60" />
+    </Item>
+  </Items>
+</Override>

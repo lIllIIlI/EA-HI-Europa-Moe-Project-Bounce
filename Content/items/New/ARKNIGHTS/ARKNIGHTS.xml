@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--凯尔希/博士-->
+  <Item name="Rhodes Island doctor outfit" identifier="Kaltsituniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="425" minavailable="1">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="6">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Content/Items/New/OutfitIcons_1.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Kaltsit 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="1,8,120,59" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Kaltsit's Clothes 1 Torso" texture="KaltsitTorso_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,139,220" origin="0.5,0.5" />
+      <sprite name="Kaltsit's Clothes 1 Right Hand" texture="Kaltsit_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Left Hand" texture="Kaltsit_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Left Lower Arm" texture="Kaltsit_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Right Lower Arm" texture="Kaltsit_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Left Upper Arm" texture="Kaltsit_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Right Upper Arm" texture="Kaltsit_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Waist" texture="Kaltsit_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Right Thigh" texture="Kaltsit_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Left Thigh" texture="Kaltsit_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Right Leg" texture="Kaltsit_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Left Leg" texture="Kaltsit_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Right Shoe" texture="Kaltsit_[GENDER].png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes 1 Left Shoe" texture="Kaltsit_[GENDER].png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Kaltsit's Clothes Boob" texture="Kaltsit_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <SkillModifier skillidentifier="medical" skillvalue="15" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.70" />
+    </Wearable>
+    <ItemContainer capacity="3">
+      <Containable items="chem,medical" />
+    </ItemContainer>
+  </Item>
+  <!--黑钢制服-->
+  <Item name="Blacksteel outfit" identifier="HeiTieuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="BlackSteel1's Uniform 2 Torso" texture="blacksteel_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Right Hand" texture="blacksteel_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Left Hand" texture="blacksteel_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Left Lower Arm" texture="blacksteel_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Right Lower Arm" texture="blacksteel_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Left Upper Arm" texture="blacksteel_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Right Upper Arm" texture="blacksteel_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Waist" texture="blacksteel_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Right Thigh" texture="blacksteel_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Left Thigh" texture="blacksteel_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Right Leg" texture="blacksteel_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Left Leg" texture="blacksteel_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Right Shoe" texture="blacksteel_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform 2 Left Shoe" texture="blacksteel_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="BlackSteel1's Uniform boob" texture="blacksteel_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <!-- 天灾学者服装 -->
+  <Item name="Rhodes Island researcher outfit" identifier="RodesResearcherUniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
+    <PreferredContainer primary="crewcab" />
+    <Price baseprice="150" minavailable="1">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="7,9" sheetelementsize="64,64" />
+    <Sprite name="researcher" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="376,147,118,57" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Researcher Torso" texture="Rodes-researcher_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Right Hand" texture="Rodes-researcher_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Left Hand" texture="Rodes-researcher_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Left Lower Arm" texture="Rodes-researcher_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Right Lower Arm" texture="Rodes-researcher_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Left Upper Arm" texture="Rodes-researcher_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Right Upper Arm" texture="Rodes-researcher_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Waist" texture="Rodes-researcher_[GENDER].png" limb="Waist" hidelimb="false" inheritorigin="true" inherittexturescale="true" inheritsourcerect="true" />
+      <sprite name="Researcher Right Thigh" texture="Rodes-researcher_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Left Thigh" texture="Rodes-researcher_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Right Leg" texture="Rodes-researcher_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Left Leg" texture="Rodes-researcher_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Right Shoe" texture="Rodes-researcher_[GENDER].png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher Left Shoe" texture="Rodes-researcher_[GENDER].png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Researcher boob" texture="Rodes-researcher_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <SkillModifier skillidentifier="electrical" skillvalue="5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+      <SkillModifier skillidentifier="medical" skillvalue="5" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <!-- 企鹅物流员工制服 -->
+  <Item name="Penguin Logistics outfit" identifier="penguin_logistics" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <Price baseprice="275" minavailable="1">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Penguin Logistics Icon" texture="%ModDir%/Content/Items/New/ARKNIGHTS/penguin_logistics_icon.png" sourcerect="0,0,62,60" origin="0.5,0.5" />
+    <Sprite name="Penguin Logistics" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,77,117,62" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Penguin Logistics Torso" texture="penguin_logistics_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="160,0,112,207" />
+      <sprite name="Penguin Logistics Right Hand" texture="penguin_logistics_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Left Hand" texture="penguin_logistics_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Right Lower Arm" texture="penguin_logistics_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Left Lower Arm" texture="penguin_logistics_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Right Upper Arm" texture="penguin_logistics_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Left Upper Arm" texture="penguin_logistics_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Waist" texture="penguin_logistics_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="160,207,112,61" />
+      <sprite name="Penguin Logistics Right Thigh" texture="penguin_logistics_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Left Thigh" texture="penguin_logistics_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Right Leg" texture="penguin_logistics_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Left Leg" texture="penguin_logistics_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Right Shoe" texture="penguin_logistics_[GENDER].png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics Left Shoe" texture="penguin_logistics_[GENDER].png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Penguin Logistics boob" texture="penguin_logistics_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <Item name="Lungmen Guard Department Uniform" identifier="LungMen" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="LungMen Uniform 2 Torso" texture="lungmen_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Right Hand" texture="lungmen_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Left Hand" texture="lungmen_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Left Lower Arm" texture="lungmen_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Right Lower Arm" texture="lungmen_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Left Upper Arm" texture="lungmen_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Right Upper Arm" texture="lungmen_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Waist" texture="lungmen_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Right Thigh" texture="lungmen_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Left Thigh" texture="lungmen_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Right Leg" texture="lungmen_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Left Leg" texture="lungmen_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Right Shoe" texture="lungmen_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 Left Shoe" texture="lungmen_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="LungMen Uniform 2 boob" texture="lungmen_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+  </Item>
+  <!-- 深海猎人宽沿帽 -->
+  <Item name="Abyssal Hunter's hat" identifier="AbyssalHunterHat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.2">
+    <Inventoryicon texture="%ModDir%/Content/Items/New/ARKNIGHTS/abysshunter_hat.png" depth="0.6" sourcerect="0,0,195,115" origin="0.5,0.5" />
+    <Sprite name="AbyssHunterHat" texture="%ModDir%/Content/Items/New/ARKNIGHTS/abysshunter_hat.png" depth="0.6" sourcerect="0,0,195,115" origin="0.5,0.7" />
+    <Body width="75" height="50" density="30" />
+    <Price baseprice="150" minavailable="1">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="AbyssalHunterHat" texture="%ModDir%/Content/Items/New/ARKNIGHTS/abysshunter_hat.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hidelimb="false" sourcerect="0,0,195,115" origin="0.45,0.81" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+</Items>

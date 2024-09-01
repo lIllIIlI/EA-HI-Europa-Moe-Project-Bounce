@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Missions>
+	<CargoMission name="Tobacco Frenzy" identifier="EAHI_Mission_YMLKR" tags="EAHI_N" type="Cargo" description="" difficulty="2" commonness="90" achievementidentifier="cargomission" successmessage="‘Tobacco’ has been successfully delivered to [location2]" failuremessage="Obviously, this is not tobacco, but a mutated explosive fruit" requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="200" maxcount="12">
+				<Item identifier="badcreepingorange" amount="8"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="Radiation Engineer" identifier="EAHI_Mission_FXGB" tags="EAHI_N" type="Cargo" description="" difficulty="4" commonness="90" achievementidentifier="cargomission" successmessage="Volatile ray fuel rods have been successfully delivered to [location2]" failuremessage="Bro, you need to stay alive to spend the money." requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="400" maxcount="40">
+				<Item identifier="fulguriumfuelrodvolatile" amount="4"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="Suicide Truck" identifier="EAHI_Mission_ZBKC" tags="EAHI_N" type="Cargo" description="" difficulty="4" commonness="90" achievementidentifier="cargomission" successmessage="Volatile azide compounds have been successfully delivered to [location2], you breathe a sigh of relief." failuremessage="Bro, you need to stay alive to spend the money." requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="400" maxcount="40">
+				<Item identifier="volatilecompoundn" amount="1"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="No Return" identifier="EAHI_Mission_YYWH_1" tags="EAHI_N" type="Cargo" description="" difficulty="1" commonness="30" achievementidentifier="cargomission" successmessage="You actually resisted your greed, unbelievable" failuremessage="‘I knew it’ said the liaison." requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="1600" maxcount="8">
+				<Item identifier="coalitionmedal" amount="1"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="No Return" identifier="EAHI_Mission_YYWH_3" tags="EAHI_N" type="Cargo" description="" difficulty="1" commonness="30" achievementidentifier="cargomission" successmessage="You actually resisted your greed, unbelievable" failuremessage="‘I knew it’ said the liaison." requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="3000" maxcount="4">
+				<Item identifier="skillbooksailorsguide" amount="2"/>
+				<Item identifier="skillbookhandyseaman" amount="2"/>
+				<Item identifier="skillbookeuropanmedicine" amount="2"/>
+				<Item identifier="skillbooksubmarinewarfare" amount="2"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="No Return" identifier="EAHI_Mission_YYWH_2" tags="EAHI_N" type="Cargo" description="" difficulty="1" commonness="30" achievementidentifier="cargomission" successmessage="You actually resisted your greed, unbelievable" failuremessage="‘I knew it’ said the liaison." requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="1600" maxcount="8">
+				<Item identifier="endocrinebooster" amount="1"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="Garbage Truck" identifier="EAHI_Mission_LJC" tags="EAHI_N" type="Cargo" description="" difficulty="1" commonness="80" achievementidentifier="cargomission" successmessage="Waste materials have been successfully delivered to [location2]" failuremessage="No way, why would anyone need waste materials" requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="250" maxcount="40">
+				<Item identifier="scrap" amount="8"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="Clothing Transport" identifier="EAHI_Mission_FZ" tags="EAHI_N" type="Cargo" description="" difficulty="1" commonness="80" achievementidentifier="cargomission" successmessage="Clothing has been successfully delivered to [location2]" failuremessage="No way, why would anyone need clothes" requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="300" maxcount="12">
+				<Item identifier="RO635uniform1" amount="1"/>
+				<Item identifier="UMP9uniform1" amount="1"/>
+				<Item identifier="securityuniform4" amount="1"/>
+				<Item identifier="securityuniform5" amount="1"/>
+				<Item identifier="securityuniform6" amount="1"/>
+				<Item identifier="securityuniform7" amount="1"/>
+				<Item identifier="securityuniform8" amount="1"/>
+				<Item identifier="prisonerclothes" amount="1"/>
+				<Item identifier="vipclothes3" amount="1"/>
+				<Item identifier="vipclothes2" amount="1"/>
+				<Item identifier="pirateclothes" amount="1"/>
+				<Item identifier="pirateclothesnovice" amount="1"/>
+				<Item identifier="pirateclotheshard" amount="1"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<CargoMission name="Short Film" identifier="EAHI_Mission_XDY" tags="EAHI_N" type="Cargo" description="" difficulty="1" commonness="80" achievementidentifier="cargomission" successmessage="You flipped through the log and didn't find what you wanted. Anyway, the stuff has been delivered, who cares." failuremessage="How did you fail? Is there really someone lacking short films?" requireddeliveryamount="0.98">
+		<Items>
+			<Item identifier="metalcrate" reward="200" maxcount="10">
+				<Item identifier="handheldterminal" amount="4"/>
+			</Item>
+		</Items>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+		<LocationType from="AnyOutpost" to="AnyOutpost"/>
+	</CargoMission>
+	<!-- <EscortMission name="Smooth Sailing" identifier="EAHI_Mission_PPQY" tags="EAHI_N" type="Escort" description="" difficulty="4" commonness="100" reward="3500" achievementidentifier="escortmission" successmessage="‘Nothing surprising happens in the deep sea, right?’" baseescortedcharacters="1" terroristchance="1">
+    <message header="Personnel died" text="" />
+    <message header="Terrorists defeated" text="" />
+    <Characters>
+      <Item from="escortnpcs1" identifier="vip" escortidentifier="vip" color="238,130,238" />
+      <Item from="escortnpcs1" identifier="securitynpc" />
+      <Item from="escortnpcs1" identifier="securitynpc" />
+    </Characters>
+    <TerroristItems>
+      <Item identifier="shotgun" equip="true" mindifficulty="20">
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+        <Item identifier="shotgunshell" />
+      </Item>
+      <Item identifier="revolver" equip="true" mindifficulty="60">
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+      </Item>
+    </TerroristItems>
+    <Reputation identifier="EAHI" amount="-20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55" />
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </EscortMission> -->
+	<MonsterMission name="Raptor Ambush" identifier="EAHI_Mission_XML" tags="EAHI_N,EAHI_H" description="" type="Monster" difficulty="4" commonness="100" reward="8000" sonarlabel="Raptor Pack" maxsonarmarkerdistance="10000" successmessage="The raptor pack has been cleared">
+		<monster character="mudraptor_veteran" min="13" max="20"/>
+		<monster character="watcher" min="1" max="1"/>
+		<Reputation identifier="EAHI" amount="5"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_XML" text="missionmessage0.EAHI_Mission_XML"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="爬行者之母歼灭战"  -->
+	<MonsterMission identifier="EAHI_Mission_PP" tags="EAHI_N,EAHI_H" description="" type="Monster" difficulty="4" commonness="100" reward="8500" sonarlabel="character.crawler" maxsonarmarkerdistance="10000">
+		<monster character="crawler" min="10" max="15"/>
+		<monster character="crawlerbroodmother" min="4" max="6"/>
+		<monster character="watcher" min="1" max="1"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_PP" text="missionmessage0.EAHI_Mission_PP"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="黄金之风"  -->
+	<MonsterMission identifier="EAHI_Mission_HF" tags="EAHI_N,EAHI_H" type="Monster" commonness="100" reward="9000" sonarlabel="character.hammerhead" maxsonarmarkerdistance="10000" difficulty="4">
+		<monster character="Hammerheadgold_m" min="8" max="16"/>
+		<monster character="watcher" min="1" max="1"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_HF" text="missionmessage0.EAHI_Mission_HF"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="猎杀摩螺克群"  -->
+	<MonsterMission identifier="EAHI_Mission_MLKQ" type="Monster" tags="MLK,EAHI_H" description="" commonness="100" reward="10000" sonarlabel="character.moloch" maxsonarmarkerdistance="30000" difficulty="4">
+		<monster character="Molochblack_m" min="3" max="6"/>
+		<monster character="Molochbaby" min="5" max="10"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_MLKQ" text="missionmessage0.EAHI_Mission_MLKQ"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="黑云氤氲"  -->
+	<MonsterMission identifier="EAHI_Mission_HMLK" type="Monster" tags="MLK,EAHI_H" description="" commonness="100" reward="10000" sonarlabel="character.blackmoloch" maxsonarmarkerdistance="30000" difficulty="4">
+		<monster character="Molochblack" min="3" max="6"/>
+		<monster character="watcher" min="1" max="1"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_HMLK" text="missionmessage0.EAHI_Mission_HMLK"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="非法试验"  -->
+	<MonsterMission identifier="EAHI_Mission_XFFSY_1" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="20000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+		<monster character="doomworm" min="2" max="2"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_XFFSY_1" text="missionmessage0.EAHI_Mission_XFFSY_1"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="非法试验"  -->
+	<MonsterMission identifier="EAHI_Mission_XFFSY_2" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="20000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+		<monster character="Charybdis" min="2" max="3"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<message header="missionheader0.EAHI_Mission_XFFSY_2" text="missionmessage0.EAHI_Mission_XFFSY_2"/>
+	</MonsterMission>
+	<!-- <MonsterMission name="非法试验"  -->
+	<MonsterMission identifier="EAHI_Mission_XFFSY_3" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="60000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+		<monster character="Endworm" min="2" max="4"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<message header="Hunt Ended" text="You watch the massive body of the worm sink into the abyss, letting out a long sigh of relief."/>
+	</MonsterMission>
+	<MonsterMission name="‘Calm’ly Watch the Show" identifier="EAHI_Mission_JGHX" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="4000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+		<monster character="Charybdis" min="1" max="1"/>
+		<monster character="Hammerheadgold_m" min="4" max="8"/>
+		<Reputation identifier="EAHI" amount="10"/>
+		<Reputation identifier="coalition" amount="-5"/>
+		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+		<message header="Spectacular Show" text="It was quite a show, too bad someone has to clean up the mess."/>
+	</MonsterMission>
+</Missions>

@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English"
+           nowhitespace="false"
+           translatedname="English">
+  <!-- Faction -->
+  <faction.EAHI>East Asia Heavy Industries</faction.EAHI>
+  <faction.EAHI.description>The precursor of Europa East Asia Heavy Industries, the most renowned conglomerate on Europa, was originally a research outpost affiliated with Earth's East Asia Heavy Industries. As Europa gradually lost contact with Earth, the former research station transformed into the largest mining machinery supplier on Europa, leveraging its legacy industrial mother machines. After the Tormsdale nuclear disaster, EAHI acquired the majority of uranium mines from the Europa Union at a remarkably low price, becoming the largest mining trust across all of Europa. Negative rumors about EAHI have always circulated in secret, but publicly, they are hailed as the cornerstone of the Union's prosperity. </faction.EAHI.description>
+  <faction.EAHI.shortdescription>East Asia Heavy Industries is a massive corporation specializing in mining and engineering machinery manufacturing. It enjoys a high reputation across Europa and has extensive cooperation with the Europa Union. </faction.EAHI.shortdescription>
+  <!-- Labels -->
+  <AnimatedBarotraumaClassic>[EA-HI]Animated Barotrauma Classic</AnimatedBarotraumaClassic>
+  <subcategory.waifu_cosplay>Cosplay</subcategory.waifu_cosplay>
+  <subcategory.waifu_maid>Maid</subcategory.waifu_maid>
+  <subcategory.waifu_tightswim>Swimsui\nTights</subcategory.waifu_tightswim>
+  <subcategory.waifu_wip>Working In Progress</subcategory.waifu_wip>
+  <subcategory.waifu_innercloth>Innercloth</subcategory.waifu_innercloth>
+  <!--override-->
+  <entityname.alienblood>Alien Blood</entityname.alienblood>
+  <entitydescription.alienbloodmod>Blood extracted from the body of a native species of Europa can be further processed into Blood products to treat blood loss. It can also be further purified into genes using therapeutics at the research bench.</entitydescription.alienbloodmod>
+  <entitydescription.mudraptorshellmod>Mudraptor Carapace Fragment. Can be fabricated into Exotic Matter and Mudraptor Headgear</entitydescription.mudraptorshellmod>
+  <entityname.mudraptorshell_head>Mudraptor Headgear</entityname.mudraptorshell_head>
+  <entitydescription.mudraptorshell_head>A small fragment of Mudraptor's carapace, I don't know which part of Mudraptor it is.</entitydescription.mudraptorshell_head>
+  <entityname.exotic_matter>Exotic Matter</entityname.exotic_matter>
+  <!--entity-->
+  <entityname.Wf_SaltedFish>Salted Fish Sword</entityname.Wf_SaltedFish>
+  <entitydescription.Wf_SaltedFish>Rare Earth weapon, very easy to cause tear damage.</entitydescription.Wf_SaltedFish>
+  <entityname.militarybackpack>Military Backpack</entityname.militarybackpack>
+  <entitydescription.militarybackpack>Backpack with a large inventory, waterproof, but slows down user's speed a bit.</entitydescription.militarybackpack>
+  <entityname.beltpack>Beltbag</entityname.beltpack>
+  <entitydescription.beltpack>Can carry more stuff than a toolbelt.</entitydescription.beltpack>
+  <entityname.EMSpack>EMS Medical Bag</entityname.EMSpack>
+  <entitydescription.EMSpack>Bag for emergency medical service, can improve user's medical skill.</entitydescription.EMSpack>
+  <entityname.Toolkit>Toolkit</entityname.Toolkit>
+  <entitydescription.Toolkit>Handy beltbag, can improve user's mechanic and electrical skills.</entitydescription.Toolkit>
+  <entityname.duffelpack>Duffel Bag</entityname.duffelpack>
+  <entitydescription.duffelpack>A patched duffel bag, can carry ammo boxes.</entitydescription.duffelpack>
+  <entityname.rigging>Rigging</entityname.rigging>
+  <entitydescription.rigging>Simple vest, which is able to carry your stuff.</entitydescription.rigging>
+  <entityname.chiyuan>"Chiyuan" Light Body Armor</entityname.chiyuan>
+  <entitydescription.chiyuan>Cover Vest designed for combat. Can carry some stuff.</entitydescription.chiyuan>
+  <entityname.Wf_SaltedFish>SaltedFish</entityname.Wf_SaltedFish>
+  <entitydescription.Wf_SaltedFish>"I'm not salted fish after all!"</entitydescription.Wf_SaltedFish>
+  <entityname.mosquito_swatter>Mosquito Swatter</entityname.mosquito_swatter>
+  <entitydescription.mosquito_swatter>No mosquito here, but maybe you can use this shit as a pacemaker after turning up the voltage?</entitydescription.mosquito_swatter>
+  <entityname.masksmanrifle>Marksman Rifle</entityname.masksmanrifle>
+  <entitydescription.masksmanrifle>Designed assault rifle. Slower firing rate with higher accuracy and damage.</entitydescription.masksmanrifle>
+  <entityname.404uniform>Taskforce "404"</entityname.404uniform>
+  <entitydescription.404uniform>404 not found</entitydescription.404uniform>
+  <entityname.GKuniform>Operation Group "Griffin"</entityname.GKuniform>
+  <entitydescription.GKuniform>16Lab</entitydescription.GKuniform>
+  <entityname.exoskeleton_light>IOP Light Exoskeleton</entityname.exoskeleton_light>
+  <entitydescription.exoskeleton_light>Enhances user's mobility while providing protection. Needs battery.</entitydescription.exoskeleton_light>
+  <entityname.exoskeleton_standard>IOP Standard Exoskeleton</entityname.exoskeleton_standard>
+  <entitydescription.exoskeleton_standard>Protects user in combat. Needs battery.</entitydescription.exoskeleton_standard>
+  <entityname.beret>Beret</entityname.beret>
+  <entitydescription.beret>"Shiki kan, it's enough to have me..."</entitydescription.beret>
+  <entityname.Kaltsituniform>Rhodes Island Doctor Outfit</entityname.Kaltsituniform>
+  <entitydescription.Kaltsituniform>"Mon3ters are not allowed on board."</entitydescription.Kaltsituniform>
+  <entityname.HeiTieuniform>Blacksteel Outfit</entityname.HeiTieuniform>
+  <entitydescription.HeiTieuniform>"Blacksteel, at your service."</entitydescription.HeiTieuniform>
+  <entityname.penguin_logistics>Penguin Logistics Outfit</entityname.penguin_logistics>
+  <entitydescription.penguin_logistics>"Any methods can be taken to achieve your goals."</entitydescription.penguin_logistics>
+  <entityname.RodesResearcherUniform>Rhodes Island Researcher Outfit</entityname.RodesResearcherUniform>
+  <entitydescription.RodesResearcherUniform>"Generally speaking, men do more harm than natural disasters."</entitydescription.RodesResearcherUniform>
+  <entityname.LungMen>Lungmen Guard Department Uniform</entityname.LungMen>
+  <entitydescription.LungMen>"Both ability and political integrity."</entitydescription.LungMen>
+  <entityname.AbyssalHunterHat>Abyssal Hunter's Hat</entityname.AbyssalHunterHat>
+  <entitydescription.AbyssalHunterHat>"... Let's go hunt down some behemoths."</entitydescription.AbyssalHunterHat>
+  <entityname.doctorsuniform3>Medic Outfit</entityname.doctorsuniform3>
+  <entitydescription.doctorsuniform3></entitydescription.doctorsuniform3>
+  <entityname.shengxuanuniform>Shenxuan</entityname.shengxuanuniform>
+  <entitydescription.shengxuanuniform>A well-cut elegant suit.</entitydescription.shengxuanuniform>
+  <entityname.lightarmor>Light Combat Armor</entityname.lightarmor>
+  <entitydescription.lightarmor>A lightweight combat suit with advanced technology, can provide its user with weapon skill bonuses and protection. Uses both clothing and armor slots.</entitydescription.lightarmor>
+  <entityname.firmament>Firmament Helmet</entityname.firmament>
+  <entitydescription.firmament>Helmet able to equip and autoinject two medical items. Has white and black versions.</entitydescription.firmament>
+  <entityname.firmament_b>Firmament Helmet</entityname.firmament_b>
+  <entitydescription.firmament_b>Helmet able to carry two equipment, can inject medicine when wearer's healthy situation gets worse. Has white and black versions.</entitydescription.firmament_b>
+  <entityname.flashhelmet>Flash Helmet</entityname.flashhelmet>
+  <entitydescription.flashhelmet>Light helmet with a flashlight.</entitydescription.flashhelmet>
+  <entityname.clowndivingmask_alt>Clown Diving Mask</entityname.clowndivingmask_alt>
+  <entitydescription.clowndivingmask_alt>(Wearing position is different) A clown mask combined with a diving mask, allowing the user to both clown around and breathe underwater.</entitydescription.clowndivingmask_alt>
+  <entityname.maidclothes1>Maid Uniform</entityname.maidclothes1>
+  <entitydescription.maidclothes1>Cute</entitydescription.maidclothes1>
+  <entityname.maidclothes2>Lewd Maid</entityname.maidclothes2>
+  <entitydescription.maidclothes2>Sexy</entitydescription.maidclothes2>
+  <entityname.maidclothes3>Maid Uniform Alter</entityname.maidclothes3>
+  <entitydescription.maidclothes3>Strict</entitydescription.maidclothes3>
+  <entityname.maidheaddress>Headdress</entityname.maidheaddress>
+  <entitydescription.maidheaddress></entitydescription.maidheaddress>
+  <entityname.Wf_Admiral_Katana>Katana</entityname.Wf_Admiral_Katana>
+  <entitydescription.Wf_Admiral_Katana>A melee weapon in the eastern countries of the Earth, very easy to cause bloodshed.</entitydescription.Wf_Admiral_Katana>
+  <entityname.Wf_Admiral_Wakizashi>Wakizashi</entityname.Wf_Admiral_Wakizashi>
+  <entitydescription.Wf_Admiral_Wakizashi>A short melee weapon of the countries in the east of the Earth, supplements the Katana.</entitydescription.Wf_Admiral_Wakizashi>
+  <entityname.Wf_Admiral_Katana_kai>Katana-Kai</entityname.Wf_Admiral_Katana_kai>
+  <entitydescription.Wf_Admiral_Katana_kai>A modern and improved Katana made of exotic materials capable of cutting through almost any monster's armor. But the high temperature will directly cauterize the wound, losing the ability to bleed.</entitydescription.Wf_Admiral_Katana_kai>
+  <entityname.Wf_Admiral_Wakizashi_kai>Wakizashi-Kai</entityname.Wf_Admiral_Wakizashi_kai>
+  <entitydescription.Wf_Admiral_Wakizashi_kai>A modernized Wakizashi using exotic materials capable of cutting through almost any monster's armor. But the high temperature will directly cauterize the wound, losing the ability to bleed.</entitydescription.Wf_Admiral_Wakizashi_kai>
+  <entityname.Wf_Blame_harpoongun>Blame Harpoongun</entityname.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun>Unidentified man-made objects brought back from the deep sea, the legendary electric-based fisherman's weapon, the harpoon launched through electromagnetic force has extremely high penetration power, and the attack power has been strengthened by 30%, which seems to be compatible with the standard batteries we use.</entitydescription.Wf_Blame_harpoongun>
+  <entityname.Wf_Blame_spear>Blame Spear</entityname.Wf_Blame_spear>
+  <entitydescription.Wf_Blame_spear>The legendary electric-based fisherman's weapon, it's extremely strong.</entitydescription.Wf_Blame_spear>
+  <entityname.Wf_Blame_batterycell>Blame Battery Cell</entityname.Wf_Blame_batterycell>
+  <entitydescription.Wf_Blame_batterycell>Only for the Blame Harpoongun</entitydescription.Wf_Blame_batterycell>
+  <entityname.pistol>Pistol</entityname.pistol>
+  <entitydescription.pistol>Cure infection, one bullet at a time.</entitydescription.pistol>
+  <entityname.pistolmagazine>Pistol Magazine</entityname.pistolmagazine>
+  <entitydescription.pistolmagazine>13 rounds</entitydescription.pistolmagazine>
+  <entityname.smallriotshield>Small Riotshield</entityname.smallriotshield>
+  <entitydescription.smallriotshield>One-handed small riotshield. You can use it with a sidearm.</entitydescription.smallriotshield>
+  <entityname.shotgun_sawedoff>Sawed-off Shotgun</entityname.shotgun_sawedoff>
+  <entitydescription.shotgun_sawedoff>"It's capable of firing bullets, and that's enough for it."</entitydescription.shotgun_sawedoff>
+  <entityname.ceremonialsword_heavy>Ceremonial Great Sword</entityname.ceremonialsword_heavy>
+  <entitydescription.ceremonialsword_heavy>A well decorated great sword, requires skills to wield it.</entitydescription.ceremonialsword_heavy>
+  <entityname.Wf_Blame_G.B.E>Graviton Beam Emitter</entityname.Wf_Blame_G.B.E>
+  <entitydescription.Wf_Blame_G.B.E>Graviton Beam Emitter, an extremely rare unidentified weapon discovered in the deep sea, shaped like a pistol. Depending on the remaining power, it can emit graviton beams of varying power and create a gravity explosion at the end of the beam that attracts surrounding objects. The graviton beams emitted at any power level have unparalleled power and should be used with caution.</entitydescription.Wf_Blame_G.B.E>
+  <entityname.Wf_G.B.E_batterycell>G.B.E Energy Cell</entityname.Wf_G.B.E_batterycell>
+  <entitydescription.Wf_G.B.E_batterycell>The energy cell for the Graviton Beam Emitter, incompatible with our appliances and chargers, only for use with the Graviton Beam Emitter.</entitydescription.Wf_G.B.E_batterycell>
+  <entityname.Wf_G.B.E_kai>Micro Graviton Beam Pistol</entityname.Wf_G.B.E_kai>
+  <entitydescription.Wf_G.B.E_kai>A product of the Coalition's attempt to convert the Graviton Beam Emitter into a universal weapon, with greatly reduced power but compatible with Europa's universal charging device.</entitydescription.Wf_G.B.E_kai>
+  <entityname.Wf_G.B.E_kai_beam>Micro Graviton Beam</entityname.Wf_G.B.E_kai_beam>
+  <entitydescription.Wf_G.B.E_kai_beam>Micro Graviton Beam</entitydescription.Wf_G.B.E_kai_beam>
+  <entityname.Wf_G.B.E_beam_s>Small Amount of Gravitons</entityname.Wf_G.B.E_beam_s>
+  <entitydescription.Wf_G.B.E_beam_s>Small Amount of Gravitons</entitydescription.Wf_G.B.E_beam_s>
+  <entityname.Wf_G.B.E_beam_m>Some Gravitons</entityname.Wf_G.B.E_beam_m>
+  <entitydescription.Wf_G.B.E_beam_m>Some Gravitons</entitydescription.Wf_G.B.E_beam_m>
+  <entityname.Wf_G.B.E_beam_b>Large Amount of Gravitons</entityname.Wf_G.B.E_beam_b>
+  <entitydescription.Wf_G.B.E_beam_b>Large Amount of Gravitons</entitydescription.Wf_G.B.E_beam_b>
+  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
+  <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS.</entitydescription.Wf_pucs>
+  <entityname.Wf_pucs_R>Combat EPSP</entityname.Wf_pucs_R>
+  <entitydescription.Wf_pucs_R>Targeted improved EPSP, using ballistic fiber to strengthen the defense against some attacks.</entitydescription.Wf_pucs_R>
+  <entityname.Wf_pucs_B>Deep Dive EPSP</entityname.Wf_pucs_B>
+  <entitydescription.Wf_pucs_B>This improved EPSP uses ballistic fiber and titanium-aluminum alloy to strengthen the defense. While maintaining excellent burn defense, it has the defense and pressure resistance of a standard abyss diving suit.</entitydescription.Wf_pucs_B>
+  <entityname.Wf_pucs_D>Special Operations EPSP</entityname.Wf_pucs_D>
+  <entitydescription.Wf_pucs_D>The targeted improved EPSP uses low-visibility paint and strengthens the defense against human weapons, and is equipped with small propellers to facilitate the rapid transfer of combatants outside the combat area.</entitydescription.Wf_pucs_D>
+  <epsp.light>Light</epsp.light>
+  <epsp.lightandscooter>Light and Scooter</epsp.lightandscooter>
+  <entityname.Wf_New_XDS-01>XDS-01</entityname.Wf_New_XDS-01>
+  <entitydescription.Wf_New_XDS-01></entitydescription.Wf_New_XDS-01>
+  <entityname.Wf_New_XDS-01_Engine>XDS-01 Engine</entityname.Wf_New_XDS-01_Engine>
+  <entitydescription.Wf_New_XDS-01_Engine></entitydescription.Wf_New_XDS-01_Engine>
+  <entityname.Wf_debris>Debris</entityname.Wf_debris>
+  <entitydescription.Wf_debris></entitydescription.Wf_debris>
+  <entityname.Wf_Research_Box>Research Box</entityname.Wf_Research_Box>
+  <entitydescription.Wf_Research_Box></entitydescription.Wf_Research_Box>
+  <entityname.Wf_Research_chip>XDS-01 Research Clip</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip></entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_Log>XDS-01 Research Data</entityname.Wf_Research_Log>
+  <entitydescription.Wf_Research_Log></entitydescription.Wf_Research_Log>
+  <entityname.loudspeaker>Loudspeaker</entityname.loudspeaker>
+  <entitydescription.loudspeaker>Idiot↑Moron↓</entitydescription.loudspeaker>
+  <entityname.loudspeaker1>Loudspeaker</entityname.loudspeaker1>
+  <entitydescription.loudspeaker1>Good! Very spirited!</entitydescription.loudspeaker1>
+  <entityname.loudspeaker2>Loudspeaker</entityname.loudspeaker2>
+  <entitydescription.loudspeaker2>Speaking so softly, and you still want to command a warship!?</entitydescription.loudspeaker2>
+  <entityname.loudspeaker3>Loudspeaker</entityname.loudspeaker3>
+  <entitydescription.loudspeaker3>Incompetent Rage</entitydescription.loudspeaker3>
+  <entityname.loudspeaker4>Loudspeaker</entityname.loudspeaker4>
+  <entitydescription.loudspeaker4>enemy spotted</entitydescription.loudspeaker4>
+  <entityname.ironpipe>Ironpipe</entityname.ironpipe>
+  <entitydescription.ironpipe>Maybe we can use it in some other scenarios?</entitydescription.ironpipe>
+  <entityname.vodka>Vodka</entityname.vodka>
+  <entitydescription.vodka>"This is the best thing under this sea, my comrade."</entitydescription.vodka>
+  <!-- KEP Series -->
+  <entityname.kep_cloak>K.E.P Ballastic Cloak MOD1</entityname.kep_cloak>
+  <entitydescription.kep_cloak>Provided by Jiuzhou Armory. Our researcher modified it by adding 2 sets of hemostatic spray system which make more effective use of antibiotic gel.\nThe inner system is activated automatically when user receives burn damage or is bleeding, curing the user only.\nThe outter system requires user to manually activate to spray hemostatic fog.</entitydescription.kep_cloak>
+  <entityname.kep_helmet>K.E.P Combat Helmet MOD1</entityname.kep_helmet>
+  <entitydescription.kep_helmet>Provided by Jiuzhou Armory. Our researcher modified it to auto adjust pressure for the user if a pressure stabilizer is inserted.</entitydescription.kep_helmet>
+  <entityname.kep_uniform>K.E.P Uniform</entityname.kep_uniform>
+  <entitydescription.kep_uniform>Provided by Jiuzhou Armory. Good choice for protection.</entitydescription.kep_uniform>
+  <!--Short front clothing-->
+  <entityname.RO635uniform1>RO635 Humanoid Costume</entityname.RO635uniform1>
+  <entityname.UMP9uniform1>UMP9 Humanoid Costume</entityname.UMP9uniform1>
+  <entityname.securityuniform4>Midnight Gospel</entityname.securityuniform4>
+  <entityname.securityuniform5>MP7 Figure Costume</entityname.securityuniform5>
+  <entityname.securityuniform6>VSK figure clothing</entityname.securityuniform6>
+  <entityname.securityuniform7>M200 Figure Costume</entityname.securityuniform7>
+  <entityname.securityuniform8>Kalina Figure Costume</entityname.securityuniform8>
+  <entityname.M45uniform1>M/45 Figure Costume</entityname.M45uniform1>
+  <entityname.AK12uniform>AK12 Figure Costume</entityname.AK12uniform>
+  <!--Other clothing-->
+  <entityname.GTCQuniform1>Gothic Dress</entityname.GTCQuniform1>
+  <entityname.HeiTieuniform>Black Steel Uniform-L</entityname.HeiTieuniform>
+  <entityname.QPuniform>Qipao</entityname.QPuniform>
+  <entityname.BSQPuniform>White Cheongsam</entityname.BSQPuniform>
+  <entityname.ArmedJKuniform>Armed JK suit</entityname.ArmedJKuniform>
+  <entityname.HeiTieuniform2>Black Steel Uniform - F</entityname.HeiTieuniform2>
+  <entityname.ArmedJK_xionggua>Special Chest Hanger</entityname.ArmedJK_xionggua>
+  <entitydescription.ArmedJK_xionggua>Well, the special chest hanging uses an unknown technology, in short, it can stuff a lot of things and increase your attack power at the same time</entitydescription.ArmedJK_xionggua>
+  <entityname.ArmedJK_genesplicer>Custom Tactical Gene Splicer</entityname.ArmedJK_genesplicer>
+  <entityname.Kaltsituniform>Rhode Medical Executive Uniform</entityname.Kaltsituniform>
+  <entitydescription.Kaltsituniform>"Doctor?"</entitydescription.Kaltsituniform>
+  <entityname.skyfireuniform>Rhode Chief Sorceress Uniform</entityname.skyfireuniform>
+  <entitydescription.skyfireuniform>"The temperature of battlefield is too low" (WIP)</entitydescription.skyfireuniform>
+  <entityname.skyfireswimsuit>RT.RX01☆Skyfire</entityname.skyfireswimsuit>
+  <entitydescription.skyfireswimsuit>"Please do not place the swimsuit near an open fire."（WIP）</entitydescription.skyfireswimsuit>
+  <entityname.shengxuanuniform>Shengxuan</entityname.shengxuanuniform>
+  <entitydescription.shengxuanuniform>"Mourn with butterflies for those who sleep"\nEmbedded with genetic technology and hormone injectors that give the wearer heightened regenerative capabilities of their symbiote, while keeping the symbiote docile.</entitydescription.shengxuanuniform>
+  <entityname.shengxuanhats>Dead Butterfly Funeral Offering</entityname.shengxuanhats>
+  <entitydescription.shengxuanhats>"Where do people go after death?"\nImbued with pheromones that pacify feral husks.</entitydescription.shengxuanhats>
+  <entityname.succubusmask>Succubus Mask</entityname.succubusmask>
+  <entitydescription.succubusmask>“Great, just what I needed”</entitydescription.succubusmask>
+  <entityname.succubussuit>Succubus Set</entityname.succubussuit>
+  <entitydescription.succubussuit>A clown who signs a contract with the devil will eventually become a succubus. "No, it's illogical"</entitydescription.succubussuit>
+  <entityname.tight_combatsuit_1>Tight Combat Suit MK1</entityname.tight_combatsuit_1>
+  <entitydescription.tight_combatsuit_1>Outline your beautiful figure</entitydescription.tight_combatsuit_1>
+  <entityname.tight_combatsuit_2>Tight Combat Suit MK2</entityname.tight_combatsuit_2>
+  <entitydescription.tight_combatsuit_2>Outline your beautiful figure</entitydescription.tight_combatsuit_2>
+  <entityname.whiteswimmingsuit>White Competitive Swimsuit</entityname.whiteswimmingsuit>
+  <entitydescription.whiteswimmingsuit>Wear it to compete with the seafood</entitydescription.whiteswimmingsuit>
+  <entityname.blue_combatsuit>Blue Battle Suit</entityname.blue_combatsuit>
+  <entitydescription.blue_combatsuit>It looks sexier from the front than from the side. (Don't tilt your head to look at the screen, invisible)</entitydescription.blue_combatsuit>
+  <entityname.guardiansuit>Guardian Battle Suit</entityname.guardiansuit>
+  <entitydescription.guardiansuit>Someone wore it and the armor was torn apart, now you wear it and drive a submarine</entitydescription.guardiansuit>
+  <entityname.Sailor_suit>Sailor Suit</entityname.Sailor_suit>
+  <entitydescription.Sailor_suit>It's the feeling of youth</entitydescription.Sailor_suit>
+  <entityname.White_meteor>Pure White Meteor</entityname.White_meteor>
+  <entitydescription.White_meteor>Meteor in the daytime, go forward with your wish!</entitydescription.White_meteor>
+  <entityname.Sports_shorts>Sports Shorts</entityname.Sports_shorts>
+  <entitydescription.Sports_shorts>Exercise, defend yourself</entitydescription.Sports_shorts>
+  <entityname.Competitive_swimsuit>Backless Competitive Swimsuit</entityname.Competitive_swimsuit>
+  <entitydescription.Competitive_swimsuit>Compete with tiger tail sharks to see who is faster</entitydescription.Competitive_swimsuit>
+  <entityname.blackgelcoat>Black Gel Coat</entityname.blackgelcoat>
+  <entitydescription.blackgelcoat>A black tights.</entitydescription.blackgelcoat>
+  <entityname.maidclothes1>White Maid Uniform</entityname.maidclothes1>
+  <entitydescription.maidclothes1>Adorable.</entitydescription.maidclothes1>
+  <entityname.maidheaddress>Maid Headdress</entityname.maidheaddress>
+  <entitydescription.maidheaddress>Maid's core element.</entitydescription.maidheaddress>
+  <entityname.Exotic_Amor_suit>Exotic Matter Armor - Diving Suit</entityname.Exotic_Amor_suit>
+  <entitydescription.Exotic_Amor_suit>This is the wetsuit part of the suit, which is made of the alien material extracted from the biological crust of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Amor_suit>
+  <entityname.Exotic_Amor_suit_head>Exotic Matter Armor - Helmet</entityname.Exotic_Amor_suit_head>
+  <entitydescription.Exotic_Amor_suit_head>This is the helmet part of the suit, which is made of the alien material extracted from the biological carapace of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Amor_suit_head>
+  <entityname.PrayerMio_uniform>HGIS</entityname.PrayerMio_uniform>
+  <entitydescription.PrayerMio_uniform>Experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Clothing part] "Contribution from Chiyo Mio, the up master of station b" (WIP)</entitydescription.PrayerMio_uniform>
+  <entityname.PrayerMio_hat>Prism</entityname.PrayerMio_hat>
+  <entitydescription.PrayerMio_hat>The experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Crown ring part] "Contribution from Chiyo Mio, the up master of station b" (WIP)</entitydescription.PrayerMio_hat>
+  <entityname.IronArmourPlus>Armor but better I guess</entityname.IronArmourPlus>
+  <entitydescription.IronArmourPlus>After some bored crew forged the Mechanic's makeshift armor. Don't think this is cool? It fits my vision of a Europa submarine in the 22nd century. (WIP)</entitydescription.IronArmourPlus>
+  <!--EA-HI item-->
+  <entityname.EAHI_pucs>[EA-HI] InvisiPUCS</entityname.EAHI_pucs>
+  <entitydescription.EAHI_pucs>East Asia Heavy Industries PUCS, using the next generation outrageous technology, to prevent your beautiful face and slender legs from being covered. An integrated compressor automatically extracts oxygen from the air. Withstand up to 8000 meters of water pressure.</entitydescription.EAHI_pucs>
+  <entityname.EAHI_toolbelt>Toolbelt (Invisible)</entityname.EAHI_toolbelt>
+  <entityname.EAHI_autoinjectorheadset>[EA-HI] Self-Injecting Headset</entityname.EAHI_autoinjectorheadset>
+  <entitydescription.EAHI_autoinjectorheadset>The Integrated Self-Injection Headset developed by East Asia Heavy Industries has a health scanner function and a built-in authority simulation system that can crack most types of encryption.</entitydescription.EAHI_autoinjectorheadset>
+  <entityname.EAHI_kuorongbag>[EA-HI] Prototype Expansion Pack</entityname.EAHI_kuorongbag>
+  <entitydescription.EAHI_kuorongbag>The general expansion package developed by East Asia Heavy Industries was cut in half due to infringement issues. A small pouch that can be installed in the inventory, and can also be loaded into a gun to increase the charge capacity of revolvers, harpoons, shotguns, hand cannons, and stun guns</entitydescription.EAHI_kuorongbag>
+  <entityname.EAHI_handheldsonar>[EA-HI] Advanced Sonar</entityname.EAHI_handheldsonar>
+  <entitydescription.EAHI_handheldsonar>High-power sonar, can penetrate the hull of the submarine, a must for gunners</entitydescription.EAHI_handheldsonar>
+  <entityname.EAHI_duogongnengtool>[EA-HI] Prototype Multi-Tool</entityname.EAHI_duogongnengtool>
+  <entitydescription.EAHI_duogongnengtool>The multi-function tool developed by East Asia Heavy Industries has stopped production due to the high cost. This tool is a screwdriver, wrench, welding tool, mining tool all in one. Powered by high pressure gas. Note: AI cannot use</entitydescription.EAHI_duogongnengtool>
+  <entityname.teleportine>[EA-HI] Teleportine</entityname.teleportine>
+  <entitydescription.teleportine>This vial is distributed by East Asia Heavy Industries to the liaison officers. Upon injury it will quickly teleport them to a safe place.</entitydescription.teleportine>
+  <entityname.exotic_matter>Exotic matter</entityname.exotic_matter>
+  <entitydescription.exotic_matter>Exotic matter extracted from Europa's bio-carapace possesses rather ingenious properties.</entitydescription.exotic_matter>
+  <entityname.EAHI_license_oneoff>Master Blueprint - [type]</entityname.EAHI_license_oneoff>
+  <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of East Asia Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
+  <!--Talent-->
+  <talentname.wf_researcher></talentname.wf_researcher>
+  <!--AFF-->
+  <Builder.Msg.Detach>[[use]] Detatch</Builder.Msg.Detach>
+  <!--eventtext-->
+  <EventText.missionevent_EAHI1.c1>Loafer[EA-HI Liaison Officer]: Zzz. This is your task, don't disturb my sleep.</EventText.missionevent_EAHI1.c1>
+  <EventText.missionevent_EAHI2.c1>Chao Wendao [EA-HI Delegate]: Are you here to accept the contract? OK, there are two tasks here.</EventText.missionevent_EAHI2.c1>
+  <EventText.missionevent_XML.c1>The liaison said that recently a group of particularly ferocious Mudraptors was attacking ships traveling in the waterway, seriously affecting the interests of the company. [reward]mk has been promised to those who annihilate this horde of monsters. "</EventText.missionevent_XML.c1>
+  <EventText.missionevent_PP.c1>Several Crawler Mother leads hordes of crawlers to attack ships in the channel. East Asia Heavy Industries promises to give [reward]mk rewards to those who annihilate this group of monsters.</EventText.missionevent_PP.c1>
+  <EventText.missionevent_HF.c1>A large number of golden hammerheads are entrenched in the waterway, seriously affecting the transportation of people and goods. East Asia Heavy Industries is offering a reward [reward]mk to all free captains in order to solve this problem.</EventText.missionevent_HF.c1>
+  <EventText.missionevent_MLK.c1>"A horde of aggressive Molochs is attacking ships traveling between [location1] and [location2]. A [reward]mk has been promised to whoever annihilates the horde."</EventText.missionevent_MLK.c1>
+  <EventText.missionevent_SY.c1>EA-HI's illegal experiment in the abyss alarmed the Doomworm. The liaison officer hopes that you can defeat the Worm before it is discovered by the Coalition, otherwise the EA-HI will face a large fine.</EventText.missionevent_SY.c1>
+  <missionname.EAHI_Mission_YMLKR>Tobacco Mania</missionname.EAHI_Mission_YMLKR>
+  <missiondescription.EAHI_Mission_YMLKR>EA-HI recently ordered a large amount of tobacco, but due to the Coalition's embargo on strategic materials, it could not be delivered, and the site was checking for contraband. In order to prevent exposure, the liaison officer asked you to help deliver a batch of goods. "Wait, when did tobacco become illegal?"</missiondescription.EAHI_Mission_YMLKR>
+  <missionsuccess.EAHI_Mission_YMLKR>"Tobacco" has been successfully delivered to [location2]</missionsuccess.EAHI_Mission_YMLKR>
+  <missionfailure.EAHI_Mission_YMLKR>Obviously, these are not tobacco at all, but Mutated Pomegrenades</missionfailure.EAHI_Mission_YMLKR>
+  <missionname.EAHI_Mission_FXGB>Radiation Sapper</missionname.EAHI_Mission_FXGB>
+  <missiondescription.EAHI_Mission_FXGB>[Warning! High-risk] The liaison officer entrusted you to deliver a batch of high-risk Volatile Fulgurium Fuel Rods, and gave [reward] mk, you think about it, it is nothing more than radiation sickness. "How can my life be more important than money?"</missiondescription.EAHI_Mission_FXGB>
+  <missionsuccess.EAHI_Mission_FXGB>Volatile Fulgurium Fuel Rods have been successfully delivered to [location2]</missionsuccess.EAHI_Mission_FXGB>
+  <missionfailure.EAHI_Mission_FXGB>You cannot spend the money if you are dead.</missionfailure.EAHI_Mission_FXGB>
+  <missionname.EAHI_Mission_ZBKC>Explosive Truck</missionname.EAHI_Mission_ZBKC>
+  <missiondescription.EAHI_Mission_ZBKC>[Warning! High-risk] The liaison officer entrusted you to deliver a batch of high-risk Volatile Compound Ns, and gave [reward] mk. 【The entrustment must be delivered within 10 minutes, otherwise the consequences will be at your own risk】</missiondescription.EAHI_Mission_ZBKC>
+  <missionsuccess.EAHI_Mission_ZBKC>You breathe a sigh of relief that the Volatile Compound Ns has been successfully delivered to [location2].</missionsuccess.EAHI_Mission_ZBKC>
+  <missionfailure.EAHI_Mission_ZBKC>You cannot spend the money if you are dead.</missionfailure.EAHI_Mission_ZBKC>
+  <missionname.EAHI_Mission_YYWH_1>No Return with Cargo</missionname.EAHI_Mission_YYWH_1>
+  <missiondescription.EAHI_Mission_YYWH_1>The liaison officer entrusted you to deliver a batch of Coalition medals, and gave [reward]mk. "I hope you don't use it yourself," the liaison officer said, "Even if you use it yourself, I can't do anything about it."</missiondescription.EAHI_Mission_YYWH_1>
+  <missionsuccess.EAHI_Mission_YYWH_1>Somehow, you managed to restrain yourself.</missionsuccess.EAHI_Mission_YYWH_1>
+  <missionfailure.EAHI_Mission_YYWH_1>"I knew it," said the liaison officer.</missionfailure.EAHI_Mission_YYWH_1>
+  <missionname.EAHI_Mission_YYWH_2>No Return with Cargo</missionname.EAHI_Mission_YYWH_2>
+  <missiondescription.EAHI_Mission_YYWH_2>The liaison officer entrusted you to deliver a batch of endocrine enhancer, and gave [reward]mk. "I hope you don't use it yourself," the liaison officer said, "Even if you use it yourself, I can't do anything about it."</missiondescription.EAHI_Mission_YYWH_2>
+  <missionsuccess.EAHI_Mission_YYWH_2>Somehow, you managed to restrain yourself.</missionsuccess.EAHI_Mission_YYWH_2>
+  <missionfailure.EAHI_Mission_YYWH_2>"I knew it," said the liaison officer.</missionfailure.EAHI_Mission_YYWH_2>
+  <missionname.EAHI_Mission_YYWH_2>No Return with Cargo</missionname.EAHI_Mission_YYWH_2>
+  <missiondescription.EAHI_Mission_YYWH_2>The liaison officer entrusted you to deliver a batch of skill books, and gave [reward]mk. "I hope you don't use it yourself," the liaison officer said, "Even if you use it yourself, I can't do anything about it."</missiondescription.EAHI_Mission_YYWH_2>
+  <missionsuccess.EAHI_Mission_YYWH_2>Somehow, you managed to restrain yourself.</missionsuccess.EAHI_Mission_YYWH_2>
+  <missionfailure.EAHI_Mission_YYWH_2>"I knew it," said the liaison officer.</missionfailure.EAHI_Mission_YYWH_2>
+  <missionname.EAHI_Mission_LJC>Garbage Disposal</missionname.EAHI_Mission_LJC>
+  <missiondescription.EAHI_Mission_LJC>The liaison entrusts you to deliver a scrap [reward]mk</missiondescription.EAHI_Mission_LJC>
+  <missionsuccess.EAHI_Mission_LJC>Scrap has been successfully delivered to [location2]</missionsuccess.EAHI_Mission_LJC>
+  <missionfailure.EAHI_Mission_LJC>No way, why would someone steal scrap?</missionfailure.EAHI_Mission_LJC>
+  <missionname.EAHI_Mission_FZ>clothing transportation</missionname.EAHI_Mission_FZ>
+  <missiondescription.EAHI_Mission_FZ>The liaison entrusts you to deliver a batch of clothes with rewards of [reward]mk</missiondescription.EAHI_Mission_FZ>
+  <missionsuccess.EAHI_Mission_FZ>Clothing has been successfully delivered to [location2]</missionsuccess.EAHI_Mission_FZ>
+  <missionfailure.EAHI_Mission_FZ>No way, why would someone steal clothes?</missionfailure.EAHI_Mission_FZ>
+  <missionname.EAHI_Mission_XDY>Adult Film</missionname.EAHI_Mission_XDY>
+  <missiondescription.EAHI_Mission_XDY>Given Europa's terrible network environment, the liaison officer asks you to help transport a batch of goods, mainly hard drives. "They are all confidential files, don't go snooping around," the liaison officer says, offering a [reward]mk reward.</missiondescription.EAHI_Mission_XDY>
+  <missionsuccess.EAHI_Mission_XDY>You look through the logs and don't find what you're looking for. Anyway, the stuff's delivered anyway, so who cares.</missionsuccess.EAHI_Mission_XDY>
+  <missionfailure.EAHI_Mission_XDY>How did you fail?</missionfailure.EAHI_Mission_XDY>
+  <missionname.EAHI_Mission_PPQY>Prosperity</missionname.EAHI_Mission_PPQY>
+  <missiondescription.EAHI_Mission_PPQY>East Asia Heavy Industries entrusts you to assassinate a senior official of the Coalition who hinders the company's interests. If you succeed, you will be given [reward]mk. Please bide your time, clear them all, and throw the bodies overboard.</missiondescription.EAHI_Mission_PPQY>
+  <missionsuccess.EAHI_Mission_PPQY>"It's not surprising what happens in the deep sea, is it?"</missionsuccess.EAHI_Mission_PPQY>
+  <missionfailure.EAHI_Mission_PPQY>You killed the senior officer at the wrong time, allowing him to send a distress message</missionfailure.EAHI_Mission_PPQY>
+  <missionheader0.EAHI_Mission_PPQY>Mission Failed</missionheader0.EAHI_Mission_PPQY>
+  <missionmessage0.EAHI_Mission_PPQY>You killed the senior officer at the wrong time, allowing him to send a distress message</missionmessage0.EAHI_Mission_PPQY>
+  <missionheader1.EAHI_Mission_PPQY>Successful Assassination</missionheader1.EAHI_Mission_PPQY>
+  <missionmessage1.EAHI_Mission_PPQY>You got your timing and killed the top officer in the comms blind spot</missionmessage1.EAHI_Mission_PPQY>
+  <missionname.EAHI_Mission_PP>Crawler Mother Annihilation</missionname.EAHI_Mission_PP>
+  <missiondescription.EAHI_Mission_PP>Several Crawler Mothers lead hordes of crawlers to attack ships in the channel. East Asia Heavy Industries promised to give 8,500 mk rewards to those who wiped out this group of monsters.</missiondescription.EAHI_Mission_PP>
+  <missionsuccess.EAHI_Mission_PP>Colonies of Crawlers have been removed</missionsuccess.EAHI_Mission_PP>
+  <missionfailure.EAHI_Mission_PP>Crawler swarm yet lives</missionfailure.EAHI_Mission_PP>
+  <missionname.EAHI_Mission_XML>Mudraptor Fight</missionname.EAHI_Mission_XML>
+  <missiondescription.EAHI_Mission_XML>A liaison officer said that recently a group of particularly ferocious Mudraptors was attacking ships traveling in the waterway, seriously affecting the interests of the company. A reward of 8000mk has been promised to whoever annihilates this horde of monsters.</missiondescription.EAHI_Mission_XML>
+  <missionsuccess.EAHI_Mission_XML>Mudraptor swarm has been cleared</missionsuccess.EAHI_Mission_XML>
+  <missionfailure.EAHI_Mission_XML>Mudraptor swarm not cleared</missionfailure.EAHI_Mission_XML>
+  <missionname.EAHI_Mission_HF>Golden Storm </missionname.EAHI_Mission_HF>
+  <missiondescription.EAHI_Mission_HF>A large number of Golden Hammerheads are entrenched in the waterway, seriously affecting the transportation of people and goods. East Asia Heavy Industries is offering a reward of 9000mk to all free captains in order to solve this problem.</missiondescription.EAHI_Mission_HF>
+  <missionsuccess.EAHI_Mission_HF>The golden storm has died down</missionsuccess.EAHI_Mission_HF>
+  <missionfailure.EAHI_Mission_HF>The golden storm is still raging</missionfailure.EAHI_Mission_HF>
+  <missionname.EAHI_Mission_MLKQ>Hunt the Moloch Pack</missionname.EAHI_Mission_MLKQ>
+  <missiondescription.EAHI_Mission_MLKQ>A group of extremely powerful Molochs are attacking the ships traveling in the channel. A reward of 10000mk has been promised to those who annihilate this group of monsters.</missiondescription.EAHI_Mission_MLKQ>
+  <missionsuccess.EAHI_Mission_MLKQ>Moloch group has been cleared</missionsuccess.EAHI_Mission_MLKQ>
+  <missionfailure.EAHI_Mission_MLKQ>Molochs not cleared</missionfailure.EAHI_Mission_MLKQ>
+  <missionname.EAHI_Mission_HMLK>Dark Clouds</missionname.EAHI_Mission_HMLK>
+  <missiondescription.EAHI_Mission_HMLK>A group of extremely aggressive black Molochs are attacking the ships traveling in the channel. A reward of 10000mk has been promised to those who annihilate this group of monsters.</missiondescription.EAHI_Mission_HMLK>
+  <missionsuccess.EAHI_Mission_HMLK>The Black Moloch group has been cleared</missionsuccess.EAHI_Mission_HMLK>
+  <missionfailure.EAHI_Mission_HMLK>Black Moloch group not cleared</missionfailure.EAHI_Mission_HMLK>
+  <missionname.EAHI_Mission_XFFSY_1>Illegal experiment</missionname.EAHI_Mission_XFFSY_1>
+  <missiondescription.EAHI_Mission_XFFSY_1>East Asia Heavy Industries' illegal experiment in the abyss alarmed the Destruction Worm. The liaison officer hopes that you can defeat the Worm before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_1>
+  <missionsuccess.EAHI_Mission_XFFSY_1>The Worm has been killed</missionsuccess.EAHI_Mission_XFFSY_1>
+  <missionfailure.EAHI_Mission_XFFSY_1>The Worm was not killed</missionfailure.EAHI_Mission_XFFSY_1>
+  <missionname.EAHI_Mission_XFFSY_2>Illegal experiment</missionname.EAHI_Mission_XFFSY_2>
+  <missiondescription.EAHI_Mission_XFFSY_2>East Asia Heavy Industries' illegal experiment in the abyss alarmed the Charybdis, and the liaison officer hopes that you can defeat the Charybdis before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_2>
+  <missionsuccess.EAHI_Mission_XFFSY_2>Charybdis has been killed</missionsuccess.EAHI_Mission_XFFSY_2>
+  <missionfailure.EAHI_Mission_XFFSY_2>Charybdis not killed</missionfailure.EAHI_Mission_XFFSY_2>
+  <missionname.EAHI_Mission_XFFSY_3>Illegal experiment</missionname.EAHI_Mission_XFFSY_3>
+  <missiondescription.EAHI_Mission_XFFSY_3>[Warning! High-risk] East Asia Heavy Industries' illegal experiment in the abyss has alarmed the doomsday worm. The liaison officer hopes that you can defeat the worm before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_3>
+  <missionsuccess.EAHI_Mission_XFFSY_3>The worm has been killed</missionsuccess.EAHI_Mission_XFFSY_3>
+  <missionfailure.EAHI_Mission_XFFSY_3>The worm was not killed</missionfailure.EAHI_Mission_XFFSY_3>
+  <missionname.EAHI_Mission_JGHX>'Calm'ly Watch the Show</missionname.EAHI_Mission_JGHX>
+  <missiondescription.EAHI_Mission_JGHX>The Liaison invites you to a good show, the showdown of the century between Hammerhead and the Sea Eater. "Remember to remain silent," said the liaison officer.</missiondescription.EAHI_Mission_JGHX>
+  <missionsuccess.EAHI_Mission_JGHX>It was brilliant, it's a pity someone has to clean up the mess.</missionsuccess.EAHI_Mission_JGHX>
+  <missionfailure.EAHI_Mission_JGHX>You failed to keep silent and got caught up in the fray</missionfailure.EAHI_Mission_JGHX>
+  <missionheader0.EAHI_Mission_XML>Target Eliminated</missionheader0.EAHI_Mission_XML>
+  <missionmessage0.EAHI_Mission_XML>The Mudraptor has been cleared. Return to the station to claim your reward.</missionmessage0.EAHI_Mission_XML>
+  <missionheader0.EAHI_Mission_PP>Target Eliminated</missionheader0.EAHI_Mission_PP>
+  <missionmessage0.EAHI_Mission_PP>The Crawlers have been cleared. Return to the station to claim your reward.</missionmessage0.EAHI_Mission_PP>
+  <missionheader0.EAHI_Mission_HF>Storm Conquered</missionheader0.EAHI_Mission_HF>
+  <missionmessage0.EAHI_Mission_HF>The Golden Storm has dispersed. Return to the station to claim your reward.</missionmessage0.EAHI_Mission_HF>
+  <missionheader0.EAHI_Mission_MLKQ>Target Eliminated</missionheader0.EAHI_Mission_MLKQ>
+  <missionmessage0.EAHI_Mission_MLKQ>The Moloch group has been cleared. Return to the station to claim your reward.</missionmessage0.EAHI_Mission_MLKQ>
+  <missionheader0.EAHI_Mission_HMLK>Fog Dispersed</missionheader0.EAHI_Mission_HMLK>
+  <missionmessage0.EAHI_Mission_HMLK>The Moloch group has been cleared. Return to the station to claim your reward.</missionmessage0.EAHI_Mission_HMLK>
+  <missionheader0.EAHI_Mission_XFFSY_1>Hunt Concluded</missionheader0.EAHI_Mission_XFFSY_1>
+  <missionmessage0.EAHI_Mission_XFFSY_1>You have surpassed the abyss.</missionmessage0.EAHI_Mission_XFFSY_1>
+  <missionheader0.EAHI_Mission_XFFSY_2>Hunt Concluded</missionheader0.EAHI_Mission_XFFSY_2>
+  <missionmessage0.EAHI_Mission_XFFSY_2>You watch the massive body of the Charybdis die. You wonder why something so ugly is called a Siren.</missionmessage0.EAHI_Mission_XFFSY_2>
+  <missionheader0.EAHI_Mission_XFFSY_3>Hunt Concluded</missionheader0.EAHI_Mission_XFFSY_3>
+  <missionmessage0.EAHI_Mission_XFFSY_3>You watch the massive body of the Endworm sink into the abyss, and breathe a sigh of relief.</missionmessage0.EAHI_Mission_XFFSY_3>
+  <missionheader0.EAHI_Mission_JGHX>Epic Drama</missionheader0.EAHI_Mission_JGHX>
+  <missionmessage0.EAHI_Mission_JGHX>Quite a show, but someone has to clean up the mess.</missionmessage0.EAHI_Mission_JGHX>
+  <!-- Custom -->
+  <entityname.gravpistol>Gravitational-Beam Emitter</entityname.gravpistol>
+  <entitydescription.gravpistol>The GBE is a gravitron energy weapon that can penetrate all known materials and armor. Its construction baffles the mind.</entitydescription.gravpistol>
+  <entityname.gravbeamammo>Gravitational-Beam Cell</entityname.gravbeamammo>
+  <entitydescription.gravbeamammo>It glows of a stable, focused graviton energy which is capable of dispersing and destroying all types of known matter.</entitydescription.gravbeamammo>
+  <entityname.dominator>45MW.TRG Dominator</entityname.dominator>
+  <entitydescription.dominator>The Dominator Portable Psychological Diagnosis and Suppression System is a law enforcement handgun used by the old earth's government.. It can quickly dispatch multiple threats in rapid sucession.</entitydescription.dominator>
+  <entityname.dominatorammo>Dominator's Eliminator Energy Cell</entityname.dominatorammo>
+  <entitydescription.dominatorammo>Enforcement cell: Lethal Eliminator. Please aim carefully and eliminate the target.</entitydescription.dominatorammo>
+  <entityname.dominatorammo2>Dominator's Paralyzer Energy Cell</entityname.dominatorammo2>
+  <entitydescription.dominatorammo2>Enforcement cell: Non-Lethal Paralyzer. Please aim calmly and subdue the target.</entitydescription.dominatorammo2>
+  <entityname.dominatorammo3>Dominator's Decomposer Energy Cell</entityname.dominatorammo3>
+  <entitydescription.dominatorammo3>Enforcement Cell: Destroy Decomposer. Target will be completely annihilated. Please proceed with maximum caution.</entitydescription.dominatorammo3>
+  <afflictionname.eliminator>Lethal Eliminator!</afflictionname.eliminator>
+  <eventtext.DRF.1>"Psst! Hey, stranger. Come here. I've got something interesting here."</eventtext.DRF.1>
+  <eventtext.DRF.o1>Listen to her</eventtext.DRF.o1>
+  <eventtext.DRF.o4>Ignore</eventtext.DRF.o4>
+  <eventtext.DRF.o1.c1>"A powerful energy weapon used by the old Earth's goverment. You won't find this anywhere... I'll give you a cheap price. How is it??"</eventtext.DRF.o1.c1>
+  <eventtext.DRF.o2>"How is that here??"</eventtext.DRF.o2>
+  <eventtext.DRF.notbuy>"I'm not interested in dangerous things. That thing would blow up in my face!"</eventtext.DRF.notbuy>
+  <eventtext.DRF.notbuy2>"I'm disappointed, when the Coalition gets your smuggling ass don't you dare mention me buddy."</eventtext.DRF.notbuy2>
+  <eventtext.DRF.o2.c1>".... Be quiet and listen carefully.." "Data Recovery Foundation. You know DRF, right? An organization that studies forgotten technologies under the Coalition." "Recently, DRF succeeded in restoring the old Earth's energy weapons." "Of course it's not mint, it's just a broken one that's repaired, But it's a great achievement."</eventtext.DRF.o2.c1>
+  <eventtext.DRF.o2.c2>"And... This is it, don't ask." (sighs for a moment) "I'll give you a deal. Only 6,666 marks."</eventtext.DRF.o2.c2>
+  <eventtext.DRF.o3>"Yes. I will buy it.."</eventtext.DRF.o3>
+  <eventtext.DRF.suc1>"Good! I'm outta here! You'd better get moving and keep that tucked away till you leave, the Coalition is turning over every stone looking for it." She hands you a small, sleek handgun that emits a red glow. I wonder how powerful this really is.</eventtext.DRF.suc1>
+  <eventtext.DRF.suc2>"Good! I'm outta here! You'd better get moving and keep that tucked away till you leave, the Coalition is turning over every stone looking for it." She hands you a bluish pistol... pistol murmurs quietly in your pocket, is the pistol talking?! </eventtext.DRF.suc2>
+  <eventtext.DRF.nomney>"You don't have enough money? I guess crew isn't making a lot of money these days.. You never saw me ya hear?!"</eventtext.DRF.nomney>
+  <eventtext.DRF.sec>You hand over the money, you can faintly hear security guards shouting and stomping down the nearby hallway. "FUCK! How'd they track me here!?" After throwing a gun at you, The stranger hurdles over some nearby crates and disappears behind a doorway. Something is wrong ! </eventtext.DRF.sec>
+  <eventtext.DRF.out>"Well, sorry about that."</eventtext.DRF.out>
+  <eventtext.DRF.fight>"Give me that before I tell the security ! ! "</eventtext.DRF.fight>
+  <eventtext.DRF.fight2>"What the hell!!! Are you crazy?" When you shout, her face shows signs of embarrassment and anger. The smuggler takes a bluish glowing handgun out of her suit and aims at you! </eventtext.DRF.fight2>
+</infotexts>
