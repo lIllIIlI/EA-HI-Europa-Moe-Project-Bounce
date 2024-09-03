@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
   <Items>
-    <Item name="" identifier="clowndivingmask" variantof="divingmask" tags="smallitem,clownmask,diving,lightdiving">
+    <!--修改：在hull内不消耗氧气；hull含氧量大于50缓慢回复氧气-->
+    <Item name="" identifier="clowndivingmask" category="Equipment" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="smallitem,clothing,clownmask,diving,lightdiving" description="" scale="0.5">
+      <PreferredContainer primary="divingcab,supplycab" />
       <Price baseprice="150" sold="false" canbespecial="false" />
-      <PreferredContainer primary="divingcab,supplycab" amount="0" />
       <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/TalentGear.png" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
-      <InventoryIcon />
       <Body width="5" radius="25" />
-      <!-- clear old fabrication and deconstruction elements, replace with new ones -->
-      <Fabricate />
-      <Deconstruct />
       <Deconstruct time="10">
         <Item identifier="divingmask" />
       </Deconstruct>

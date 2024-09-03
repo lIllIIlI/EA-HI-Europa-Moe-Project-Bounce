@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+<Override>
   <Item name="XDS-01" identifier="Wf_New_XDS-01" category="Equipment" tags="diving,deepdiving,divinggear_wearableindoors,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="15000" sold="false" />
     <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
@@ -295,4 +296,5 @@
       <GuiFrame relativesize="0.35,0.35" anchor="Center" style="ItemUI" />
     </Terminal>
   </Item>
+</Override>
 </Items>
