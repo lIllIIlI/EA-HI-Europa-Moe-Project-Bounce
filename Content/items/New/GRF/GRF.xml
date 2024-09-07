@@ -71,6 +71,8 @@
     </Wearable>
   </Item>
   <Item name="IOP Light Exoskeleton" identifier="exoskeleton_light" category="Equipment" tags="mediumitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer primary="outpostcrewcabinet" />
     <PreferredContainer primary="wreckengcab,abandonedengcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="750">
       <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="0" sold="false" />
@@ -80,13 +82,20 @@
       <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="0" />
     </Price>
     <Deconstruct time="15">
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="titaniumaluminiumalloy"/>
       <Item identifier="steel" />
       <Item identifier="rubber" />
     </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem identifier="rubber" amount="2" />
+    </Fabricate>
     <InventoryIcon name="Exoskeleton Light Icon" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
     <Sprite name="Exoskeleton Light" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
       <sprite name="Exoskeleton Light Torso" texture="exoskeleton_light.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
       <sprite name="Exoskeleton Light Right Hand" texture="exoskeleton_light.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
@@ -109,7 +118,7 @@
         <RequiredItem items="mobilebattery" targetslot="0" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" comparison="Or"></StatusEffect>
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" />
       <StatValue stattype="FlowResistance" value="0.9" />
       <StatValue stattype="MeleeAttackMultiplier" value="0.3" />
     </Wearable>
@@ -123,6 +132,7 @@
     </ItemContainer>
   </Item>
   <Item name="IOP Standard Exoskeleton" identifier="exoskeleton_standard" category="Equipment" tags="mediumitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="crewcab" />
     <PreferredContainer primary="wreckengcab,abandonedengcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="750">
       <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="0" sold="false" />
@@ -136,9 +146,16 @@
       <Item identifier="steel" />
       <Item identifier="rubber" />
     </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
     <InventoryIcon name="Exoskeleton Standard Icon" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
     <Sprite name="Exoskeleton Standard" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
       <sprite name="Exoskeleton Standard Torso" texture="exoskeleton_standard.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
       <sprite name="Exoskeleton Standard Right Hand" texture="exoskeleton_standard.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" canbehiddenbyotherwearables="false" />
@@ -161,7 +178,7 @@
         <RequiredItem items="mobilebattery" targetslot="0" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" comparison="Or"></StatusEffect>
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" />
       <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" />
       <StatValue stattype="FlowResistance" value="0.9" />
     </Wearable>

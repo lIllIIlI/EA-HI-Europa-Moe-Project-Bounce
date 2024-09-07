@@ -89,6 +89,7 @@
         <SkillModifier skillidentifier="weapons" skillvalue="15" />
         <StatValue stattype="RangedAttackSpeed" value="0.25" />
         <StatValue stattype="TurretAttackSpeed" value="0.25" />
+        <StatValue stattype="TurretChargeSpeed" value="0.25" />
       </Wearable>
       <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,0-30" handle2="0,-30" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
       <!-- MOD FEATURE MORE CONTAINABLE -->
