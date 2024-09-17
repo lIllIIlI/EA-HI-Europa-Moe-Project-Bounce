@@ -24,7 +24,7 @@
     <PreferredContainer primary="locker" />
     <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" depth="0.51" origin="0.5,0.5" />
-    <Body radius="40" height="70" density="30" />
+    <Body width="100" height="140" density="30" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
       <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" limb="Torso" scale="0.85" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.85,0.76" />
       <StatusEffect disabledeltatime="true" setvalue="true" SpeedMultiplier="0.88" target="Character" type="OnWearing" />
@@ -145,7 +145,7 @@
     <PreferredContainer primary="locker" />
     <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/duffelpack.png" sourcerect="0,0,203,112" />
     <Sprite texture="%ModDir%/Content/items/New/backpacks/duffelpack.png" sourcerect="0,0,203,112" depth="0.51" />
-    <Body radius="200" height="112" density="20" />
+    <Body width="200" height="112" density="20" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
       <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/duffelpack_equip.png" sourcerect="0,0,147,202" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.81,0.5" />
       <StatusEffect disabledeltatime="true" setvalue="true" SpeedMultiplier="0.54" target="Character" type="Always" />

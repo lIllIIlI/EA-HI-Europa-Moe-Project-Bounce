@@ -62,7 +62,7 @@
 				</Attack>
 			</MeleeWeapon>
 			<Quality>
-				<QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+				<QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
 			</Quality>
 		</item>
 		<!--胁差-->
@@ -96,11 +96,11 @@
 				</Attack>
 			</MeleeWeapon>
 			<Quality>
-				<QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+				<QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
 			</Quality>
 		</item>
 		<!--热能太刀-->
-		<item name="Katana kai" identifier="Wf_Admiral_Katana_kai" scale="0.32" category="Weapon" tags="smallitem,weapon" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+		<item name="Katana-Kai" identifier="Wf_Admiral_Katana_kai" scale="0.32" category="Weapon" tags="smallitem,weapon" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
 			<PreferredContainer primary="armcab" spawnprobability="0" />
 			<Price baseprice="1200" soldeverywhere="false">
 				<Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -143,12 +143,12 @@
 					<Sound file="%ModDir%/Content/Items/weapons/lightsaber.ogg" range="500" type="OnUse" />
 				</Attack>
 			</MeleeWeapon>
+			<Quality>
+				<QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+			</Quality>
 		</item>
-		<Quality>
-			<QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
-		</Quality>
 		<!--热能胁差-->
-		<item name="Wakizashi kai" identifier="Wf_Admiral_Wakizashi_kai" scale="0.32" category="Weapon" tags="smallitem,weapon" cargocontainnerientifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+		<item name="Wakizashi-Kai" identifier="Wf_Admiral_Wakizashi_kai" scale="0.32" category="Weapon" tags="smallitem,weapon" cargocontainnerientifier="metalcrate" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
 			<PreferredContainer primary="armcab" spawnprobability="0" />
 			<Price baseprice="1200" soldeverywhere="false">
 				<Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -191,7 +191,7 @@
 				</Attack>
 			</MeleeWeapon>
 			<Quality>
-				<QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+				<QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
 			</Quality>
 		</item>
 		<!--电基鱼叉发射器-->
@@ -456,7 +456,7 @@
 			</Quality>
 			<SkillRequirementHint identifier="weapons" level="50" />
 		</Item>
-		<Item name="" identifier="coilriflemagazine" maxstacksize="8" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+		<Item name="Coilrifle Magazine" identifier="coilriflemagazine" maxstacksize="8" maxstacksizecharacterinventory="8" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 			<PreferredContainer primary="coilrifle" minamount="1" maxamount="1" spawnprobability="1" />
 			<PreferredContainer primary="armcab" secondary="secarmcab" />
 			<Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
@@ -485,7 +485,7 @@
 			<Body width="28" height="29" density="25" />
 			<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="arbalestround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 				<Containable items="coilrifleround" />
-				<StatusEffect type="OnUse" target="This" condition="-12.5" disabledeltatime="true">
+				<StatusEffect type="OnUse" target="This" condition="-6.25" disabledeltatime="true">
 					<SpawnItem identifiers="coilrifleround" spawnposition="ThisInventory" />
 				</StatusEffect>
 			</ItemContainer>
@@ -540,7 +540,7 @@
 			<InventoryIcon texture="%ModDir%/Content/Items/Weapons/pistol.png" sourcerect="0,0,67,41" origin="0.5,0.5" />
 			<Sprite texture="%ModDir%/Content/Items/Weapons/pistol.png" sourcerect="0,0,67,41" depth="0.55" origin="0.5,0.5" />
 			<Body width="72" height="40" density="25" />
-			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,-16" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
+			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,-10" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
 			<RangedWeapon barrelpos="29,11" spread="4" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.25" reload="0.37">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -610,21 +610,19 @@
 				<Price storeidentifier="merchantmine" multiplier="1.25" minavailable="3" />
 				<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
 			</Price>
-			<Fabricate suitablefabricators="fabricator" requiredtime="20">
+			<Fabricate suitablefabricators="fabricator" requiredtime="20" amount="4">
 				<RequiredSkill identifier="weapons" level="30" />
 				<RequiredItem identifier="magnesium" />
 				<RequiredItem identifier="lead" />
-				<RequiredItem identifier="plastic" />
+				<RequiredItem identifier="plastic" amount="2"/>
 			</Fabricate>
-			<Fabricate suitablefabricators="fabricator" requiredtime="15" displayname="recycleitem">
+			<Fabricate suitablefabricators="fabricator" requiredtime="5" displayname="recycleitem">
 				<RequiredSkill identifier="weapons" level="30" />
-				<RequiredItem identifier="magnesium" />
-				<RequiredItem identifier="lead" />
+				<RequiredItem identifier="magnesium" mincondition="0.25"/>
+				<RequiredItem identifier="lead" mincondition="0.25"/>
 				<RequiredItem identifier="pistolmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
 			</Fabricate>
-			<Deconstruct time="10">
-				<Item identifier="plastic" />
-			</Deconstruct>
+			<Deconstruct time="1"/>
 			<InventoryIcon texture="%ModDir%/Content/Items/Weapons/pistolmagazine.png" sourcerect="0,0,35,50" />
 			<Sprite texture="%ModDir%/Content/Items/Weapons/pistolmagazine.png" depth="0.54" sourcerect="0,0,35,50" origin="0.5,0.5" />
 			<Body width="14" height="40" density="25" />
@@ -1086,73 +1084,6 @@
 					<Remove/>
 				</StatusEffect>
 			</Projectile>
-		</Item>
-		<Item name="" identifier="waifu_nucleargun" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.125" impactsoundtag="impact_metal_heavy">
-			<PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
-			<Price baseprice="900" sold="false">
-				<Price storeidentifier="merchantoutpost" multiplier="1.5" />
-				<Price storeidentifier="merchantcity" multiplier="1.25" />
-				<Price storeidentifier="merchantresearch" multiplier="1.25" />
-				<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" sold="true">
-					<Reputation faction="coalition" min="70" />
-				</Price>
-				<Price storeidentifier="merchantmine" multiplier="1.25" />
-			</Price>
-			<Deconstruct time="10">
-				<Item identifier="copper" />
-				<Item identifier="plastic" />
-				<Item identifier="lead" />
-				<Item identifier="titaniumaluminiumalloy" />
-				<Item identifier="fulgurium" />
-			</Deconstruct>
-			<Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
-				<RequiredSkill identifier="electrical" level="65" />
-				<RequiredItem identifier="fpgacircuit" />
-				<RequiredItem identifier="lead" amount="2" />
-				<RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-				<RequiredItem identifier="fulgurium" amount="2" />
-			</Fabricate>
-			<Sprite texture="%ModDir%/Content/Items/Weapons/waifu_nucleargun.png" sourcerect="0,0,1196,284" depth="0.55" origin="0.5,0.5" />
-			<Body width="238" height="63" density="25" />
-			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,4" handle1="-250,-50" handle2="-100,-45" holdangle="-25" />
-			<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-				<sprite name="Nuclear Gun Worn" texture="%ModDir%/Content/Items/Weapons/waifu_nucleargun.png" canbehiddenbyotherwearables="false" rotation="90" depth="0.6" sourcerect="0,0,1196,284" limb="Torso" depthlimb="LeftArm" scale="0.125" origin="0.5,0.8" />
-			</Wearable>
-			<RangedWeapon reload="0.25" holdtrigger="true" barrelpos="598,0" spread="0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.375">
-				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-				<ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
-				<ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="10,235,195,255" />
-				<ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemax="360" />
-				<Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator2.ogg" type="OnUse" range="3000" />
-				<Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator3.ogg" type="OnUse" range="3000" />
-				<Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator4.ogg" type="OnUse" range="3000" />
-				<ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="1000" />
-				<StatusEffect type="OnUse">
-					<Explosion range="75.0" force="1.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
-				</StatusEffect>
-				<StatusEffect type="OnUse" target="Contained">
-					<Use/>
-				</StatusEffect>
-				<RequiredItems items="reactorfuel" type="Contained" msg="ItemMsgAmmoRequired" />
-				<RequiredSkill identifier="weapons" level="25" />
-				<RequiredSkill identifier="electrical" level="45" />
-			</RangedWeapon>
-			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="10,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
-				<Containable items="reactorfuel" rotation="90" />
-				<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
-				<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
-				<SubContainer capacity="1" maxstacksize="1">
-					<Containable items="flashlight" hide="false" itempos="25,0" setactive="true" />
-				</SubContainer>
-			</ItemContainer>
-			<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
-			<Quality>
-				<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-			</Quality>
-			<SkillRequirementHint identifier="weapons" level="25" />
-			<SkillRequirementHint identifier="electrical" level="45" />
 		</Item>
 	</Items>
 </Override>

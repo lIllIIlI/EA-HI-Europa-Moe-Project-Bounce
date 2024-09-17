@@ -68,7 +68,7 @@
     </ItemContainer>
     <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
       <GuiFrame relativesize="0.1,0.09" anchor="BottomRight" pivot="BottomRight" relativeoffset="0,0.18" />
-      <Button text="外置止血喷雾">
+      <Button text="Ext. Hemostatic Spray">
         <StatusEffect type="OnUse" target="This" tags="active" duration="4" stackable="false">
           <RequiredItem items="antibleeding3" type="Contained" />
         </StatusEffect>

@@ -77,7 +77,7 @@
   <entitydescription.firmament_b>Helmet able to carry two equipment, can inject medicine when wearer's healthy situation gets worse. Has white and black versions.</entitydescription.firmament_b>
   <entityname.flashhelmet>Flash Helmet</entityname.flashhelmet>
   <entitydescription.flashhelmet>Light helmet with a flashlight.</entitydescription.flashhelmet>
-  <entityname.clowndivingmask_alt>Clown Diving Mask</entityname.clowndivingmask_alt>
+  <entityname.clowndivingmask_alt>Clown Diving Mask Alter</entityname.clowndivingmask_alt>
   <entitydescription.clowndivingmask_alt>(Wearing position is different) A clown mask combined with a diving mask, allowing the user to both clown around and breathe underwater.</entitydescription.clowndivingmask_alt>
   <entityname.maidclothes1>Maid Uniform</entityname.maidclothes1>
   <entitydescription.maidclothes1>Cute</entitydescription.maidclothes1>
@@ -136,17 +136,17 @@
   <epsp.light>Light</epsp.light>
   <epsp.lightandscooter>Light and Scooter</epsp.lightandscooter>
   <entityname.Wf_New_XDS-01>XDS-01</entityname.Wf_New_XDS-01>
-  <entitydescription.Wf_New_XDS-01></entitydescription.Wf_New_XDS-01>
+  <entitydescription.Wf_New_XDS-01>The pinnacle of alien tech, borne through the efforts of the past researchers and yours alike. Protects against nearly everything.</entitydescription.Wf_New_XDS-01>
   <entityname.Wf_New_XDS-01_Engine>XDS-01 Engine</entityname.Wf_New_XDS-01_Engine>
-  <entitydescription.Wf_New_XDS-01_Engine></entitydescription.Wf_New_XDS-01_Engine>
+  <entitydescription.Wf_New_XDS-01_Engine>Back mounted, alien powered engine. Highly protective, however the intake is vulnerable to explosives.</entitydescription.Wf_New_XDS-01_Engine>
   <entityname.Wf_debris>Debris</entityname.Wf_debris>
-  <entitydescription.Wf_debris></entitydescription.Wf_debris>
+  <entitydescription.Wf_debris>A broken thruster or engine piece. Might be useful.</entitydescription.Wf_debris>
   <entityname.Wf_Research_Box>Research Box</entityname.Wf_Research_Box>
-  <entitydescription.Wf_Research_Box></entitydescription.Wf_Research_Box>
-  <entityname.Wf_Research_chip>XDS-01 Research Clip</entityname.Wf_Research_chip>
-  <entitydescription.Wf_Research_chip></entitydescription.Wf_Research_chip>
-  <entityname.Wf_Research_Log>XDS-01 Research Data</entityname.Wf_Research_Log>
-  <entitydescription.Wf_Research_Log></entitydescription.Wf_Research_Log>
+  <entitydescription.Wf_Research_Box>A Rusted box? </entitydescription.Wf_Research_Box>
+  <entityname.Wf_Research_chip>XDS-01 Research Chip</entityname.Wf_Research_chip>
+  <entitydescription.Wf_Research_chip>Experimental Chip designed using state-of-the-art alien technology. No clue how such complex circuits were embedded into this tiny thing.</entitydescription.Wf_Research_chip>
+  <entityname.Wf_Research_Log>XDS-01 Research Log</entityname.Wf_Research_Log>
+  <entitydescription.Wf_Research_Log>Research log from the past alien researchers...seems it's been scrubbed clean.</entitydescription.Wf_Research_Log>
   <entityname.loudspeaker>Loudspeaker</entityname.loudspeaker>
   <entitydescription.loudspeaker>Idiot↑Moron↓</entitydescription.loudspeaker>
   <entityname.loudspeaker1>Loudspeaker</entityname.loudspeaker1>
@@ -260,7 +260,7 @@
   <Builder.Msg.Detach>[[use]] Detatch</Builder.Msg.Detach>
   <!--eventtext-->
   <EventText.missionevent_EAHI1.c1>Loafer[EA-HI Liaison Officer]: Zzz. This is your task, don't disturb my sleep.</EventText.missionevent_EAHI1.c1>
-  <EventText.missionevent_EAHI2.c1>Chao Wendao [EA-HI Delegate]: Are you here to accept the contract? OK, there are two tasks here.</EventText.missionevent_EAHI2.c1>
+  <EventText.missionevent_EAHI2.c1>Brynhild [EA-HI Delegate]: Are you here to accept the contract? OK, there are two tasks here.</EventText.missionevent_EAHI2.c1>
   <EventText.missionevent_XML.c1>The liaison said that recently a group of particularly ferocious Mudraptors was attacking ships traveling in the waterway, seriously affecting the interests of the company. [reward]mk has been promised to those who annihilate this horde of monsters. "</EventText.missionevent_XML.c1>
   <EventText.missionevent_PP.c1>Several Crawler Mother leads hordes of crawlers to attack ships in the channel. East Asia Heavy Industries promises to give [reward]mk rewards to those who annihilate this group of monsters.</EventText.missionevent_PP.c1>
   <EventText.missionevent_HF.c1>A large number of golden hammerheads are entrenched in the waterway, seriously affecting the transportation of people and goods. East Asia Heavy Industries is offering a reward [reward]mk to all free captains in order to solve this problem.</EventText.missionevent_HF.c1>

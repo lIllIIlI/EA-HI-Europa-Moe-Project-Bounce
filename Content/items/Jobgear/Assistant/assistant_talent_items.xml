@@ -8,16 +8,49 @@
       <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/TalentGear.png" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
       <Body width="5" radius="25" />
       <Deconstruct time="10">
+        <Item identifier="clownmask" />
         <Item identifier="divingmask" />
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
         <RequiredItem identifier="clownmask" />
         <RequiredItem identifier="divingmask" />
       </Fabricate>
-      <Wearable>
+      <Wearable limbtype="Head" slots="Any,Head" >
         <sprite name="Clown Diving Mask Wearable" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" sourcerect="417,303,39,75" origin="0.1,0.6" />
         <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygentank" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+          <Conditional IsDead="false" />
+          <RequiredItem items="weldingfueltank" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+          <RequiredItem items="incendiumfueltank" type="Contained" />
+          <Affliction identifier="burn" amount="0.1" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygeniteshard" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygenitetank" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.1" setvalue="true" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygeniteshard" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+          <Conditional IsDead="false" />
+          <RequiredItem items="oxygenitetank" type="Contained" />
+        </StatusEffect>
+        <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
       </Wearable>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </ItemContainer>
     </Item>
     
     <Item name="Clown Divingmask Alt" variantof="clowndivingmask" identifier="clowndivingmask_alt" tags="smallitem,clothing,clownmask,diving,lightdiving" >
@@ -30,8 +63,9 @@
         <RequiredItem identifier="clowndivingmask" />
         <RequiredItem />
       </Fabricate>
-      <Wearable>
+      <Wearable limbtype="Head" slots="Any,Head">
         <sprite name="Clown Diving Mask Wearable Alt" texture="%ModDir%/Content/Items/JobGear/Assistant/clowndivingmask_alt.png" limb="Head" inheritlimbdepth="true" inheritscale="true" scale="0.5" ignorelimbscale="true" sourcerect="0,0,88,112" origin="0.75,0.65" />
+        <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
       </Wearable>
     </Item>
 

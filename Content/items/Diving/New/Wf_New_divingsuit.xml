@@ -141,7 +141,7 @@
 			<StatusEffect type="OnActive" target="This">
 				<ParticleEmitter particle="Wf_gravityspherefx" particleamount="1" emitinterval="1.25" ColorMultiplier="20,50,255,155"/>
 			</StatusEffect>
-			<StatusEffect type="Always" target="this" >
+			<StatusEffect type="Always" target="this">
 				<Active />
 			</StatusEffect>
 			<StatusEffect type="Always" target="this" delay="10.0" >
@@ -220,17 +220,16 @@
         <Conditional InWater="eq true" />
         <ParticleEmitter particle="Wf_faradayfx" anglemax="360" distancemax="60" particlespersecond="20" />
       </StatusEffect>
-      <!-- Currently this spawns infinite balls so disabling for now -->
-		<!-- <StatusEffect type="OnWearing" target="Character" >
-			<Conditional vitality="lt 50" oneshot="true"/>
+		<StatusEffect type="OnWearing" target="Character" interval="10">
+			<Conditional vitality="lt 50" />
 			<SpawnItem identifier="Wf_New_XDS-01_AntiGravityBall" spawnposition="this"/>
-		</StatusEffect> -->
+		</StatusEffect>
 			
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="120.0,270.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,stun" armorsector="120.0,270.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="120.0,270.0" damagemultiplier="0" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="120.0,270.0" afflictiontypes="burn" damagemultiplier="0" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="120.0,270.0" afflictionidentifiers="huskinfection" damagemultiplier="0.1" probabilitymultiplier="0.05" damagesound="LimbArmor" />
+      <damagemodifier armorsector="120.0,270.0" afflictionidentifiers="huskinfection" damagemultiplier="0.1" probabilitymultiplier="0.05" damagesound="LimbArmor" /> <!-- this appears -->
       <damagemodifier armorsector="150.0,210.0" afflictionidentifiers="explosiondamage" damagemultiplier="1.2" damagesound="StructureAlien" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" aimpos="90,0" handle1="82,-27" handle2="82,-27" holdangle="90.0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
