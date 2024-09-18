@@ -220,10 +220,10 @@
         <Conditional InWater="eq true" />
         <ParticleEmitter particle="Wf_faradayfx" anglemax="360" distancemax="60" particlespersecond="20" />
       </StatusEffect>
-		<StatusEffect type="OnWearing" target="Character" interval="10">
-			<Conditional vitality="lt 50" />
-			<SpawnItem identifier="Wf_New_XDS-01_AntiGravityBall" spawnposition="this"/>
-		</StatusEffect>
+      <!-- <StatusEffect type="OnWearing" target="Character" oneshot="True" stackable="False">
+        <Conditional vitality="lt 50" />
+        <SpawnItem identifier="Wf_New_XDS-01_AntiGravityBall" spawnposition="this"/>
+      </StatusEffect> -->
 			
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="120.0,270.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,stun" armorsector="120.0,270.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
