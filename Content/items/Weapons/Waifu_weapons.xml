@@ -49,7 +49,7 @@
 			<Body width="305" height="32" density="45" />
 			<MeleeWeapon slots="RightHand,Any" aimpos="45,20" handle1="-35,-2" holdangle="30" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
 				<Attack targetimpulse="3" severlimbsprobability="8.5" itemdamage="20" penetration="1.25">
-					<Affliction identifier="internaldamage" strength="5" />
+					<Affliction identifier="internaldamage" strength="8" />
 					<Affliction identifier="lacerations" strength="12" />
 					<Affliction identifier="bleeding" strength="25" />
 					<Affliction identifier="stun" strength="0.4" />
@@ -84,7 +84,7 @@
 			<MeleeWeapon slots="LeftHand,Any" aimpos="45,20" handle1="-32,-2" holdangle="30" reload="0.65" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
 				<Attack targetimpulse="3" severlimbsprobability="0.1" itemdamage="20" penetration="0.25">
 					<Affliction identifier="internaldamage" strength="5" />
-					<Affliction identifier="lacerations" strength="5" />
+					<Affliction identifier="lacerations" strength="11" />
 					<Affliction identifier="bleeding" strength="15" />
 					<Affliction identifier="stun" strength="0.2" />
 					<Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
@@ -178,7 +178,7 @@
 			<MeleeWeapon slots="LeftHand,Any" aimpos="45,20" handle1="-32,-2" holdangle="30" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
 				<Attack targetimpulse="3" severlimbsprobability="0.1" itemdamage="20" penetration="0.75">
 					<Affliction identifier="internaldamage" strength="5" />
-					<Affliction identifier="lacerations" strength="5" />
+					<Affliction identifier="lacerations" strength="8" />
 					<Affliction identifier="burn" strength="15" />
 					<Affliction identifier="stun" strength="0.2" />
 					<Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
@@ -287,7 +287,7 @@
 			<LightComponent characterusable="false" LightColor="225,0,0,120" range="40" IsOn="false" BlinkFrequency="1.5">
 				<!--<Sprite texture="Content/Lights/pointlight_bounce.png" sourcerect="0,0,1024,1024" alpha="0.5" />-->
 			</LightComponent>
-			<Projectile characterusable="false" launchimpulse="80.0" sticktocharacters="true" sticktoitems="false" sticktostructures="true" penetration="0.85" maxtargetstohit="2">
+			<Projectile characterusable="false" launchimpulse="120.0" sticktocharacters="true" sticktoitems="false" sticktostructures="true" penetration="1" maxtargetstohit="3">
 				<ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.75" colormultiplier="0,0,255,255" />
 				<Attack structuredamage="20" itemdamage="40" targetforce="30" severlimbsprobability="0.15">
 					<Affliction identifier="bleeding" strength="60" />
@@ -540,7 +540,7 @@
 			<InventoryIcon texture="%ModDir%/Content/Items/Weapons/pistol.png" sourcerect="0,0,67,41" origin="0.5,0.5" />
 			<Sprite texture="%ModDir%/Content/Items/Weapons/pistol.png" sourcerect="0,0,67,41" depth="0.55" origin="0.5,0.5" />
 			<Body width="72" height="40" density="25" />
-			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,-10" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
+			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,20" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
 			<RangedWeapon barrelpos="29,11" spread="4" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.25" reload="0.37">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -793,10 +793,7 @@
 			<aitarget sightrange="500" soundrange="500" fadeouttime="1" />
 		</Item>
 		<Item name="" identifier="Wf_Blame_G.B.E" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" Scale="0.5" impactsoundtag="impact_metal_light">
-			<PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.01" />
-			<PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
-			<PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
-			<PreferredContainer secondary="ruintreasure" spawnprobability="0.01" />
+			<PreferredContainer secondary="ruintreasure" spawnprobability="0.02" />
 			<Price baseprice="20000">
 				<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
 				<Price storeidentifier="merchantcity" sold="false" multiplier="1.25" minavailable="2" />
@@ -813,7 +810,7 @@
 			<Sprite texture="%ModDir%/Content/items/Weapons/Blame_harpoongun.png" sourcerect="38,55,66,57" depth="0.55" origin="0.5,0.5" />
 			<Body width="60" height="50" density="50" />
 			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,10" handle1="-20,-8" msg="ItemMsgPickUpSelect" />
-			<RangedWeapon barrelpos="31,13.5" holdtrigger="true" maxchargetime="2.0" reload="0.25" spread="0" unskilledspread="10" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
+			<RangedWeapon barrelpos="31,13.5" holdtrigger="true" maxchargetime="4.0" reload="0.25" spread="0" unskilledspread="10" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
 				<ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
 				<ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
 				<ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,0,0,255" />
@@ -822,7 +819,7 @@
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<Sound file="%ModDir%/Content/Items/Weapons/G.B.E shooting.ogg" type="OnUse" />
 				<StatusEffect type="OnUse" target="This">
-					<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+					<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="200.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">
 					<Use/>
@@ -833,20 +830,13 @@
 			<ItemContainer hideitems="true" drawinventory="false" capacity="1" maxstacksize="1" containedstateindicatorstyle="battery">
 				<Containable items="Wf_G.B.E_batterycell" />
 			</ItemContainer>
-			<LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
-				<StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
-					<Conditional IsDead="false" />
-				</StatusEffect>
-				<LightTexture texture="Content/Lights/lightcone.png" origin="0.5,0.5" size="1.0,0.9" />
+			<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+			<LightComponent LightColor="1,0,0,0.5" Flicker="0.8" range="50" powerconsumption="0" IsOn="true">
+				<LightTexture texture="Content/Lights/pointlight_bright.png" origin="0.4,0.4" size="0.4,0.4"/>
 			</LightComponent>
-			<CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
-				<GuiFrame relativesize="0.07,0.05" anchor="BottomCenter" absoluteoffset="50,125" style="ItemUI" />
-				<TickBox text="Flash">
-					<StatusEffect type="OnUse" targettype="This" IsOn="true" />
-					<StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
-				</TickBox>
-			</CustomInterface>
-			<aitarget sightrange="0" soundrange="1500" fadeouttime="2" />
+			<LightComponent LightColor="0,0.5,0.5,0.5" Flicker="0.5" range="50" powerconsumption="0" IsOn="true">
+				<LightTexture texture="Content/Lights/pointlight_bright.png" origin="1,0.2" size="0.2,0.2"/>
+			</LightComponent>
 		</Item>
 		<Item name="" identifier="Wf_G.B.E_beam_s" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
 			<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
@@ -856,8 +846,8 @@
 				<ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.0,0.5" />
 				<ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" scalemultiplier="0.5,0.5" />
 				<Attack structuredamage="1000" targetforce="5" itemdamage="100" severlimbsprobability="10">
-					<Affliction identifier="burn" strength="500" />
-					<Affliction identifier="lacerations" strength="500" />
+					<Affliction identifier="burn" strength="200" />
+					<Affliction identifier="explosiondamage" strength="500"/>
 					<Affliction identifier="stun" strength="1.0" />
 				</Attack>
 				<StatusEffect type="OnImpact" target="this" condition="-100" disabledeltatime="true" />
@@ -894,8 +884,8 @@
 				<ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" scalemultiplier="1.0,1.0" />
 				<Attack structuredamage="1000" targetforce="5" itemdamage="100" severlimbsprobability="10">
 					<Affliction identifier="burn" strength="500" />
-					<Affliction identifier="lacerations" strength="500" />
-					<Affliction identifier="stun" strength="1.0" />
+					<Affliction identifier="explosiondamage" strength="2000"/>
+					<Affliction identifier="stun" strength="5.0" />
 				</Attack>
 				<StatusEffect type="OnImpact" target="this" condition="-50" disabledeltatime="true" />
 				<StatusEffect type="OnImpact" target="UseTarget">
@@ -911,7 +901,7 @@
 				<StatusEffect type="OnBroken" target="This">
 					<ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="400" distancemax="500" velocitymin="-500" velocitymax="-900" particlespersecond="200" colormultiplier="255,180,255,255" />
 					<ParticleEmitter particle="gravityspherefx2" particlespersecond="3" />
-					<Explosion range="500.0" structuredamage="500" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
+					<Explosion range="1500.0" structuredamage="500" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
 						<Affliction identifier="burn" strength="500" />
 						<Affliction identifier="explosiondamage" strength="500" />
 					</Explosion>
@@ -928,10 +918,10 @@
 			<Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="10" penetration="1.0">
 				<ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.0,3.0" />
 				<ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
-				<Attack structuredamage="5000" targetforce="5" itemdamage="500" severlimbsprobability="100">
-					<Affliction identifier="burn" strength="2500" />
-					<Affliction identifier="lacerations" strength="2500" />
-					<Affliction identifier="stun" strength="1.0" />
+				<Attack structuredamage="100000" ballastfloradamage="500" targetforce="1000" itemdamage="10000" levelwalldamage="10000" severlimbsprobability="100" penetration="1">
+					<Affliction identifier="stun" strength="10"/>
+					<Affliction identifier="explosiondamage" strength="2000"/>
+					<Affliction identifier="burn" strength="1000"/>
 				</Attack>
 				<StatusEffect type="OnImpact" target="this" condition="-10" disabledeltatime="true" />
 				<StatusEffect type="OnImpact" target="UseTarget">
@@ -947,7 +937,7 @@
 				<StatusEffect type="OnBroken" target="This">
 					<ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="400" distancemax="500" velocitymin="-500" velocitymax="-900" particlespersecond="200" colormultiplier="255,180,255,255" />
 					<ParticleEmitter particle="gravityspherefx2" particlespersecond="5" />
-					<Explosion range="1500.0" structuredamage="1000" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
+					<Explosion range="2500.0" structuredamage="1000" itemdamage="100" force="-100.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
 						<Affliction identifier="burn" strength="1500" />
 						<Affliction identifier="explosiondamage" strength="1500" />
 					</Explosion>

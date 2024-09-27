@@ -35,7 +35,12 @@
         <sprite name="Commoner's Clothes 1 Right Shoe" texture="Commoner1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 1 Left Shoe" texture="Commoner1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 1 boob" texture="Commoner1_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
+        <SkillModifier skillidentifier="electrical" skillvalue="5" />
+        <SkillModifier skillidentifier="helm" skillvalue="5" />
+        <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+        <SkillModifier skillidentifier="medical" skillvalue="5" />
+        <SkillModifier skillidentifier="weapons" skillvalue="5" />
       </Wearable>
     </Item>
     <Item name="" identifier="commonerclothes2" nameidentifier="outpostoutfit1" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -71,7 +76,7 @@
         <sprite name="Commoner's Clothes 2 Right Shoe" texture="Commoner2_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 2 Left Shoe" texture="Commoner2_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 2 boob" texture="Commoner2_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -113,7 +118,7 @@
         <sprite name="Commoner's Clothes 3 Right Shoe" texture="Commoner3_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 3 Left Shoe" texture="Commoner3_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 3 boob" texture="Commoner3_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -154,7 +159,7 @@
         <sprite name="Commoner's Clothes 4 Right Shoe" texture="Commoner4_[GENDER].png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 4 Left Shoe" texture="Commoner4_[GENDER].png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 4 boob" texture="Commoner4_[GENDER].png" limb="tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -196,7 +201,7 @@
         <sprite name="Commoner's Clothes 5 Left Shoe" texture="commoner_5_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 5 Right Shoe" texture="commoner_5_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 5 boob" texture="Commoner_5_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -237,8 +242,7 @@
         <sprite name="Crew Chief Left Shoe" texture="crewchief_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Right Shoe" texture="crewchief_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief boob" texture="crewchief_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds, blunttrauma" damagemultiplier="0.7" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -291,7 +295,8 @@
     <Item name="" identifier="minerclothes" nameidentifier="mineroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
       <PreferredContainer primary="crewcab" />
-      <Price baseprice="75">
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="150" sold="false">
         <Price storeidentifier="merchantoutpost" minavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
         <Price storeidentifier="merchantresearch" minavailable="1" />
@@ -320,9 +325,9 @@
         <sprite name="Miner Left Shoe" texture="miner_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Miner Right Shoe" texture="miner_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Miner boob" texture="miner_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.95" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.85" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.8" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.8" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.7" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -335,7 +340,8 @@
       <PreferredContainer primary="outpostcrewcabinet,abandonedcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
       <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
       <PreferredContainer primary="crewcab" />
-      <Price baseprice="75">
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="150" sold="false">
         <Price storeidentifier="merchantoutpost" minavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
         <Price storeidentifier="merchantresearch" minavailable="1" />
@@ -364,8 +370,7 @@
         <sprite name="Quartermaster Left Shoe" texture="quartermaster_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Quartermaster Right Shoe" texture="quartermaster_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Quartermaster Boob" texture="quartermaster_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound, bitewounds" damagemultiplier="0.7" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="helm" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -409,7 +414,7 @@
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
         <SkillModifier skillidentifier="medical" skillvalue="5" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <!--站点安全官-->
@@ -519,8 +524,7 @@
         <sprite name="Bandit Uniform 1 Left Shoe" texture="bandit_1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Bandit Uniform 1 Right Shoe" texture="bandit_1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Bandit Uniform 1 Boob" texture="bandit_1_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <Item name="" identifier="banditclothes2" nameidentifier="banditoutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -556,8 +560,7 @@
         <sprite name="Bandit Uniform 2 Left Shoe" texture="bandit_2_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Bandit Uniform 2 Right Shoe" texture="bandit_2_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Bandit Uniform 2 Boob" texture="bandit_2_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <!--VIP修改：能在废弃站点获得；增加减伤-->

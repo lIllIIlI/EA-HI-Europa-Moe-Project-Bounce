@@ -33,9 +33,9 @@
                   <Label name="waiting" />
                   <ConversationAction targettag="triggerer_player" text="EventText.DRF.o2.c2">
                   <Option text="EventText.DRF.o3">
-                  <CheckMoneyAction amount="6666">
+                  <CheckMoneyAction amount="12000">
                     <Success>
-                      <MoneyAction amount="-6666" />
+                      <MoneyAction amount="-12000" />
                       <RNGAction chance="0.7">
                         <Success>
                           <RNGAction chance="0.5">
@@ -114,7 +114,7 @@
     <EventSet identifier="outposteventsEAHI.ALL.generic.missionevents" minleveldifficulty="20" maxleveldifficulty="100" allowatstart="true" chooserandom="true" eventcount="2">
       <ScriptedEvent identifier="missionevent_EAHI1" commonness="100" />
       <ScriptedEvent identifier="missionevent_EAHI2" commonness="110" />
-      <ScriptedEvent identifier="DRF" commonness="50" />
+      <ScriptedEvent identifier="DRF" commonness="20" />
     </EventSet>
     <!-- low-difficulty random events -->
     <EventSet identifier="outpostevents.easy.generic.randomevents.EAHI" minleveldifficulty="0" maxleveldifficulty="30" allowatstart="true" chooserandom="true" onceperoutpost="true">

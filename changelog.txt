@@ -60,3 +60,14 @@ Feet offset changes:
 - other stuff i forgot
 - modified the XDS a bit
 - Parity with original EA-HI mod, Faction rework in progress.
+
+?/??/24
+-un-nerfed exoskeletons and suits
+-other stuff i forgot
+
+9/24/24
+- adjusted G.B.E values..
+- diving suits lights and range
+- resprite clown exo
+- fix exotic suit
+- some more stuff i forgot

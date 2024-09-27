@@ -92,20 +92,6 @@
       <Item identifier="Wf_pucs_D" equip="true" />
       <Item identifier="securityuniform2" equip="true" />
       <Item identifier="divingknifeunique" equip="false" />
-      <Item identifier="shotgununique" equip="true">
-        <Item identifier="shotgunslugexplosive" />
-        <Item identifier="shotgunslugexplosive" />
-      </Item>
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
-      <Item identifier="shotgunslugexplosive" />
       <Item identifier="deusizine" />
       <Item identifier="deusizine" />
     </ItemSet>

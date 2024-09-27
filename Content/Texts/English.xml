@@ -15,7 +15,7 @@
   <subcategory.waifu_innercloth>Innercloth</subcategory.waifu_innercloth>
   <!--override-->
   <entityname.alienblood>Alien Blood</entityname.alienblood>
-  <entitydescription.alienbloodmod>Blood extracted from the body of a native species of Europa can be further processed into Blood products to treat blood loss. It can also be further purified into genes using therapeutics at the research bench.</entitydescription.alienbloodmod>
+  <entitydescription.alienbloodmod>Blood extracted from the body of a native species of Europa can be further processed into Blood products to treat blood loss. It can also be further purified into genes using stabilozine at the research bench.</entitydescription.alienbloodmod>
   <entitydescription.mudraptorshellmod>Mudraptor Carapace Fragment. Can be fabricated into Exotic Matter and Mudraptor Headgear</entitydescription.mudraptorshellmod>
   <entityname.mudraptorshell_head>Mudraptor Headgear</entityname.mudraptorshell_head>
   <entitydescription.mudraptorshell_head>A small fragment of Mudraptor's carapace, I don't know which part of Mudraptor it is.</entitydescription.mudraptorshell_head>
@@ -112,7 +112,7 @@
   <entityname.ceremonialsword_heavy>Ceremonial Great Sword</entityname.ceremonialsword_heavy>
   <entitydescription.ceremonialsword_heavy>A well decorated great sword, requires skills to wield it.</entitydescription.ceremonialsword_heavy>
   <entityname.Wf_Blame_G.B.E>Graviton Beam Emitter</entityname.Wf_Blame_G.B.E>
-  <entitydescription.Wf_Blame_G.B.E>Graviton Beam Emitter, an extremely rare unidentified weapon discovered in the deep sea, shaped like a pistol. Depending on the remaining power, it can emit graviton beams of varying power and create a gravity explosion at the end of the beam that attracts surrounding objects. The graviton beams emitted at any power level have unparalleled power and should be used with caution.</entitydescription.Wf_Blame_G.B.E>
+  <entitydescription.Wf_Blame_G.B.E>A pristine Graviton Beam Emitter, an extremely rare unidentified weapon discovered in the deep sea, shaped like a pistol. Depending on the remaining power, it can emit graviton beams of varying power and create a gravity explosion at the end of the beam that attracts surrounding objects. The graviton beams emitted at any power level have unparalleled power and should be used with caution.</entitydescription.Wf_Blame_G.B.E>
   <entityname.Wf_G.B.E_batterycell>G.B.E Energy Cell</entityname.Wf_G.B.E_batterycell>
   <entitydescription.Wf_G.B.E_batterycell>The energy cell for the Graviton Beam Emitter, incompatible with our appliances and chargers, only for use with the Graviton Beam Emitter.</entitydescription.Wf_G.B.E_batterycell>
   <entityname.Wf_G.B.E_kai>Micro Graviton Beam Pistol</entityname.Wf_G.B.E_kai>
@@ -226,10 +226,10 @@
   <entitydescription.maidclothes1>Adorable.</entitydescription.maidclothes1>
   <entityname.maidheaddress>Maid Headdress</entityname.maidheaddress>
   <entitydescription.maidheaddress>Maid's core element.</entitydescription.maidheaddress>
-  <entityname.Exotic_Amor_suit>Exotic Matter Armor - Diving Suit</entityname.Exotic_Amor_suit>
-  <entitydescription.Exotic_Amor_suit>This is the wetsuit part of the suit, which is made of the alien material extracted from the biological crust of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Amor_suit>
-  <entityname.Exotic_Amor_suit_head>Exotic Matter Armor - Helmet</entityname.Exotic_Amor_suit_head>
-  <entitydescription.Exotic_Amor_suit_head>This is the helmet part of the suit, which is made of the alien material extracted from the biological carapace of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Amor_suit_head>
+  <entityname.Exotic_Armored_suit>Exotic Matter Armor - Diving Suit</entityname.Exotic_Armored_suit>
+  <entitydescription.Exotic_Armored_suit>This is the wetsuit part of the suit, which is made of the alien material extracted from the biological crust of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Armored_suit>
+  <entityname.Exotic_Armored_suit_head>Exotic Matter Armor - Helmet</entityname.Exotic_Armored_suit_head>
+  <entitydescription.Exotic_Armored_suit_head>This is the helmet part of the suit, which is made of the alien material extracted from the biological carapace of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Armored_suit_head>
   <entityname.PrayerMio_uniform>HGIS</entityname.PrayerMio_uniform>
   <entitydescription.PrayerMio_uniform>Experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Clothing part] "Contribution from Chiyo Mio, the up master of station b" (WIP)</entitydescription.PrayerMio_uniform>
   <entityname.PrayerMio_hat>Prism</entityname.PrayerMio_hat>
@@ -381,18 +381,36 @@
   <eventtext.DRF.1>"Psst! Hey, stranger. Come here. I've got something interesting here."</eventtext.DRF.1>
   <eventtext.DRF.o1>Listen to her</eventtext.DRF.o1>
   <eventtext.DRF.o4>Ignore</eventtext.DRF.o4>
-  <eventtext.DRF.o1.c1>"A powerful energy weapon used by the old Earth's goverment. You won't find this anywhere... I'll give you a cheap price. How is it??"</eventtext.DRF.o1.c1>
+  <eventtext.DRF.o1.c1>"A powerful energy weapon used by the old Earth's goverment. You won't find this anywhere else... I'll give you a relatively cheap price. How about it??"</eventtext.DRF.o1.c1>
   <eventtext.DRF.o2>"How is that here??"</eventtext.DRF.o2>
   <eventtext.DRF.notbuy>"I'm not interested in dangerous things. That thing would blow up in my face!"</eventtext.DRF.notbuy>
   <eventtext.DRF.notbuy2>"I'm disappointed, when the Coalition gets your smuggling ass don't you dare mention me buddy."</eventtext.DRF.notbuy2>
-  <eventtext.DRF.o2.c1>".... Be quiet and listen carefully.." "Data Recovery Foundation. You know DRF, right? An organization that studies forgotten technologies under the Coalition." "Recently, DRF succeeded in restoring the old Earth's energy weapons." "Of course it's not mint, it's just a broken one that's repaired, But it's a great achievement."</eventtext.DRF.o2.c1>
-  <eventtext.DRF.o2.c2>"And... This is it, don't ask." (sighs for a moment) "I'll give you a deal. Only 6,666 marks."</eventtext.DRF.o2.c2>
+  <eventtext.DRF.o2.c1>
+    ".... Be quiet and listen carefully.."
+    "Data Recovery Foundation. You know DRF, right? An organization that studies forgotten technologies under the Coalition."
+    "Recently, DRF succeeded in restoring the old Earth's energy weapons."
+    "Of course it's not mint, it's just a broken one that's repaired, But it's a great achievement nonetheless."</eventtext.DRF.o2.c1>
+  <eventtext.DRF.o2.c2>
+    "That's all I can say, don't ask too much."
+
+    (sighs for a moment) 
+    
+    "I'll give you a deal. Only 12,000 marks."</eventtext.DRF.o2.c2>
   <eventtext.DRF.o3>"Yes. I will buy it.."</eventtext.DRF.o3>
-  <eventtext.DRF.suc1>"Good! I'm outta here! You'd better get moving and keep that tucked away till you leave, the Coalition is turning over every stone looking for it." She hands you a small, sleek handgun that emits a red glow. I wonder how powerful this really is.</eventtext.DRF.suc1>
-  <eventtext.DRF.suc2>"Good! I'm outta here! You'd better get moving and keep that tucked away till you leave, the Coalition is turning over every stone looking for it." She hands you a bluish pistol... pistol murmurs quietly in your pocket, is the pistol talking?! </eventtext.DRF.suc2>
+  <eventtext.DRF.suc1>"Good! I'm outta here! You'd better get moving and keep that tucked away till you leave, the Coalition is turning over every stone looking for it." 
+    She hands you a small, sleek handgun that emits a red glow. Wonder how powerful this really is.</eventtext.DRF.suc1>
+  <eventtext.DRF.suc2>"Good! I'm outta here! You'd better get moving and keep that tucked away till you leave, the Coalition is turning over every stone looking for it."
+    She hands you a bluish pistol... pistol murmurs quietly in your pocket, is the pistol talking?! </eventtext.DRF.suc2>
   <eventtext.DRF.nomney>"You don't have enough money? I guess crew isn't making a lot of money these days.. You never saw me ya hear?!"</eventtext.DRF.nomney>
-  <eventtext.DRF.sec>You hand over the money, you can faintly hear security guards shouting and stomping down the nearby hallway. "FUCK! How'd they track me here!?" After throwing a gun at you, The stranger hurdles over some nearby crates and disappears behind a doorway. Something is wrong ! </eventtext.DRF.sec>
+  <eventtext.DRF.sec>You hand over the money, you can faintly hear security guards shouting and stomping down the nearby hallway.
+    
+    "FUCK! How'd they track me here!?"
+    
+    After throwing a gun at you, The stranger hurdles over some nearby crates and disappears behind a doorway. 
+    Something is wrong ! </eventtext.DRF.sec>
   <eventtext.DRF.out>"Well, sorry about that."</eventtext.DRF.out>
   <eventtext.DRF.fight>"Give me that before I tell the security ! ! "</eventtext.DRF.fight>
-  <eventtext.DRF.fight2>"What the hell!!! Are you crazy?" When you shout, her face shows signs of embarrassment and anger. The smuggler takes a bluish glowing handgun out of her suit and aims at you! </eventtext.DRF.fight2>
+  <eventtext.DRF.fight2>"What the hell!!! Are you crazy?" 
+    When you shout, her face shows signs of embarrassment and anger.
+    The smuggler takes a bluish glowing handgun out of her suit and aims at you! </eventtext.DRF.fight2>
 </infotexts>

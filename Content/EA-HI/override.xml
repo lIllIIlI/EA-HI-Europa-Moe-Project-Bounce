@@ -93,7 +93,7 @@
     <!-- 压力稳定剂:提高出售数量,降低价格和制造消耗 -->
     <Item name="" identifier="pressurestabilizer" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,chem,medical,syringe" allowasextracargo="true" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="medcab" />
-      <Price baseprice="500" sold="true">
+      <Price baseprice="100" sold="false">
         <Price storeidentifier="merchantoutpost" />
         <Price storeidentifier="merchantcity" multiplier="0.9" />
         <Price storeidentifier="merchantresearch" multiplier="0.9" />

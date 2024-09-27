@@ -272,7 +272,7 @@
       <Body radius="45" width="34" density="15" />
       <Wearable>
         <sprite name="Slipsuit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="7,501,104,115" origin="0.5,0.745">
-          <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
+          <LightComponent range="300.0" lightcolor="120,100,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
@@ -300,7 +300,7 @@
       </Wearable>
     </Item>
     <!--防暴盾牌：穿戴时提供伤害减免-->
-    <Item name="" identifier="riotshield" category="Equipment" tags="mediumitem" health="150" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" damagedbyprojectiles="true" scale="1" allowasextracargo="true">
+    <Item name="" identifier="riotshield" category="Equipment" tags="mediumitem" health="350" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" damagedbyprojectiles="true" scale="1" allowasextracargo="true">
       <PreferredContainer primary="armcab" secondary="secarmcab" />
       <Price baseprice="360" sold="true" minleveldifficulty="50">
         <Price storeidentifier="merchantoutpost" multiplier="1.4" />

@@ -225,7 +225,7 @@
 				</StatusEffect>
 				<ChargeSound file="%ModDir%/Content/items/Weapons/Custom/charging.ogg" range="2000" volume="0.8"/>
 				<StatusEffect type="OnUse" target="This">
-					<Explosion range="100.0" levelwalldamage="0" structuredamage="1" force="100.0" itemdamage="1" severlimbsprobability="1" decal="explosion" decalsize="0.7" camerashake="200.0">
+					<Explosion range="100.0" levelwalldamage="0" structuredamage="1" force="100.0" itemdamage="1" severlimbsprobability="1" decal="explosion" decalsize="0.7" camerashake="20.0">
 						<Affliction identifier="stun" strength="5"/>
 						<Affliction identifier="blunttrauma" strength="200"/>
 					</Explosion>
@@ -234,7 +234,7 @@
 					<Use/>
 				</StatusEffect>
 				<RequiredItems items="gravbeam" type="Contained" msg="ItemMsgAmmoRequired"/>
-				<RequiredSkill identifier="weapons" level="25"/>
+				<RequiredSkill identifier="weapons" level="75"/>
 				<StatusEffect type="OnPicked" target="This">
 					<sound file="%ModDir%/Content/items/Weapons/Custom/blametheme.ogg"/>
 				</StatusEffect>
@@ -242,7 +242,7 @@
 			<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
 				<Containable items="gravbeam"/>
 			</ItemContainer>
-			<aitarget sightrange="3000" soundrange="5000" fadeouttime="5"/>
+			<aitarget sightrange="3000" soundrange="1500" fadeouttime="5"/>
 			<Quality>
 				<QualityStat stattype="firingratemultiplier" value="0.1"/>
 			</Quality>
@@ -286,13 +286,14 @@
 			<Projectile characterusable="false" hitscan="true" removeonhit="false" maxtargetstohit="20">
 				<ParticleEmitter particle="tracernucleargun" particleamount="10" velocitymin="0" velocitymax="0"/>
 				<ParticleEmitter particle="traceblamelaser" particleamount="1" velocitymin="0" velocitymax="0"/>
-				<Attack structuredamage="100000" ballastfloradamage="300" targetforce="1000" itemdamage="10000" levelwalldamage="10000" severlimbsprobability="100" penetration="1">
-					<Affliction identifier="stun" strength="10"/>
-					<Affliction identifier="explosiondamage" strength="2000"/>
-					<Affliction identifier="burn" strength="1000"/>
+				<Attack structuredamage="1000" targetforce="5" itemdamage="500" severlimbsprobability="100">
+					<Affliction identifier="burn" strength="500" />
+					<Affliction identifier="lacerations" strength="250" />
+					<Affliction identifier="explosiondamage" strength="250"/>
+					<Affliction identifier="stun" strength="1.0" />
 				</Attack>
 				<StatusEffect type="OnImpact" target="UseTarget">
-					<Explosion range="500.0" levelwalldamage="10000" ballastfloradamage="300" structuredamage="10000" force="50.0" itemdamage="10000" severlimbsprobability="0.8" decal="explosion" decalsize="2">
+					<Explosion range="500.0" levelwalldamage="1000" ballastfloradamage="300" structuredamage="1000" force="50.0" itemdamage="100" severlimbsprobability="0.8" decal="explosion" decalsize="2">
 						<Affliction identifier="burn" strength="200"/>
 						<Affliction identifier="explosiondamage" strength="300"/>
 						<Affliction identifier="stun" strength="5"/>

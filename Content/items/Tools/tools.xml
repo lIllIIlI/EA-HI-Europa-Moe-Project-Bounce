@@ -172,7 +172,7 @@
 		</Attack>
 	</MeleeWeapon>
 </Item>
-<!-- Fixed enhanced immersion flashlightfuckery -->
+<!-- Fixed enhanced immersion flashlight -->
 <Item name="" identifier="flashlight" category="Equipment" Tags="smallitem,tool,provocative,flashlight" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_plastic" isshootable="true" RequireAimToUse="true">
 	<PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
 	<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />

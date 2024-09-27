@@ -28,7 +28,7 @@
         <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
         <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
         <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-        <RequiredItem tag="smgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+        <RequiredItem tag="smgammo" mincondition="0.0" maxcondition="0.1" usecondition="false" />
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="lead" mincondition="0.95" />

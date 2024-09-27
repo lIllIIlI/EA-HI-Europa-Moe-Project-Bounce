@@ -6,7 +6,7 @@
     <Price baseprice="120" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="0.85" />
       <Price storeidentifier="merchantcity" multiplier="0.85" />
-      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.2"/>
       <Price storeidentifier="merchantmilitary" multiplier="0.9" />
       <Price storeidentifier="merchantmine" multiplier="0.85" />
     </Price>

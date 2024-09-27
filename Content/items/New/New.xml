@@ -295,7 +295,7 @@
     <InventoryIcon texture="%ModDir%/Content/Items/New/lightarmor_icon.png" sourcerect="0,0,128,106" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="896,7,125,63" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
-    <Wearable slots="Any,OuterClothes+InnerClothes" msg="ItemMsgPickUpSelect">
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Light Armor Torso" texture="lightarmor_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Light Armor Right Hand" texture="lightarmor_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Light Armor Left Hand" texture="lightarmor_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
