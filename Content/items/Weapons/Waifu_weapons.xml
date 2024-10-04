@@ -540,7 +540,7 @@
 			<InventoryIcon texture="%ModDir%/Content/Items/Weapons/pistol.png" sourcerect="0,0,67,41" origin="0.5,0.5" />
 			<Sprite texture="%ModDir%/Content/Items/Weapons/pistol.png" sourcerect="0,0,67,41" depth="0.55" origin="0.5,0.5" />
 			<Body width="72" height="40" density="25" />
-			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,20" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
+			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,-20" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
 			<RangedWeapon barrelpos="29,11" spread="4" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.25" reload="0.37">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
