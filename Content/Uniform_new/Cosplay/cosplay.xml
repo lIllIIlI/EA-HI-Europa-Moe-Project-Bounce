@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
-  <!-- 来自其他作品的服装放在这里 --> 
+  <!-- 来自其他作品的服装放在这里 -->
   <Items>
     <!--少前：RO635-->
-    <Item name="" identifier="RO635uniform1" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="RO635uniform1" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -41,7 +41,7 @@
       </Wearable>
     </Item>
     <!--少前：UMP9-->
-    <Item name="" identifier="UMP9uniform1" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="UMP9uniform1" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -79,7 +79,7 @@
       </Wearable>
     </Item>
     <!--少前：子夜福音-->
-    <Item name="" identifier="securityuniform4" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="securityuniform4" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -117,7 +117,7 @@
       </Wearable>
     </Item>
     <!--少前：MP7-->
-    <Item name="" identifier="securityuniform5" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="securityuniform5" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -156,7 +156,7 @@
       </Wearable>
     </Item>
     <!--少前：VSK-->
-    <Item name="" identifier="securityuniform6" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="securityuniform6" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -194,7 +194,7 @@
       </Wearable>
     </Item>
     <!--少前：M200-->
-    <Item name="" identifier="securityuniform7" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="securityuniform7" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -225,13 +225,13 @@
         <sprite name="Security Officer's Uniform 7 Left Leg" texture="%ModDir%/Content/Uniform_new/Cosplay/SecurityOfficer7.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 7 Right Shoe" texture="%ModDir%/Content/Uniform_new/Cosplay/SecurityOfficer7.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 7 Left Shoe" texture="%ModDir%/Content/Uniform_new/Cosplay/SecurityOfficer7.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Boob" texture="%ModDir%/Content/Uniform_new/Cosplay/SecurityOfficer7.png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+        <sprite name="Boob" texture="%ModDir%/Content/Uniform_new/Cosplay/SecurityOfficer7.png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound, bitewounds" damagemultiplier="0.95" />
         <SkillModifier skillidentifier="weapons" skillvalue="20" />
       </Wearable>
     </Item>
     <!--少前：Kalina-->
-    <Item name="" identifier="securityuniform8" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="securityuniform8" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -272,7 +272,7 @@
       </Wearable>
     </Item>
     <!--舟：凯尔希-->
-    <Item name="" identifier="Kaltsituniform" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="Kaltsituniform" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -311,7 +311,7 @@
       </ItemContainer>
     </Item>
     <!-- 舟：天火 -->
-    <Item name="" identifier="skyfireuniform" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" fireproof="true">
+    <Item name="" identifier="skyfireuniform" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" fireproof="true">
       <PreferredContainer primary="crewcab" />
       <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -349,7 +349,7 @@
       </Wearable>
     </Item>
     <!-- 舟：温差 RT.RX01-天火 -->
-    <Item name="" identifier="skyfireswimsuit" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" fireproof="true">
+    <Item name="" identifier="skyfireswimsuit" subcategory="waifu_cosplay" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" fireproof="true">
       <PreferredContainer primary="crewcab" />
       <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
       <Price baseprice="150" minavailable="1" sold="false">
@@ -387,7 +387,7 @@
       </Wearable>
     </Item>
     <!--亡蝶葬仪的赠礼-->
-    <Item name="" identifier="shengxuanhats" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,huskcult" description="" hideinmenus="false" scale="0.50">
+    <Item name="" identifier="shengxuanhats" subcategory="waifu_cosplay" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,huskcult" description="" hideinmenus="false" scale="0.50">
       <Price baseprice="100" sold="false" canbespecial="false">
         <Price storeidentifier="merchanthusk" minavailable="4" sold="true">
           <Reputation faction="huskcult" min="35" />

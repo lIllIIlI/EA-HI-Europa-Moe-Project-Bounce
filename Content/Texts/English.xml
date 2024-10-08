@@ -3,11 +3,21 @@
            nowhitespace="false"
            translatedname="English">
   <!-- Faction -->
+  <Override>
+    <faceattachment.hair>Decoration</faceattachment.hair>
+    <faceattachment.beard>Back Hair</faceattachment.beard>
+    <faceattachment.moustache>Front Hair</faceattachment.moustache>
+    <customization.haircolor>Decoration Color</customization.haircolor>
+    <customization.facialhaircolor>Hair Color</customization.facialhaircolor>
+  </Override>
   <faction.EAHI>East Asia Heavy Industries</faction.EAHI>
   <faction.EAHI.description>The precursor of Europa East Asia Heavy Industries, the most renowned conglomerate on Europa, was originally a research outpost affiliated with Earth's East Asia Heavy Industries. As Europa gradually lost contact with Earth, the former research station transformed into the largest mining machinery supplier on Europa, leveraging its legacy industrial mother machines. After the Tormsdale nuclear disaster, EAHI acquired the majority of uranium mines from the Europa Union at a remarkably low price, becoming the largest mining trust across all of Europa. Negative rumors about EAHI have always circulated in secret, but publicly, they are hailed as the cornerstone of the Union's prosperity. </faction.EAHI.description>
   <faction.EAHI.shortdescription>East Asia Heavy Industries is a massive corporation specializing in mining and engineering machinery manufacturing. It enjoys a high reputation across Europa and has extensive cooperation with the Europa Union. </faction.EAHI.shortdescription>
   <!-- Labels -->
-  <AnimatedBarotraumaClassic>[EA-HI]Animated Barotrauma Classic</AnimatedBarotraumaClassic>
+  <AnimatedBarotraumaClassic>[EA-HI]Animated Barotrauma + Custom</AnimatedBarotraumaClassic>
+  <subcategory.EAHI>EAHI</subcategory.EAHI>
+  <subcategory.EPSP>E.P.S. PUCS</subcategory.EPSP>
+
   <subcategory.waifu_cosplay>Cosplay</subcategory.waifu_cosplay>
   <subcategory.waifu_maid>Maid</subcategory.waifu_maid>
   <subcategory.waifu_tightswim>Swimsui\nTights</subcategory.waifu_tightswim>
@@ -16,10 +26,13 @@
   <!--override-->
   <entityname.alienblood>Alien Blood</entityname.alienblood>
   <entitydescription.alienbloodmod>Blood extracted from the body of a native species of Europa can be further processed into Blood products to treat blood loss. It can also be further purified into genes using stabilozine at the research bench.</entitydescription.alienbloodmod>
-  <entitydescription.mudraptorshellmod>Mudraptor Carapace Fragment. Can be fabricated into Exotic Matter and Mudraptor Headgear</entitydescription.mudraptorshellmod>
+  <entitydescription.mudraptorshellmod>Mudraptor Carapace Fragment. Can be broken down into Exotic Matter and Mudraptor Headgear</entitydescription.mudraptorshellmod>
   <entityname.mudraptorshell_head>Mudraptor Headgear</entityname.mudraptorshell_head>
   <entitydescription.mudraptorshell_head>A small fragment of Mudraptor's carapace, I don't know which part of Mudraptor it is.</entitydescription.mudraptorshell_head>
   <entityname.exotic_matter>Exotic Matter</entityname.exotic_matter>
+  <entitydescription.exotic_matter>Liquid extracted from alien creature shells.</entitydescription.exotic_matter>
+  <entityname.EAHI_serum>Exotic Matter Extraction Serum</entityname.EAHI_serum>
+  <entitydescription.EAHI_serum>Used to extract Exotic Matter from alien creature shells. Place it together with the alien creature shells in the EAI Portable Process Bench for extraction.</entitydescription.EAHI_serum>
   <!--entity-->
   <entityname.Wf_SaltedFish>Salted Fish Sword</entityname.Wf_SaltedFish>
   <entitydescription.Wf_SaltedFish>Rare Earth weapon, very easy to cause tear damage.</entitydescription.Wf_SaltedFish>
@@ -96,7 +109,7 @@
   <entityname.Wf_Admiral_Wakizashi_kai>Wakizashi-Kai</entityname.Wf_Admiral_Wakizashi_kai>
   <entitydescription.Wf_Admiral_Wakizashi_kai>A modernized Wakizashi using exotic materials capable of cutting through almost any monster's armor. But the high temperature will directly cauterize the wound, losing the ability to bleed.</entitydescription.Wf_Admiral_Wakizashi_kai>
   <entityname.Wf_Blame_harpoongun>Blame Harpoongun</entityname.Wf_Blame_harpoongun>
-  <entitydescription.Wf_Blame_harpoongun>Unidentified man-made objects brought back from the deep sea, the legendary electric-based fisherman's weapon, the harpoon launched through electromagnetic force has extremely high penetration power, and the attack power has been strengthened by 30%, which seems to be compatible with the standard batteries we use.</entitydescription.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun>Unidentified man-made objects brought back from the deep sea, the legendary electric-based fisherman's weapon, the harpoon launched through electromagnetic force has extremely high penetration power, and the attack power has been strengthened by 130%, which seems to be compatible with the standard batteries we use.</entitydescription.Wf_Blame_harpoongun>
   <entityname.Wf_Blame_spear>Blame Spear</entityname.Wf_Blame_spear>
   <entitydescription.Wf_Blame_spear>The legendary electric-based fisherman's weapon, it's extremely strong.</entitydescription.Wf_Blame_spear>
   <entityname.Wf_Blame_batterycell>Blame Battery Cell</entityname.Wf_Blame_batterycell>
@@ -128,11 +141,11 @@
   <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
   <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS.</entitydescription.Wf_pucs>
   <entityname.Wf_pucs_R>Combat EPSP</entityname.Wf_pucs_R>
-  <entitydescription.Wf_pucs_R>Targeted improved EPSP, using ballistic fiber to strengthen the defense against some attacks.</entitydescription.Wf_pucs_R>
+  <entitydescription.Wf_pucs_R>A targeted improvement of the EPSP, reinforced with bulletproof fibers to enhance defense against certain attacks.</entitydescription.Wf_pucs_R>
   <entityname.Wf_pucs_B>Deep Dive EPSP</entityname.Wf_pucs_B>
-  <entitydescription.Wf_pucs_B>This improved EPSP uses ballistic fiber and titanium-aluminum alloy to strengthen the defense. While maintaining excellent burn defense, it has the defense and pressure resistance of a standard abyss diving suit.</entitydescription.Wf_pucs_B>
+  <entitydescription.Wf_pucs_B>A targeted improvement of the EPSP, reinforced with bulletproof fibers and titanium-aluminum alloy to enhance defense. It maintains excellent burn protection while offering the defense and pressure resistance of standard abyssal diving suits.</entitydescription.Wf_pucs_B>
   <entityname.Wf_pucs_D>Special Operations EPSP</entityname.Wf_pucs_D>
-  <entitydescription.Wf_pucs_D>The targeted improved EPSP uses low-visibility paint and strengthens the defense against human weapons, and is equipped with small propellers to facilitate the rapid transfer of combatants outside the combat area.</entitydescription.Wf_pucs_D>
+  <entitydescription.Wf_pucs_D>A targeted improvement of the EPSP, uses low-visibility coating and strengthens the defense against human weapons, and is equipped with small propellers to facilitate the rapid transfer of combatants outside the combat area.</entitydescription.Wf_pucs_D>
   <epsp.light>Light</epsp.light>
   <epsp.lightandscooter>Light and Scooter</epsp.lightandscooter>
   <entityname.Wf_New_XDS-01>XDS-01</entityname.Wf_New_XDS-01>
@@ -231,36 +244,42 @@
   <entityname.Exotic_Armored_suit_head>Exotic Matter Armor - Helmet</entityname.Exotic_Armored_suit_head>
   <entitydescription.Exotic_Armored_suit_head>This is the helmet part of the suit, which is made of the alien material extracted from the biological carapace of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Armored_suit_head>
   <entityname.PrayerMio_uniform>HGIS</entityname.PrayerMio_uniform>
-  <entitydescription.PrayerMio_uniform>Experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Clothing part] "Contribution from Chiyo Mio, the up master of station b" (WIP)</entitydescription.PrayerMio_uniform>
+  <entitydescription.PrayerMio_uniform>Experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Clothing] "Contribution from Chiyo Mio, from BiLibiLi" (WIP)</entitydescription.PrayerMio_uniform>
   <entityname.PrayerMio_hat>Prism</entityname.PrayerMio_hat>
-  <entitydescription.PrayerMio_hat>The experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Crown ring part] "Contribution from Chiyo Mio, the up master of station b" (WIP)</entitydescription.PrayerMio_hat>
-  <entityname.IronArmourPlus>Armor but better I guess</entityname.IronArmourPlus>
-  <entitydescription.IronArmourPlus>After some bored crew forged the Mechanic's makeshift armor. Don't think this is cool? It fits my vision of a Europa submarine in the 22nd century. (WIP)</entitydescription.IronArmourPlus>
+  <entitydescription.PrayerMio_hat>The experimental protective clothing and matching armor used by the Mars UAC Research Institute for subspace exploration research. A high-performance suit designed to protect the wearer in harsh environments. [Halo] "Contribution from Chiyo Mio, from BiLibiLi" (WIP)</entitydescription.PrayerMio_hat>
+  <entityname.IronArmourPlus>Reinforced Light Armor</entityname.IronArmourPlus>
+  <entitydescription.IronArmourPlus>Lightweight armor reinforced with steel plates, from the EAHI's EARTH Series</entitydescription.IronArmourPlus>
+  <entityname.Senshi>Senshi Garb</entityname.Senshi>
+  <entitydescription.Senshi>A lightweight and flexible Asian style warrior robe, from EAHI's EARTH Series. Raise weapon damage by 20% on wearing.</entitydescription.Senshi>
   <!--EA-HI item-->
   <entityname.EAHI_pucs>[EA-HI] InvisiPUCS</entityname.EAHI_pucs>
+  <entityname.i_Wf_pucs>[EA-HI] InvisiPUCS</entityname.i_Wf_pucs>
   <entitydescription.EAHI_pucs>East Asia Heavy Industries PUCS, using the next generation outrageous technology, to prevent your beautiful face and slender legs from being covered. An integrated compressor automatically extracts oxygen from the air. Withstand up to 8000 meters of water pressure.</entitydescription.EAHI_pucs>
   <entityname.EAHI_toolbelt>Toolbelt (Invisible)</entityname.EAHI_toolbelt>
-  <entityname.EAHI_autoinjectorheadset>[EA-HI] Self-Injecting Headset</entityname.EAHI_autoinjectorheadset>
-  <entitydescription.EAHI_autoinjectorheadset>The Integrated Self-Injection Headset developed by East Asia Heavy Industries has a health scanner function and a built-in authority simulation system that can crack most types of encryption.</entitydescription.EAHI_autoinjectorheadset>
+  <entityname.EAHI_autoinjectorheadset>[EA-HI] Auto-Injecting Headset</entityname.EAHI_autoinjectorheadset>
+  <entitydescription.EAHI_autoinjectorheadset>The Integrated Auto-Injection Headset developed by East Asia Heavy Industries has a health scanner function and a built-in authority simulation system that can crack most types of encryption.</entitydescription.EAHI_autoinjectorheadset>
   <entityname.EAHI_kuorongbag>[EA-HI] Prototype Expansion Pack</entityname.EAHI_kuorongbag>
   <entitydescription.EAHI_kuorongbag>The general expansion package developed by East Asia Heavy Industries was cut in half due to infringement issues. A small pouch that can be installed in the inventory, and can also be loaded into a gun to increase the charge capacity of revolvers, harpoons, shotguns, hand cannons, and stun guns</entitydescription.EAHI_kuorongbag>
   <entityname.EAHI_handheldsonar>[EA-HI] Advanced Sonar</entityname.EAHI_handheldsonar>
   <entitydescription.EAHI_handheldsonar>High-power sonar, can penetrate the hull of the submarine, a must for gunners</entitydescription.EAHI_handheldsonar>
-  <entityname.EAHI_duogongnengtool>[EA-HI] Prototype Multi-Tool</entityname.EAHI_duogongnengtool>
-  <entitydescription.EAHI_duogongnengtool>The multi-function tool developed by East Asia Heavy Industries has stopped production due to the high cost. This tool is a screwdriver, wrench, welding tool, mining tool all in one. Powered by high pressure gas. Note: AI cannot use</entitydescription.EAHI_duogongnengtool>
+  <entityname.EAHI_duogongnengtool>[EA-HI] Prototype Multi-Sprayer</entityname.EAHI_duogongnengtool>
+  <entitydescription.EAHI_duogongnengtool>A multi-function sprayer developed by East Asia Heavy Industries. Ingenious mechanical design enables cutting flames when an oxygen tank is inserted and welding operations when a welding fuel tank is used.</entitydescription.EAHI_duogongnengtool>
   <entityname.teleportine>[EA-HI] Teleportine</entityname.teleportine>
   <entitydescription.teleportine>This vial is distributed by East Asia Heavy Industries to the liaison officers. Upon injury it will quickly teleport them to a safe place.</entitydescription.teleportine>
   <entityname.exotic_matter>Exotic matter</entityname.exotic_matter>
   <entitydescription.exotic_matter>Exotic matter extracted from Europa's bio-carapace possesses rather ingenious properties.</entitydescription.exotic_matter>
   <entityname.EAHI_license_oneoff>Master Blueprint - [type]</entityname.EAHI_license_oneoff>
   <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of East Asia Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
-  <!--Talent-->
-  <talentname.wf_researcher></talentname.wf_researcher>
+  <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of Dongya Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
+  <entityname.EAHI_laserpointer>Laser Pointer</entityname.EAHI_laserpointer>
+  <entitydescription.EAHI_laserpointer>Slightly reduces weapon spread when activated.</entitydescription.EAHI_laserpointer>
+  <entityname.otfx_wrenchscrewdrivertwoinone>Wrench-Screwdriver 2-in-1 Tool</entityname.otfx_wrenchscrewdrivertwoinone>
+  <entitydescription.otfx_wrenchscrewdrivertwoinone>When equipped, double right-click to switch between wrench and screwdriver modes.</entitydescription.otfx_wrenchscrewdrivertwoinone>
   <!--AFF-->
   <Builder.Msg.Detach>[[use]] Detatch</Builder.Msg.Detach>
   <!--eventtext-->
   <EventText.missionevent_EAHI1.c1>Loafer[EA-HI Liaison Officer]: Zzz. This is your task, don't disturb my sleep.</EventText.missionevent_EAHI1.c1>
-  <EventText.missionevent_EAHI2.c1>Brynhild [EA-HI Delegate]: Are you here to accept the contract? OK, there are two tasks here.</EventText.missionevent_EAHI2.c1>
+  <EventText.missionevent_EAHI2.c1>Brynhild [EA-HI Delegate]: Are you here to accept the contract? OK, there are a few tasks here.</EventText.missionevent_EAHI2.c1>
   <EventText.missionevent_XML.c1>The liaison said that recently a group of particularly ferocious Mudraptors was attacking ships traveling in the waterway, seriously affecting the interests of the company. [reward]mk has been promised to those who annihilate this horde of monsters. "</EventText.missionevent_XML.c1>
   <EventText.missionevent_PP.c1>Several Crawler Mother leads hordes of crawlers to attack ships in the channel. East Asia Heavy Industries promises to give [reward]mk rewards to those who annihilate this group of monsters.</EventText.missionevent_PP.c1>
   <EventText.missionevent_HF.c1>A large number of golden hammerheads are entrenched in the waterway, seriously affecting the transportation of people and goods. East Asia Heavy Industries is offering a reward [reward]mk to all free captains in order to solve this problem.</EventText.missionevent_HF.c1>

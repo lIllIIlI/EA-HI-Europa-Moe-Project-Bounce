@@ -253,7 +253,7 @@
       <Item identifier="organicfiber" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/Content/Items/New/OutfitIcons_1.png" sourcerect="128,27,128,101" origin="0.5,0.5" />
-    <Sprite name="JWsuit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="1,8,120,59" depth="0.6" origin="0.5,0.5" color="25,10,10,120"/>
+    <Sprite name="JWsuit" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="1,8,120,59" depth="0.6" origin="0.5,0.5" color="25,10,10,120" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="JWsuit Torso" texture="bulletproofsuit_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

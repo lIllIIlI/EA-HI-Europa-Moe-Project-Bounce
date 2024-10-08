@@ -82,7 +82,7 @@
       <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="0" />
     </Price>
     <Deconstruct time="15">
-      <Item identifier="titaniumaluminiumalloy"/>
+      <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="steel" />
       <Item identifier="rubber" />
     </Deconstruct>

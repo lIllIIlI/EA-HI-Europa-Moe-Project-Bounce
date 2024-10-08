@@ -92,7 +92,7 @@
       </ItemContainer>
     </Item>
     <!--修改贴图-->
-    <Item name="" identifier="divingsuit" category="Diving,Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="divingsuit" category="Diving" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="1" cargocontaineridentifier="" >
       <Price baseprice="250">
         <Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="2" />
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="4" />
@@ -101,6 +101,7 @@
         <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="5" />
       </Price>
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="1" />
+      <PreferredContainer primary="piratedivingsuitcontainer" spawnprobability="1" maxleveldifficulty="35" />
       <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.1" />
       <Deconstruct time="30">
         <Item identifier="titaniumaluminiumalloy" />
@@ -203,7 +204,7 @@
       <aitarget maxsightrange="1500" />
     </Item>
     <!--修改贴图-->
-    <Item name="" identifier="abyssdivingsuit" category="Diving,Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="abyssdivingsuit" category="Diving" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.9" cargocontaineridentifier="">
       <Price baseprice="550" minleveldifficulty="35">
         <Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="1" />
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="2" />
@@ -212,7 +213,7 @@
         <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="2" />
       </Price>
       <PreferredContainer primary="divingsuitcontainer" />
-      <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.05" />
+      <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.05" minleveldifficulty="50" />
       <PreferredContainer primary="piratedivingsuitcontainer" spawnprobability="1" minleveldifficulty="50" />
       <Deconstruct time="30">
         <Item identifier="titaniumaluminiumalloy" />
@@ -263,7 +264,8 @@
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
           <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
-          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />        </StatusEffect>
+          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />
+          </StatusEffect>
           <!-- Refill oxygen when the suit is contained. -->
           <StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
             <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
@@ -290,8 +292,8 @@
           <Conditional IsDead="false" />
           <RequiredItem items="oxygenitetank" type="Contained" />
         </StatusEffect>
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" damagesound="" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       </Wearable>
@@ -312,7 +314,7 @@
       <aitarget maxsightrange="1500" />
     </Item>
     <!--修改贴图-->
-    <Item name="" identifier="combatdivingsuit" category="Diving,Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="combatdivingsuit" category="Diving" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2" cargocontaineridentifier="">
       <Price baseprice="560" minleveldifficulty="35">
         <Price storeidentifier="merchantoutpost" sold="false" multiplier="0.9" />
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="2" sold="false" />
@@ -323,7 +325,7 @@
       </Price>
       <PreferredContainer primary="divingsuitcontainer" />
       <PreferredContainer primary="piratedivingsuitcontainer" spawnprobability="1" minleveldifficulty="35" />
-      <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.05" />
+      <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.05" minleveldifficulty="35" />
       <Deconstruct time="30">
         <Item identifier="ballisticfiber" />
         <Item identifier="titaniumaluminiumalloy" />
@@ -370,7 +372,7 @@
         <sprite name="Combat Diving Suit Left Leg" texture="combat_DivingSuit_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Combat Diving Suit Left Shoe" texture="combat_DivingSuit_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Combat Diving Suit Right Shoe" texture="combat_DivingSuit_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Combat Diving Suit Boobs" texture="combat_DivingSuit_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true"  inheritsourcerect="true"/>
+        <sprite name="Combat Diving Suit Boobs" texture="combat_DivingSuit_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true"  inheritsourcerect="true" />
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
         <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="5750.0" SpeedMultiplier="0.95" PropulsionSpeedMultiplier="1.4" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
@@ -404,7 +406,7 @@
           <Conditional IsDead="false" />
           <RequiredItem items="oxygenitetank" type="Contained" />
         </StatusEffect>
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" damagesound="" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
@@ -427,7 +429,7 @@
     </Item>
 
     
-    <Item name="" identifier="respawndivingsuit" category="Diving,Equipment" tags="diving,deepdiving,provocative,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="respawndivingsuit" category="Diving" tags="diving,deepdiving,human,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
       <Deconstruct time="1" />
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,832,128,128" origin="0.5,0.5" />
       <Sprite name="Respawn Diving Suit Item" texture="%ModDir%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
@@ -466,7 +468,7 @@
         <sprite name="Respawn Diving Suit Left Leg" texture="RespawnSuit_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Respawn Diving Suit Left Shoe" texture="RespawnSuit_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Respawn Diving Suit Right Shoe" texture="RespawnSuit_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Respawn Diving Suit Boobs" texture="RespawnSuit_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true"  inheritsourcerect="true"/>
+        <sprite name="Respawn Diving Suit Boobs" texture="RespawnSuit_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true"  inheritsourcerect="true" />
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
         <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PropulsionSpeedMultiplier="0.85" setvalue="true" disabledeltatime="true">
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
@@ -506,7 +508,7 @@
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
       <aitarget maxsightrange="1500" />
     </Item>
-    <Item name="" identifier="brokendivingsuit" category="Diving,Equipment" tags="diving,deepdiving,human" scale="0.5" fireproof="false" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="">
+    <Item name="" identifier="brokendivingsuit" category="Diving" tags="deepdiving,human" scale="0.5" fireproof="false" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="">
       <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.1" maxleveldifficulty="100" />
       <Deconstruct time="15" chooserandom="true" amount="1">
         <Item identifier="titanium" commonness="60" />
@@ -575,7 +577,7 @@
           <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.09, 0.47" size="1.0,1.0" />
         </LightComponent>
       </sprite>
-      <sprite name="Exosuit Torso" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Torso" scale="1" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.77,0.4" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="325,106,152,269"/>
+      <sprite name="Exosuit Torso" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Torso" scale="1" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.77,0.4" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="325,106,152,269" />
       <sprite name="Clown Exosuit Right Hand" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="544,288,24,40" origin="0.47,0.59" />
       <sprite name="Clown Exosuit Left Hand" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="608,288,24,40" origin="0.47,0.59" />
       <sprite name="Clown Exosuit Right Upper Arm" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="540,98,27,76" origin="0.5,0.59" />
@@ -594,8 +596,8 @@
 <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
       <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVisionAmount="0.5" PressureProtection="7000.0" setvalue="true" disabledeltatime="true">
-        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true"/>
-        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
         <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
       </StatusEffect>
@@ -616,8 +618,8 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, bleeding" damagemultiplier="0.25" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" probabilitymultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.1" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.1" damagesound="LimbArmor" />
       <StatValue stattype="FlowResistance" value="0.9" />
       <StatValue stattype="PropulsionSpeed" value="-0.5" />
     </Wearable>
@@ -625,8 +627,8 @@
     <RangedWeapon barrelpos="29,11" spread="5" unskilledspread="5" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.1" suitableprojectiles="bananapeelprojectile">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="All"/>
-      <Sound file="Content/Items/Weapons/honk.ogg" type="OnUse" selectionmode="All"/>
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="All" />
+      <Sound file="Content/Items/Weapons/honk.ogg" type="OnUse" selectionmode="All" />
       <ParticleEmitter particle="explosionsmoke" particleamount="5" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse" target="This">
         <SpawnItem identifier="bananapeelprojectile" spawnposition="ThisInventory" count="1" />
@@ -643,7 +645,7 @@
       <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
         <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
         <Conditional condition="lte 0.0" />
-        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
       </StatusEffect>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="oxygensource,weldingtoolfuel" />
@@ -656,7 +658,7 @@
           </StatusEffect>
           <StatusEffect type="OnWearing" target="Contained">
             <Conditional condition="lt 5.0" />
-            <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true"/>
+            <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true" />
           </StatusEffect>
         </Containable>
         <Containable items="oxygenitetank">
@@ -714,7 +716,7 @@
         <StatusEffect type="OnUse" duration="5" target="NearbyCharacters" targetidentifiers="human" range="500" setvalue="true" stackable="false" conditionalcomparison="And" CheckConditionalAlways="true">
           <RequiredItem items="reactorfuel" type="Contained" />
           <Conditional HasStatusTag="!equals clown" />
-          <Conditional TeamID="FriendlyNPC"/>
+          <Conditional TeamID="FriendlyNPC" />
           <TriggerEvent identifier="clownhaven_progress" />
         </StatusEffect>
         <StatusEffect type="OnUse" duration="5" target="Limb,This" targetlimbs="Torso" range="500" camerashake="5" setvalue="true" stackable="false" CheckConditionalAlways="true">

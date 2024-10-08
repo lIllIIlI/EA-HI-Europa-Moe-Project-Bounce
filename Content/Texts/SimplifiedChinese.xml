@@ -2,12 +2,70 @@
 <infotexts language="Simplified Chinese"
            nowhitespace="true"
            translatedname="中文（简体）">
+  <!-- Customization -->
+  <Override>
+    <faceattachment.hair>头饰</faceattachment.hair>
+    <faceattachment.beard>后发</faceattachment.beard>
+    <faceattachment.moustache>前发</faceattachment.moustache>
+    <faceattachment.accessories>面部装饰</faceattachment.accessories>
+    <customization.haircolor>头饰颜色</customization.haircolor>
+    <customization.facialhaircolor>头发颜色</customization.facialhaircolor>
+  </Override>
+  <!-- Display name -->
+  <displayname.ChangeMode>[itemname] (改变模式)</displayname.ChangeMode>
   <!-- Faction -->
   <faction.EAHI>東亞重工</faction.EAHI>
   <faction.EAHI.description>在木卫二最知名的欧罗巴东亚重工集团的前身是隶属于地球东亚重工的科研前哨站，随着木卫二逐渐和地球断开联系，曾经的科研站凭借遗留下的工业母机摇身一变成为木卫二最大的矿务机械供应商。在托姆斯戴尔核灾难之后，东亚重工以极低的价格从木卫二联盟收购了绝大多数的铀矿场，成为了全欧罗巴最大的矿业托拉斯。有关东亚重工的负面消息一直在暗地流传，但是明面上，他们被称为联盟富强的基石。</faction.EAHI.description>
   <faction.EAHI.shortdescription>东亚重工是一个主营矿业和工程器械制造业的巨型企业，在全木卫二享有很高的声誉，并与木卫二联盟展开广泛的合作。</faction.EAHI.shortdescription>
   <EAHI_Welcommessage></EAHI_Welcommessage>
+  <entityname.EAHI_LiaisonCommunicator>東亞重工联络员通讯器</entityname.EAHI_LiaisonCommunicator>
+  <entitydescription.EAHI_LiaisonCommunicator>使用无线电的联络员通讯器, 因此在定居点外无法拨通, 每拨打一次需要重新充电. 由于近期盗用身份实施诈骗案件频发, 东亚重工要求客户插入ID用以识别身份.</entitydescription.EAHI_LiaisonCommunicator>
+  <charactername.MerchantEAHI>東亞重工经销商</charactername.MerchantEAHI>
+
+  <itemmsgweldingfueloroxygensourcerequired>需要焊接油料或氧气罐</itemmsgweldingfueloroxygensourcerequired>
+  <idcardrequired>需要ID卡</idcardrequired>
+  <itemmsgequiporpickupuse>装备[[use]]</itemmsgequiporpickupuse>
+  <!-- Event -->
+  <EventText.EAHI.WIP>抱歉, 系统正在开发中, 暂时不提供该服务 </EventText.EAHI.WIP>
+  <EventText.EAHI.Liaison.Menu>您好，欢迎致电东亚重工联络中心自助语音服务，请问有什么可以帮助你的吗？</EventText.EAHI.Liaison.Menu>
+  <EventText.EAHI.Liaison.Merchant>购买商品</EventText.EAHI.Liaison.Merchant>
+  <EventText.EAHI.Liaison.MerchantComing>欢迎致电东亚重工销售部, 已为您联系了当地经销商, 她会在半分钟内抵达[location]的气闸处. </EventText.EAHI.Liaison.MerchantComing>
+  <EventText.EAHI.Liaison.MerchantNotAvailable>抱歉, [location]的经销商目前正在服务其他客户而无法抵达. 如果您支付200马克, 在您下一次致电的时候本地经销商将优先为您服务. 请问您想要购买该服务吗?</EventText.EAHI.Liaison.MerchantNotAvailable>
+  <EventText.EAHI.Liaison.ReserveMerchant>支付200马克</EventText.EAHI.Liaison.ReserveMerchant>
+  <EventText.EAHI.Liaison.MerchantReserved>支付成功, 祝您今天过得愉快, 再见.</EventText.EAHI.Liaison.MerchantReserved>
+  <EventText.EAHI.Liaison.DontHaveEnoughMoney>支付失败, 您并没有足够的钱来支付. 我们向全欧罗巴自由船长提供奖励丰厚的委托, 如您需要金钱, 欢迎下次致电接取委托服务, 祝您有美好的一天, 再见. </EventText.EAHI.Liaison.DontHaveEnoughMoney>
+  <EventText.EAHI.Liaison.DontReserve>不购买这个服务</EventText.EAHI.Liaison.DontReserve>
+  <EventText.EAHI.Liaison.MerchantnotReserved>好的. 我们向全欧罗巴自由船长提供奖励丰厚的委托, 如您需要金钱, 欢迎下次致电接取委托服务, 祝您有美好的一天, 再见.</EventText.EAHI.Liaison.MerchantnotReserved>
+  <EventText.EAHI.Liaison.Mission>接取委托</EventText.EAHI.Liaison.Mission>
+  <EventText.EAHI.Liaison.MissionTypeSelect>欢迎致电东亚重工委托服务处, 请问您想要接取哪种类型的委托? 我们给高社会信用分的可信赖客户提供奖励更高的委托. </EventText.EAHI.Liaison.MissionTypeSelect>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Delivery>随机委托</EventText.EAHI.Liaison.MissionTypeSelect.Delivery>
+  <!-- <EventText.EAHI.Liaison.MissionTypeSelect.Delivery>货运任务</EventText.EAHI.Liaison.MissionTypeSelect.Delivery> -->
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply-30-0>好的, 委托内容已发送, 祝您有美好的一天, 再见. </EventText.EAHI.Liaison.MissionTypeSelect.Reply-30-0>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply0-30>好的, 委托内容已发送, 祝您有美好的一天, 再见. </EventText.EAHI.Liaison.MissionTypeSelect.Reply0-30>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply30-60>好的, 委托内容已发送, 祝您有美好的一天, 再见. </EventText.EAHI.Liaison.MissionTypeSelect.Reply30-60>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply60-90>好的, 委托内容已发送, 祝您有美好的一天, 再见. </EventText.EAHI.Liaison.MissionTypeSelect.Reply60-90>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply90-100>好的, 委托内容已发送, 祝您有美好的一天, 再见. </EventText.EAHI.Liaison.MissionTypeSelect.Reply90-100>
+  <EventText.EAHI.Liaison.MissionNotAvailable>很抱歉, 由于竞争激烈, [location]当前并没有可用委托. 如果您支付200马克, 在您下一次致电的时候我们将优先为您匹配委托. 请问您想要购买该服务吗? </EventText.EAHI.Liaison.MissionNotAvailable>
+  <EventText.EAHI.Liaison.ReserveMission>支付200马克</EventText.EAHI.Liaison.ReserveMission>
+  <EventText.EAHI.Liaison.MissionReserved>支付成功, 祝您今天过得愉快, 再见.</EventText.EAHI.Liaison.MissionReserved>
+  <EventText.EAHI.Liaison.ClaimPoints>兑换EAI Points</EventText.EAHI.Liaison.ClaimPoints>
+  <EventText.EAHI.Liaison.complaint>售后和投诉服务</EventText.EAHI.Liaison.complaint>
+  <EventText.EAHI.Liaison.Quit>挂断</EventText.EAHI.Liaison.Quit>
+  <EventText.EAHI.Liaison.Wait5min>很抱歉, 由于服务繁忙, 自助服务暂时不可用, 请等待5分钟后再次拨打. </EventText.EAHI.Liaison.Wait5min>
+  <EventText.EAHI.Liaison.CoporatePolice>记录显示您多次做出损害公司利益的行为, 我们认为您是公司繁荣的严重障碍, 现派出公司警察进行压制工作. </EventText.EAHI.Liaison.CoporatePolice>
+
+  <!-- Portable Process Brench -->
+  <entityname.EAHI_ProcessBrench>东亚重工便携式加工台</entityname.EAHI_ProcessBrench>
+  <entitydescription.EAHI_ProcessBrench>放置在平面上使用，可背起。使用燃料罐供能。</entitydescription.EAHI_ProcessBrench>
+  <EAHI_ProcessBrench.Process>加工</EAHI_ProcessBrench.Process>
+  <EAHI_ProcessBrench.empty.infotext>放入物品进行加工作业。本加工台使用燃料油罐充能。</EAHI_ProcessBrench.empty.infotext>
+  <EAHI_ProcessBrench.extract.infotext>提取</EAHI_ProcessBrench.extract.infotext>
+  <EAHI_ProcessBrench.missingitem>已放入提取液。需要异星生物甲壳。</EAHI_ProcessBrench.missingitem>
+  <EAHI_ProcessBrench.Process.infotext>准备提取异星物质</EAHI_ProcessBrench.Process.infotext>
+  
   <!-- Labels -->
+  <subcategory.EAHI>EAHI</subcategory.EAHI>
+  <subcategory.EPSP>E.P.S. PUCS</subcategory.EPSP>
   <subcategory.waifu_cosplay>Cosplay</subcategory.waifu_cosplay>
   <subcategory.waifu_maid>Maid</subcategory.waifu_maid>
   <subcategory.waifu_tightswim>Swimsui\nTights</subcategory.waifu_tightswim>
@@ -21,25 +79,28 @@
   <entitydescription.mudraptorshell_head>一小片迅猛龙甲壳碎片，也不知道是迅猛龙的哪个部位。</entitydescription.mudraptorshell_head>
   <entityname.exotic_matter>异星物质</entityname.exotic_matter>
   <entitydescription.exotic_matter>从异星生物甲壳中提取出的液体。</entitydescription.exotic_matter>
+  <entitydescription.mudraptorshell_head>一小片迅猛龙甲壳碎片，也不知道是迅猛龙的哪个部位。</entitydescription.mudraptorshell_head>
+  <entityname.EAHI_serum>异星物质提取液</entityname.EAHI_serum>
+  <entitydescription.EAHI_serum>用于从异星生物的甲壳中提取异星物质。\n和异星生物甲壳一起放入东亚重工便携式加工台中提取。</entitydescription.EAHI_serum>
   <!--entity-->
   <entityname.Wf_SaltedFish>咸鱼大剑</entityname.Wf_SaltedFish>
-  <entitydescription.Wf_SaltedFish>罕见的地球武器，极易造成撕裂伤</entitydescription.Wf_SaltedFish>
+  <entitydescription.Wf_SaltedFish>罕见的地球武器，极易造成撕裂伤. 双击右键进入'咸鱼突刺'状态, 期间移动速度和近战攻击力大幅度提升. 属于东亚重工EARTH系列.</entitydescription.Wf_SaltedFish>
   <entityname.Wf_Admiral_Katana>太刀</entityname.Wf_Admiral_Katana>
-  <entitydescription.Wf_Admiral_Katana>地球东方国家的一种近战武器，十分容易造成流血</entitydescription.Wf_Admiral_Katana>
+  <entitydescription.Wf_Admiral_Katana>地球东方国家的一种近战武器，十分容易造成流血. </entitydescription.Wf_Admiral_Katana>
   <entityname.Wf_Admiral_Wakizashi>胁差</entityname.Wf_Admiral_Wakizashi>
   <entitydescription.Wf_Admiral_Wakizashi>地球东方国家的一种近战武器，比太刀要短</entitydescription.Wf_Admiral_Wakizashi>
   <entityname.Wf_Admiral_Katana_kai>热能太刀</entityname.Wf_Admiral_Katana_kai>
-  <entitydescription.Wf_Admiral_Katana_kai>使用异星材料的现代化改进的太刀，几乎能够切开任何怪物的护甲。但是高温会将伤口直接愈合，失去了出血能力</entitydescription.Wf_Admiral_Katana_kai>
+  <entitydescription.Wf_Admiral_Katana_kai>使用异星材料的现代化改进的太刀，几乎能够切开任何怪物的护甲。但是高温会将伤口直接愈合，失去了出血能力. 属于东亚重工EARTH系列.</entitydescription.Wf_Admiral_Katana_kai>
   <entityname.Wf_Admiral_Wakizashi_kai>热能胁差</entityname.Wf_Admiral_Wakizashi_kai>
-  <entitydescription.Wf_Admiral_Wakizashi_kai>使用异星材料现代化改进的胁差，几乎能够切开任何怪物的护甲。但是高温会将伤口直接愈合，失去了出血能力</entitydescription.Wf_Admiral_Wakizashi_kai>
+  <entitydescription.Wf_Admiral_Wakizashi_kai>使用异星材料现代化改进的胁差，几乎能够切开任何怪物的护甲。但是高温会将伤口直接愈合，失去了出血能力. 属于东亚重工EARTH系列.</entitydescription.Wf_Admiral_Wakizashi_kai>
   <entityname.Wf_Blame_harpoongun>电基鱼叉发射器</entityname.Wf_Blame_harpoongun>
-  <entitydescription.Wf_Blame_harpoongun>深海中带回的不明人造物品，传说中电基渔师的武器，透过电磁力发射的鱼叉具有极高的穿透力，攻击力加强了30%，似乎兼容我们使用的标准电池。</entitydescription.Wf_Blame_harpoongun>
+  <entitydescription.Wf_Blame_harpoongun>深海中带回的不明人造物品，传说中电基渔师的武器，透过电磁力发射的鱼叉具有极高的穿透力，攻击力加强了130%，似乎兼容我们使用的标准电池。</entitydescription.Wf_Blame_harpoongun>
   <entityname.Wf_Blame_spear>电基鱼叉</entityname.Wf_Blame_spear>
   <entitydescription.Wf_Blame_spear>传说中电基渔师的武器，硬度极高</entitydescription.Wf_Blame_spear>
   <entityname.Wf_Blame_batterycell>电基鱼叉发射器电池</entityname.Wf_Blame_batterycell>
-  <entitydescription.Wf_Blame_batterycell>电基鱼叉发射器配套的电池，无法兼容我们的电器与充电器，仅供电基鱼叉发射器使用</entitydescription.Wf_Blame_batterycell>
+  <entitydescription.Wf_Blame_batterycell>电基鱼叉发射器配套的电池，无法兼容我们的电器与充电器，仅供电基鱼叉发射器使用. 一次性使用. </entitydescription.Wf_Blame_batterycell>
   <entityname.Wf_Blame_G.B.E>重力子放射线射出装置</entityname.Wf_Blame_G.B.E>
-  <entitydescription.Wf_Blame_G.B.E>重力子放射线射出装置(Graviton Beam Emitter)，深海中发现的一种极为罕见的不明武器，造型类似于手枪，根据剩余电量可以射出不同威力的重力子放射线，并在放射线末端产生一个吸引周围物体的重力爆炸。不论哪一种电量下发射出的重力子放射线都拥有无与伦比的威力，需谨慎使用</entitydescription.Wf_Blame_G.B.E>
+  <entitydescription.Wf_Blame_G.B.E>重力子放射线射出装置(Graviton Beam Emitter)，深海中发现的一种极为罕见的不明武器，造型类似于手枪，根据剩余电量可以射出不同威力的重力子放射线，并在放射线末端产生一个吸引周围物体的重力爆炸。不论哪一种电量下发射出的重力子放射线都拥有无与伦比的威力，需谨慎使用 (不可充能, 但可作为材料制作重力子放射线手枪)</entitydescription.Wf_Blame_G.B.E>
   <entityname.Wf_G.B.E_batterycell>G.B.E能量单元</entityname.Wf_G.B.E_batterycell>
   <entitydescription.Wf_G.B.E_batterycell>重力子放射线射出装置的能量单元，无法兼容我们的电器与充电器，仅供重力子放射线射出装置使用</entitydescription.Wf_G.B.E_batterycell>
   <entityname.Wf_G.B.E_kai>微量重力子放射线手枪</entityname.Wf_G.B.E_kai>
@@ -52,14 +113,22 @@
   <entitydescription.Wf_G.B.E_beam_m>一些重力子</entitydescription.Wf_G.B.E_beam_m>
   <entityname.Wf_G.B.E_beam_b>大量重力子</entityname.Wf_G.B.E_beam_b>
   <entitydescription.Wf_G.B.E_beam_b>大量重力子</entitydescription.Wf_G.B.E_beam_b>
-  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
+  <entityname.Wf_pucs>实验性压力稳定PUCS (EPSP)</entityname.Wf_pucs>
   <entitydescription.Wf_pucs>实验性压力稳定PUCS（Experimental Pressure Stabilized PUCS）：使用实验性技术，将压力稳定剂替代厚重外壳的潜水服，与普通PUCS相比拥有更好的视野与机动性。</entitydescription.Wf_pucs>
-  <entityname.Wf_pucs_R>战斗型EPSP</entityname.Wf_pucs_R>
+  <entityname.Wf_pucs_R>战斗型 EPSP</entityname.Wf_pucs_R>
   <entitydescription.Wf_pucs_R>针对性改进型EPSP，使用防弹纤维强化了抵御部分攻击的防御力。</entitydescription.Wf_pucs_R>
-  <entityname.Wf_pucs_B>深潜型EPSP</entityname.Wf_pucs_B>
+  <entityname.Wf_pucs_B>深潜型 EPSP</entityname.Wf_pucs_B>
   <entitydescription.Wf_pucs_B>针对性改进型EPSP，使用防弹纤维与钛铝合金强化了防御力，在保持了优秀烧伤防御的同时拥有标准深渊潜水服的防御力与压力抵抗。</entitydescription.Wf_pucs_B>
-  <entityname.Wf_pucs_D>特种作战EPSP</entityname.Wf_pucs_D>
+  <entityname.Wf_pucs_D>特种作战 EPSP</entityname.Wf_pucs_D>
   <entitydescription.Wf_pucs_D>针对性改进型EPSP，使用了低可见性涂装并针对性对人类武器强化了防御力，并配备了小型推进器以便作战人员在作战区域外快速转移。</entitydescription.Wf_pucs_D>
+  <entityname.i_Wf_pucs>隐形版 实验性压力稳定PUCS (EPSP)</entityname.i_Wf_pucs>
+  <entitydescription.i_Wf_pucs>实验性压力稳定PUCS（Experimental Pressure Stabilized PUCS）：使用实验性技术，将压力稳定剂替代厚重外壳的潜水服，与普通PUCS相比拥有更好的视野与机动性。</entitydescription.i_Wf_pucs>
+  <entityname.i_Wf_pucs_R>隐形版 战斗型 EPSP</entityname.i_Wf_pucs_R>
+  <entitydescription.i_Wf_pucs_R>针对性改进型EPSP，使用防弹纤维强化了抵御部分攻击的防御力。</entitydescription.i_Wf_pucs_R>
+  <entityname.i_Wf_pucs_B>隐形版 深潜型 EPSP</entityname.i_Wf_pucs_B>
+  <entitydescription.i_Wf_pucs_B>针对性改进型EPSP，使用防弹纤维与钛铝合金强化了防御力，在保持了优秀烧伤防御的同时拥有标准深渊潜水服的防御力与压力抵抗。</entitydescription.i_Wf_pucs_B>
+  <entityname.EAHI_pucs>隐形版 特种作战 EPSP</entityname.EAHI_pucs>
+  <entitydescription.EAHI_pucs>针对性改进型EPSP，使用了低可见性涂装并针对性对人类武器强化了防御力，并配备了小型推进器以便作战人员在作战区域外快速转移。</entitydescription.EAHI_pucs>
   <epsp.light>灯光</epsp.light>
   <epsp.lightandscooter>灯光与推进器</epsp.lightandscooter>
   <!-- 三神丘 -->
@@ -92,9 +161,9 @@
   <entityname.Kaltsituniform>罗德岛医疗主管服装</entityname.Kaltsituniform>
   <entitydescription.Kaltsituniform>"doctor?"</entitydescription.Kaltsituniform>
   <entityname.skyfireuniform>罗德岛首席术师服装</entityname.skyfireuniform>
-  <entitydescription.skyfireuniform>"战场的温度太低了。"（WIP）</entitydescription.skyfireuniform>
+  <entitydescription.skyfireuniform>"战场的温度太低了。"</entitydescription.skyfireuniform>
   <entityname.skyfireswimsuit>温差 RT.RX01☆天火</entityname.skyfireswimsuit>
-  <entitydescription.skyfireswimsuit>"请不要将泳衣靠近明火。"（WIP）</entitydescription.skyfireswimsuit>
+  <entitydescription.skyfireswimsuit>"请不要将泳衣靠近明火。"</entitydescription.skyfireswimsuit>
   <entityname.shengxuanuniform>圣宣</entityname.shengxuanuniform>
   <entitydescription.shengxuanuniform>“用蝴蝶为那些长眠的人们献上哀悼”\n这件衣服可以激发画皮寄生虫的自愈能力，同时又让它们处于休眠状态。</entitydescription.shengxuanuniform>
   <entityname.shengxuanhats>亡蝶葬仪的赠礼</entityname.shengxuanhats>
@@ -129,34 +198,38 @@
   <entitydescription.maidclothes2>黑色是容易引人遐想的颜色，就像深渊一般。</entitydescription.maidclothes2>
   <entityname.maidheaddress>女仆发带</entityname.maidheaddress>
   <entitydescription.maidheaddress>女仆必备。</entitydescription.maidheaddress>
-  <entityname.Exotic_Armored_suit>异星物质装甲-潜水服</entityname.Exotic_Armored_suit>
-  <entitydescription.Exotic_Armored_suit>以从木卫二生物甲壳中提炼而出的异星物质为原料的套装，这是其中的潜水服部分。集齐套装的所有零件会获得更高的加成。（WIP）</entitydescription.Exotic_Armored_suit>
-  <entityname.Exotic_Armored_suit_head>异星物质装甲-头盔</entityname.Exotic_Armored_suit_head>
-  <entitydescription.Exotic_Armored_suit_head>以从木卫二生物甲壳中提炼而出的异星物质为原料的套装，这是其中的头盔部分。集齐套装的所有零件会获得更高的加成。（WIP）</entitydescription.Exotic_Armored_suit_head>
+  <entityname.Exotic_Amor_suit>异星物质装甲-潜水服</entityname.Exotic_Amor_suit>
+  <entitydescription.Exotic_Amor_suit>以从木卫二生物甲壳中提炼而出的异星物质为原料的套装，这是其中的潜水服部分。集齐套装的所有零件会获得更高的加成。（WIP）</entitydescription.Exotic_Amor_suit>
+  <entityname.Exotic_Amor_suit_head>异星物质装甲-头盔</entityname.Exotic_Amor_suit_head>
+  <entitydescription.Exotic_Amor_suit_head>以从木卫二生物甲壳中提炼而出的异星物质为原料的套装，这是其中的头盔部分。集齐套装的所有零件会获得更高的加成。（WIP）</entitydescription.Exotic_Amor_suit_head>
   <entityname.PrayerMio_uniform>HGIS</entityname.PrayerMio_uniform>
   <entitydescription.PrayerMio_uniform>火星UAC研究所用于对亚空间探索研究的实验型防护服与配套护甲。适用于恶劣环境保护穿戴者的高性能套装。【服装部分】“来自b站up主千代澪的供稿”（WIP）</entitydescription.PrayerMio_uniform>
   <entityname.PrayerMio_hat>棱镜</entityname.PrayerMio_hat>
   <entitydescription.PrayerMio_hat>火星UAC研究所用于对亚空间探索研究的实验型防护服与配套护甲。适用于恶劣环境保护穿戴者的高性能套装。【冠环部分】“来自b站up主千代澪的供稿”（WIP）</entitydescription.PrayerMio_hat>
-  <entityname.IronArmourPlus>铁甲</entityname.IronArmourPlus>
-  <entitydescription.IronArmourPlus>当一些无聊的船员锻打机修工的临时装甲之后的产物。不觉得这很酷吗？很符合我对22世纪木卫二潜艇的想象。（WIP）</entitydescription.IronArmourPlus>
+  <entityname.IronArmourPlus>镶钢轻甲</entityname.IronArmourPlus>
+  <entitydescription.IronArmourPlus>镶嵌了钢板的轻便战甲, 属于东亚重工EARTH系列. </entitydescription.IronArmourPlus>
+  <entityname.Senshi>战士服</entityname.Senshi>
+  <entitydescription.Senshi>轻便且灵活的战士袍, 来自地球的东方国家, 穿着时提升20%的武器伤害, 属于东亚重工EARTH系列. </entitydescription.Senshi>
   <!--EA-HI物品-->
-  <entityname.EAHI_pucs>隐形EPSP</entityname.EAHI_pucs>
-  <entitydescription.EAHI_pucs>以特种作战EPSP为基础佐以异星物质研制的隐形EPSP，完全舍弃了厚重外壳。智能注射系统会根据你当前受伤情况选择需要的药物。集成的压缩机能自动从空气中抽取氧气。最高承受8000米水压。</entitydescription.EAHI_pucs>
-  <entityname.EAHI_toolbelt>工具袋（透明）</entityname.EAHI_toolbelt>
+  <entityname.EAHI_toolbelt>隐形版 工具袋</entityname.EAHI_toolbelt>
   <entityname.EAHI_autoinjectorheadset>高级自注射耳机</entityname.EAHI_autoinjectorheadset>
   <entitydescription.EAHI_autoinjectorheadset>东亚重工研发的集成自注射耳机，集成健康扫描、智能医疗注射之外，可破解大多数联盟保险。智能医疗会自动选择最适合当前需要的药物注射。</entitydescription.EAHI_autoinjectorheadset>
-  <entityname.EAHI_kuorongbag>原型扩容弹夹</entityname.EAHI_kuorongbag>
+  <entityname.EAHI_kuorongbag>多用扩容弹夹</entityname.EAHI_kuorongbag>
   <entitydescription.EAHI_kuorongbag>机械式扩容弹夹，适配左轮、鱼叉、散弹、手炮、电击枪，由于涉嫌侵权停产。</entitydescription.EAHI_kuorongbag>
-  <entityname.EAHI_handheldsonar>[EA-HI]高级声呐</entityname.EAHI_handheldsonar>
+  <entityname.EAHI_handheldsonar>高级声呐</entityname.EAHI_handheldsonar>
   <entitydescription.EAHI_handheldsonar>高功率声纳，可以穿透潜艇外壳，炮手必备</entitydescription.EAHI_handheldsonar>
-  <entityname.EAHI_duogongnengtool>[EA-HI]原型多功能工具</entityname.EAHI_duogongnengtool>
-  <entitydescription.EAHI_duogongnengtool>东亚重工研发的多功能工具，因造价过于高昂停止生产。该工具集螺丝刀、扳手、焊接工具、采矿工具于一体。使用高压气体进行供能。注：AI无法使用</entitydescription.EAHI_duogongnengtool>
-  <entityname.teleportine>[EA-HI]传送药水</entityname.teleportine>
+  <entityname.EAHI_duogongnengtool>原型多功能喷枪</entityname.EAHI_duogongnengtool>
+  <entitydescription.EAHI_duogongnengtool>东亚重工研发的多功能喷枪。使用了巧妙的机械设计,当放入氧气罐时启动切割火焰, 而放入焊接油罐时可进行焊接作业.</entitydescription.EAHI_duogongnengtool>
+  <entityname.teleportine>传送药水</entityname.teleportine>
   <entitydescription.teleportine>东亚重工给各站点联络员配发的传送药水，当联络员受伤时，将迅速将他传送到安全的地方。</entitydescription.teleportine>
   <entityname.exotic_matter>异星物质</entityname.exotic_matter>
   <entitydescription.exotic_matter>从木卫二生物甲壳中提炼而出的异星物质，拥有相当巧妙的特性。</entitydescription.exotic_matter>
   <entityname.EAHI_licence_oneoff>大师级蓝图-[type]</entityname.EAHI_licence_oneoff>
   <entitydescription.EAHI_licence_oneoff>将蓝图和对应物品放入东亚重工3D打印机，你可以提升对应物品的制作水平</entitydescription.EAHI_licence_oneoff>
+  <entityname.EAHI_laserpointer>激光指示器</entityname.EAHI_laserpointer>
+  <entitydescription.EAHI_laserpointer>启用时可略微降低武器散射。</entitydescription.EAHI_laserpointer>
+  <entityname.otfx_wrenchscrewdrivertwoinone>扳手螺丝刀二合一工具</entityname.otfx_wrenchscrewdrivertwoinone>
+  <entitydescription.otfx_wrenchscrewdrivertwoinone>装备时,双击右键切换扳手和螺丝刀状态</entitydescription.otfx_wrenchscrewdrivertwoinone>
   <!--天赋-->
   <talentname.wf_researcher></talentname.wf_researcher>
   <!--AFF-->
@@ -267,4 +340,71 @@
   <missionmessage0.EAHI_Mission_XFFSY_3>你看着蠕虫死去的庞大身躯沉入深渊，不禁长舒一口气。</missionmessage0.EAHI_Mission_XFFSY_3>
   <missionheader0.EAHI_Mission_JGHX>世纪大戏</missionheader0.EAHI_Mission_JGHX>
   <missionmessage0.EAHI_Mission_JGHX>挺精彩的，可惜得有人收拾残局。</missionmessage0.EAHI_Mission_JGHX>
+
+  <!-- Custom -->
+  <entityname.gravpistol>重力激光散射器</entityname.gravpistol>
+  <entitydescription.gravpistol>重力激光散射器是一把发射引力子的能量武器，可穿透一切已知的材料与护甲. 其构造非常复杂，后坐力更是有如迅猛龙冲击一般强烈，请小心射击.</entitydescription.gravpistol>
+
+  <entityname.gravbeamammo>引力激光电池</entityname.gravbeamammo>
+  <entitydescription.gravbeamammo>它散发着稳定、强烈集中的引力能量. 这种能量足以穿透与毁灭任何已知的物质.</entitydescription.gravbeamammo>
+
+  <entityname.dominator>45MW.TRG 支配者</entityname.dominator>
+  <entitydescription.dominator>“支配者”便携式神经诊断与压制系统是一把旧地球政府配发的警用手枪. 可快速连续的毁灭镇压多个目标.</entitydescription.dominator>
+
+  <entityname.dominatorammo>支配者歼灭型能量电池</entityname.dominatorammo>
+  <entitydescription.dominatorammo>电池类型: 致命性歼灭电池. 请谨慎瞄准以歼灭目标.</entitydescription.dominatorammo>
+
+  <entityname.dominatorammo2>支配者瘫痪型能量电池</entityname.dominatorammo2>
+  <entitydescription.dominatorammo2>电池类型: 非致命麻醉电池. 请冷静瞄准以制服目标.</entitydescription.dominatorammo2>
+
+  <entityname.dominatorammo3>支配者涅灭型能量电池</entityname.dominatorammo3>
+  <entitydescription.dominatorammo3>电池类型: 毁灭分解电池. 目标将被直接化成分子. 请以最大限度的谨慎瞄准.</entitydescription.dominatorammo3>
+
+
+  <afflictionname.eliminator>致命性歼灭者</afflictionname.eliminator>
+
+  <eventtext.DRF.1>"嘘嘘嘘! 嘿小伙子，来这儿看下，我这有点有意思的玩意儿."</eventtext.DRF.1>
+  <eventtext.DRF.o1>听他继续</eventtext.DRF.o1>
+  <eventtext.DRF.o4>无视</eventtext.DRF.o4>
+
+  <eventtext.DRF.o1.c1>"一把旧地球政府配发的强大能量武器，过了这个村可就没这个店咯... 我便宜卖给你，咋样?"</eventtext.DRF.o1.c1>
+  <eventtext.DRF.o2>"这玩意咋在这??"</eventtext.DRF.o2>
+  <eventtext.DRF.notbuy>"我对危险的事物可没什么兴趣. 这玩意要在我脸上炸了咋整!"</eventtext.DRF.notbuy>
+  <eventtext.DRF.notbuy2>"真失望, 要联盟抓着你个走私狗别他妈提到我."</eventtext.DRF.notbuy2>
+
+  <eventtext.DRF.o2.c1>".... 安静嗷，你可得仔细听好 ..."
+  "资料回收协会. 你知道不? 那是个在联盟手下工作的专门回收已遗失科技的协会."
+  "最近, 回收协会成功的还原了一把旧地球的能量武器."
+  "当然, 他们没造出把新的来, 就是把老枪修好了而已. 但那也得算是个伟大进步了."</eventtext.DRF.o2.c1>
+
+  <eventtext.DRF.o2.c2>"我就解释这么点，你也别多问."
+
+  (叹口气)
+
+  "我就卖你12000MK怎么样."</eventtext.DRF.o2.c2>
+
+  <eventtext.DRF.o3>"行，我买了"</eventtext.DRF.o3>
+
+  <eventtext.DRF.suc1>"牛! 那我可先跑路了! 你也赶紧溜，枪藏藏好, 联盟在挨家挨户的搜这玩意儿呢."
+  他们给了你把小巧, 散发着红光又看着精良的手枪. 这玩意威力得有多大啊.</eventtext.DRF.suc1>
+  <eventtext.DRF.suc2>"牛! 那我可先跑路了! 你也赶紧溜，枪藏藏好, 联盟在挨家挨户的搜这玩意儿呢。"
+  他们给了你把蓝色的手枪... 手枪在你的口袋里轻声的低语着什么. 等下，这手枪还会说话?! </eventtext.DRF.suc2>
+
+  <eventtext.DRF.nomney>"啥？没钱了? 害，这年头谁日子都不好过啊...  你从来没见过我，明白?!"</eventtext.DRF.nomney>
+  <eventtext.DRF.sec>你递过一沓厚厚的纸钞, 但隔壁走廊传来了警卫的喧哗，以及渐渐逼近的重踏脚步声.
+
+  "操！他们怎么找过来的!?"
+
+  枪一下被扔到你的手上, 那个男人翻过一个箱子，有如黑人一般消失在阴暗的走廊之中
+  有点儿他娘的不对劲啊! </eventtext.DRF.sec>
+
+  <eventtext.DRF.out>"唉，那不好意思了."</eventtext.DRF.out>
+  <eventtext.DRF.fight>"在我叫警卫之前把它交给我! ! "</eventtext.DRF.fight>
+
+  <eventtext.DRF.fight2>"操！你他妈的疯了么！ "
+
+  在你的叫喊声之中, 他的脸上露出了些许的不堪与愤怒.
+  然后走私者拿出了一把蓝色的手枪对准了你 !
+
+  </eventtext.DRF.fight2>
 </infotexts>

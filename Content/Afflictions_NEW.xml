@@ -1,19 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--电基鱼叉枪：给玩家一个提升攻击力的buff-->
 <Afflictions>
-	<Affliction name="Will of the Electrofisher" description="" identifier="wf_blameipromotion" type="talentbuff" isbuff="true" limbspecific="false" maxstrength="2.5" activationthreshold="0" showinhealthscannerthreshold="110" showiconthreshold="110" showicontoothersthreshold="110" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-		<Effect minstrength="0" maxstrength="2.5" strengthchange="-1">
-			<StatValue stattype="weaponsskillbonus" minvalue="0" maxvalue="-20"/>
-			<StatValue stattype="attackmultiplier" minvalue="0" maxvalue="0.3"/>
-		</Effect>
-		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
-	</Affliction>
-	<Affliction name="Focus" description="Wearing the research uniform greatly enhances your concentration" identifier="wf_researcherbonus" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="8" maxstrength="8" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-		<Effect minstrength="0" maxstrength="8" strengthchange="-2"/>
-		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
-	</Affliction>
-<!-- Added from the Blame/Psychopass mod -->
-<Affliction
+  <Affliction name="" description="" identifier="wf_blameipromotion" type="buff" isbuff="true" limbspecific="false" maxstrength="100" duration="0.1" showiconthreshold="infinity" showicontoothersthreshold="infinity">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0">
+      <StatValue stattype="RangedSpreadReduction" value="0.5" />
+      <StatValue stattype="attackmultiplier" minvalue="0" maxvalue="0.3" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="Wf_SaltedFishAttack" type="" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="500.016" showiconthreshold="infinity" showicontoothersthreshold="infinity">
+    <Effect minstrength="0" maxstrength="100" strengthchange="+200" minspeedmultiplier="1.3" maxspeedmultiplier="2.0">
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.0" maxvalue="1.5" />
+    </Effect>
+    <Effect minstrength="100" maxstrength="200" strengthchange="+280" minspeedmultiplier="2.0" maxspeedmultiplier="2.5">
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="1.5" maxvalue="1.5" />
+    </Effect>
+    <Effect minstrength="200" maxstrength="300" strengthchange="+500" minspeedmultiplier="2.5" maxspeedmultiplier="1.0">
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="1.5" maxvalue="0.0" />
+    </Effect>
+    <Effect minstrength="300" maxstrength="400" strengthchange="+100" minspeedmultiplier="1.0" maxspeedmultiplier="0.0" />
+    <Effect minstrength="400" maxstrength="500" strengthchange="+500" minspeedmultiplier="0.0" maxspeedmultiplier="1.0" />
+    <Effect minstrength="500" maxstrength="500.016" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="Wf_SaltedFishAttack" strength="infinity" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!-- Added from the Blame/Psychopass mod -->
+  <Affliction
     name=""
     identifier="eliminator"
     type="poison"
@@ -22,16 +35,15 @@
     karmachangeonapplied="-50"
     maxstrength="100">
 
-     <Effect minstrength="1" maxstrength="30"
+    <Effect minstrength="1" maxstrength="30"
       strengthchange="30"
       minradialdistort="1.0"
       maxradialdistort="2.0"
       dialogflag="GunshotWound"
       minfacetint="100,0,0,150"
-      maxfacetint="100,0,0,150">
-    </Effect>
+      maxfacetint="100,0,0,150"> </Effect>
 
-     <Effect minstrength="31" maxstrength="60"
+    <Effect minstrength="31" maxstrength="60"
       strengthchange="30"
       minradialdistort="2.0"
       maxradialdistort="3.0"
@@ -39,11 +51,11 @@
       minfacetint="150,0,0,150"
       maxfacetint="150,0,0,150">
       <StatusEffect target="limb">
-       <ParticleEmitter particle="bloodsplashblame" copyentityangle="true" particleamount="30" scalemin="0.1" scalemax="0.1" />
+        <ParticleEmitter particle="bloodsplashblame" copyentityangle="true" particleamount="30" scalemin="0.1" scalemax="0.1" />
       </StatusEffect>
     </Effect>
 
-     <Effect minstrength="61" maxstrength="90"
+    <Effect minstrength="61" maxstrength="90"
       strengthchange="30"
       minradialdistort="4.0"
       maxradialdistort="5.0"
@@ -51,7 +63,7 @@
       minfacetint="200,0,0,150"
       maxfacetint="200,0,0,150">
       <StatusEffect target="limb">
-       <ParticleEmitter particle="bloodsplashblame" copyentityangle="true" particleamount="30" scalemin="0.2" scalemax="0.2" />
+        <ParticleEmitter particle="bloodsplashblame" copyentityangle="true" particleamount="30" scalemin="0.2" scalemax="0.2" />
       </StatusEffect>
     </Effect>
 
@@ -62,23 +74,22 @@
       dialogflag="GunshotWound"
       minfacetint="255,0,0,150"
       maxfacetint="255,0,0,150">
-     <StatusEffect target="Character" duration="1" >
+      <StatusEffect target="Character" duration="1"> </StatusEffect>
+      <StatusEffect target="limb" SpeedMultiplier="0.3">
+        <Affliction identifier="stun" strength="5" probability="1" />
+        <Explosion range="30.0" shockwave="false" smoke="false" flames="false" sparks="false" force="30.0" severlimbsprobability="100000" decal="blood" decalsize="3">
+          <Affliction identifier="stun" strength="1" />
+          <Affliction identifier="explosiondamage" strength="700" probability="1" />
+        </Explosion>
+        <ParticleEmitter particle="bloodsplash" copyentityangle="true" particleamount="30" scalemin="3" scalemax="3" />
+        <ParticleEmitter particle="blood" scalemin="2" scalemax="2" />
+        <ParticleEmitter particle="blooddrop" scalemin="2" scalemax="2" />
       </StatusEffect>
-      <StatusEffect target="limb" SpeedMultiplier="0.3">            
-          <Affliction identifier="stun" strength="5" probability="1"/>
-            <Explosion range="30.0" shockwave="false" smoke="false" flames="false" sparks="false" force="30.0" severlimbsprobability="100000" decal="blood" decalsize="3">
-             <Affliction identifier="stun" strength="1"/>
-             <Affliction identifier="explosiondamage" strength="700" probability="1" />   
-          </Explosion> 
-          <ParticleEmitter particle="bloodsplash" copyentityangle="true" particleamount="30" scalemin="3" scalemax="3" />
-           <ParticleEmitter particle="blood" scalemin="2" scalemax="2" />
-           <ParticleEmitter particle="blooddrop" scalemin="2" scalemax="2" />
+      <StatusEffect target="limb" SpeedMultiplier="0.3" setvalue="true">
+        <Affliction identifier="eliminator" strength="0" />
       </StatusEffect>
-       <StatusEffect target="limb" SpeedMultiplier="0.3" setvalue="true">     
-          <Affliction identifier="eliminator" strength="0"/>
-       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
 
   <Affliction
@@ -88,38 +99,38 @@
     limbspecific="false"
     indicatorlimb="Head"
     activationthreshold="1"
-   showicontoothersthreshold="101"
+    showicontoothersthreshold="101"
     maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-1000">
-      <StatusEffect target="Character" >
-            <Sound file="%ModDir%/Content/items/Weapons/Custom/gore2.ogg" />
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/Content/items/Weapons/Custom/gore2.ogg" />
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
 
-   <Affliction
+  <Affliction
     name=""
     identifier="spddown"
     type="poison"
     limbspecific="false"
     indicatorlimb="Head"
     activationthreshold="1"
-   showicontoothersthreshold="101"
+    showicontoothersthreshold="101"
     maxstrength="100">
     <Effect minstrength="70" maxstrength="100" strengthchange="-30">
-      <StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true"/> 
+      <StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Effect>
 
     <Effect minstrength="40" maxstrength="70" strengthchange="-30">
-      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true"/> 
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Effect>
 
-     <Effect minstrength="1" maxstrength="40" strengthchange="-30">
-      <StatusEffect target="Character" SpeedMultiplier="0.3" setvalue="true"/> 
+    <Effect minstrength="1" maxstrength="40" strengthchange="-30">
+      <StatusEffect target="Character" SpeedMultiplier="0.3" setvalue="true" />
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
   </Affliction>
 
 </Afflictions>

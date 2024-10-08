@@ -7,13 +7,13 @@
     <PreferredContainer primary="wreckstoragecab,abandonedstoragecab" spawnprobability="0" />
     <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0" />
     <Wearable>
-      <sprite texture="%ModDir:2809175631%/Content/Addons/EPSPSeries/EAHI_pucs.png" sourcerect="0,0,1,1" />
+      <sprite texture="%ModDir%/Content/Addons/EPSPSeries/EAHI_pucs.png" sourcerect="0,0,1,1" />
     </Wearable>
   </Item>
   <!-- 高级自注射耳机 -->
   <Item name="" identifier="EAHI_autoinjectorheadset" scale="0.5" subcategory="EAHI" category="Misc" tags="mobileradio,smallitem,idcard,id_captain,id_security,id_engineer,id_medic,id_assistant,id_mechanic,id_pirate,wreck_secureid,wreck_id,wreck_engineer,wreck_mechanic,wreck_medic,wreck_security,wreck_captain,wreck_admin,id_reactor,id_outpostsecurity" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir:2809175631%/Content/Items/Jobgear/headgears.png" sourcerect="561,323,64,64" origin="0.5,0.5" />
-    <Sprite name="Headset" texture="%ModDir:2809175631%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="512,321,49,66" origin="0.5,0.470" />
+    <InventoryIcon texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="561,323,64,64" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="512,321,49,66" origin="0.5,0.470" />
     <Body radius="20" height="20" density="30" />
     <Price baseprice="280" minavailable="2" sold="false">
       <Price storeidentifier="merchantoutpost" />
@@ -51,7 +51,7 @@
       </SubContainer>
     </ItemContainer>
     <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-      <sprite name="Headset Wearable" texture="%ModDir:2809175631%/Content/Items/Jobgear/headgears.png" limb="Head" hidelimb="false" inheritlimbdepth="true" depth="0.7" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" sourcerect="26,313,51.5,70" origin="0.515,0.703" />
+      <sprite name="Headset Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidelimb="false" inheritlimbdepth="true" depth="0.7" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" sourcerect="26,313,51.5,70" origin="0.515,0.703" />
       <!-- MOD FEATURE Auto-inject System -->
       <!-- Inject Saline & Blood Pack & Alien Blood, slot 0 -->
       <StatusEffect type="OnWearing" target="Character,Contained" condition="-10" targetslot="0" interval="0.2" disabledeltatime="true">
@@ -129,7 +129,7 @@
   <Item name="" description="" identifier="EAHI_kuorongbag" subcategory="EAHI" category="Misc" Tags="smallitem,mobilecontainer,revolverammo,pistolammoitem,handcannonammo,shotgunammo,harpoonammo,stungunammo,grenade,Blame_harpoonammo" showcontentsintooltip="true" fireproof="true" waterproof="true" scale="0.5">
     <PreferredContainer primary="storagecab" spawnprobability="0.05" />
     <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.09" />
-    <Sprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="128,0,128,128" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="128,0,128,128" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="60" density="25" />
     <Deconstruct time="15">
       <Item identifier="steel" />
@@ -215,70 +215,70 @@
       <Item identifier="plastic" amount="2" />
       <Item identifier="titaniumaluminiumalloy" amount="1" />
     </Deconstruct>
-    <!-- <InventoryIcon texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="256,0,128,128" origin="0.5,0.5" /> -->
-    <Sprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="256,0,128,128" depth="0.55" origin="0.5,0.5" />
-    <BrokenSprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="192,128,128,128" depth="0.55" origin="0.5,0.5" maxcondition="99.1" />
-    <BrokenSprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="320,128,128,128" depth="0.55" origin="0.5,0.5" maxcondition="98.1" />
+    <!-- <InventoryIcon texture="%ModDir%/Content/Addons/gfx.png" sourcerect="256,0,128,128" origin="0.5,0.5" /> -->
+    <Sprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="256,0,128,128" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="192,128,128,128" depth="0.55" origin="0.5,0.5" maxcondition="99.1" />
+    <BrokenSprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="320,128,128,128" depth="0.55" origin="0.5,0.5" maxcondition="98.1" />
     <Body width="128" height="128" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="60,-15" handle1="-40,-0" handle2="-21,-27" msg="ItemMsgPickUpSelect" />
     <RepairTool firedamage="100.0" structurefixamount="0" range="200" barrelpos="25,4" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="0" targetforce="10">
-      <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800"/>
-      <ParticleEmitterHitStructure particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50"/>
-      <ParticleEmitterHitStructure particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="50"/>
-      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800"/>
-      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100"/>
-      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
-      <sound file="%ModDir%/Content/Addons/WeldingLoopMultitool.ogg" type="OnUse" range="500.0" loop="true"/>
+      <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitStructure particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+      <ParticleEmitterHitStructure particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="50" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <sound file="%ModDir%/Content/Addons/WeldingLoopMultitool.ogg" type="OnUse" range="500.0" loop="true" />
       <!-- flame -->
       <StatusEffect type="OnUse" target="This" >
         <ParticleEmitter particle="wf_weld" particlespersecond="50" copyentityangle="true" position="30,0" Flip="True" />
-        <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired"/>
+        <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" >
         <ParticleEmitter particle="wf_plasma" particlespersecond="50" copyentityangle="true" Offset="-30,0" position="30,0" Flip="True" />
-        <RequiredItems items="oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired"/>
+        <RequiredItems items="oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired" />
       </StatusEffect>
       <!-- Use contained -->
       <StatusEffect type="OnUse" targettype="Contained" targetslot="0" Condition="-1.0" >
-        <RequiredItems items="weldingtoolfuel,oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired"/>
+        <RequiredItems items="weldingtoolfuel,oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired" />
       </StatusEffect>
-      <RequiredItems items="weldingtoolfuel,oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired"/>
+      <RequiredItems items="weldingtoolfuel,oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired" />
       <!-- Stuck Doors -->
       <StatusEffect type="OnUse" targettype="UseTarget" targets="weldable" Stuck="20" Condition="5.0">
-        <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0"/>
+        <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0" />
         <!-- <Conditional items="weldingtoolfuel" TargetContainedItem="true" targetslot="0" condtion="gt 0" /> -->
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="UseTarget" targets="weldable" Stuck="-20">
-        <RequiredItems items="oxygensource" type="Contained" targetslot="0"/>
+        <RequiredItems items="oxygensource" type="Contained" targetslot="0" />
       </StatusEffect>
       <!-- Item Damage -->
       <StatusEffect type="OnUse" targettype="UseTarget" Condition="-25">
-        <RequiredItems items="oxygensource" type="Contained" targetslot="0"/>
+        <RequiredItems items="oxygensource" type="Contained" targetslot="0" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="UseTarget" targets="item" Condition="-3.0">
-        <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0"/>
-        <Conditional HasTag="neq weldable"/>
+        <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0" />
+        <Conditional HasTag="neq weldable" />
       </StatusEffect>
       <!-- Cause Burn Damage -->
       <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.005">
-        <Affliction identifier="burn" amount="4.5"/>
-        <RequiredItems items="oxygensource" type="Contained" targetslot="0"/>
+        <Affliction identifier="burn" amount="4.5" />
+        <RequiredItems items="oxygensource" type="Contained" targetslot="0" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" interval="0.2" condition="100" setvalue="true" >
         <conditional condition="lt 99.1" />
         <conditional RequireEmpty="true" />
       </StatusEffect>
-      <Fixable identifier="structure"/>
+      <Fixable identifier="structure" />
       <!-- <NonFixable identifier="thalamus,ice" /> -->
     </RepairTool>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="tank" containedspritedepth="0.56">
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
         <Containable items="weldingtoolfuel,oxygensource" itempos="15,-14" rotation="-15" />
         <Containable items="weldingtoolfuel">
           <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="4" levelwallfixamount="-1" condition="98.0" setvalue="true" Tags="weldingequipment" />
         </Containable>
         <Containable items="oxygensource">
-          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="-1" levelwallfixamount="-7.5" condition="99.0" setvalue="true" Tags="cuttingequipment"/>
+          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="-1" levelwallfixamount="-7.5" condition="99.0" setvalue="true" Tags="cuttingequipment" />
         </Containable>
     </ItemContainer>
     <AiTarget sightrange="3000" />
@@ -357,8 +357,8 @@
       <RequiredItem identifier="screwdriver" />
       <RequiredItem identifier="copper" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="448,128,64,64" />
-    <Sprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="176,432,92,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Addons/gfx.png" sourcerect="448,128,64,64" />
+    <Sprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="176,432,92,20" depth="0.55" origin="0.5,0.5" />
     <Body width="80" height="15" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" reload="1.0" range="50" combatpriority="9" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="0" itemdamage="4" targetimpulse="4">

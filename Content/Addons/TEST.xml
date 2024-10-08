@@ -2,8 +2,8 @@
 <Override><Items>
   <!-- 抽奖券和使用凭证测试 -->
   <Item name="" identifier="testpermit" descriptionidentifier=" " allowstealingalways="true" spritecolor="20,39,162,255" category="Misc" Tags="smallitem,geneticmaterial" cargocontaineridentifier="metalcrate" scale="0.5" maxstacksize="32" impactsoundtag="impact_soft">
-    <PreferredContainer primary="crewcab" secondary="locker"/>
-    <PreferredContainer secondary="researchcontainer" spawnprobability="0.05"/>
+    <PreferredContainer primary="crewcab" secondary="locker" />
+    <PreferredContainer secondary="researchcontainer" spawnprobability="0.05" />
     <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
     <Body width="35" height="40" density="8" />
@@ -19,14 +19,14 @@
       <Item identifier="EAHI_pucs" requiredotheritem="stabilozine" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <!-- <Item identifier="teleportine" requiredotheritem="stabilozine" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
       <!-- <Item identifier="GTCQuniform1" requiredotheritem="teleportine" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
-      <item identifier="testpermit"/>
+      <item identifier="testpermit" />
       <!-- <Item identifier="geneticmaterialcrawler" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
     </Deconstruct>
     <Deconstruct time="2" requireddeconstructor="test_op_researchterminal">
       <!-- <Item identifier="EAHI_pucs" requiredotheritem="stabilozine" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
       <!-- <Item identifier="teleportine" requiredotheritem="stabilozine" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
       <!-- <Item identifier="GTCQuniform1" requiredotheritem="teleportine" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
-      <item identifier="testpermit"/>
+      <item identifier="testpermit" />
       <!-- <Item identifier="geneticmaterialcrawler" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" /> -->
     </Deconstruct>
   </Item>
@@ -59,9 +59,9 @@
         <!-- <Remove /> -->
       </StatusEffect>
     </Holdable>
-    <!-- <InventoryIcon texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="384,0,64,128" depth="0.55" origin="0.5,0.5" /> -->
-    <Sprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="448,0,64,128" depth="0.55" origin="0.5,0.5" scale="0.5" />
-    <BrokenSprite texture="%ModDir:2809175631%/Content/Addons/gfx.png" sourcerect="384,0,64,128" depth="0.55" origin="0.5,0.5" scale="0.5" maxcondition="90" />
+    <!-- <InventoryIcon texture="%ModDir%/Content/Addons/gfx.png" sourcerect="384,0,64,128" depth="0.55" origin="0.5,0.5" /> -->
+    <Sprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="448,0,64,128" depth="0.55" origin="0.5,0.5" scale="0.5" />
+    <BrokenSprite texture="%ModDir%/Content/Addons/gfx.png" sourcerect="384,0,64,128" depth="0.55" origin="0.5,0.5" scale="0.5" maxcondition="90" />
     <Body width="40" height="80" density="30" />
     <ItemContainer capacity="1" maxstacksize="0" hideitems="false">
       <SlotIcon slotindex="0" texture="Content/UI/MainIconsAtlas.png" sourcerect="640,128,128,128" origin="0.5,0.5" />
@@ -73,10 +73,10 @@
     <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="1,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <Fabricator canbeselected="true" powerconsumption="0.0" msg="ItemMsgInteractSelect" createbuttontext="campaignstoretab.buy">
       <GuiFrame relativesize="0.4,0.5" style="ItemUI" anchor="Center" />
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="200.0" loop="true"/>
+      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="200.0" loop="true" />
     </Fabricator>
-    <ItemContainer capacity="0" canbeselected="false" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
-    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
+    <ItemContainer capacity="0" canbeselected="false" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
     <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" alphablend="false" allowingameediting="false">
       <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>

@@ -71,3 +71,6 @@ Feet offset changes:
 - resprite clown exo
 - fix exotic suit
 - some more stuff i forgot
+
+10/2/24
+- Pulled changes from dev branch

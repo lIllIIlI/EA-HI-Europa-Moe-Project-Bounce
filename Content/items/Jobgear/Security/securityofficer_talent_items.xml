@@ -46,7 +46,7 @@
           <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
         </StatusEffect>
         <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
-        <RequiredSkill identifier="weapons" level="75" />
+        <RequiredSkill identifier="weapons" level="60" />
       </RangedWeapon>
       <ItemContainer capacity="2" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
         <Containable items="shotgunammo" hide="true" />
@@ -67,8 +67,12 @@
     <Item name="" identifier="bandolier" category="Equipment" tags="mediumitem,clothing" scale="0.5" cargocontaineridentifier="metalcrate" allowasextracargo="true" description="" impactsoundtag="impact_soft">
       <PreferredContainer primary="armcab" secondary="secarmcab" />
       <Price baseprice="250" sold="false">
-        <Price storeidentifier="merchantoutpost" multiplier="1.3" />
-        <Price storeidentifier="merchantcity" multiplier="1.2" />
+        <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="0" maxavailable="1" sold="true">
+          <Reputation faction="separatists" min="50" />
+        </Price>
+        <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" maxavailable="3" sold="true">
+          <Reputation faction="separatists" min="50" />
+        </Price>
         <Price storeidentifier="merchantresearch" />
         <Price storeidentifier="merchantmilitary" multiplier="0.9" />
         <Price storeidentifier="merchantmine" />
@@ -118,11 +122,11 @@
       <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="165,366,64,64" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="1,425,164,53" depth="0.55" origin="0.5,0.2" />
       <Body width="161" height="20" density="25" />
-      <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-22,2" handle2="-32,5" holdangle="30" reload="0.8" range="175" combatPriority="40" msg="ItemMsgPickUpSelect" AllowHitMultiple="true">
+      <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-22,2" handle2="-32,5" holdangle="30" reload="1.2" range="155" combatPriority="40" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="50" structuredamage="10">
-          <Affliction identifier="lacerations" strength="50" />
+          <Affliction identifier="lacerations" strength="36" />
           <Affliction identifier="bleeding" strength="10" />
-          <Affliction identifier="stun" strength="0.8" />
+          <Affliction identifier="stun" strength="0.5" />
           <StatusEffect type="OnUse" target="UseTarget">
             <Conditional entitytype="eq Character" />
             <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />

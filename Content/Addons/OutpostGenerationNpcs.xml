@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
   <npcset identifier="EAHInpc">
-    <!-- Lagency -->
-    <npc identifier="EAHInpc_1" job="engineer" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
-      <Character name="摸鱼人Loafer" speciesname="human" gender="female" race="Asian" headspriteid="8" hairindex="12" beardindex="0" moustacheindex="0" aimspeed="3.0" aimaccuracy="1.0" faceattachmentindex="3" healthmultiplier="5" personality="Fearful">
-        <job name="工程师" identifier="engineer">
+    <npc identifier="EAHInpc_1" job="engineer" faction="EAHI" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
+      <Character name="Loafer" speciesname="human" gender="female" race="Asian" headspriteid="8" hairindex="12" beardindex="0" moustacheindex="0" aimspeed="3.0" aimaccuracy="1.0" faceattachmentindex="3" healthmultiplier="5" personality="Fearful">
+        <job name="Engineer" identifier="engineer">
           <skill identifier="electrical" level="65" />
           <skill identifier="mechanical" level="40" />
           <skill identifier="weapons" level="100" />
@@ -13,12 +12,14 @@
         </job>
       </Character>
       <ItemSet commonness="1">
-        <Item identifier="EAHI_autoinjectorheadset" equip="true">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="autoinjectorheadset" equip="true">
           <Item identifier="teleportine" />
         </Item>
-        <Item identifier="Wf_pucs_D" equip="true" />
+        <Item identifier="Wf_pucs_B" equip="true" />
+        <Item identifier="RO635uniform1" equip="true" />
         <Item identifier="divingknifeunique" equip="false" />
-        <Item identifier="shotgununique" equip="false">
+        <Item identifier="shotgununique" equip="true">
           <Item identifier="shotgunslugexplosive" />
           <Item identifier="shotgunslugexplosive" />
         </Item>
@@ -36,9 +37,9 @@
         <Item identifier="shotgunslugexplosive" />
       </ItemSet>
     </npc>
-    <npc identifier="EAHInpc_2" job="engineer" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
-      <Character name="朝闻道Brynhild" speciesname="human" gender="male" race="Asian" headspriteid="8" hairindex="8" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="Fearful">
-        <job name="工程师" identifier="engineer">
+    <npc identifier="EAHInpc_2" job="engineer" faction="EAHI" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
+      <Character name="Brynhild" speciesname="human" gender="male" race="Asian" headspriteid="8" hairindex="8" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="Fearful">
+        <job name="Engineer" identifier="engineer">
           <skill identifier="electrical" level="65" />
           <skill identifier="mechanical" level="40" />
           <skill identifier="weapons" level="100" />
@@ -47,12 +48,13 @@
         </job>
       </Character>
       <ItemSet commonness="1">
-        <Item identifier="EAHI_autoinjectorheadset" equip="true">
+		<Item identifier="idcard" equip="true" />
+        <Item identifier="autoinjectorheadset" equip="true">
           <Item identifier="teleportine" />
         </Item>
-        <Item identifier="UMP9uniform1" equip="true" />
+        <Item identifier="bulletproofsuit" equip="true" />
         <Item identifier="divingknifeunique" equip="false" />
-        <Item identifier="shotgununique" equip="false">
+        <Item identifier="shotgununique" equip="true">
           <Item identifier="shotgunslugexplosive" />
           <Item identifier="shotgunslugexplosive" />
         </Item>
@@ -70,21 +72,30 @@
         <Item identifier="shotgunslugexplosive" />
       </ItemSet>
     </npc>
-    <!-- EAHI Merchant -->
-    <npc identifier="MerchantEAHI" job="watchman" spawnpointtags="shop" healthmultiplier="3" campaigninteractiontype="Store" behavior="StayInHull" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
-      <Character name="" speciesname="human" gender="male" race="Asian" headspriteid="8" hairindex="8" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="Fearful" />
-      <ItemSet commonness="1">
-        <Item identifier="EAHI_autoinjectorheadset" equip="true">
-          <Item identifier="teleportine" />
-        </Item>
-        <Item identifier="UMP9uniform1" equip="true" />
-        <Item identifier="divingknifeunique" equip="false" />
-        <Item identifier="shotgununique" equip="false">
-          <Item identifier="shotgunslugexplosive" />
-          <Item identifier="shotgunslugexplosive" />
-        </Item>
-        <Item identifier="shotgunslugexplosive" amount="12" />
-      </ItemSet>
-    </npc>
+
+<!-- Custom -->
+  <npc identifier="EAHInpc_3" job="Securityofficer" faction="EAHI" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
+    <Character name="Shade" speciesname="human" gender="female" race="Asian" headspriteid="2" hairindex="36" beardindex="0" moustacheindex="0" faceattachmentindex="6" personality="Fearful">
+      <job name="Securityofficer" identifier="securityofficer">
+        <skill identifier="electrical" level="65" />
+        <skill identifier="mechanical" level="40" />
+        <skill identifier="weapons" level="100" />
+        <skill identifier="medical" level="75" />
+        <skill identifier="helm" level="45" />
+      </job>
+    </Character>
+    <ItemSet commonness="1">
+  <Item identifier="idcard" equip="true" />
+      <Item identifier="autoinjectorheadset" equip="true">
+        <Item identifier="teleportine" />
+      </Item>
+      <Item identifier="Wf_pucs_D" equip="true" />
+      <Item identifier="securityuniform2" equip="true" />
+      <Item identifier="divingknifeunique" equip="false" />
+      <Item identifier="deusizine" />
+      <Item identifier="deusizine" />
+    </ItemSet>
+  </npc>
+
   </npcset>
 </npcsets>

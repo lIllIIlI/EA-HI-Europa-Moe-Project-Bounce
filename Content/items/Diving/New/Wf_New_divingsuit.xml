@@ -139,7 +139,7 @@
 		<Body width="5" height="5" density="0" />
 		<TriggerComponent triggeredby="Item" force="-100" radius="500" distancebasedforce="true" canbepicked="true">
 			<StatusEffect type="OnActive" target="This">
-				<ParticleEmitter particle="Wf_gravityspherefx" particleamount="1" emitinterval="1.25" ColorMultiplier="20,50,255,155"/>
+				<ParticleEmitter particle="Wf_gravityspherefx" particleamount="1" emitinterval="1.25" ColorMultiplier="20,50,255,155" />
 			</StatusEffect>
 			<StatusEffect type="Always" target="this">
 				<Active />
@@ -222,7 +222,7 @@
       </StatusEffect>
       <!-- <StatusEffect type="OnWearing" target="Character" oneshot="True" stackable="False">
         <Conditional vitality="lt 50" />
-        <SpawnItem identifier="Wf_New_XDS-01_AntiGravityBall" spawnposition="this"/>
+        <SpawnItem identifier="Wf_New_XDS-01_AntiGravityBall" spawnposition="this" />
       </StatusEffect> -->
 			
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="120.0,270.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
