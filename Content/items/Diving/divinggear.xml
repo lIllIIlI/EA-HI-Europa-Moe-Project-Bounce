@@ -27,10 +27,10 @@
         <RequiredItem identifier="rubber" />
       </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="515,322,57,62" origin="0.5,0.5" />
-      <Sprite name="Diving Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.55" sourcerect="753,429,69,59" origin="0.5,0.5" />
+      <Sprite name="Diving Mask" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.55" sourcerect="753,429,69,59" origin="0.5,0.5" />
       <Body width="40" height="35" density="15" />
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-        <sprite name="Diving Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidelimb="false" hideotherwearables="false" sourcerect="753,429,69,59" origin="0.54,0.44" hidewearablesoftype="moustache,beard" />
+        <sprite name="Diving Mask Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidelimb="false" hideotherwearables="false" sourcerect="753,429,69,59" origin="0.54,0.44" hidewearablesoftype="moustache,beard" />
         <!-- 使用hull氧气 -->
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true" />
         <!-- Hull氧含量大于50％且不在水中，缓慢回复氧气、液氧罐耐久 -->
@@ -117,13 +117,13 @@
       <!--
     <Sprite name="Diving Suit" texture="DivingSuit_Item.png" sourcerect="157,0,90,307" depth="0.55" origin="0.4888889,0.5439739" />
     -->
-      <Sprite name="Diving Suit Item" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="Diving Suit Item" texture="%ModDir:3282923984%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" />
       <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="724,373,77,209" depth="0.55" origin="-0.12,-0.14" />
-      <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+      <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Diving Suit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="267,528,94,86" origin="0.55,0.7">
+        <sprite name="Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="267,528,94,86" origin="0.55,0.7">
           <LightComponent range="300.0" lightcolor="200,255,165,200" powerconsumption="10" IsOn="true" allowingameediting="false">
             <Upgrade gameversion="0.1300.0.3" allowingameediting="false" />
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
@@ -152,7 +152,7 @@
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
           <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
-          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />
         </StatusEffect>
         <!-- Refill oxygen when the suit is contained. -->
         <StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
@@ -230,13 +230,13 @@
         <RequiredItem identifier="rubber" />
       </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="192,384,128,128" origin="0.5,0.5" />
-      <Sprite name="Abyss Diving Suit Item" texture="%ModDir%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Abyss Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="Abyss Diving Suit Item" texture="%ModDir:3282923984%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Abyss Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
       <ContainedSprite name="Abyss Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="316,379,77,214" depth="0.55" origin="-0.12,-0.13" />
-      <ContainedSprite name="Abyss Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+      <ContainedSprite name="Abyss Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Abyss Diving Suit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="391,517,107,101" origin="0.6,0.74">
+        <sprite name="Abyss Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="391,517,107,101" origin="0.6,0.74">
           <LightComponent range="300.0" lightcolor="250,220,130,255" powerconsumption="10" IsOn="true">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -264,7 +264,7 @@
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
           <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
-          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />
           </StatusEffect>
           <!-- Refill oxygen when the suit is contained. -->
           <StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
@@ -344,13 +344,13 @@
       <!--
     <Sprite name="Diving Suit" texture="DivingSuit_Item.png" sourcerect="157,0,90,307" depth="0.55" origin="0.4888889,0.5439739" />
     -->
-      <Sprite name="Combat Diving Suit Item" texture="%ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Combat Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="Combat Diving Suit Item" texture="%ModDir:3282923984%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Combat Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
       <ContainedSprite name="Combat Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="215,379,80,207" depth="0.55" origin="-0.12,-0.13" />
-      <ContainedSprite name="Combat Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+      <ContainedSprite name="Combat Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="318,6,104,101" origin="0.5,0.71">
+        <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="318,6,104,101" origin="0.5,0.71">
           <LightComponent range="300.0" lightcolor="250,55,80,255" powerconsumption="10" IsOn="true" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -378,7 +378,7 @@
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
           <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
-          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />
         </StatusEffect>
         <!-- Refill oxygen when the suit is contained. -->
         <StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
@@ -432,13 +432,13 @@
     <Item name="" identifier="respawndivingsuit" category="Diving" tags="diving,deepdiving,human,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
       <Deconstruct time="1" />
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,832,128,128" origin="0.5,0.5" />
-      <Sprite name="Respawn Diving Suit Item" texture="%ModDir%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Respawn Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="Respawn Diving Suit Item" texture="%ModDir:3282923984%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Respawn Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
       <ContainedSprite name="Respawn Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Containers/containers.png" sourcerect="118,379,77,214" depth="0.55" origin="-0.12,-0.13" />
-      <ContainedSprite name="Respawn Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+      <ContainedSprite name="Respawn Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Respawn Diving Suit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="527,523,94,95" origin="0.545,0.725">
+        <sprite name="Respawn Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="527,523,94,95" origin="0.545,0.725">
           <LightComponent range="200.0" lightcolor="250,200,200,255" powerconsumption="10" IsOn="true">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -472,7 +472,7 @@
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
         <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PropulsionSpeedMultiplier="0.85" setvalue="true" disabledeltatime="true">
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
-          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />          
+          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />          
         </StatusEffect>
         <StatusEffect type="OnWearing" target="this,Character" PressureProtection="6650.0" setvalue="true" disabledeltatime="true">
           <Conditional condition="gt 0.0" />
@@ -516,14 +516,14 @@
         <Item identifier="aluminium" commonness="40" />
         <Item identifier="titaniumaluminiumalloy" commonness="30" />
       </Deconstruct>
-      <InventoryIcon texture="%ModDir%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="435,0,128,128" origin="0.5,0.5" />
-      <Sprite name="Diving Suit Item" texture="%ModDir%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="127,0,146,120" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="308,0,75,193" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.14" />
-      <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="127,193,230,63" depth="0.55" origin="0.6,0.5" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="435,0,128,128" origin="0.5,0.5" />
+      <Sprite name="Diving Suit Item" texture="%ModDir:3282923984%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="127,0,146,120" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="308,0,75,193" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:3282923984%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.14" />
+      <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/Broken_DivingSuit_contained.png" sourcerect="127,193,230,63" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Diving Suit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="true" sourcerect="104,14,96,106" origin="0.5,0.5" />
+        <sprite name="Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="true" sourcerect="104,14,96,106" origin="0.5,0.5" />
         <sprite name="Broken Diving Suit Torso" texture="Broken_DivingSuit_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Broken Diving Suit Right Hand" texture="Broken_DivingSuit_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Broken Diving Suit Left Hand" texture="Broken_DivingSuit_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -541,7 +541,7 @@
         <sprite name="Broken Diving Suit Boobs" texture="Broken_DivingSuit_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <StatusEffect type="OnWearing" target="Character" ObstructVision="false" setvalue="true" disabledeltatime="true">
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
-          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="1" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />
         </StatusEffect>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.95" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" damagesound="" deflectprojectiles="true" />
@@ -568,31 +568,31 @@
       <RequiredItem identifier="titaniumaluminiumalloy" amount="10" />
       <RequiredItem identifier="banana" amount="16" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" sourcerect="488,622,128,128" origin="0.5,0.5" />
-    <Sprite name="Clown Exosuit Item" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" sourcerect="7,487,203,244" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" sourcerect="488,622,128,128" origin="0.5,0.5" />
+    <Sprite name="Clown Exosuit Item" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" sourcerect="7,487,203,244" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="230" density="15" />
     <Wearable slots="OuterClothes+RightHand" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-      <sprite name="Exosuit Helmet Wearable" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hideotherwearables="true" hidewearablesoftype="" sourcerect="229,457,235,261" origin="0.68,0.42" >
+      <sprite name="Exosuit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hideotherwearables="true" hidewearablesoftype="" sourcerect="229,457,235,261" origin="0.68,0.42" >
         <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-40,35">
           <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.09, 0.47" size="1.0,1.0" />
         </LightComponent>
       </sprite>
-      <sprite name="Exosuit Torso" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Torso" scale="1" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.77,0.4" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="325,106,152,269" />
-      <sprite name="Clown Exosuit Right Hand" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="544,288,24,40" origin="0.47,0.59" />
-      <sprite name="Clown Exosuit Left Hand" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="608,288,24,40" origin="0.47,0.59" />
-      <sprite name="Clown Exosuit Right Upper Arm" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="540,98,27,76" origin="0.5,0.59" />
-      <sprite name="Clown Exosuit Left Upper Arm" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="604,98,27,76" origin="0.5,0.59" />
-      <sprite name="Clown Exosuit Right Forearm" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="532,213,35,58" origin="0.47,0.59" />
-      <sprite name="Clown Exosuit Left Forearm" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="595,213,35,58" origin="0.47,0.59" />
-      <sprite name="Clown Exosuit Waist" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Waist" hidelimb="true" scale="1" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="569,470,62,56" origin="0.56,0.57" />
-      <sprite name="Clown Exosuit Right Thigh" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="88,111,51,109" origin="0.57,0.61" />
-      <sprite name="Clown Exosuit Left Thigh" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="189,113,50,109" origin="0.57,0.61" />
-      <sprite name="Clown Exosuit Right Leg" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritlimbdepth="true" inheritsourcerect="false" SourceRect="83,253,85,142" origin="0.37,0.65" />
-      <sprite name="Clown Exosuit Left Leg" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="184,253,85,142" origin="0.37,0.65" />
-      <sprite name="Clown Exosuit Left Shoe" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="591,361,59,50" origin="0.65,0.45" scale="1.2" />
-      <sprite name="Clown Exosuit Right Shoe" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="584,361,59,50" origin="0.65,0.45" scale="1.2" />
-      <sprite name="Clown Exosuit Boobs" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Tail"  hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,50,50" scale="1.2" />
-      <sprite name="Clown Exosuit hideboob" texture="%ModDir%/Content/Items/Diving/ExosuitClown.png" limb="Tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Exosuit Torso" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="Torso" scale="1" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.77,0.4" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="325,106,152,269" />
+      <sprite name="Clown Exosuit Right Hand" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="544,288,24,40" origin="0.47,0.59" />
+      <sprite name="Clown Exosuit Left Hand" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="608,288,24,40" origin="0.47,0.59" />
+      <sprite name="Clown Exosuit Right Upper Arm" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="540,98,27,76" origin="0.5,0.59" />
+      <sprite name="Clown Exosuit Left Upper Arm" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="604,98,27,76" origin="0.5,0.59" />
+      <sprite name="Clown Exosuit Right Forearm" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="532,213,35,58" origin="0.47,0.59" />
+      <sprite name="Clown Exosuit Left Forearm" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="595,213,35,58" origin="0.47,0.59" />
+      <sprite name="Clown Exosuit Waist" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="Waist" hidelimb="true" scale="1" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="569,470,62,56" origin="0.56,0.57" />
+      <sprite name="Clown Exosuit Right Thigh" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="88,111,51,109" origin="0.57,0.61" />
+      <sprite name="Clown Exosuit Left Thigh" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="189,113,50,109" origin="0.57,0.61" />
+      <sprite name="Clown Exosuit Right Leg" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritlimbdepth="true" inheritsourcerect="false" SourceRect="83,253,85,142" origin="0.37,0.65" />
+      <sprite name="Clown Exosuit Left Leg" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="184,253,85,142" origin="0.37,0.65" />
+      <sprite name="Clown Exosuit Left Shoe" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="591,361,59,50" origin="0.65,0.45" scale="1.2" />
+      <sprite name="Clown Exosuit Right Shoe" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="584,361,59,50" origin="0.65,0.45" scale="1.2" />
+      <sprite name="Clown Exosuit Boobs" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="Tail"  hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,50,50" scale="1.2" />
+      <sprite name="Clown Exosuit hideboob" texture="%ModDir:3282923984%/Content/Items/Diving/ExosuitClown.png" limb="Tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
 <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
       <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVisionAmount="0.5" PressureProtection="7000.0" setvalue="true" disabledeltatime="true">

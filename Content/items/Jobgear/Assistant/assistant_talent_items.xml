@@ -5,7 +5,7 @@
     <Item name="" identifier="clowndivingmask" category="Equipment" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="smallitem,clothing,clownmask,diving,lightdiving" description="" scale="0.5">
       <PreferredContainer primary="divingcab,supplycab" />
       <Price baseprice="150" sold="false" canbespecial="false" />
-      <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/TalentGear.png" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
+      <Sprite name="Clown Mask" texture="%ModDir:3282923984%/Content/Items/Jobgear/TalentGear.png" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
       <Body width="5" radius="25" />
       <Deconstruct time="10">
         <Item identifier="clownmask" />
@@ -16,7 +16,7 @@
         <RequiredItem identifier="divingmask" />
       </Fabricate>
       <Wearable limbtype="Head" slots="Any,Head" >
-        <sprite name="Clown Diving Mask Wearable" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" sourcerect="417,303,39,75" origin="0.1,0.6" />
+        <sprite name="Clown Diving Mask Wearable" texture="%ModDir:3282923984%/Content/Items/JobGear/TalentGear.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" sourcerect="417,303,39,75" origin="0.1,0.6" />
         <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
         <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
           <Conditional IsDead="false" />
@@ -54,7 +54,7 @@
     </Item>
     
     <Item name="Clown Divingmask Alt" variantof="clowndivingmask" identifier="clowndivingmask_alt" tags="smallitem,clothing,clownmask,diving,lightdiving" >
-      <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="334,301,40,56" origin="0.5,0.5" scale="0.5" />
+      <Sprite name="Clown Mask" texture="%ModDir:3282923984%/Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="334,301,40,56" origin="0.5,0.5" scale="0.5" />
       <Body width="5" radius="25" density="15" />
       <Deconstruct time="10">
         <Item identifier="clowndivingmask" />
@@ -64,7 +64,7 @@
         <RequiredItem />
       </Fabricate>
       <Wearable limbtype="Head" slots="Any,Head">
-        <sprite name="Clown Diving Mask Wearable Alt" texture="%ModDir%/Content/Items/JobGear/Assistant/clowndivingmask_alt.png" limb="Head" inheritlimbdepth="true" inheritscale="true" scale="0.5" ignorelimbscale="true" sourcerect="0,0,88,112" origin="0.75,0.65" />
+        <sprite name="Clown Diving Mask Wearable Alt" texture="%ModDir:3282923984%/Content/Items/JobGear/Assistant/clowndivingmask_alt.png" limb="Head" inheritlimbdepth="true" inheritscale="true" scale="0.5" ignorelimbscale="true" sourcerect="0,0,88,112" origin="0.75,0.65" />
         <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
       </Wearable>
     </Item>
@@ -113,7 +113,7 @@
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       </Fabricate>
-      <Sprite texture="%ModDir%/Content/Items/JobGear/Assistant/ceremonialsword.png" sourcerect="0,0,168,27" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:3282923984%/Content/Items/JobGear/Assistant/ceremonialsword.png" sourcerect="0,0,168,27" depth="0.55" origin="0.5,0.5" />
       <Body width="168" height="27" density="30" />
       <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-35,0" holdangle="30" aimangle="20" reload="0.75" range="75" combatPriority="30" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="6" structuredamage="1" structuresoundtype="StructureSlash">
@@ -170,7 +170,7 @@
         <RequiredItem identifier="ceremonialsword" amount="2" />
         <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       </Fabricate>
-      <Sprite texture="%ModDir%/Content/Items/JobGear/Assistant/ceremonialsword_heavy.png" sourcerect="0,0,250,60" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:3282923984%/Content/Items/JobGear/Assistant/ceremonialsword_heavy.png" sourcerect="0,0,250,60" depth="0.55" origin="0.5,0.5" />
       <Body width="250" height="60" density="30" />
       <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="15,0" handle1="-48,0" handld2="-35,0" holdangle="30" aimangle="10" reload="1.25" range="175" combatPriority="30" msg="ItemMsgPickUpSelect">
         <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="6" structuredamage="1" structuresoundtype="StructureSlash">

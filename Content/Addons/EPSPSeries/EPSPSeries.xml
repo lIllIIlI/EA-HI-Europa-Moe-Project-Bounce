@@ -31,11 +31,11 @@
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="i_Wf_pucs" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/Content/Addons/EPSPSeries/Wf_Pucs_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5" />
-      <Sprite name="Wf_PUCS Item" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Wf_PUCS In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Wf_PUCS Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_female.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
-      <ContainedSprite name="Wf_PUCS In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5" />
+      <Sprite name="Wf_PUCS Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Wf_PUCS In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Wf_PUCS Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_female.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
+      <ContainedSprite name="Wf_PUCS In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
       <Body radius="45" width="34" density="15" />
       <!-- TODO Custom Interface Optimize -->
       <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
@@ -46,12 +46,12 @@
         </TickBox>
       </CustomInterface>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" alphaclipotherwearables="false" sourcerect="429,0,45,103" origin="0.54,0.64">
+        <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" alphaclipotherwearables="false" sourcerect="429,0,45,103" origin="0.54,0.64">
           <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Wf pucs Torso" texture="Wf_pucs_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -68,7 +68,7 @@
         <sprite name="Wf pucs Left Leg" texture="Wf_pucs_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Wf pucs hideboob" texture="Wf_pucs_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Wf pucs hideboob" texture="Wf_pucs_[GENDER].png" limb="Tail" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <!-- MOD FEATURE Water Flow Ressitance -->
         <StatValue stattype="FlowResistance" value="0.25" />
         <!-- MOD FEATURE Speed&hearing Change, Remove triggerAnimation -->
@@ -281,18 +281,18 @@
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="i_Wf_pucs_R" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/Content/Addons/EPSPSeries/Wf_Pucs_R_icon.png" />
-      <Sprite texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" />
-      <ContainedSprite name="Wf_PUCS_R In Vertical Locker" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" sourcerect="164,0,87,190" />
-      <ContainedSprite name="Wf_PUCS_R Behind Window" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_R_female.png" />
-      <ContainedSprite name="Wf_PUCS_R In Horizontal Locker" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_R_icon.png" />
+      <Sprite texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" />
+      <ContainedSprite name="Wf_PUCS_R In Vertical Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" sourcerect="164,0,87,190" />
+      <ContainedSprite name="Wf_PUCS_R Behind Window" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_female.png" />
+      <ContainedSprite name="Wf_PUCS_R In Horizontal Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" />
       <Wearable>
-        <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="474,0,45,103" origin="0.54,0.64">
+        <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="474,0,45,103" origin="0.54,0.64">
           <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Wf pucs Torso" texture="Wf_pucs_R_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -356,19 +356,19 @@
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="i_Wf_pucs_B" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/Content/Addons/EPSPSeries/Wf_Pucs_B_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5" />
-      <Sprite name="Wf_PUCS Item" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Wf_PUCS_B In Vertical Locker" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" />
-      <ContainedSprite name="Wf_PUCS_B Behind Window" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_B_female.png" />
-      <ContainedSprite name="Wf_PUCS_B In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_B_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5" />
+      <Sprite name="Wf_PUCS Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Wf_PUCS_B In Vertical Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" />
+      <ContainedSprite name="Wf_PUCS_B Behind Window" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_female.png" />
+      <ContainedSprite name="Wf_PUCS_B In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" />
 
       <Wearable>
-        <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="519,0,45,103" origin="0.54,0.64">
+        <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="519,0,45,103" origin="0.54,0.64">
           <LightComponent range="300.0" lightcolor="150,124,200,255" powerconsumption="10" IsOn="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Wf pucs Torso" texture="Wf_pucs_B_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -429,11 +429,11 @@
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="EAHI_pucs" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/Content/Addons/EPSPSeries/Wf_Pucs_D_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5" />
-      <Sprite name="Wf_PUCS Item" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Wf_pucs_D In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
-      <ContainedSprite name="Wf_pucs_D Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_D_female.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
-      <ContainedSprite name="Wf_pucs_D In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_D_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5" />
+      <Sprite name="Wf_PUCS Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Wf_pucs_D In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
+      <ContainedSprite name="Wf_pucs_D Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_female.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
+      <ContainedSprite name="Wf_pucs_D In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
       <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
         <GuiFrame relativesize="0.12,0.07" anchor="BottomRight" pivot="BottomRight" relativeoffset="0.2,0.11" />
         <TickBox text="epsp.lightandscooter">
@@ -443,12 +443,12 @@
       </CustomInterface>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
 
-        <sprite name="PUCS Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="564,0,45,103" origin="0.54,0.64">
+        <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="564,0,45,103" origin="0.54,0.64">
           <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="10" IsOn="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
-            <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
         <sprite name="Wf pucs Torso" texture="Wf_pucs_D_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />

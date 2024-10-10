@@ -22,11 +22,11 @@
       <RequiredItem identifier="organicfiber" amount="6" />
     </Fabricate>
     <PreferredContainer primary="locker" />
-    <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" depth="0.51" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3282923984%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" depth="0.51" origin="0.5,0.5" />
     <Body width="100" height="140" density="30" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
-      <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" limb="Torso" scale="0.85" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.85,0.76" />
+      <sprite name="shellshield" texture="%ModDir:3282923984%/Content/items/New/backpacks/backpack.png" sourcerect="0,0,132,149" limb="Torso" scale="0.85" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.85,0.76" />
       <StatusEffect disabledeltatime="true" setvalue="true" SpeedMultiplier="0.88" target="Character" type="OnWearing" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
@@ -52,11 +52,11 @@
       <RequiredItem identifier="organicfiber" amount="4" />
     </Fabricate>
     <PreferredContainer primary="locker" />
-    <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/beltpack.png" sourcerect="0,80,100,85" />
-    <Sprite texture="%ModDir%/Content/items/New/backpacks/beltpack.png" sourcerect="0,80,100,85" depth="0.51" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/items/New/backpacks/beltpack.png" sourcerect="0,80,100,85" />
+    <Sprite texture="%ModDir:3282923984%/Content/items/New/backpacks/beltpack.png" sourcerect="0,80,100,85" depth="0.51" />
     <Body radius="28" height="30" density="20" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
-      <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/beltpack.png" sourcerect="0,80,100,85" limb="Torso" scale="0.8" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.485,0.21" />
+      <sprite name="shellshield" texture="%ModDir:3282923984%/Content/items/New/backpacks/beltpack.png" sourcerect="0,80,100,85" limb="Torso" scale="0.8" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.485,0.21" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="12">
@@ -82,11 +82,11 @@
       <RequiredItem identifier="organicfiber" amount="4" />
     </Fabricate>
     <PreferredContainer primary="locker" />
-    <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/EMS_pack.png" sourcerect="0,0,99,142" />
-    <Sprite texture="%ModDir%/Content/items/New/backpacks/EMS_pack.png" sourcerect="0,0,99,142" depth="0.51" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/items/New/backpacks/EMS_pack.png" sourcerect="0,0,99,142" />
+    <Sprite texture="%ModDir:3282923984%/Content/items/New/backpacks/EMS_pack.png" sourcerect="0,0,99,142" depth="0.51" />
     <Body radius="28" height="30" density="20" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
-      <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/EMS_pack.png" sourcerect="0,0,99,142" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.48,0.63" />
+      <sprite name="shellshield" texture="%ModDir:3282923984%/Content/items/New/backpacks/EMS_pack.png" sourcerect="0,0,99,142" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.48,0.63" />
       <SkillModifier skillidentifier="medical" skillvalue="10" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
@@ -113,11 +113,11 @@
       <RequiredItem identifier="organicfiber" amount="4" />
     </Fabricate>
     <PreferredContainer primary="locker" />
-    <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/TechnicianToolkit.png" sourcerect="0,0,72,40" />
-    <Sprite texture="%ModDir%/Content/items/New/backpacks/TechnicianToolkit.png" sourcerect="0,0,72,40" depth="0.51" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/items/New/backpacks/TechnicianToolkit.png" sourcerect="0,0,72,40" />
+    <Sprite texture="%ModDir:3282923984%/Content/items/New/backpacks/TechnicianToolkit.png" sourcerect="0,0,72,40" depth="0.51" />
     <Body radius="28" height="30" density="20" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
-      <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/TechnicianToolkit.png" sourcerect="0,0,72,40" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.42,0.32" />
+      <sprite name="shellshield" texture="%ModDir:3282923984%/Content/items/New/backpacks/TechnicianToolkit.png" sourcerect="0,0,72,40" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.42,0.32" />
       <SkillModifier skillidentifier="mechanical" skillvalue="5" />
       <SkillModifier skillidentifier="electrical" skillvalue="5" />
     </Wearable>
@@ -143,11 +143,11 @@
       <RequiredItem identifier="duffelbag" mincondition="0" usecondition="false" />
     </Fabricate>
     <PreferredContainer primary="locker" />
-    <InventoryIcon texture="%ModDir%/Content/items/New/backpacks/duffelpack.png" sourcerect="0,0,203,112" />
-    <Sprite texture="%ModDir%/Content/items/New/backpacks/duffelpack.png" sourcerect="0,0,203,112" depth="0.51" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/items/New/backpacks/duffelpack.png" sourcerect="0,0,203,112" />
+    <Sprite texture="%ModDir:3282923984%/Content/items/New/backpacks/duffelpack.png" sourcerect="0,0,203,112" depth="0.51" />
     <Body width="200" height="112" density="20" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
-      <sprite name="shellshield" texture="%ModDir%/Content/items/New/backpacks/duffelpack_equip.png" sourcerect="0,0,147,202" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.81,0.5" />
+      <sprite name="shellshield" texture="%ModDir:3282923984%/Content/items/New/backpacks/duffelpack_equip.png" sourcerect="0,0,147,202" limb="Torso" scale="0.9" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.81,0.5" />
       <StatusEffect disabledeltatime="true" setvalue="true" SpeedMultiplier="0.54" target="Character" type="Always" />
     </Wearable>
     <Holdable slots="RightHand,LeftHand" holdpos="2,-80" handle1="0,50" handle2="0,50" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
@@ -174,16 +174,16 @@
       <RequiredItem identifier="organicfiber" amount="2" />
       <RequiredItem identifier="toolbelt" amount="2" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Content/Items/New/backpacks/rigging_icon.png" sourcerect="0,0,47,59" origin="0.5,0.5" />
-    <Sprite name="Rigging" texture="%ModDir%/Content/Items/New/backpacks/rigging.png" sourcerect="0,0,94,118" depth="0.6" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/Items/New/backpacks/rigging_icon.png" sourcerect="0,0,47,59" origin="0.5,0.5" />
+    <Sprite name="Rigging" texture="%ModDir:3282923984%/Content/Items/New/backpacks/rigging.png" sourcerect="0,0,94,118" depth="0.6" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Rigging Wearable" texture="%ModDir%/Content/Items/New/backpacks/rigging_[GENDER].png" limb="Torso" hidelimb="false" inheritscale="true" inheritorigin="false" origin="0.4,0.66" inheritsourcerect="false" sourcerect="0,0,107,132" />
-      <sprite name="Rigging hideboob" texture="%ModDir%/Content/Items/New/backpacks/rigging_[GENDER].png" limb="tail" hidelimb="true" inheritscale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Rigging Wearable" texture="%ModDir:3282923984%/Content/Items/New/backpacks/rigging_[GENDER].png" limb="Torso" hidelimb="false" inheritscale="true" inheritorigin="false" origin="0.4,0.66" inheritsourcerect="false" sourcerect="0,0,107,132" />
+      <sprite name="Rigging hideboob" texture="%ModDir:3282923984%/Content/Items/New/backpacks/rigging_[GENDER].png" limb="tail" hidelimb="true" inheritscale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
     </Wearable>
     <ItemContainer capacity="8">
-      <Containable items="smallitem,mediumitem" excludeditems="toolbox,toolbelt" />
+      <Containable items="smallitem,mediumitem" excludeditems="toolbox,toolbelt,largeitem,container,backpack" />
     </ItemContainer>
   </Item>
   <Item name="Chiyuan Light Body Armor" identifier="chiyuan" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
@@ -198,7 +198,7 @@
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
     </Price>
     <Deconstruct time="40">
-      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" amount="1" />
       <Item identifier="organicfiber" amount="3" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
@@ -207,18 +207,18 @@
       <RequiredItem identifier="ballisticfiber" amount="6" />
       <RequiredItem identifier="rigging" amount="1" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Content/Items/New/backpacks/chiyuan_male.png" sourcerect="0,0,107,140" origin="0.5,0.5" />
-    <Sprite name="Chiyuan Vest" texture="%ModDir%/Content/Items/New/backpacks/chiyuan_male.png" sourcerect="0,0,107,140" depth="0.6" />
+    <InventoryIcon texture="%ModDir:3282923984%/Content/Items/New/backpacks/chiyuan_male.png" sourcerect="0,0,107,140" origin="0.5,0.5" />
+    <Sprite name="Chiyuan Vest" texture="%ModDir:3282923984%/Content/Items/New/backpacks/chiyuan_male.png" sourcerect="0,0,107,140" depth="0.6" />
     <Body width="85" height="90" density="25" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" />
-      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
-      <sprite name="Chiyuan Vest Wearable" texture="%ModDir%/Content/Items/New/backpacks/chiyuan_[GENDER].png" limb="Torso" hidelimb="false" inheritscale="true" inheritorigin="false" origin="0.45,0.6" inheritsourcerect="false" sourcerect="0,0,107,140" />
-      <sprite name="Chiyuan Vest hideboob" texture="%ModDir%/Content/Items/New/backpacks/chiyuan_[GENDER].png" limb="tail" hidelimb="true" inheritscale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <sprite name="Chiyuan Vest Wearable" texture="%ModDir:3282923984%/Content/Items/New/backpacks/chiyuan_[GENDER].png" limb="Torso" hidelimb="false" inheritscale="true" inheritorigin="false" origin="0.45,0.6" inheritsourcerect="false" sourcerect="0,0,107,140" />
+      <sprite name="Chiyuan Vest hideboob" texture="%ModDir:3282923984%/Content/Items/New/backpacks/chiyuan_[GENDER].png" limb="tail" hidelimb="true" inheritscale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
     </Wearable>
     <ItemContainer capacity="8">
-      <Containable items="smallitem,mediumitem" excludeditems="toolbox,toolbelt" />
+      <Containable items="smallitem,mediumitem" excludeditems="toolbox,toolbelt,largeitem,container,backpack" />
     </ItemContainer>
   </Item>
 </Items>

@@ -12,13 +12,13 @@
       </Price>
       <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.02" />
       <PreferredContainer primary="crewcab" />
-      <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="530,324,63,51" origin="0.5,0.5" scale="0.5" />
+      <Sprite name="Clown Mask" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="530,324,63,51" origin="0.5,0.5" scale="0.5" />
       <Body width="40" radius="30" density="15" />
       <Deconstruct time="10">
         <Item identifier="bikehorn" />
       </Deconstruct>
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-        <sprite name="Clown Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" sourcerect="530,324,63,51" origin="0.2,1.6" />
+        <sprite name="Clown Mask Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" sourcerect="530,324,63,51" origin="0.2,1.6" />
         <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
           <TriggerAnimation Type="Walk" FileName="JollyWalk" priority="0" ExpectedSpecies="Human" />
@@ -112,14 +112,14 @@
       <Price baseprice="100" sold="false" canbespecial="false" />
       <PreferredContainer primary="wreckstoragecab" spawnprobability="0.01" />
       <PreferredContainer primary="crewcab" />
-      <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="646,215,57,67" origin="0.5,0.5" scale="0.5" />
+      <Sprite name="Clown Mask" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="646,215,57,67" origin="0.5,0.5" scale="0.5" />
       <Body width="40" radius="30" density="15" />
-      <InventoryIcon texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="646,215,57,67" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" sourcerect="646,215,57,67" />
       <Deconstruct time="10">
         <Item identifier="bikehorn" />
       </Deconstruct>
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-        <sprite name="Clown Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="1" sourcerect="646,215,57,67" origin="0.2,1.25" />
+        <sprite name="Clown Mask Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="1" sourcerect="646,215,57,67" origin="0.2,1.25" />
         <SkillModifier skillidentifier="helm" skillvalue="10" />
         <SkillModifier skillidentifier="weapons" skillvalue="10" />
         <SkillModifier skillidentifier="mechanical" skillvalue="10" />
@@ -147,7 +147,7 @@
           <Containable Items="electriciansgoggles">
             <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="true" overlaycolor="0,20,0,50" debugwiring="true" />
           </Containable>
-          <SlotIcon slotindex="0" texture="%ModDir%/Content/items/weapons/Waifu_UI.png" sourcerect="120,0,120,120" origin="0.5,0.5" />
+          <SlotIcon slotindex="0" texture="%ModDir:3282923984%/Content/items/weapons/Waifu_UI.png" sourcerect="120,0,120,120" origin="0.5,0.5" />
         </ItemContainer>
         <StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
     </Item>

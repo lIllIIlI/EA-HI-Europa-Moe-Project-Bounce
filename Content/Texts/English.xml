@@ -10,9 +10,57 @@
     <customization.haircolor>Decoration Color</customization.haircolor>
     <customization.facialhaircolor>Hair Color</customization.facialhaircolor>
   </Override>
+  <displayname.ChangeMode>[itemname] (Change Mode)</displayname.ChangeMode>
   <faction.EAHI>East Asia Heavy Industries</faction.EAHI>
   <faction.EAHI.description>The precursor of Europa East Asia Heavy Industries, the most renowned conglomerate on Europa, was originally a research outpost affiliated with Earth's East Asia Heavy Industries. As Europa gradually lost contact with Earth, the former research station transformed into the largest mining machinery supplier on Europa, leveraging its legacy industrial mother machines. After the Tormsdale nuclear disaster, EAHI acquired the majority of uranium mines from the Europa Union at a remarkably low price, becoming the largest mining trust across all of Europa. Negative rumors about EAHI have always circulated in secret, but publicly, they are hailed as the cornerstone of the Union's prosperity. </faction.EAHI.description>
   <faction.EAHI.shortdescription>East Asia Heavy Industries is a massive corporation specializing in mining and engineering machinery manufacturing. It enjoys a high reputation across Europa and has extensive cooperation with the Europa Union. </faction.EAHI.shortdescription>
+  <EAHI_Welcommessage></EAHI_Welcommessage>
+  <entityname.EAHI_LiaisonCommunicator>EAI Liaison Communicator</entityname.EAHI_LiaisonCommunicator>
+  <entitydescription.EAHI_LiaisonCommunicator>
+    A radio-based communicator for liaison officers, which cannot make calls outside settlements and needs recharging after each use. Due to a recent surge in identity fraud cases, East Asia Heavy Industries requires customers to insert an ID card for identity verification.
+  </entitydescription.EAHI_LiaisonCommunicator>
+  <charactername.MerchantEAHI>EAI Merchant</charactername.MerchantEAHI>
+  <itemmsgweldingfueloroxygensourcerequired>Welding fuel or oxygen source required</itemmsgweldingfueloroxygensourcerequired>
+  <idcardrequired>ID card required</idcardrequired>
+  <itemmsgequiporpickupuse>Equip [[use]]</itemmsgequiporpickupuse>
+  <!-- Event -->
+  <EventText.EAHI.WIP>Sorry, the system is under development and this service is temporarily unavailable.</EventText.EAHI.WIP>
+  <EventText.EAHI.Liaison.Menu>Hello, welcome to East Asia Heavy Industries Liaison Center's self-service voice system. How can I assist you today?</EventText.EAHI.Liaison.Menu>
+  <EventText.EAHI.Liaison.Merchant>Purchase goods</EventText.EAHI.Liaison.Merchant>
+  <EventText.EAHI.Liaison.MerchantComing>Welcome to the East Asia Heavy Industries Sales Department. We have contacted the local merchant, who will arrive at the airlock in [location] within half a minute.</EventText.EAHI.Liaison.MerchantComing>
+  <EventText.EAHI.Liaison.MerchantNotAvailable>Sorry, the merchant at [location] is currently assisting other customers and cannot arrive at this time. If you pay 200 Marks, the local merchant will prioritize your service on your next call. Would you like to purchase this service?</EventText.EAHI.Liaison.MerchantNotAvailable>
+  <EventText.EAHI.Liaison.ReserveMerchant>Pay 200 Marks</EventText.EAHI.Liaison.ReserveMerchant>
+  <EventText.EAHI.Liaison.MerchantReserved>Payment successful. Have a nice day. Goodbye.</EventText.EAHI.Liaison.MerchantReserved>
+  <EventText.EAHI.Liaison.DontHaveEnoughMoney>Payment failed. You do not have enough money to complete the payment. We offer well-paid contracts to all free captains of Europa. If you need money, please call us again to accept a contract. Have a great day. Goodbye.</EventText.EAHI.Liaison.DontHaveEnoughMoney>
+  <EventText.EAHI.Liaison.DontReserve>Do not purchase this service</EventText.EAHI.Liaison.DontReserve>
+  <EventText.EAHI.Liaison.MerchantnotReserved>Alright. We offer well-paid contracts to all free captains of Europa. If you need money, please call us again to accept a contract. Have a great day. Goodbye.</EventText.EAHI.Liaison.MerchantnotReserved>
+  <EventText.EAHI.Liaison.Mission>Accept a contract</EventText.EAHI.Liaison.Mission>
+  <EventText.EAHI.Liaison.MissionTypeSelect>Welcome to the East Asia Heavy Industries Contract Service. What type of contract would you like to accept? We offer higher rewards to trusted customers with high social credit scores.</EventText.EAHI.Liaison.MissionTypeSelect>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Delivery>Random Contract</EventText.EAHI.Liaison.MissionTypeSelect.Delivery>
+  <!-- <EventText.EAHI.Liaison.MissionTypeSelect.Delivery>Cargo Mission</EventText.EAHI.Liaison.MissionTypeSelect.Delivery> -->
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply-30-0>Alright, the contract details have been sent. Have a great day. Goodbye.</EventText.EAHI.Liaison.MissionTypeSelect.Reply-30-0>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply0-30>Alright, the contract details have been sent. Have a great day. Goodbye.</EventText.EAHI.Liaison.MissionTypeSelect.Reply0-30>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply30-60>Alright, the contract details have been sent. Have a great day. Goodbye.</EventText.EAHI.Liaison.MissionTypeSelect.Reply30-60>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply60-90>Alright, the contract details have been sent. Have a great day. Goodbye.</EventText.EAHI.Liaison.MissionTypeSelect.Reply60-90>
+  <EventText.EAHI.Liaison.MissionTypeSelect.Reply90-100>Alright, the contract details have been sent. Have a great day. Goodbye.</EventText.EAHI.Liaison.MissionTypeSelect.Reply90-100>
+  <EventText.EAHI.Liaison.MissionNotAvailable>We apologize, but due to high competition, there are no available contracts in [location] at the moment. If you pay 200 Marks, we will prioritize finding a contract for you on your next call. Would you like to purchase this service?</EventText.EAHI.Liaison.MissionNotAvailable>
+  <EventText.EAHI.Liaison.ReserveMission>Pay 200 Marks</EventText.EAHI.Liaison.ReserveMission>
+  <EventText.EAHI.Liaison.MissionReserved>Payment successful. Have a nice day. Goodbye.</EventText.EAHI.Liaison.MissionReserved>
+  <EventText.EAHI.Liaison.ClaimPoints>Redeem EAHI Points</EventText.EAHI.Liaison.ClaimPoints>
+  <EventText.EAHI.Liaison.complaint>After-sales and complaint services</EventText.EAHI.Liaison.complaint>
+  <EventText.EAHI.Liaison.Quit>Hang up</EventText.EAHI.Liaison.Quit>
+  <EventText.EAHI.Liaison.Wait5min>We apologize, but due to high service demand, the self-service system is temporarily unavailable. Please call again in 5 minutes.</EventText.EAHI.Liaison.Wait5min>
+  <EventText.EAHI.Liaison.CoporatePolice>Records indicate repeated actions against company interests. We consider you a significant threat to the prosperity of the company and Corporate police have been dispatched.</EventText.EAHI.Liaison.CoporatePolice>
+
+  <!-- Portable Process Bench -->
+  <entityname.EAHI_ProcessBrench>EAHI Portable Processing Bench</entityname.EAHI_ProcessBrench>
+  <entitydescription.EAHI_ProcessBrench>Place on a flat surface to use. Can be carried on your back. Powered by a fuel tank.</entitydescription.EAHI_ProcessBrench>
+  <EAHI_ProcessBrench.Process>Process</EAHI_ProcessBrench.Process>
+  <EAHI_ProcessBrench.empty.infotext>Place items inside to begin processing. This bench is powered by a fuel tank.</EAHI_ProcessBrench.empty.infotext>
+  <EAHI_ProcessBrench.extract.infotext>Extract</EAHI_ProcessBrench.extract.infotext>
+  <EAHI_ProcessBrench.missingitem>Extraction Serum has been added. Alien creature parts required.</EAHI_ProcessBrench.missingitem>
+  <EAHI_ProcessBrench.Process.infotext>Preparing to extract alien material.</EAHI_ProcessBrench.Process.infotext>
+
   <!-- Labels -->
   <AnimatedBarotraumaClassic>[EA-HI]Animated Barotrauma + Custom</AnimatedBarotraumaClassic>
   <subcategory.EAHI>EAHI</subcategory.EAHI>
@@ -28,7 +76,7 @@
   <entitydescription.alienbloodmod>Blood extracted from the body of a native species of Europa can be further processed into Blood products to treat blood loss. It can also be further purified into genes using stabilozine at the research bench.</entitydescription.alienbloodmod>
   <entitydescription.mudraptorshellmod>Mudraptor Carapace Fragment. Can be broken down into Exotic Matter and Mudraptor Headgear</entitydescription.mudraptorshellmod>
   <entityname.mudraptorshell_head>Mudraptor Headgear</entityname.mudraptorshell_head>
-  <entitydescription.mudraptorshell_head>A small fragment of Mudraptor's carapace, I don't know which part of Mudraptor it is.</entitydescription.mudraptorshell_head>
+  <entitydescription.mudraptorshell_head>A small fragment of Mudraptor's carapace fashioned into a horned helmet, no clue which part of the mudraptor it is.</entitydescription.mudraptorshell_head>
   <entityname.exotic_matter>Exotic Matter</entityname.exotic_matter>
   <entitydescription.exotic_matter>Liquid extracted from alien creature shells.</entitydescription.exotic_matter>
   <entityname.EAHI_serum>Exotic Matter Extraction Serum</entityname.EAHI_serum>
@@ -142,10 +190,10 @@
   <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS.</entitydescription.Wf_pucs>
   <entityname.Wf_pucs_R>Combat EPSP</entityname.Wf_pucs_R>
   <entitydescription.Wf_pucs_R>A targeted improvement of the EPSP, reinforced with bulletproof fibers to enhance defense against certain attacks.</entitydescription.Wf_pucs_R>
-  <entityname.Wf_pucs_B>Deep Dive EPSP</entityname.Wf_pucs_B>
+  <entityname.Wf_pucs_B>Abyss EPSP</entityname.Wf_pucs_B>
   <entitydescription.Wf_pucs_B>A targeted improvement of the EPSP, reinforced with bulletproof fibers and titanium-aluminum alloy to enhance defense. It maintains excellent burn protection while offering the defense and pressure resistance of standard abyssal diving suits.</entitydescription.Wf_pucs_B>
   <entityname.Wf_pucs_D>Special Operations EPSP</entityname.Wf_pucs_D>
-  <entitydescription.Wf_pucs_D>A targeted improvement of the EPSP, uses low-visibility coating and strengthens the defense against human weapons, and is equipped with small propellers to facilitate the rapid transfer of combatants outside the combat area.</entitydescription.Wf_pucs_D>
+  <entitydescription.Wf_pucs_D>A targeted improvement of the EPSP, uses low-visibility coating and strengthens the defense against human weapons, equipped with small propellers for faster movement underwater.</entitydescription.Wf_pucs_D>
   <epsp.light>Light</epsp.light>
   <epsp.lightandscooter>Light and Scooter</epsp.lightandscooter>
   <entityname.Wf_New_XDS-01>XDS-01</entityname.Wf_New_XDS-01>
@@ -239,8 +287,10 @@
   <entitydescription.maidclothes1>Adorable.</entitydescription.maidclothes1>
   <entityname.maidheaddress>Maid Headdress</entityname.maidheaddress>
   <entitydescription.maidheaddress>Maid's core element.</entitydescription.maidheaddress>
-  <entityname.Exotic_Armored_suit>Exotic Matter Armor - Diving Suit</entityname.Exotic_Armored_suit>
-  <entitydescription.Exotic_Armored_suit>This is the wetsuit part of the suit, which is made of the alien material extracted from the biological crust of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Armored_suit>
+  <entityname.Exotic_Armored_suit>Exotic Armored Suit (F)</entityname.Exotic_Armored_suit>
+  <entitydescription.Exotic_Armored_suit>This diving suit is infused with living exotic matter extracted from Europa's monsters. Provide users the same extreme pressure resistance that of the monsters. Built-in oxygenite shard also provides limitless oxygen.</entitydescription.Exotic_Armored_suit>
+  <entityname.Exotic_Armored_suit_m>Exotic Armored Suit (M)</entityname.Exotic_Armored_suit_m>
+  <entitydescription.Exotic_Armored_suit_m>This diving suit is infused with living exotic matter extracted from Europa's monsters. Provide users the same extreme pressure resistance that of the monsters. Built-in oxygenite shard also provides limitless oxygen.</entitydescription.Exotic_Armored_suit_m>
   <entityname.Exotic_Armored_suit_head>Exotic Matter Armor - Helmet</entityname.Exotic_Armored_suit_head>
   <entitydescription.Exotic_Armored_suit_head>This is the helmet part of the suit, which is made of the alien material extracted from the biological carapace of Europa. Collecting all the parts of the set will give you a higher bonus. (WIP)</entitydescription.Exotic_Armored_suit_head>
   <entityname.PrayerMio_uniform>HGIS</entityname.PrayerMio_uniform>
@@ -267,7 +317,7 @@
   <entityname.teleportine>[EA-HI] Teleportine</entityname.teleportine>
   <entitydescription.teleportine>This vial is distributed by East Asia Heavy Industries to the liaison officers. Upon injury it will quickly teleport them to a safe place.</entitydescription.teleportine>
   <entityname.exotic_matter>Exotic matter</entityname.exotic_matter>
-  <entitydescription.exotic_matter>Exotic matter extracted from Europa's bio-carapace possesses rather ingenious properties.</entitydescription.exotic_matter>
+  <entitydescription.exotic_matter>Exotic matter extracted from Europa's bio-carapace possesses rather unique properties.</entitydescription.exotic_matter>
   <entityname.EAHI_license_oneoff>Master Blueprint - [type]</entityname.EAHI_license_oneoff>
   <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of East Asia Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
   <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of Dongya Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
@@ -317,7 +367,7 @@
   <missiondescription.EAHI_Mission_FZ>The liaison entrusts you to deliver a batch of clothes with rewards of [reward]mk</missiondescription.EAHI_Mission_FZ>
   <missionsuccess.EAHI_Mission_FZ>Clothing has been successfully delivered to [location2]</missionsuccess.EAHI_Mission_FZ>
   <missionfailure.EAHI_Mission_FZ>No way, why would someone steal clothes?</missionfailure.EAHI_Mission_FZ>
-  <missionname.EAHI_Mission_XDY>Adult Film</missionname.EAHI_Mission_XDY>
+  <missionname.EAHI_Mission_XDY>Short Film</missionname.EAHI_Mission_XDY>
   <missiondescription.EAHI_Mission_XDY>Given Europa's terrible network environment, the liaison officer asks you to help transport a batch of goods, mainly hard drives. "They are all confidential files, don't go snooping around," the liaison officer says, offering a [reward]mk reward.</missiondescription.EAHI_Mission_XDY>
   <missionsuccess.EAHI_Mission_XDY>You look through the logs and don't find what you're looking for. Anyway, the stuff's delivered anyway, so who cares.</missionsuccess.EAHI_Mission_XDY>
   <missionfailure.EAHI_Mission_XDY>How did you fail?</missionfailure.EAHI_Mission_XDY>

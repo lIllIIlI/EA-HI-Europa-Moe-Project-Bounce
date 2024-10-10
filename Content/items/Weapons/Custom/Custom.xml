@@ -22,7 +22,7 @@
 				<RequiredItem identifier="iron" amount="2" />
 				<RequiredItem identifier="chloralhydrate" amount="2" />
 			</Fabricate>
-			<Sprite texture="%ModDir%/Content/items/Weapons/weapons_new.png" sourcerect="294,71,22,45" depth="0.55" origin="0.5,0.5" />
+			<Sprite texture="%ModDir:3282923984%/Content/items/Weapons/weapons_new.png" sourcerect="294,71,22,45" depth="0.55" origin="0.5,0.5" />
 			<Body width="26" height="54" density="30" />
 			<ItemComponent characterusable="false">
 				<!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
@@ -110,7 +110,7 @@
 				<RequiredItem identifier="chloralhydrate" amount="2" />
 				<RequiredItem identifier="phosphorus" />
 			</Fabricate>
-			<Sprite texture="%ModDir%/Content/items/Weapons/weapons_new.png" sourcerect="333,86,41,17" depth="0.55" origin="0.5,0.5" Color="255,128,225,255" />
+			<Sprite texture="%ModDir:3282923984%/Content/items/Weapons/weapons_new.png" sourcerect="333,86,41,17" depth="0.55" origin="0.5,0.5" Color="255,128,225,255" />
 			<Body width="38" height="15" density="30" />
 			<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 			<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
@@ -173,7 +173,7 @@
 		</Item>
 		<Item name="Sleep Mist Emitter" identifier="sleepmistemitter" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
 			<!-- Use this for debugging: sourcerect="185,159,41,17" -->
-			<Sprite texture="%ModDir%/Content/items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" Color="255,55,255,100" />
+			<Sprite texture="%ModDir:3282923984%/Content/items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" Color="255,55,255,100" />
 			<!-- Without a body, the item wouldn't stay inside the sub, and could go through sub walls from the outside -->
 			<Body radius="50" bodytype="kinematic" />
 			<ItemComponent>
@@ -219,11 +219,11 @@
 				<ParticleEmitterCharge particle="chargeblamelaser" velocitymin="0" velocitymax="0" particlespersecond="120" scalemin="0.5" scalemax="0.5" anglemin="0" anglemax="359" colormultiplier="220,0,0,255" />
 				<ParticleEmitter particle="muzzleblame" copyentityangle="true" particleamount="10" scalemin="0.8" scalemax="0.8" />
 				<ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
-				<Sound file="%ModDir%/Content/items/Weapons/Custom/launch2.ogg" type="OnUse" range="2000" volume="1.3" />
+				<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/launch2.ogg" type="OnUse" range="2000" volume="1.3" />
 				<StatusEffect type="OnUse" delay="0.1">
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/blameshot.ogg" type="OnUse" range="1000" volume="1.4" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/blameshot.ogg" type="OnUse" range="1000" volume="1.4" />
 				</StatusEffect>
-				<ChargeSound file="%ModDir%/Content/items/Weapons/Custom/charging.ogg" range="2000" volume="0.8" />
+				<ChargeSound file="%ModDir:3282923984%/Content/items/Weapons/Custom/charging.ogg" range="2000" volume="0.8" />
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="100.0" levelwalldamage="0" structuredamage="1" force="100.0" itemdamage="1" severlimbsprobability="1" decal="explosion" decalsize="0.7" camerashake="20.0">
 						<Affliction identifier="stun" strength="5" />
@@ -236,7 +236,7 @@
 				<RequiredItems items="gravbeam" type="Contained" msg="ItemMsgAmmoRequired" />
 				<RequiredSkill identifier="weapons" level="75" />
 				<StatusEffect type="OnPicked" target="This">
-					<sound file="%ModDir%/Content/items/Weapons/Custom/blametheme.ogg" />
+					<sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/blametheme.ogg" />
 				</StatusEffect>
 			</RangedWeapon>
 			<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
@@ -330,13 +330,13 @@
 				<ParticleEmitterCharge particle="chargeblamelaser" velocitymin="0" velocitymax="0" particlespersecond="120" scalemin="0.5" scalemax="0.5" anglemin="0" anglemax="359" colormultiplier="0,150,255,255" />
 				<ParticleEmitter particle="muzzleblame" copyentityangle="true" particleamount="10" scalemin="0.8" scalemax="0.8" colormultiplier="0,150,255,255" />
 				<ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
-				<Sound file="%ModDir%/Content/items/Weapons/Custom/domshot.ogg" type="OnUse" range="2000" volume="2" />
+				<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/domshot.ogg" type="OnUse" range="2000" volume="2" />
 				<StatusEffect type="OnSecondaryUse" target="This">
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/idle1-1.ogg" range="100" loop="false" volume="1.4" selectionmode="Random" />
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/idle2-1.ogg" range="100" loop="false" volume="1.4" />
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/idle3-1.ogg" range="100" loop="false" volume="1.4" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/idle1-1.ogg" range="100" loop="false" volume="1.4" selectionmode="Random" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/idle2-1.ogg" range="100" loop="false" volume="1.4" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/idle3-1.ogg" range="100" loop="false" volume="1.4" />
 				</StatusEffect>
-				<ChargeSound file="%ModDir%/Content/items/Weapons/Custom/charging.ogg" range="2000" volume="0.8" />
+				<ChargeSound file="%ModDir:3282923984%/Content/items/Weapons/Custom/charging.ogg" range="2000" volume="0.8" />
 				<StatusEffect type="OnUse">
 					<Explosion range="150.0" force="10" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" camerashake="5.0" />
 				</StatusEffect>
@@ -346,7 +346,7 @@
 				<RequiredItems items="dominatorbeam" type="Contained" msg="ItemMsgAmmoRequired" />
 				<RequiredSkill identifier="weapons" level="25" />
 				<StatusEffect type="OnPicked" target="This">
-					<sound file="%ModDir%/Content/items/Weapons/Custom/blametheme.ogg" />
+					<sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/blametheme.ogg" />
 				</StatusEffect>
 			</RangedWeapon>
 			<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
@@ -388,7 +388,7 @@
 					<SpawnItem identifiers="dominatorbolt" spawnposition="ThisInventory" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="This" delay="1">
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/rethalmod.ogg" type="OnUse" range="100" volume="0.8" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/rethalmod.ogg" type="OnUse" range="100" volume="0.8" />
 				</StatusEffect>
 			</ItemContainer>
 			<!--Magazines can be combined to raise conditin.-->
@@ -435,7 +435,7 @@
 					<SpawnItem identifiers="dominatorbolt2" spawnposition="ThisInventory" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="This" delay="1">
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/nonrethalmod.ogg" type="OnUse" range="100" volume="0.8" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/nonrethalmod.ogg" type="OnUse" range="100" volume="0.8" />
 				</StatusEffect>
 			</ItemContainer>
 			<!--Magazines can be combined to raise conditin.-->
@@ -480,7 +480,7 @@
 					<SpawnItem identifiers="dominatorbolt3" spawnposition="ThisInventory" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="This" delay="1">
-					<Sound file="%ModDir%/Content/items/Weapons/Custom/destroymod.ogg" type="OnUse" range="100" volume="0.8" />
+					<Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/destroymod.ogg" type="OnUse" range="100" volume="0.8" />
 				</StatusEffect>
 			</ItemContainer>
 			<!--Magazines can be combined to raise conditin.-->

@@ -12,7 +12,7 @@
         <Price storeidentifier="merchantmine" minavailable="6" />
       </Price>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
-      <Sprite name="Headset" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="16,336,50,50" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="16,336,50,50" origin="0.5,0.5" />
       <Body radius="20" height="20" density="30" />
       <Deconstruct time="10">
         <Item identifier="plastic" amount="2" />
@@ -35,7 +35,7 @@
         </WifiComponent>
       </Upgrade>
       <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-        <sprite name="Headset Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidelimb="false" inheritlimbdepth="true" depth="0.7" inheritscale="true" ignorelimbscale="true" scale="0.8" hideotherwearables="false" sourcerect="16,336,50,50" origin="0.8,0.72" />
+        <sprite name="Headset Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" hidelimb="false" inheritlimbdepth="true" depth="0.7" inheritscale="true" ignorelimbscale="true" scale="0.8" hideotherwearables="false" sourcerect="16,336,50,50" origin="0.8,0.72" />
       </Wearable>
     </Item>
   </Items>

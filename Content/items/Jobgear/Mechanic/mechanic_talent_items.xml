@@ -62,30 +62,30 @@
         <RequiredItem identifier="organicfiber" amount="2" />
         <RequiredItem identifier="iron" amount="6" />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_Items.png" sourcerect="144,0,128,128" origin="0.5,0.5" />
-      <Sprite name="Makeshift Armor Item" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_Items.png" sourcerect="7,6,137,115" depth="0.55" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_Items.png" sourcerect="144,0,128,128" origin="0.5,0.5" />
+      <Sprite name="Makeshift Armor Item" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_Items.png" sourcerect="7,6,137,115" depth="0.55" origin="0.5,0.5" />
       <Body width="62" height="120" density="30" />
       <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true" />
         <damagemodifier afflictionidentifiers="bitewounds, lacerations,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-        <sprite name="Makeshift Armor Torso" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Cloak" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Torso" depthlimb="RightForearm" hidelimb="false" inherittexturescale="true" CanBeHiddenByOtherWearables="false" origin="0.6,0.75" sourcerect="400,0,80,128" />
-        <sprite name="Makeshift Armor Right Hand" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Left Hand" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Right Upper Arm" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Left Upper Arm" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Right Forearm" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Left Forearm" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Waist" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Right Thigh" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Left Thigh" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Right Leg" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Left Leg" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Left Shoe" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Right Shoe" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Makeshift Armor Boobs" texture="%ModDir%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="403,120,50,50" />
+        <sprite name="Makeshift Armor Torso" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Cloak" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Torso" depthlimb="RightForearm" hidelimb="false" inherittexturescale="true" CanBeHiddenByOtherWearables="false" origin="0.6,0.75" sourcerect="400,0,80,128" />
+        <sprite name="Makeshift Armor Right Hand" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Left Hand" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Right Upper Arm" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Left Upper Arm" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Right Forearm" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Left Forearm" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Waist" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Right Thigh" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Left Thigh" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Right Leg" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Left Leg" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Left Shoe" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Right Shoe" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Makeshift Armor Boobs" texture="%ModDir:3282923984%/Content/Items/Diving/MakeshiftArmor_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="403,120,50,50" />
 
         <StatValue stattype="FlowResistance" value="0.5" />
         <StatValue stattype="PropulsionSpeed" value="-0.3" />
@@ -112,67 +112,15 @@
         <RequiredItem identifier="iron" amount="4" />
       </Fabricate>
       <Body width="70" height="80" />
-      <Sprite name="Makeshift Helmet Item" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="693,559,65,40" origin="0.54,1.1" depth="0.6" />
+      <Sprite name="Makeshift Helmet Item" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" sourcerect="693,559,65,40" origin="0.54,1.1" depth="0.6" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
         <damagemodifier afflictionidentifiers="lacerations, bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-        <sprite name="Iron Helmet" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" sourcerect="693,559,65,40" origin="0.54,1.1" />
+        <sprite name="Iron Helmet" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" sourcerect="693,559,65,40" origin="0.54,1.1" />
       </Wearable>
-    </Item>
-    <Item name="Exosuit Locker Vertical" identifier="EXOdivingsuitlocker" category="Diving" tags="container,divingsuitcontainer,divingsuitcontainerwindow" pickdistance="50" scale="0.5">
-      <!-- 合成 -->
-      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
-        <RequiredSkill identifier="mechanical" level="20" />
-        <RequiredSkill identifier="electrical" level="20" />
-        <RequiredItem identifier="steel" amount="4" />
-        <RequiredItem identifier="iron" amount="4" />
-      </Fabricate>
-      <!-- 分解 -->
-      <Deconstruct time="15">
-        <Item identifier="steel" amount="4" />
-        <Item identifier="iron" amount="4" />
-      </Deconstruct>
-      <!-- 贴图 -->
-      <Sprite name="Exosuit Locker Vertical" texture="%ModDir%/EXOPLACE.png" depth="0.74" sourcerect="12,20,255,380" origin="0.5,0.5" />
-      <DecorativeSprite texture="%ModDir%/EXOPLACE.png" depth="0.72" sourcerect="260,20,255,380" origin="0.5,0.5" />
-      <!-- 耗电 -->
-      <Powered powerconsumption="50" currpowerconsumption="50" isactive="true">
-        <GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
-      </Powered>
-      <!-- 接线面板 -->
-      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
-        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
-        <RequiredSkill identifier="electrical" level="20" />
-        <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-          <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
-          <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
-          <Affliction identifier="stun" strength="3" />
-          <Affliction identifier="burn" strength="5" />
-        </StatusEffect>
-        <RequiredItem items="screwdriver" type="Equipped" />
-        <ParticleEmitter particle="spark" particleburstamount="5" particleburstinterval="1.05" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
-        <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
-        <input name="power_in" displayname="connection.powerin" />
-      </ConnectionPanel>
-      <!-- 放置物品 -->
-      <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="124,-168" iteminterval="0,0" canbeselected="true" containedspritedepth="0.73" msg="ItemMsgInteractSelect">
-        <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
-        <StatusEffect type="OnFire" target="This" tags="onfire" duration="1" stackable="false" />
-        <Containable items="deepdivinglarge,exosuitPA"></Containable>
-      </ItemContainer>
-      <!-- 实体大小 -->
-      <Body width="250" height="350" density="20" />
-      <!-- 拆卸安装手持 -->
-      <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true" attachedbydefault="true">
-        <RequiredItem items="wrench" type="Equipped" />
-        <StatusEffect target="This" type="Always">
-          <Conditional attached="false" targetitemcomponentname="Holdable" />
-          <DropContainedItems />
-        </StatusEffect>
-      </Holdable>
     </Item>
     <Item name="" identifier="exosuit" category="Diving,Equipment" tags="diving,deepdiving,deepdivinglarge,human" scale="0.605" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.01" cargocontaineridentifier="">
       <Price baseprice="80" canbespecial="false" sold="false" />
@@ -189,7 +137,7 @@
         <RequiredItem identifier="rubber" amount="3" />
       </Fabricate>
       <InventoryIcon texture="Content/Items/Jobgear/Mechanic/Exosuit.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
-      <Sprite name="Exosuit Item" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" sourcerect="472,0,176,264" depth="0.55" origin="0.5,0.5" />
+      <Sprite name="Exosuit Item" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" sourcerect="472,0,176,264" depth="0.55" origin="0.5,0.5" />
       <Body width="150" height="230" density="30" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
         <!-- <sprite name="Exosuit Helmet Wearable" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
@@ -214,25 +162,25 @@
   
         <!-- TODO Show Head? -->
         <sprite name="Exosuit Helmet Wearable" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
-        <sprite name="Exosuit Torso" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.40,0.62" inheritsourcerect="false" sourcerect="168,0,176,264">
+        <sprite name="Exosuit Torso" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.40,0.62" inheritsourcerect="false" sourcerect="168,0,176,264">
           <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-50,-80">
             <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />          
           </LightComponent>
         </sprite>
-        <sprite name="Exosuit Right Hand" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="344,184,64,48" />
-        <sprite name="Exosuit Left Hand" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="408,184,64,48" />
-        <sprite name="Exosuit Right Upper Arm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.538" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="344,0,64,104" />
-        <sprite name="Exosuit Left Upper Arm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.538" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="408,0,64,104" />
-        <sprite name="Exosuit Right Forearm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.513" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="344,104,64,80" />
-        <sprite name="Exosuit Left Forearm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.513" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="408,104,64,80" />
-        <sprite name="Exosuit Waist" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.563,0.556" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,264,128,72" />
-        <sprite name="Exosuit Right Thigh" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightThigh" depthlimb="head" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.524,0.529" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,0,84,136" />
-        <sprite name="Exosuit Left Thigh" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.524,0.529" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="84,0,84,136" />
-        <sprite name="Exosuit Right Leg" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="0,136,80,128" />
-        <sprite name="Exosuit Left Leg" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="88,136,80,128" />
-        <sprite name="Exosuit Right Shoe" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.513,0.667" inheritsourcerect="false" sourcerect="128,264,96,72" />
-        <sprite name="Exosuit Left Shoe" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.513,0.667" inheritsourcerect="false" sourcerect="224,264,96,72" />
-        <sprite name="Exosuit hideboob" texture="%ModDir%/Content/Items/Jobgear/Mechanic/EXO.png" limb="tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,1,1" />
+        <sprite name="Exosuit Right Hand" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="344,184,64,48" />
+        <sprite name="Exosuit Left Hand" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="408,184,64,48" />
+        <sprite name="Exosuit Right Upper Arm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.538" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="344,0,64,104" />
+        <sprite name="Exosuit Left Upper Arm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.538" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="408,0,64,104" />
+        <sprite name="Exosuit Right Forearm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.513" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="344,104,64,80" />
+        <sprite name="Exosuit Left Forearm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.513" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="408,104,64,80" />
+        <sprite name="Exosuit Waist" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.563,0.556" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,264,128,72" />
+        <sprite name="Exosuit Right Thigh" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightThigh" depthlimb="head" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.524,0.529" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,0,84,136" />
+        <sprite name="Exosuit Left Thigh" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.524,0.529" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="84,0,84,136" />
+        <sprite name="Exosuit Right Leg" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="0,136,80,128" />
+        <sprite name="Exosuit Left Leg" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="88,136,80,128" />
+        <sprite name="Exosuit Right Shoe" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.513,0.667" inheritsourcerect="false" sourcerect="128,264,96,72" />
+        <sprite name="Exosuit Left Shoe" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.513,0.667" inheritsourcerect="false" sourcerect="224,264,96,72" />
+        <sprite name="Exosuit hideboob" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/EXO.png" limb="tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,1,1" />
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
         <StatusEffect type="OnWearing" target="Character" LowPassMultiplier="0.2" HideFace="true" ObstructVisionAmount="0.5" PressureProtection="10000.0"  PropulsionSpeedMultiplier="0.5" setvalue="true" disabledeltatime="true">
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
@@ -333,39 +281,42 @@
       </ItemContainer>
       <aitarget maxsightrange="1500" />
     </Item>
-    <Item name="" identifier="exosuit_alt" variantof="exosuit">
+    <Item name="Exosuit Alter" identifier="exosuit_alt" variantof="exosuit">
       <Price baseprice="80" canbespecial="false" sold="false" />
       <Deconstruct time="5">
         <Item identifier="exosuit" />
       </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="false">
         <RequiredSkill identifier="mechanical" level="60" />
-        <RequiredItem identifier="exosuit" />
+        <RequiredItem identifier="exosuit" amount="1"/>
+        <RequiredItem />
       </Fabricate>
-      <InventoryIcon texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" sourcerect="488,622,128,128" origin="0.5,0.5" />
-      <Sprite name="Exosuit Item" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" sourcerect="7,487,203,244" depth="0.55" origin="0.5,0.5" />
+      <!-- <InventoryIcon texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" sourcerect="488,622,128,128" origin="0.5,0.5" /> -->
+      <Sprite name="Exosuit Item" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" sourcerect="7,487,203,244" depth="0.55" origin="0.5,0.5" />
       <Body width="150" height="230" density="15" />
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-        <sprite name="Exosuit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hideotherwearables="true" hidewearablesoftype="" sourcerect="229,457,235,261" origin="0.68,0.42">
+        <sprite name="Exosuit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hideotherwearables="true" hidewearablesoftype="" sourcerect="229,457,235,261" origin="0.68,0.42">
           <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-40,35">
             <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.09, 0.47" size="1.0,1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="Exosuit Torso" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Torso" scale="1" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.77,0.4" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="325,106,152,269" />
-        <sprite name="Exosuit Right Hand" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="544,288,24,40" origin="0.47,0.59" />
-        <sprite name="Exosuit Left Hand" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="608,288,24,40" origin="0.47,0.59" />
-        <sprite name="Exosuit Right Upper Arm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="540,98,27,76" origin="0.5,0.59" />
-        <sprite name="Exosuit Left Upper Arm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="604,98,27,76" origin="0.5,0.59" />
-        <sprite name="Exosuit Right Forearm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="532,213,35,58" origin="0.47,0.59" />
-        <sprite name="Exosuit Left Forearm" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="595,213,35,58" origin="0.47,0.59" />
-        <sprite name="Exosuit Waist" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Waist" hidelimb="true" scale="1" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="569,470,62,56" origin="0.56,0.57" />
-        <sprite name="Exosuit Right Thigh" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="88,111,51,109" origin="0.57,0.61" />
-        <sprite name="Exosuit Left Thigh" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="189,113,50,109" origin="0.57,0.61" />
-        <sprite name="Exosuit Right Leg" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritlimbdepth="true" inheritsourcerect="false" SourceRect="83,253,85,142" origin="0.37,0.65" />
-        <sprite name="Exosuit Left Leg" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="184,253,85,142" origin="0.37,0.65" />
-        <sprite name="Exosuit Left Shoe" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="591,361,59,50" origin="0.65,0.45" scale="1.2" />
-        <sprite name="Exosuit Right Shoe" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="584,361,59,50" origin="0.65,0.45" scale="1.2" />
-        <sprite name="Exosuit Boobs" texture="%ModDir%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Tail"  hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,50,50" scale="1.2" />
+        <sprite name="Exosuit Torso" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Torso" scale="1" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.77,0.4" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="325,106,152,269" >
+          <LightComponent />
+        </sprite>
+        <sprite name="Exosuit Right Hand" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="544,288,24,40" origin="0.47,0.59" />
+        <sprite name="Exosuit Left Hand" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="608,288,24,40" origin="0.47,0.59" />
+        <sprite name="Exosuit Right Upper Arm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="540,98,27,76" origin="0.5,0.59" />
+        <sprite name="Exosuit Left Upper Arm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="604,98,27,76" origin="0.5,0.59" />
+        <sprite name="Exosuit Right Forearm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="532,213,35,58" origin="0.47,0.59" />
+        <sprite name="Exosuit Left Forearm" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="595,213,35,58" origin="0.47,0.59" />
+        <sprite name="Exosuit Waist" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Waist" hidelimb="true" scale="1" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="569,470,62,56" origin="0.56,0.57" />
+        <sprite name="Exosuit Right Thigh" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="88,111,51,109" origin="0.57,0.61" />
+        <sprite name="Exosuit Left Thigh" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="189,113,50,109" origin="0.57,0.61" />
+        <sprite name="Exosuit Right Leg" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritlimbdepth="true" inheritsourcerect="false" SourceRect="83,253,85,142" origin="0.37,0.65" />
+        <sprite name="Exosuit Left Leg" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" SourceRect="184,253,85,142" origin="0.37,0.65" />
+        <sprite name="Exosuit Left Shoe" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="591,361,59,50" origin="0.65,0.45" scale="1.2" />
+        <sprite name="Exosuit Right Shoe" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="584,361,59,50" origin="0.65,0.45" scale="1.2" />
+        <sprite name="Exosuit Boobs" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/Exosuit2.png" limb="Tail"  hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,50,50" scale="1.2" />
         <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" />
     		<StatValue stattype="MeleeAttackMultiplier" value="0.3" />
         </Wearable>
@@ -388,7 +339,7 @@
         <RequiredItem identifier="steel" />
       </Fabricate>
       <InventoryIcon texture="Content/Items/Jobgear/TalentGear.png" sourcerect="157,492,114,20" origin="0.5,0.5" />
-      <Sprite texture="%ModDir%/Content/items/Jobgear/Mechanic/heavywrench_plus.png" sourcerect="0,0,171,36" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:3282923984%/Content/items/Jobgear/Mechanic/heavywrench_plus.png" sourcerect="0,0,171,36" depth="0.55" origin="0.5,0.5" />
       <Body width="114" height="20" density="30" />
       <MeleeWeapon slots="RightHand+LeftHand,Any" range="130" reload="1.1" controlpose="true" aimpos="45,10" handle1="-25,0" handle2="-12.5,0.5" holdangle="56" combatpriority="20">
         <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />

@@ -13,7 +13,7 @@
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon name="404 Uniform Icon" texture="%ModDir%/Content/Items/New/GRF/GRF_icon.png" sourcerect="0,0,64,57" origin="0.5,0.5" />
+    <InventoryIcon name="404 Uniform Icon" texture="%ModDir:3282923984%/Content/Items/New/GRF/GRF_icon.png" sourcerect="0,0,64,57" origin="0.5,0.5" />
     <Sprite name="404 Uniform" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -48,7 +48,7 @@
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon name="GK Uniform Icon" texture="%ModDir%/Content/Items/New/GRF/GRF_icon.png" sourcerect="0,0,64,57" origin="0.5,0.5" />
+    <InventoryIcon name="GK Uniform Icon" texture="%ModDir:3282923984%/Content/Items/New/GRF/GRF_icon.png" sourcerect="0,0,64,57" origin="0.5,0.5" />
     <Sprite name="GK Uniform" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -92,8 +92,8 @@
       <RequiredItem identifier="steel" amount="1" />
       <RequiredItem identifier="rubber" amount="2" />
     </Fabricate>
-    <InventoryIcon name="Exoskeleton Light Icon" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
-    <Sprite name="Exoskeleton Light" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Exoskeleton Light Icon" texture="%ModDir:3282923984%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
+    <Sprite name="Exoskeleton Light" texture="%ModDir:3282923984%/Content/Items/New/GRF/exoskeleton_light_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
@@ -152,8 +152,8 @@
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon name="Exoskeleton Standard Icon" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
-    <Sprite name="Exoskeleton Standard" texture="%ModDir%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Exoskeleton Standard Icon" texture="%ModDir:3282923984%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" origin="0.5,0.5" />
+    <Sprite name="Exoskeleton Standard" texture="%ModDir:3282923984%/Content/Items/New/GRF/exoskeleton_standard_icon.png" sourcerect="0,0,99,87" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
     <Wearable slots="Bag" msg="ItemMsgPickUpSelect">
@@ -192,8 +192,8 @@
     </ItemContainer>
   </Item>
   <Item name="Beret" identifier="beret" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4">
-    <Inventoryicon texture="%ModDir%/Content/Items/New/GRF/beret.png" scale="0.5" depth="0.6" sourcerect="0,0,100,50" origin="0.5,0.5" />
-    <Sprite name="beret" texture="%ModDir%/Content/Items/New/GRF/beret.png" scale="0.4" depth="0.6" sourcerect="0,0,100,50" origin="0.5,0.5" />
+    <Inventoryicon texture="%ModDir:3282923984%/Content/Items/New/GRF/beret.png" scale="0.5" depth="0.6" sourcerect="0,0,100,50" origin="0.5,0.5" />
+    <Sprite name="beret" texture="%ModDir:3282923984%/Content/Items/New/GRF/beret.png" scale="0.4" depth="0.6" sourcerect="0,0,100,50" origin="0.5,0.5" />
     <Body width="50" height="25" density="15" />
     <Price baseprice="150" minavailable="1">
       <Price storeidentifier="merchantoutpost" minavailable="1" />
@@ -206,7 +206,7 @@
       <Item identifier="organicfiber" />
     </Deconstruct>
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Beret" texture="%ModDir%/Content/Items/New/GRF/beret.png" limb="Head" inheritlimbdepth="true" inheritscale="false" scale="0.32" ignorelimbscale="true" hidelimb="false" sourcerect="0,0,100,50" origin="0.54,1.33" />
+      <sprite name="Beret" texture="%ModDir:3282923984%/Content/Items/New/GRF/beret.png" limb="Head" inheritlimbdepth="true" inheritscale="false" scale="0.32" ignorelimbscale="true" hidelimb="false" sourcerect="0,0,100,50" origin="0.54,1.33" />
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" deflectprojectiles="true" />
     </Wearable>

@@ -160,10 +160,10 @@
         <Price storeidentifier="merchantmine" minavailable="2" />
       </Price>
       <Deconstruct time="5" />
-      <Sprite name="Baseball Cap" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="886,321,108,52" origin="0.5,0.5" />
+      <Sprite name="Baseball Cap" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="886,321,108,52" origin="0.5,0.5" />
       <Body width="80" height="45" density="30" />
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-        <sprite name="Baseball Cap Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" sourcerect="886,321,108,52" origin="0.55,1.22" />
+        <sprite name="Baseball Cap Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" sourcerect="886,321,108,52" origin="0.55,1.22" />
       </Wearable>
     </Item>
   </Items>

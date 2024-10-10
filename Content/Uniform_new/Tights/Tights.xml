@@ -14,7 +14,7 @@
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <InventoryIcon name="tight_combatsuit_1's Uniform 2 Icon" texture="%ModDir%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="128,155,128,110" origin="0.5,0.5" />
+      <InventoryIcon name="tight_combatsuit_1's Uniform 2 Icon" texture="%ModDir:3282923984%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="128,155,128,110" origin="0.5,0.5" />
       <Sprite name="tight_combatsuit_1's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -49,7 +49,7 @@
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <InventoryIcon name="tight_combatsuit_2's Uniform 2 Icon" texture="%ModDir%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="256,155,128,110" origin="0.5,0.5" />
+      <InventoryIcon name="tight_combatsuit_2's Uniform 2 Icon" texture="%ModDir:3282923984%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="256,155,128,110" origin="0.5,0.5" />
       <Sprite name="tight_combatsuit_2's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -84,11 +84,11 @@
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <InventoryIcon name="blue_combatsuit's Uniform 2 Icon" texture="%ModDir%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="384,155,128,110" origin="0.5,0.5" />
+      <InventoryIcon name="blue_combatsuit's Uniform 2 Icon" texture="%ModDir:3282923984%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="384,155,128,110" origin="0.5,0.5" />
       <Sprite name="blue_combatsuit's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="Succubus Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears_1.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="true" sourcerect="0,0,188,280" origin="0.7667,0.290" />
+        <sprite name="Succubus Mask Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_1.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="true" sourcerect="0,0,188,280" origin="0.7667,0.290" />
         <sprite name="blue_combatsuit's Uniform 2 Torso" texture="blue_combatsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="blue_combatsuit's Uniform 2 Right Hand" texture="blue_combatsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="blue_combatsuit's Uniform 2 Left Hand" texture="blue_combatsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -121,7 +121,7 @@
         <Price storeidentifier="merchantmine" minavailable="1" />
       </Price>
       <Deconstruct time="10" />
-      <InventoryIcon name="guardiansuit's Uniform 2 Icon" texture="%ModDir%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="128,283,128,110" origin="0.5,0.5" />
+      <InventoryIcon name="guardiansuit's Uniform 2 Icon" texture="%ModDir:3282923984%/Content/Uniform_new/OutfitIcons_1.png" sourcerect="128,283,128,110" origin="0.5,0.5" />
       <Sprite name="guardiansuit's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">

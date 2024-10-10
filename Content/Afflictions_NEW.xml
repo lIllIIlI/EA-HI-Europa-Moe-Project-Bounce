@@ -103,7 +103,7 @@
     maxstrength="100">
     <Effect minstrength="0" maxstrength="100" strengthchange="-1000">
       <StatusEffect target="Character">
-        <Sound file="%ModDir%/Content/items/Weapons/Custom/gore2.ogg" />
+        <Sound file="%ModDir:3282923984%/Content/items/Weapons/Custom/gore2.ogg" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />

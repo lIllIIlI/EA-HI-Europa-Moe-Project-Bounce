@@ -2,7 +2,7 @@
 <Override>
   <Items>
     <!-- 叠氮化合物:修改自爆时间 -->
-    <Item name="" identifier="volatilecompoundn" category="Weapon,Material" Tags="smallitem,explosive,demolitionsexpert" maxstacksize="8" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
+    <Item name="" identifier="volatilecompoundn" category="Weapon,Material" Tags="smallitem,explosive,demolitionsexpert" maxstacksize="32" maxstacksizecharacterinventory="8" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
       <Upgrade gameversion="0.9.3.0" scale="0.5" />
       <PreferredContainer primary="secarmcab" secondary="armcab" />
       <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0.01" />
@@ -29,7 +29,7 @@
         <StatusEffect type="OnFire" target="This" Condition="-50.0" />
         <StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true" />
         <StatusEffect type="OnBroken" target="This">
-          <Explosion range="500.0" ballastfloradamage="100" structuredamage="150" itemdamage="500" force="15" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.5">
+          <Explosion range="500.0" ballastfloradamage="100" structuredamage="150" itemdamage="500" force="15" severlimbsprobability="0.5" debris="true" decal="explosion" decalsize="0.5" penetration="0.5">
             <Affliction identifier="explosiondamage" strength="125" />
             <Affliction identifier="burn" strength="15" probability="0.2" dividebylimbcount="false" />
             <Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />

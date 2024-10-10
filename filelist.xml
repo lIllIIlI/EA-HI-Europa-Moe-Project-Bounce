@@ -48,6 +48,7 @@
   <Text file="%ModDir%/Content/Texts/English.xml" />
   <Text file="%ModDir%/Content/Texts/Russian.xml" />
   <Item file="%ModDir%/Content/Addons/EAHI.xml" />
+  <Item file="%ModDir%/Content/Addons/Tapes.xml" />
   <Item file="%ModDir%/Content/Addons/override.xml" />
   <NPCSets file="%ModDir%/Content/Addons/OutpostGenerationNpcs.xml" />
   <NPCSets file="%ModDir%/Content/NPCPrefabs/CombatMissionNpcs.xml" />

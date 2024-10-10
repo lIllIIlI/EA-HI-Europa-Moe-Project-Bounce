@@ -53,11 +53,11 @@
         <Price storeidentifier="merchantmine" />
       </Price>
       <Deconstruct time="10" />
-      <Sprite texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="258,408,103,64" depth="0.6" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" sourcerect="258,408,103,64" depth="0.6" origin="0.5,0.5" />
       <Body radius="30" density="50" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
-        <sprite texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="258,408,103,64" origin="0.54,1" />
+        <sprite texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="258,408,103,64" origin="0.54,1" />
         <SkillModifier skillidentifier="helm" skillvalue="12" />
       </Wearable>
     </Item>
@@ -65,10 +65,10 @@
     <Item name="" identifier="piratebandana" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,separatists" description="" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="15" sold="false" canbespecial="false" />
       <Deconstruct time="10" />
-      <Sprite texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="123,406,124,94" origin="0.5,0.5" scale="0.4" />
+      <Sprite texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="123,406,124,94" origin="0.5,0.5" scale="0.4" />
       <Body width="20" radius="15" density="15" />
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-        <sprite texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="123,406,124,94" origin="0.57,0.72" />
+        <sprite texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="123,406,124,94" origin="0.57,0.72" />
         <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
         <SkillModifier skillidentifier="mechanical" skillvalue="5" />
         <SkillModifier skillidentifier="electrical" skillvalue="5" />
@@ -102,7 +102,7 @@
         <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
         <SkillModifier skillidentifier="weapons" skillvalue="10" />
-        <sprite name="Pirate Armor Wearable" texture="%ModDir%/Content/Map/Pirates/PirateEquip.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" ignorelimbscale="true" scale="0.65" inheritsourcerect="false" sourcerect="5,2,128,241" origin="0.56421875,0.5" />
+        <sprite name="Pirate Armor Wearable" texture="%ModDir:3282923984%/Content/Map/Pirates/PirateEquip.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" ignorelimbscale="true" scale="0.65" inheritsourcerect="false" sourcerect="5,2,128,241" origin="0.56421875,0.5" />
       </Wearable>
     </Item>
     <!--需要优化贴图-->
@@ -123,7 +123,7 @@
       <Deconstruct time="10">
         <Item identifier="ballisticfiber" />
       </Deconstruct>
-      <Sprite name="Pirate Helmet" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="716,242,97,42" depth="0.6" origin="0.5,0.5" />
+      <Sprite name="Pirate Helmet" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" sourcerect="716,242,97,42" depth="0.6" origin="0.5,0.5" />
       <Body radius="30" density="30" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
         <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -131,7 +131,7 @@
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <SkillModifier skillidentifier="weapons" skillvalue="5" />
-        <sprite name="Pirate Helmet 1 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidelimb="false" sourcerect="716,242,97,42" origin="0.68,0.6" />
+        <sprite name="Pirate Helmet 1 Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidelimb="false" sourcerect="716,242,97,42" origin="0.68,0.6" />
       </Wearable>
       <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="" containedspritedepths="0.551,0.552">
         <Containable items="healthscanner,thermalgoggles,electriciansgoggles">
@@ -147,7 +147,7 @@
         <Containable Items="electriciansgoggles">
           <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="true" overlaycolor="0,20,0,50" debugwiring="true" />
         </Containable>
-        <SlotIcon slotindex="0" texture="%ModDir%/Content/Items/Weapons/Waifu_UI.png" sourcerect="120,0,120,120" origin="0.5,0.5" />
+        <SlotIcon slotindex="0" texture="%ModDir:3282923984%/Content/Items/Weapons/Waifu_UI.png" sourcerect="120,0,120,120" origin="0.5,0.5" />
       </ItemContainer>
       <StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
     </Item>
