@@ -3,7 +3,7 @@
   <Items>
     <!--修改贴图-->
     <Item name="" identifier="healthscanner" scale="0.5" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="medcab" amount="1" spawnprobability="0.5" notcampaign="true" />
+    <PreferredContainer primary="medcab" amount="1" spawnprobability="0.5" notcampaign="true" notpvp="true"/>
       <Price baseprice="150" minavailable="1">
         <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
         <Price storeidentifier="merchantcity" multiplier="1.2" />
@@ -63,7 +63,7 @@
         <sprite name="Medic Uniform 1 Right Shoe" texture="Medic1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Medic Uniform 1 Left Shoe" texture="Medic1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Medic Uniform 1 Boob" texture="Medic1_[GENDER].png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" dantifiers="lacerations,bitewounds" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="3" maxstacksize="8">
         <Containable items="chem,medical" />

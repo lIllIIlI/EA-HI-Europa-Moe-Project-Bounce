@@ -25,7 +25,7 @@
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="pucs" />
         <RequiredItem identifier="pressurestabilizer" />
-        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="fpgacircuit" amount="2" />
       </Fabricate>
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
         <RequiredSkill identifier="electrical" level="60" />
@@ -47,8 +47,8 @@
       </CustomInterface>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" alphaclipotherwearables="false" sourcerect="429,0,45,103" origin="0.54,0.64">
-          <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
+          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="1" IsOn="false" allowingameediting="false">
+            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
@@ -288,7 +288,7 @@
       <ContainedSprite name="Wf_PUCS_R In Horizontal Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" />
       <Wearable>
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="474,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="false">
+          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="1" IsOn="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
@@ -315,7 +315,9 @@
 
         <!-- MOD FEATURE Damage Modifier -->
         <!-- MOD FEATURE INCREASE DEFEND -->
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds,lacerations,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       </Wearable>
       <ItemContainer>
         <Containable />
@@ -323,6 +325,7 @@
         <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
       </ItemContainer>
     </Item>
+
     <Item name="" identifier="Wf_pucs_B" variantof="Wf_pucs">
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
       <Price baseprice="1500">
@@ -348,9 +351,8 @@
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="Wf_pucs" />
         <RequiredItem identifier="bluepaint" />
-        <RequiredItem identifier="ballisticfiber" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
+        <RequiredItem identifier="ballisticfiber" amount="3" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
       </Fabricate>
       <Fabricate>
         <RequiredSkill identifier="electrical" level="60" />
@@ -364,7 +366,7 @@
 
       <Wearable>
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="519,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="150,124,200,255" powerconsumption="10" IsOn="false">
+          <LightComponent range="300.0" lightcolor="150,124,200,255" powerconsumption="1" IsOn="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
@@ -389,15 +391,20 @@
 
         <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.1" PropulsionSpeedMultiplier="1.5" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true"></StatusEffect>
 
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+        <!-- MOD FEATURE IMMUNITY TO RADIATION -->
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       </Wearable>
       <ItemContainer>
         <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
         <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
       </ItemContainer>
     </Item>
-    <Item name="" identifier="Wf_pucs_D" subcategory="EPSP" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving" allowasextracargo="False" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false" botpriority="5" cargocontaineridentifier="">
-      <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
+    <!-- Cannot use inheritance efectively here due to ordering of status effects being inconsistent with prior 3 suits -->
+    <Item name="" identifier="Wf_pucs_D" subcategory="EPSP" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving" allowasextracargo="False" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false" botpriority="5">
       <Price baseprice="2000">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="1" sold="false" />
@@ -410,6 +417,7 @@
           <Reputation faction="coalition" min="90" />
         </Price>
       </Price>
+      <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
       <Deconstruct time="15">
         <Item identifier="Wf_pucs" />
         <Item identifier="slipsuit" />
@@ -417,7 +425,7 @@
         <Item identifier="underwaterscooter" />
         <Item identifier="fpgacircuit" />
       </Deconstruct>
-      <Fabricate requiredtime="30">
+      <Fabricate suitablefabricators="fabricator" requiredtime="30">
         <RequiredSkill identifier="electrical" level="60" />
         <RequiredItem identifier="Wf_pucs" />
         <RequiredItem identifier="slipsuit" />
@@ -434,6 +442,7 @@
       <ContainedSprite name="Wf_pucs_D In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
       <ContainedSprite name="Wf_pucs_D Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_female.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
       <ContainedSprite name="Wf_pucs_D In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
+      <Body radius="45" width="34" density="15" />
       <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
         <GuiFrame relativesize="0.12,0.07" anchor="BottomRight" pivot="BottomRight" relativeoffset="0.2,0.11" />
         <TickBox text="epsp.lightandscooter">
@@ -444,8 +453,8 @@
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
 
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="564,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="10" IsOn="false">
-            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+          <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="1" IsOn="false" allowingameediting="true">
+            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
@@ -466,6 +475,9 @@
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_D_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_D_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="wf pucs Right Boobs" texture="Wf_pucs_D_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+        <!-- MOD FEATURE Water Flow Ressitance -->
+        <StatValue stattype="FlowResistance" value="0.25" />
+        <!-- MOD FEATURE Speed&hearing Change, Remove triggerAnimation -->
 
         <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.15" PropulsionSpeedMultiplier="1.6" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true">
           <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
@@ -503,6 +515,19 @@
           <Conditional targetcontainer="true" targetgrandparent="true" NeedsAir="true" />
           <Conditional InWater="true" />
           <RequiredItem items="oxygensource" type="Contained" />
+        </StatusEffect>
+        <!-- MOD FEATURE Speed up in water when open -->
+        <StatusEffect type="OnWearing" target="this,Character" SpeedMultiplier="1.7" comparison="And" setvalue="true" disabledeltatime="true">
+          <Conditional InWater="true" />
+          <Conditional IsOn="true" />
+        </StatusEffect>
+        <!-- MOD FEATURE Emmit Particles to stimulate scooter -->
+        <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" comparison="And">
+          <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+          <Conditional IsOn="true" />
+          <Conditional InWater="true" />
+          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="0.2" scalemax="0.5" />
+          <sound file="Content/Items/Diving/ScooterLoop.ogg" range="500.0" loop="true" />
         </StatusEffect>
         <!-- MOD FEATURE Auto-inject System -->
         <!-- Inject Saline & Blood Pack & Alien Blood, slot 1 -->
@@ -574,21 +599,10 @@
           <Conditional bloodloss="gt 5.0" />
           <Conditional oxygenlow="gt 50.0" />
         </StatusEffect>
-        <StatusEffect type="OnWearing" target="this,Character" SpeedMultiplier="1.7" comparison="And" setvalue="true" disabledeltatime="true">
-          <Conditional InWater="true" />
-          <Conditional IsOn="true" />
-        </StatusEffect>
-        <!-- MOD FEATURE Emmit Particles to stimulate scooter -->
-        <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
-          <Conditional IsOn="true" />
-          <Conditional InWater="true" />
-          <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="0.2" scalemax="0.5" />
-          <sound file="Content/Items/Diving/ScooterLoop.ogg" range="500.0" loop="true" />
-        </StatusEffect>
-        <MotionSensor rangex="30" rangey="40" canbeselected="false" IgnoreDead="true" minimumvelocity="3" updateinterval="0.025" target="Human" DetectOwnMotion="true" />
         <!-- MOD FEATURE Damage Modifier -->
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+        <!-- MOD FEATURE -->
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,explosiondamage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations,bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
         <!-- MOD FEATURE IMMUNITY TO RADIATION -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
@@ -611,11 +625,11 @@
         <StatValue stattype="WalkingSpeed" value="0.2" />
       </Wearable>
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+      <MotionSensor rangex="30" rangey="40" canbeselected="false" IgnoreDead="true" minimumvelocity="3" updateinterval="0.025" target="Human" DetectOwnMotion="true" />
       <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" autoinject="true">
         <Containable items="none" />
-        <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
-        <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
-        <SlotIcon slotindex="2" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
+        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+        <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
         <SubContainer capacity="1" maxstacksize="1">
           <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
           <Containable items="oxygenitetank">

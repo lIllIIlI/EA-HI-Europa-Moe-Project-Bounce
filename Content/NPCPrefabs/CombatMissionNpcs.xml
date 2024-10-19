@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
-  <Override>
     <npcset identifier="piratenpcs1">
       <npc identifier="piratecaptain" job="captain" moduleflags="none" behavior="Patrol" healthmultiplier="0.5" aimspeed="0.8" aimaccuracy="0.3">
         <ItemSet commonness="1">
@@ -212,5 +211,4 @@
         </ItemSet>
       </npc>
     </npcset>
-  </Override>
 </npcsets>

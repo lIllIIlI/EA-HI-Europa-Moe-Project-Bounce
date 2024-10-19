@@ -275,6 +275,20 @@
         </ItemSet>
       </npc>
       
+    <npc identifier="merchantnightclub" spawnpointtags="nightclubcounter" campaigninteractiontype="Store" behavior="StayInHull">
+      <ItemSet commonness="1">
+        <Item identifier="vipclothes1" equip="true"/>
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="divingknife" />
+        <Item identifier="shotgun">
+          <Item identifier="shotgunshell" amount="6"/>
+        </Item>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+      </ItemSet>
+    </npc>
+
       <npc identifier="securitynpccoalition" job="outpostsecurityofficer" tags="securitynpc" spawnpointtags="security" healthmultiplier="2" behavior="Patrol">
         <ItemSet>
           <Item identifier="securitypatrolclothes" equip="true" />
@@ -685,7 +699,7 @@
         </ItemSet>
       </npc>
   
-      <npc identifier="researcher" commonness="0" moduleflags="none" job="medicaldoctor" behavior="Passive" healthmultiplier="0.75" ModuleFlags="ResearchModule" preferredoutpostmoduletypes="researchmodule,crewmodule">
+    <npc identifier="researcher" commonness="0" moduleflags="none" job="medicaldoctor" tags="researchernpc" behavior="Passive" healthmultiplier="0.75" ModuleFlags="ResearchModule" preferredoutpostmoduletypes="researchmodule,crewmodule">
         <ItemSet commonness="1">
           <Item identifier="idcard" equip="true"/>
           <Item identifier="researcherclothes" equip="true"/>
@@ -802,6 +816,18 @@
         </ItemSet>
       </npc>
   
+    <npc identifier="hardhatman" commonness="0" moduleflags="none" job="mechanic" behavior="Passive" preferredoutpostmoduletypes="crewmodule">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="ballistichelmet2" equip="true"/>
+        <Item identifier="minerclothes" equip="true"/>
+        <Item identifier="crowbar" equip="true"/>
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+      </ItemSet>
+    </npc>
+
       <npc identifier="clown" commonness="0" faction="clowns" moduleflags="clownmodule" job="assistant" behavior="Passive" preferredoutpostmoduletypes="clownmodule" spawnpointtags="clown">
         <ItemSet commonness="1">
           <Item identifier="idcard" equip="true"/>
@@ -884,7 +910,7 @@
       <npc identifier="merchanthusk" faction="huskcult" commonness="0" moduleflags="huskmodule" job="assistant" behavior="Passive" preferredoutpostmoduletypes="huskmodule" campaigninteractiontype="Store" spawnpointtags="clown">
         <ItemSet commonness="1">
           <Item identifier="idcard" equip="true"/>
-          <Item identifier="zealotrobes" equip="true"/>
+        <Item identifier="cultistrobes" equip="true"/>
           <Item identifier="divingknife" equip="false"/>
           <Item identifier="piratebandana" equip="true" />
         </ItemSet>

@@ -31,133 +31,133 @@
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 	</Item> -->
 	<Item name="" identifier="backpack" category="Equipment" tags="mediumitem,mobilecontainer,largemobilecontainer,tool" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_soft">
-		<PreferredContainer primary="engcab" />
-		<PreferredContainer primary="wreckstoragecab,abandonedstoragecab,piratestoragecab" />
-		<PreferredContainer primary="outpostcrewcabinet" />
+		<PreferredContainer primary="engcab"/>
+		<PreferredContainer primary="wreckstoragecab,abandonedstoragecab,piratestoragecab"/>
+		<PreferredContainer primary="outpostcrewcabinet"/>
 		<Deconstruct time="10">
-			<Item identifier="organicfiber" amount="3" />
+			<Item identifier="organicfiber" amount="3"/>
 		</Deconstruct>
 		<Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
-			<Item identifier="organicfiber" amount="5" />
+			<Item identifier="organicfiber" amount="5"/>
 		</Fabricate>
 		<Price baseprice="200" minleveldifficulty="50">
-			<Price storeidentifier="merchantoutpost" minavailable="4" />
-			<Price storeidentifier="merchantcity" minavailable="6" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="1" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" minavailable="8" />
-			<Price storeidentifier="merchantengineering" minavailable="4" multiplier="0.9" />
+			<Price storeidentifier="merchantoutpost" minavailable="4"/>
+			<Price storeidentifier="merchantcity" minavailable="6"/>
+			<Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1"/>
+			<Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="1"/>
+			<Price storeidentifier="merchantmine" multiplier="1.25" minavailable="8"/>
+			<Price storeidentifier="merchantengineering" minavailable="4" multiplier="0.9"/>
 		</Price>
-		<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Tools/tools.png" sourcerect="0,0,92,160" origin="0.5,0.5" />
-		<Sprite texture="%ModDir:3282923984%/Content/Items/Tools/tools.png" sourcerect="0,0,92,160" depth="0.6" />
-		<Body width="60" height="100" density="15" />
+		<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Tools/tools.png" sourcerect="0,0,92,160" origin="0.5,0.5"/>
+		<Sprite texture="%ModDir:3282923984%/Content/Items/Tools/tools.png" sourcerect="0,0,92,160" depth="0.6"/>
+		<Body width="60" height="100" density="15"/>
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" />
-			<sprite name="Backpack" CanBeHiddenByOtherWearables="false" CanBeHiddenByItem="deepdivinglarge" texture="%ModDir:3282923984%/Content/Items/Tools/tools.png" sourcerect="0,0,92,160" limb="Torso" depthlimb="Waist" inherittexturescale="true" origin="0.85,0.6" />
-			<StatValue stattype="MovementSpeed" value="-0.3" />
-			<StatValue stattype="PropulsionSpeed" value="-0.3" />
+			<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true"/>
+			<sprite name="Backpack" CanBeHiddenByOtherWearables="false" CanBeHiddenByItem="deepdivinglarge" texture="%ModDir:3282923984%/Content/Items/Tools/tools.png" sourcerect="0,0,92,160" limb="Torso" depthlimb="Waist" inherittexturescale="true" origin="0.85,0.6"/>
+			<StatValue stattype="MovementSpeed" value="-0.3"/>
+			<StatValue stattype="PropulsionSpeed" value="-0.3"/>
 		</Wearable>
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,50" handle2="10,50" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false">
-			<StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true" />
-			<StatValue stattype="PropulsionSpeed" value="-0.3" />
+			<StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true"/>
+			<StatValue stattype="PropulsionSpeed" value="-0.3"/>
 		</Holdable>
 		<ItemContainer capacity="12" maxstacksize="32" depth="0.5">
-			<Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+			<Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier"/>
 		</ItemContainer>
 	</Item>
 	<Item name="Ironpipe" identifier="ironpipe" category="misc" tags="smallitem,misc" variantof="crowbar">
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" spawnprobability="0.1" />
-		<PreferredContainer primary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" spawnprobability="0.1" />
-		<PreferredContainer secondary="outposttrashcan" spawnprobability="0.1" />
-		<Price baseprice="35" sold="false" />
+		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" spawnprobability="0.1"/>
+		<PreferredContainer primary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" spawnprobability="0.1"/>
+		<PreferredContainer secondary="outposttrashcan" spawnprobability="0.1"/>
+		<Price baseprice="35" sold="false"/>
 		<Deconstruct>
-			<Item identifier="iron" />
+			<Item identifier="iron"/>
 		</Deconstruct>
-		<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/ironpipe_icon.png" sourcerect="0,0,45,45" origin="0.5,0.5" />
-		<Sprite texture="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/ironpipe.png" sourcerect="0,0,233,20" depth="0.55" origin="0.5,0.5" />
-		<Body width="114" height="20" density="30" />
+		<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/ironpipe_icon.png" sourcerect="0,0,45,45" origin="0.5,0.5"/>
+		<Sprite texture="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/ironpipe.png" sourcerect="0,0,233,20" depth="0.55" origin="0.5,0.5"/>
+		<Body width="114" height="20" density="30"/>
 		<MeleeWeapon slots="RightHand+LeftHand,Any" range="150" reload="0.8" controlpose="true" aimpos="45,10" handle1="-25,0" handle2="-12.5,0.5" holdangle="56" combatpriority="20">
-			<StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
-			<StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" />
+			<StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true"/>
+			<StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true"/>
 			<Attack targetimpulse="15" structuredamage="0" itemdamage="5">
-				<Affliction identifier="stun" strength="0.5" />
+				<Affliction identifier="stun" strength="0.5"/>
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Conditional entitytype="eq Character" />
-					<Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/钢管落地.ogg" range="1000" volume="1.5" />
+					<Conditional entitytype="eq Character"/>
+					<Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/钢管落地.ogg" range="1000" volume="1.5"/>
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
 	</Item>
 	<!-- Fixed enhanced immersion flashlight -->
 	<Item name="" identifier="flashlight" category="Equipment" Tags="smallitem,tool,provocative,flashlight" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_plastic" isshootable="true" RequireAimToUse="true">
-		<PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
-		<PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+		<PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true"/>
+		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05"/>
+		<PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1"/>
 		<Price baseprice="200" minavailable="2">
-			<Price storeidentifier="merchantoutpost" />
-			<Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.25" />
-			<Price storeidentifier="merchantmine" />
+			<Price storeidentifier="merchantoutpost"/>
+			<Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3"/>
+			<Price storeidentifier="merchantresearch" multiplier="1.25"/>
+			<Price storeidentifier="merchantmilitary" multiplier="1.25"/>
+			<Price storeidentifier="merchantmine"/>
 		</Price>
 		<Fabricate suitablefabricators="fabricator" requiredtime="10">
-			<RequiredSkill identifier="mechanical" level="25" />
-			<RequiredItem identifier="aluminium" amount="2" />
-			<RequiredItem tag="lightcomponent" />
+			<RequiredSkill identifier="mechanical" level="25"/>
+			<RequiredItem identifier="aluminium" amount="2"/>
+			<RequiredItem tag="lightcomponent"/>
 		</Fabricate>
 		<Deconstruct time="15">
-			<Item identifier="aluminium" />
-			<Item identifier="lightcomponent" />
+			<Item identifier="aluminium"/>
+			<Item identifier="lightcomponent"/>
 		</Deconstruct>
-		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,320,64,64" origin="0.5,0.5" />
-		<Sprite texture="Content/Items/Tools/tools.png" sourcerect="293,185,49,18" depth="0.55" origin="0.5,0.5" />
-		<Body width="48" height="15" density="15" />
-		<GreaterComponent canbeselected="false" canbepicked="false" allowingameediting="false" timeframe="0" drawhudwhenequipped="false" MaxOutputLength="1" />
-		<Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect" />
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,320,64,64" origin="0.5,0.5"/>
+		<Sprite texture="Content/Items/Tools/tools.png" sourcerect="293,185,49,18" depth="0.55" origin="0.5,0.5"/>
+		<Body width="48" height="15" density="15"/>
+		<GreaterComponent canbeselected="false" canbepicked="false" allowingameediting="false" timeframe="0" drawhudwhenequipped="false" MaxOutputLength="1"/>
+		<Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect"/>
 		<RangedWeapon reload="0.1" slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnContained" target="This" IsOn="true" setvalue="true">
-				<Conditional HasTag="gun" targetcontainer="true" />
-				<Conditional HasTag="weapon" targetcontainer="true" />
+				<Conditional HasTag="gun" targetcontainer="true"/>
+				<Conditional HasTag="weapon" targetcontainer="true"/>
 			</StatusEffect>
-			<StatusEffect type="OnUse" target="This" timeframe="1" disabledeltatime="true" />
+			<StatusEffect type="OnUse" target="This" timeframe="1" disabledeltatime="true"/>
 			<StatusEffect type="OnUse" target="This" timeframe="0" setvalue="true" disabledeltatime="true">
-				<Conditional timeframe="gt 1" />
+				<Conditional timeframe="gt 1"/>
 			</StatusEffect>
 			<StatusEffect type="OnUse" target="This" timeframe="0" IsOn="true" setvalue="true" disabledeltatime="true">
-				<Conditional timeframe="eq 0" />
-				<Sound file="%ModDir:3282923984%/Content/Items/Tools/FlashlightOn.ogg" volume="1.0" range="350" loop="false" />
+				<Conditional timeframe="eq 0"/>
+				<Sound file="%ModDir:3282923984%/Content/Items/Tools/FlashlightOn.ogg" volume="1.0" range="350" loop="false"/>
 			</StatusEffect>
 			<StatusEffect type="OnUse" target="This" IsOn="false" setvalue="true" disabledeltatime="true">
-				<Conditional timeframe="eq 1" />
-				<Sound file="%ModDir:3282923984%/Content/Items/Tools/FlashlightOff.ogg" volume="1.0" range="350" loop="false" />
+				<Conditional timeframe="eq 1"/>
+				<Sound file="%ModDir:3282923984%/Content/Items/Tools/FlashlightOff.ogg" volume="1.0" range="350" loop="false"/>
 			</StatusEffect>
 		</RangedWeapon>
 		<LightComponent LightColor="0.5,0.5,0.5,1.0" Flicker="0.02" range="1000" powerconsumption="10" IsOn="false">
-			<LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+			<LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0"/>
 			<StatusEffect type="OnActive" targettype="This" flicker="0.02" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.0" setvalue="true">
-				<Conditional targetcontaineditem="true" condition="gt 2.0" />
+				<Conditional targetcontaineditem="true" condition="gt 2.0"/>
 			</StatusEffect>
 			<StatusEffect type="OnActive" targettype="This" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5" setvalue="true">
-				<Conditional targetcontaineditem="true" condition="lte 2.0" />
+				<Conditional targetcontaineditem="true" condition="lte 2.0"/>
 			</StatusEffect>
 			<StatusEffect type="OnActive" targettype="Contained" Condition="-0.01">
-				<RequiredItem items="mobilebattery" type="Contained" />
+				<RequiredItem items="mobilebattery" type="Contained"/>
 			</StatusEffect>
 			<StatusEffect type="OnActive" targettype="Contained" setvalue="false">
-				<Conditional targetcontaineditem="true" condition="lte 0.0" />
+				<Conditional targetcontaineditem="true" condition="lte 0.0"/>
 			</StatusEffect>
 			<StatusEffect type="OnActive" targettype="This" setvalue="false">
-				<Conditional HasTag="gun" targetcontainer="true" />
-				<Conditional HasTag="weapon" targetcontainer="true" />
+				<Conditional HasTag="gun" targetcontainer="true"/>
+				<Conditional HasTag="weapon" targetcontainer="true"/>
 			</StatusEffect>
 		</LightComponent>
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
-			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5"/>
 			<Containable items="mobilebattery">
-				<StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+				<StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true"/>
 			</Containable>
 		</ItemContainer>
-		<AiTarget sightrange="3000" />
-		<Upgrade gameversion="0.10.0.0" scale="0.5" />
+		<AiTarget sightrange="3000"/>
+		<Upgrade gameversion="0.10.0.0" scale="0.5"/>
 	</Item>
 </Override>

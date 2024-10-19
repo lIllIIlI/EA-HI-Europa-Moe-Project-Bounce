@@ -15,11 +15,11 @@
   <faction.EAHI.description>The precursor of Europa East Asia Heavy Industries, the most renowned conglomerate on Europa, was originally a research outpost affiliated with Earth's East Asia Heavy Industries. As Europa gradually lost contact with Earth, the former research station transformed into the largest mining machinery supplier on Europa, leveraging its legacy industrial mother machines. After the Tormsdale nuclear disaster, EAHI acquired the majority of uranium mines from the Europa Union at a remarkably low price, becoming the largest mining trust across all of Europa. Negative rumors about EAHI have always circulated in secret, but publicly, they are hailed as the cornerstone of the Union's prosperity. </faction.EAHI.description>
   <faction.EAHI.shortdescription>East Asia Heavy Industries is a massive corporation specializing in mining and engineering machinery manufacturing. It enjoys a high reputation across Europa and has extensive cooperation with the Europa Union. </faction.EAHI.shortdescription>
   <EAHI_Welcommessage></EAHI_Welcommessage>
-  <entityname.EAHI_LiaisonCommunicator>EAI Liaison Communicator</entityname.EAHI_LiaisonCommunicator>
+  <entityname.EAHI_LiaisonCommunicator>EAHI Liaison Communicator</entityname.EAHI_LiaisonCommunicator>
   <entitydescription.EAHI_LiaisonCommunicator>
-    A radio-based communicator for liaison officers, which cannot make calls outside settlements and needs recharging after each use. Due to a recent surge in identity fraud cases, East Asia Heavy Industries requires customers to insert an ID card for identity verification.
+  A radio-based communicator for liaison officers, which cannot make calls outside settlements and needs recharging after each use. Due to a recent surge in identity fraud cases, East Asia Heavy Industries requires customers to insert an ID card for identity verification.
   </entitydescription.EAHI_LiaisonCommunicator>
-  <charactername.MerchantEAHI>EAI Merchant</charactername.MerchantEAHI>
+  <charactername.MerchantEAHI>EAHI Merchant</charactername.MerchantEAHI>
   <itemmsgweldingfueloroxygensourcerequired>Welding fuel or oxygen source required</itemmsgweldingfueloroxygensourcerequired>
   <idcardrequired>ID card required</idcardrequired>
   <itemmsgequiporpickupuse>Equip [[use]]</itemmsgequiporpickupuse>
@@ -47,7 +47,7 @@
   <EventText.EAHI.Liaison.ReserveMission>Pay 200 Marks</EventText.EAHI.Liaison.ReserveMission>
   <EventText.EAHI.Liaison.MissionReserved>Payment successful. Have a nice day. Goodbye.</EventText.EAHI.Liaison.MissionReserved>
   <EventText.EAHI.Liaison.ClaimPoints>Redeem EAHI Points</EventText.EAHI.Liaison.ClaimPoints>
-  <EventText.EAHI.Liaison.complaint>After-sales and complaint services</EventText.EAHI.Liaison.complaint>
+  <EventText.EAHI.Liaison.complaint>Customer service</EventText.EAHI.Liaison.complaint>
   <EventText.EAHI.Liaison.Quit>Hang up</EventText.EAHI.Liaison.Quit>
   <EventText.EAHI.Liaison.Wait5min>We apologize, but due to high service demand, the self-service system is temporarily unavailable. Please call again in 5 minutes.</EventText.EAHI.Liaison.Wait5min>
   <EventText.EAHI.Liaison.CoporatePolice>Records indicate repeated actions against company interests. We consider you a significant threat to the prosperity of the company and Corporate police have been dispatched.</EventText.EAHI.Liaison.CoporatePolice>
@@ -186,16 +186,6 @@
   <entitydescription.Wf_G.B.E_beam_m>Some Gravitons</entitydescription.Wf_G.B.E_beam_m>
   <entityname.Wf_G.B.E_beam_b>Large Amount of Gravitons</entityname.Wf_G.B.E_beam_b>
   <entitydescription.Wf_G.B.E_beam_b>Large Amount of Gravitons</entitydescription.Wf_G.B.E_beam_b>
-  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
-  <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS.</entitydescription.Wf_pucs>
-  <entityname.Wf_pucs_R>Combat EPSP</entityname.Wf_pucs_R>
-  <entitydescription.Wf_pucs_R>A targeted improvement of the EPSP, reinforced with bulletproof fibers to enhance defense against certain attacks.</entitydescription.Wf_pucs_R>
-  <entityname.Wf_pucs_B>Abyss EPSP</entityname.Wf_pucs_B>
-  <entitydescription.Wf_pucs_B>A targeted improvement of the EPSP, reinforced with bulletproof fibers and titanium-aluminum alloy to enhance defense. It maintains excellent burn protection while offering the defense and pressure resistance of standard abyssal diving suits.</entitydescription.Wf_pucs_B>
-  <entityname.Wf_pucs_D>Special Operations EPSP</entityname.Wf_pucs_D>
-  <entitydescription.Wf_pucs_D>A targeted improvement of the EPSP, uses low-visibility coating and strengthens the defense against human weapons, equipped with small propellers for faster movement underwater.</entitydescription.Wf_pucs_D>
-  <epsp.light>Light</epsp.light>
-  <epsp.lightandscooter>Light and Scooter</epsp.lightandscooter>
   <entityname.Wf_New_XDS-01>XDS-01</entityname.Wf_New_XDS-01>
   <entitydescription.Wf_New_XDS-01>The pinnacle of alien tech, borne through the efforts of the past researchers and yours alike. Protects against nearly everything.</entitydescription.Wf_New_XDS-01>
   <entityname.Wf_New_XDS-01_Engine>XDS-01 Engine</entityname.Wf_New_XDS-01_Engine>
@@ -302,34 +292,48 @@
   <entityname.Senshi>Senshi Garb</entityname.Senshi>
   <entitydescription.Senshi>A lightweight and flexible Asian style warrior robe, from EAHI's EARTH Series. Raise weapon damage by 20% on wearing.</entitydescription.Senshi>
   <!--EA-HI item-->
-  <entityname.EAHI_pucs>[EA-HI] InvisiPUCS</entityname.EAHI_pucs>
-  <entityname.i_Wf_pucs>[EA-HI] InvisiPUCS</entityname.i_Wf_pucs>
-  <entitydescription.EAHI_pucs>East Asia Heavy Industries PUCS, using the next generation outrageous technology, to prevent your beautiful face and slender legs from being covered. An integrated compressor automatically extracts oxygen from the air. Withstand up to 8000 meters of water pressure.</entitydescription.EAHI_pucs>
+  <entityname.Wf_pucs>EPSP</entityname.Wf_pucs>
+  <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS. Operational Depth: 6,200m</entitydescription.Wf_pucs>
+  <entityname.Wf_pucs_R>Combat EPSP</entityname.Wf_pucs_R>
+  <entitydescription.Wf_pucs_R>A targeted improvement of the EPSP, made primarily for close quarters melee combat against Europan wildlife. Operational Depth: 6,200m</entitydescription.Wf_pucs_R>
+  <entityname.Wf_pucs_B>Abyss EPSP</entityname.Wf_pucs_B>
+  <entitydescription.Wf_pucs_B>A targeted improvement of the EPSP, reinforced with bulletproof fibers and titanium-aluminum alloy to enhance defense. It maintains excellent burn protection while offering the defense and pressure resistance of standard abyssal diving suits.</entitydescription.Wf_pucs_B>
+  <entityname.Wf_pucs_D>SpecOps EPSP</entityname.Wf_pucs_D>
+  <entitydescription.Wf_pucs_D>A targeted improvement of the EPSP, uses low-visibility coating and strengthens the defense against human weapons, equipped with small propellers for faster movement underwater. Operational Depth: 10,000m</entitydescription.Wf_pucs_D>
+  <epsp.light>Light</epsp.light>
+  <epsp.lightandscooter>Light and Scooter</epsp.lightandscooter>
+  <entityname.EAHI_pucs>SpecOps EPSP (Invisible)</entityname.EAHI_pucs>
+  <entitydescription.EAHI_pucs>A targeted improvement of the EPSP, uses *very* low-visibility coating and strengthens the defense against human weapons, equipped with *very* small propellers for faster movement underwater. Operational Depth: 10,000m</entitydescription.EAHI_pucs>
+  <entityname.i_Wf_pucs>EPSP (Invisible)</entityname.i_Wf_pucs>
+  <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS. Operational Depth: 6,200m</entitydescription.Wf_pucs>
+  <entityname.i_Wf_pucs_R>Combat EPSP (Invisible)</entityname.i_Wf_pucs_R>
+  <entitydescription.i_Wf_pucs_R>A targeted improvement of the EPSP, it may not be visible but this is perfectly suitable for close quarters melee combat with Europan wildlife. Operational Depth: 6,200m</entitydescription.i_Wf_pucs_R>
+  <entityname.i_Wf_pucs_B>Abyss EPSP (Invisible)</entityname.i_Wf_pucs_B>
+  <entitydescription.i_Wf_pucs_B>A targeted improvement of the EPSP, heavily reinforced with bulletproof fibers (not visible) and titanium-aluminum alloy (also not visible) to enhance defense. Operational Depth: 10,000m</entitydescription.i_Wf_pucs_B>
   <entityname.EAHI_toolbelt>Toolbelt (Invisible)</entityname.EAHI_toolbelt>
-  <entityname.EAHI_autoinjectorheadset>[EA-HI] Auto-Injecting Headset</entityname.EAHI_autoinjectorheadset>
+  <entityname.EAHI_autoinjectorheadset>Auto-Injecting Headset</entityname.EAHI_autoinjectorheadset>
   <entitydescription.EAHI_autoinjectorheadset>The Integrated Auto-Injection Headset developed by East Asia Heavy Industries has a health scanner function and a built-in authority simulation system that can crack most types of encryption.</entitydescription.EAHI_autoinjectorheadset>
-  <entityname.EAHI_kuorongbag>[EA-HI] Prototype Expansion Pack</entityname.EAHI_kuorongbag>
-  <entitydescription.EAHI_kuorongbag>The general expansion package developed by East Asia Heavy Industries was cut in half due to infringement issues. A small pouch that can be installed in the inventory, and can also be loaded into a gun to increase the charge capacity of revolvers, harpoons, shotguns, hand cannons, and stun guns</entitydescription.EAHI_kuorongbag>
-  <entityname.EAHI_handheldsonar>[EA-HI] Advanced Sonar</entityname.EAHI_handheldsonar>
+  <entityname.EAHI_kuorongbag>Prototype Expansion Pack</entityname.EAHI_kuorongbag>
+  <entitydescription.EAHI_kuorongbag>The generic expansion pack developed by East Asia Heavy Industries was cut in half due to infringement issues. A small pouch that can be installed in the inventory, and can also be loaded into a gun to increase the charge capacity of revolvers, harpoons, shotguns, hand cannons, and stun guns</entitydescription.EAHI_kuorongbag>
+  <entityname.EAHI_handheldsonar>Advanced Sonar</entityname.EAHI_handheldsonar>
   <entitydescription.EAHI_handheldsonar>High-power sonar, can penetrate the hull of the submarine, a must for gunners</entitydescription.EAHI_handheldsonar>
-  <entityname.EAHI_duogongnengtool>[EA-HI] Prototype Multi-Sprayer</entityname.EAHI_duogongnengtool>
+  <entityname.EAHI_duogongnengtool>Prototype Multi-Sprayer</entityname.EAHI_duogongnengtool>
   <entitydescription.EAHI_duogongnengtool>A multi-function sprayer developed by East Asia Heavy Industries. Ingenious mechanical design enables cutting flames when an oxygen tank is inserted and welding operations when a welding fuel tank is used.</entitydescription.EAHI_duogongnengtool>
-  <entityname.teleportine>[EA-HI] Teleportine</entityname.teleportine>
+  <entityname.teleportine>Teleportine</entityname.teleportine>
   <entitydescription.teleportine>This vial is distributed by East Asia Heavy Industries to the liaison officers. Upon injury it will quickly teleport them to a safe place.</entitydescription.teleportine>
   <entityname.exotic_matter>Exotic matter</entityname.exotic_matter>
   <entitydescription.exotic_matter>Exotic matter extracted from Europa's bio-carapace possesses rather unique properties.</entitydescription.exotic_matter>
   <entityname.EAHI_license_oneoff>Master Blueprint - [type]</entityname.EAHI_license_oneoff>
   <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of East Asia Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
-  <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of Dongya Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
   <entityname.EAHI_laserpointer>Laser Pointer</entityname.EAHI_laserpointer>
   <entitydescription.EAHI_laserpointer>Slightly reduces weapon spread when activated.</entitydescription.EAHI_laserpointer>
-  <entityname.otfx_wrenchscrewdrivertwoinone>Wrench-Screwdriver 2-in-1 Tool</entityname.otfx_wrenchscrewdrivertwoinone>
+  <entityname.otfx_wrenchscrewdrivertwoinone>WrenchDriver</entityname.otfx_wrenchscrewdrivertwoinone>
   <entitydescription.otfx_wrenchscrewdrivertwoinone>When equipped, double right-click to switch between wrench and screwdriver modes.</entitydescription.otfx_wrenchscrewdrivertwoinone>
   <!--AFF-->
   <Builder.Msg.Detach>[[use]] Detatch</Builder.Msg.Detach>
   <!--eventtext-->
   <EventText.missionevent_EAHI1.c1>Loafer[EA-HI Liaison Officer]: Zzz. This is your task, don't disturb my sleep.</EventText.missionevent_EAHI1.c1>
-  <EventText.missionevent_EAHI2.c1>Brynhild [EA-HI Delegate]: Are you here to accept the contract? OK, there are a few tasks here.</EventText.missionevent_EAHI2.c1>
+  <EventText.missionevent_EAHI2.c1>Brynhild[EA-HI Delegate]: Are you here to accept the contract? OK, there are a few tasks here.</EventText.missionevent_EAHI2.c1>
   <EventText.missionevent_XML.c1>The liaison said that recently a group of particularly ferocious Mudraptors was attacking ships traveling in the waterway, seriously affecting the interests of the company. [reward]mk has been promised to those who annihilate this horde of monsters. "</EventText.missionevent_XML.c1>
   <EventText.missionevent_PP.c1>Several Crawler Mother leads hordes of crawlers to attack ships in the channel. East Asia Heavy Industries promises to give [reward]mk rewards to those who annihilate this group of monsters.</EventText.missionevent_PP.c1>
   <EventText.missionevent_HF.c1>A large number of golden hammerheads are entrenched in the waterway, seriously affecting the transportation of people and goods. East Asia Heavy Industries is offering a reward [reward]mk to all free captains in order to solve this problem.</EventText.missionevent_HF.c1>

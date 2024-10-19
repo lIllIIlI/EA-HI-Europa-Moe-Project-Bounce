@@ -5,7 +5,7 @@
 		<Item name="" identifier="securityuniform1" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
 			<PreferredContainer primary="crewcab" />
 			<PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
-			<Price baseprice="150" minavailable="1">
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
 				<Price storeidentifier="merchantoutpost" minavailable="1" />
 				<Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
 				<Price storeidentifier="merchantresearch" minavailable="1" />
@@ -41,7 +41,7 @@
 		<Item name="" identifier="securityuniform2" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
 			<PreferredContainer primary="crewcab" />
 			<PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
-			<Price baseprice="150" minavailable="1">
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
 				<Price storeidentifier="merchantoutpost" minavailable="1" />
 				<Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
 				<Price storeidentifier="merchantresearch" minavailable="1" />
@@ -77,7 +77,7 @@
 		<Item name="" identifier="securityuniform3" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
 			<PreferredContainer primary="crewcab" />
 			<PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
-			<Price baseprice="150" minavailable="1">
+    <Price baseprice="150" minavailable="1" requiredfaction="coalition">
 				<Price storeidentifier="merchantoutpost" minavailable="1" />
 				<Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
 				<Price storeidentifier="merchantresearch" minavailable="1" />
@@ -249,10 +249,10 @@
 				<sprite name="Security Vest Wearable boob" texture="%ModDir:3282923984%/Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
 			</Wearable>
 		</Item>
-		<!--修改：贴图；增加一个容器可以放置健康扫描仪或者热成像，插入有效-->
-		<Item name="" identifier="ballistichelmet1" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
+  <!-- HEADGEAR START -->
+  <Item name="" identifier="ballistichelmet1" aliases="ballistichelmet" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
 			<Upgrade gameversion="0.9.6.0" scale="0.325" />
-			<PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
 			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
 			<PreferredContainer secondary="armcab" />
 			<Price baseprice="320">
@@ -277,7 +277,7 @@
 				<damagemodifier afflictionidentifiers="bitewounds, blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-				<sprite name="Ballistic Helmet 1 Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="4,213,92,88" origin="0.5165,0.65" />
+				<sprite name="Ballistic Helmet 1 Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="4,213,92,88" origin="0.5165,0.61" />
 			</Wearable>
 			<ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="" containedspritedepths="0.551,0.552">
 				<Containable items="healthscanner,thermalgoggles,electriciansgoggles">
@@ -297,9 +297,8 @@
 			</ItemContainer>
 			<StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
 		</Item>
-
-		<Item name="" identifier="ballistichelmet2" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
-			<PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
+  <Item name="" identifier="ballistichelmet2" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
 			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
 			<PreferredContainer secondary="armcab" />
 			<Price baseprice="320">
@@ -344,9 +343,8 @@
 			</ItemContainer>
 			<StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
 		</Item>
-
-		<Item name="" identifier="ballistichelmet3" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
-			<PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
+  <Item name="" identifier="ballistichelmet3" category="Equipment" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" notpvp="true" />
 			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
 			<PreferredContainer secondary="armcab" />
 			<Price baseprice="320">
