@@ -68,6 +68,9 @@
         <Item identifier="Wf_Admiral_Katana" equip="false"/>
         <Item identifier="Wf_Admiral_Wakizashi" equip="false"/>
         <Item identifier="harmonica" equip="false"/>
+        <Item identifier="captainspipe" GameMode="PvE" equip="false">
+          <Item identifier="pipetobacco"/>
+        </Item>
         <PreviewSprites dims="120,109">
           <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0"/>
           <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15"/>

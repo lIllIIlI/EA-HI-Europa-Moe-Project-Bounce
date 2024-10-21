@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--凯尔希/博士-->
-  <Item name="Rhodes Island doctor outfit" identifier="Kaltsituniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Kaltsit Uniform" identifier="Kaltsituniform" subcategory="waifu_cosplay" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="425" minavailable="1">
@@ -79,7 +79,7 @@
     </Wearable>
   </Item>
   <!-- 天灾学者服装 -->
-  <Item name="Rhodes Island researcher outfit" identifier="RodesResearcherUniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Rhodes Island researcher outfit" identifier="RodesResearcherUniform" subcategory="waifu_cosplay" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
     <PreferredContainer primary="crewcab" />
     <Price baseprice="150" minavailable="1">
@@ -92,8 +92,8 @@
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sheetindex="7,9" sheetelementsize="64,64" />
-    <Sprite name="researcher" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="376,147,118,57" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Skyfire Uniform Icon" texture="%ModDir%/Content/Uniform_new/OutfitIcons.png" sourcerect="128,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Skyfire Uniform" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="768,297,126,56" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Researcher Torso" texture="Rodes-researcher_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

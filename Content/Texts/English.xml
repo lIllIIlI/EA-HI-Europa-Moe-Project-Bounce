@@ -50,7 +50,7 @@
   <EventText.EAHI.Liaison.complaint>Customer service</EventText.EAHI.Liaison.complaint>
   <EventText.EAHI.Liaison.Quit>Hang up</EventText.EAHI.Liaison.Quit>
   <EventText.EAHI.Liaison.Wait5min>We apologize, but due to high service demand, the self-service system is temporarily unavailable. Please call again in 5 minutes.</EventText.EAHI.Liaison.Wait5min>
-  <EventText.EAHI.Liaison.CoporatePolice>Records indicate repeated actions against company interests. We consider you a significant threat to the prosperity of the company and Corporate police have been dispatched.</EventText.EAHI.Liaison.CoporatePolice>
+  <EventText.EAHI.Liaison.CoporatePolice>Records indicate repeated actions against company interests. We consider you a significant threat to the prosperity of the company. Corporate police have been dispatched to neutralize the situation.</EventText.EAHI.Liaison.CoporatePolice>
 
   <!-- Portable Process Bench -->
   <entityname.EAHI_ProcessBrench>EAHI Portable Processing Bench</entityname.EAHI_ProcessBrench>
@@ -242,16 +242,16 @@
   <entityname.Kaltsituniform>Rhode Medical Executive Uniform</entityname.Kaltsituniform>
   <entitydescription.Kaltsituniform>"Doctor?"</entitydescription.Kaltsituniform>
   <entityname.skyfireuniform>Rhode Chief Sorceress Uniform</entityname.skyfireuniform>
-  <entitydescription.skyfireuniform>"The temperature of battlefield is too low" (WIP)</entitydescription.skyfireuniform>
+  <entitydescription.skyfireuniform>"The temperature of battlefield is too low"</entitydescription.skyfireuniform>
   <entityname.skyfireswimsuit>RT.RX01☆Skyfire</entityname.skyfireswimsuit>
-  <entitydescription.skyfireswimsuit>"Please do not place the swimsuit near an open fire."（WIP）</entitydescription.skyfireswimsuit>
+  <entitydescription.skyfireswimsuit>"Please do not place the swimsuit near an open fire."</entitydescription.skyfireswimsuit>
   <entityname.shengxuanuniform>Shengxuan</entityname.shengxuanuniform>
-  <entitydescription.shengxuanuniform>"Mourn with butterflies for those who sleep"\nEmbedded with genetic technology and hormone injectors that give the wearer heightened regenerative capabilities of their symbiote, while keeping the symbiote docile.</entitydescription.shengxuanuniform>
+  <entitydescription.shengxuanuniform>"Mourn with butterflies for those who sleep"\Once said to have kept husk parasites docile when worn, providing higher metabolism and regeneration...but is that still the case?</entitydescription.shengxuanuniform>
   <entityname.shengxuanhats>Dead Butterfly Funeral Offering</entityname.shengxuanhats>
   <entitydescription.shengxuanhats>"Where do people go after death?"\nImbued with pheromones that pacify feral husks.</entitydescription.shengxuanhats>
   <entityname.succubusmask>Succubus Mask</entityname.succubusmask>
   <entitydescription.succubusmask>“Great, just what I needed”</entitydescription.succubusmask>
-  <entityname.succubussuit>Succubus Set</entityname.succubussuit>
+  <entityname.succubussuit>Succubus Outfit</entityname.succubussuit>
   <entitydescription.succubussuit>A clown who signs a contract with the devil will eventually become a succubus. "No, it's illogical"</entitydescription.succubussuit>
   <entityname.tight_combatsuit_1>Tight Combat Suit MK1</entityname.tight_combatsuit_1>
   <entitydescription.tight_combatsuit_1>Outline your beautiful figure</entitydescription.tight_combatsuit_1>
@@ -305,7 +305,7 @@
   <entityname.EAHI_pucs>SpecOps EPSP (Invisible)</entityname.EAHI_pucs>
   <entitydescription.EAHI_pucs>A targeted improvement of the EPSP, uses *very* low-visibility coating and strengthens the defense against human weapons, equipped with *very* small propellers for faster movement underwater. Operational Depth: 10,000m</entitydescription.EAHI_pucs>
   <entityname.i_Wf_pucs>EPSP (Invisible)</entityname.i_Wf_pucs>
-  <entitydescription.Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick shell, which has better vision and mobility than ordinary PUCS. Operational Depth: 6,200m</entitydescription.Wf_pucs>
+  <entitydescription.i_Wf_pucs>Experimental Pressure Stabilized PUCS (Experimental Pressure Stabilized PUCS): Using experimental technology, the pressure stabilizer replaces the diving suit with a thick (invisible) shell, which has better vision and mobility than ordinary PUCS. Operational Depth: 6,200m</entitydescription.i_Wf_pucs>
   <entityname.i_Wf_pucs_R>Combat EPSP (Invisible)</entityname.i_Wf_pucs_R>
   <entitydescription.i_Wf_pucs_R>A targeted improvement of the EPSP, it may not be visible but this is perfectly suitable for close quarters melee combat with Europan wildlife. Operational Depth: 6,200m</entitydescription.i_Wf_pucs_R>
   <entityname.i_Wf_pucs_B>Abyss EPSP (Invisible)</entityname.i_Wf_pucs_B>

@@ -117,7 +117,7 @@
 		<Reputation identifier="EAHI" amount="3"/>
 		<Items>
 			<Item identifier="metalcrate" reward="300" maxcount="12">
-				<Item identifier="RO635uniform1" amount="1"/>
+				<Item identifier="vipclothes1" amount="1"/>
 				<Item identifier="UMP9uniform1" amount="1"/>
 				<Item identifier="securityuniform4" amount="1"/>
 				<Item identifier="securityuniform5" amount="1"/>
@@ -238,7 +238,7 @@
 		<message header="missionheader0.EAHI_Mission_XFFSY_1" text="missionmessage0.EAHI_Mission_XFFSY_1"/>
 	</MonsterMission>
 	<!-- <MonsterMission name="非法试验"  -->
-	<MonsterMission identifier="EAHI_Mission_XFFSY_2" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="20000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+	<MonsterMission identifier="EAHI_Mission_XFFSY_2" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="10000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
 		<Reputation identifier="EAHI" amount="5"/>
 		<Reputation identifier="coalition" amount="-5"/>
 		<Reputation identifier="separatists" amount="-5"/>
@@ -247,7 +247,7 @@
 		<message header="missionheader0.EAHI_Mission_XFFSY_2" text="missionmessage0.EAHI_Mission_XFFSY_2"/>
 	</MonsterMission>
 	<!-- <MonsterMission name="非法试验"  -->
-	<MonsterMission identifier="EAHI_Mission_XFFSY_3" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="30000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+	<MonsterMission identifier="EAHI_Mission_XFFSY_3" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="15000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
 		<monster character="Endworm" min="2" max="4"/>
 		<monster character="Charybdis" min="1" max="2"/>
 		<Reputation identifier="EAHI" amount="5"/>
