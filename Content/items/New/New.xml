@@ -224,9 +224,6 @@
 			<SkillModifier skillidentifier="medical" skillvalue="10" />
 			<SkillModifier skillidentifier="weapons" skillvalue="10" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
-			<StatusEffect type="OnWearing" target="Character" interval="0.5" disabledeltatime="true">
-				<Affliction identifier="husktransformimmunitytemporary" amount="100" />
-			</StatusEffect>
 			<StatusEffect target="Character" type="OnWearing">
 				<Conditional huskinfection="gt 0" />
 				<Conditional husksymbiosis="gt 0" />
@@ -337,20 +334,21 @@
 		<InventoryIcon texture="%ModDir:3282923984%/Content/items/New/bat.png" sourcerect="0,0,204,24" origin="0.5,0.5" />
 		<Sprite texture="%ModDir:3282923984%/Content/items/New/bat.png" sourcerect="0,0,204,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="204" height="24" density="30" />
-		<MeleeWeapon slots="RightHand+LeftHand,Any" range="175" reload="0.8" controlpose="true" aimpos="20,0" handle1="-32,0" handle2="-27,0.5" holdangle="56" combatpriority="20">
-			<StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
-			<StatusEffect type="OnUse" target="This" reload="1.0" setvalue="true" />
-			<Attack targetimpulse="15" structuredamage="5" itemdamage="5">
-				<Affliction identifier="blunttrauma" strength="24" />
-				<Affliction identifier="stun" strength="0.3" />
-				<Affliction identifier="stun" strength="3" probability="0.25" />
+		<MeleeWeapon slots="RightHand+LeftHand,Any" range="175" reload="2.0" controlpose="true" aimpos="20,0" handle1="-32,0" handle2="-27,0.5" holdangle="56" combatpriority="20">
+			<StatusEffect type="OnFailure" target="This" reload="3.5" setvalue="true" />
+			<StatusEffect type="OnUse" target="This" reload="2.0" setvalue="true" />
+			<Attack targetimpulse="150" structuredamage="5" itemdamage="5">
+				<Affliction identifier="stun" strength="3" />
+				<Affliction identifier="blunttrauma" strength="5" />
 				<!-- <StatusEffect type="OnUse" target="UseTarget"> -->
 				<!-- <Conditional entitytype="eq Character" /> -->
 				<!-- <Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/钢管落地.ogg" range="1000" volume="1.5" /> -->
 				<!-- </StatusEffect> -->
-				<StatusEffect type="OnUse" target="Target">
-					<Conditional entitytype="eq Character" />
-					<Explosion range="150.0" force="20" shockwave="true" smoke="false" flash="false" sparks="false" flames="false" underwaterbubble="false" camerashake="10.0" />
+				<StatusEffect type="OnUse" target="This">
+					<!-- <Conditional entitytype="eq Character" /> -->
+					<Explosion range="500.0" force="250" shockwave="true" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0">
+						<!-- <Affliction identifier="stun" strength="4" /> -->
+					</Explosion>
 					<Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/homerun.ogg" range="1000" volume="1.5" />
 				</StatusEffect>
 			</Attack>
