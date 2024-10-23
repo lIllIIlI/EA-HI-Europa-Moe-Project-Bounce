@@ -194,7 +194,7 @@
   </Item>
   <!--多功能工具：一个就够了-->
   <Item name="" description="" identifier="EAHI_duogongnengtool" subcategory="EAHI" category="Misc" Tags="smallitem,tool,mountableweapon" cargocontaineridentifier="metalcrate" HideConditionBar="true" HideConditionInTooltip="true" Scale="0.4" impactsoundtag="impact_metal_light" addedrepairspeedmultiplier="0.3">
-    <PreferredContainer primary="storagecab" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" spawnprobability="0.02" />
     <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.02" />
     <Price baseprice="350" minavailable="2" sold="false">
       <Price storeidentifier="merchantoutpost" />
@@ -215,7 +215,7 @@
     <BrokenSprite texture="%ModDir:3282923984%/Content/Addons/gfx.png" sourcerect="320,128,128,128" depth="0.55" origin="0.5,0.5" maxcondition="98.1" />
     <Body width="128" height="128" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="60,-15" handle1="-40,-0" handle2="-21,-27" msg="ItemMsgPickUpSelect" />
-    <RepairTool firedamage="100.0" structurefixamount="0" range="200" barrelpos="25,4" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="0" targetforce="10">
+    <RepairTool firedamage="60.0" structurefixamount="0" range="200" barrelpos="25,20" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="0" targetforce="10">
       <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
       <ParticleEmitterHitStructure particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
       <ParticleEmitterHitStructure particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="50" />
@@ -238,7 +238,7 @@
       </StatusEffect>
       <RequiredItems items="weldingtoolfuel,oxygensource" type="Contained" targetslot="0" msg="itemmsgweldingfueloroxygensourcerequired" />
       <!-- Stuck Doors -->
-      <StatusEffect type="OnUse" targettype="UseTarget" targets="weldable" Stuck="20" Condition="5.0">
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="weldable" Stuck="10" Condition="5.0">
         <RequiredItems items="weldingtoolfuel" type="Contained" targetslot="0" />
         <!-- <Conditional items="weldingtoolfuel" TargetContainedItem="true" targetslot="0" condtion="gt 0" /> -->
       </StatusEffect>
@@ -246,7 +246,7 @@
         <RequiredItems items="oxygensource" type="Contained" targetslot="0" />
       </StatusEffect>
       <!-- Item Damage -->
-      <StatusEffect type="OnUse" targettype="UseTarget" Condition="-25">
+      <StatusEffect type="OnUse" targettype="UseTarget" Condition="-15">
         <RequiredItems items="oxygensource" type="Contained" targetslot="0" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="UseTarget" targets="item" Condition="-3.0">
@@ -269,10 +269,10 @@
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
         <Containable items="weldingtoolfuel,oxygensource" itempos="15,-14" rotation="-15" />
         <Containable items="weldingtoolfuel">
-          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="4" levelwallfixamount="-1" condition="98.0" setvalue="true" Tags="weldingequipment" />
+          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="2.5" levelwallfixamount="-1" condition="98.0" setvalue="true" Tags="weldingequipment" />
         </Containable>
         <Containable items="oxygensource">
-          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="-1" levelwallfixamount="-7.5" condition="99.0" setvalue="true" Tags="cuttingequipment" />
+          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="-0.75" levelwallfixamount="-5.5" condition="99.0" setvalue="true" Tags="cuttingequipment" />
         </Containable>
     </ItemContainer>
     <AiTarget sightrange="3000" />

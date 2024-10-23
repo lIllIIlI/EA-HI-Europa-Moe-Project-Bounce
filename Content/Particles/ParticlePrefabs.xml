@@ -8,8 +8,9 @@
   startsizemax="1.75,1.1"
   sizechangemin="-4,-0.1"
   sizechangemax="-4,-0.5"
-  startcolor="255,255,255,255"
-  endcolor="255,255,255,0"
+  startcolor="255,50,0,255"
+  middlecolor="255,155,0,255"
+  endcolor="255,200,0,255"
   lifetime="0.25"
   drawtarget="Both"
   drawontop="True"
@@ -34,7 +35,6 @@
   animduration="1"
   loopanim="True"
   lifetimemin="0"
-  middlecolor="255,255,255,255"
   usemiddlecolor="False"
   priority="0">
   <sprite
@@ -47,7 +47,8 @@
   startsizemax="2,1.1"
   sizechange="-4.0,-0.5"
   startcolor="255,255,255,255"
-  endcolor="255,255,255,0"
+  middlecolor="120,150,255,255"
+  endcolor="100,0,255,255"
   lifetime="0.25"
   drawtarget="Both"
   drawontop="True"
@@ -74,7 +75,6 @@
   animduration="1"
   loopanim="True"
   lifetimemin="0"
-  middlecolor="255,255,255,255"
   usemiddlecolor="False"
   priority="0">
   <sprite

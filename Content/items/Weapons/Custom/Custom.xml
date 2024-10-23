@@ -509,5 +509,62 @@
 				</StatusEffect>
 			</Projectile>
 		</Item>
+		<!-- Prox Mine launcher attempt -->
+		<Item name="Proximity Mine" identifier="proxmine" category="weapon" maxstacksize="8" cargocontaineridentifier="explosivecrate" tags="smallitem,explosive,demolitionsexpert" Scale="0.5" impactsoundtag="impact_soft">
+			<PreferredContainer secondary="armcab" />
+			<Price baseprice="150" canbespecial="false" sold="false">
+				<Price storeidentifier="merchantmilitary" minavailable="1" maxavailable="8" sold="true"> </Price>
+			</Price>
+			<Deconstruct time="1" />
+			<Fabricate suitablefabricators="fabricator" requiredtime="20" amount="4">
+				<RequiredSkill identifier="weapons" level="60" />
+				<RequiredItem identifier="uex" />
+				<RequiredItem identifier="motiondetector" />
+			</Fabricate>
+			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,0,72,24" origin="0.5,0.5" />
+			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,0,72,24" depth="0.55" origin="0.5,0.5" />
+			<Body width="72" height="24" density="15" />
+			<LightComponent characterusable="false" LightColor="175,0,0,255" range="5" IsOn="false" BlinkFrequency="2" />
+			<MotionSensor range="5" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
+				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" conditionalcomparison="And">
+					<Conditional Speed="lt 0.1" />
+					<Conditional IsContained="false" />
+				</StatusEffect>
+				<StatusEffect type="OnBroken" target="This">
+					<sound file="Content/Items/Tools/FlareIgnite.ogg" range="500" />
+					<ParticleEmitter particle="muzzleflash" anglemin="0" anglemax="360" particleamount="3" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="200,255,0" />
+					<ParticleEmitter particle="spark" anglemin="0" anglemax="360" particleamount="2" velocitymin="0" velocitymax="0" scalemin="1" scalemax="1" colormultiplier="255,150,0" />
+					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500" />
+					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500" />
+					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500" />
+					<Explosion range="500.0" ballastfloradamage="100" structuredamage="150" itemdamage="500" force="15" severlimbsprobability="0.5" debris="true" decal="explosion" decalsize="0.5" penetration="0.5">
+						<Affliction identifier="explosiondamage" strength="75" dividebylimbcount="true" />
+						<Affliction identifier="lacerations" strength="15" probability="0.2" dividebylimbcount="false" />
+						<Affliction identifier="bleeding" strength="35" probability="0.05" dividebylimbcount="false" />
+						<Affliction identifier="stun" strength="5" />
+						<Affliction identifier="slow" strength="15" />
+					</Explosion>
+					<RemoveItem/>
+				</StatusEffect>
+			</MotionSensor>
+			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnImpact" target="This" targetitemcomponent="LightComponent" IsOn="true" />
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" IsOn="false" />
+			</Throwable>
+			<Quality>
+				<QualityStat stattype="ExplosionRadius" value="0.1" />
+				<QualityStat stattype="ExplosionDamage" value="0.1" />
+			</Quality>
+		</Item>
+		<Item name="" identifier="proxmineprojectile" nameidentifier="proxmine" variantof="proxmine" hideinmenus="true">
+			<Price/>
+			<Deconstruct/>
+			<Fabricate/>
+			<LightComponent characterusable="false" LightColor="175,0,0,255" range="5" IsOn="false" BlinkFrequency="2" />
+			<Projectile characterusable="false" launchimpulse="10.0" impulsespread="0.5">
+				<StatusEffect type="OnImpact" target="This" targetitemcomponent="LightComponent" IsOn="true" />
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" IsOn="false" />
+			</Projectile>
+		</Item>
 	</Override>
 </Items>

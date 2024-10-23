@@ -337,18 +337,16 @@
 		<MeleeWeapon slots="RightHand+LeftHand,Any" range="175" reload="2.0" controlpose="true" aimpos="20,0" handle1="-32,0" handle2="-27,0.5" holdangle="56" combatpriority="20">
 			<StatusEffect type="OnFailure" target="This" reload="3.5" setvalue="true" />
 			<StatusEffect type="OnUse" target="This" reload="2.0" setvalue="true" />
-			<Attack targetimpulse="150" structuredamage="5" itemdamage="5">
+			<Attack targetimpulse="15" structuredamage="2" itemdamage="2">
 				<Affliction identifier="stun" strength="3" />
-				<Affliction identifier="blunttrauma" strength="5" />
+				<Affliction identifier="blunttrauma" strength="1" />
 				<!-- <StatusEffect type="OnUse" target="UseTarget"> -->
 				<!-- <Conditional entitytype="eq Character" /> -->
 				<!-- <Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/钢管落地.ogg" range="1000" volume="1.5" /> -->
 				<!-- </StatusEffect> -->
 				<StatusEffect type="OnUse" target="This">
 					<!-- <Conditional entitytype="eq Character" /> -->
-					<Explosion range="500.0" force="250" shockwave="true" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0">
-						<!-- <Affliction identifier="stun" strength="4" /> -->
-					</Explosion>
+					<Explosion range="200.0" force="420" shockwave="true" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0"/>
 					<Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/homerun.ogg" range="1000" volume="1.5" />
 				</StatusEffect>
 			</Attack>

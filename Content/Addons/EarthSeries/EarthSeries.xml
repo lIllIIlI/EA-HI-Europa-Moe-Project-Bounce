@@ -578,8 +578,8 @@
 			<InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EarthSeries/pistol.png" sourcerect="0,0,67,41" origin="0.5,0.5" />
 			<Sprite texture="%ModDir:3282923984%/Content/Addons/EarthSeries/pistol.png" sourcerect="0,0,67,41" depth="0.55" origin="0.5,0.5" />
 			<Body width="72" height="40" density="25" />
-			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,-20" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
-			<RangedWeapon barrelpos="29,11" spread="4" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.25" reload="0.37">
+      <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" holdpos="42,-16" handle1="-20,-7" holdangle="90" msg="ItemMsgPickUpSelect" />
+      <RangedWeapon barrelpos="29,11" spread="4" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.25" reload="0.37">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<Sound file="Content/Items/Weapons/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -673,7 +673,7 @@
 			<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 		</Item>
 		<!--小型防暴盾-->
-		<Item name="Small Riotshield" identifier="smallriotshield" category="Equipment" tags="mediumitem" health="100" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" damagedbyprojectiles="true" scale="1" allowasextracargo="true">
+		<Item name="Small Riotshield" identifier="smallriotshield" category="Equipment" tags="mediumitem" health="200" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate" damagedbyprojectiles="true" scale="1" allowasextracargo="true">
 			<PreferredContainer primary="armcab" secondary="secarmcab" />
 			<Price baseprice="320" sold="true" minleveldifficulty="25">
 				<Price storeidentifier="merchantoutpost" multiplier="1.4" />
