@@ -112,7 +112,7 @@
       <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5"/>
       <Body radius="45" width="34" density="20"/>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="267,528,94,86" origin="0.55,0.7">
+        <sprite name="Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" alphaclipotherwearables="true" sourcerect="267,528,94,86" origin="0.55,0.7">
           <LightComponent range="300.0" lightcolor="200,255,165,200" powerconsumption="10" IsOn="true" allowingameediting="false">
             <Upgrade gameversion="0.1300.0.3" allowingameediting="false"/>
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
@@ -244,7 +244,7 @@
       <ContainedSprite name="Abyss Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/Abyss_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5"/>
       <Body radius="45" width="34" density="20"/>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Abyss Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="391,517,107,101" origin="0.6,0.74">
+        <sprite name="Abyss Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" alphaclipotherwearables="true" sourcerect="391,517,107,101" origin="0.6,0.74">
           <LightComponent range="300.0" lightcolor="250,220,130,255" powerconsumption="10" IsOn="true">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
               <Conditional IsDead="false"/>
@@ -379,7 +379,7 @@
       <ContainedSprite name="Combat Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/Combat_DivingSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5"/>
       <Body radius="45" width="34" density="20"/>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="318,6,104,101" origin="0.5,0.71">
+        <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" alphaclipotherwearables="true" sourcerect="318,6,104,101" origin="0.5,0.71">
           <LightComponent range="300.0" lightcolor="250,55,80,255" powerconsumption="10" IsOn="true" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
               <Conditional IsDead="false"/>
@@ -486,7 +486,7 @@
       <ContainedSprite name="Respawn Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5"/>
       <Body radius="45" width="34" density="20"/>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="Respawn Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="true" hideotherwearables="true" sourcerect="527,523,94,95" origin="0.545,0.725">
+        <sprite name="Respawn Diving Suit Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_[GENDER].png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" alphaclipotherwearables="true" sourcerect="527,523,94,95" origin="0.545,0.725">
           <LightComponent range="200.0" lightcolor="250,200,200,255" powerconsumption="10" IsOn="true">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
               <Conditional IsDead="false"/>
