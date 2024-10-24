@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="[EA-HI] Europa Moe Project + Bounce" modversion="1.2.3.25" corepackage="False" steamworkshopid="3282923984" gameversion="1.5.9.2">
-
+<contentpackage name="[EA-HI] Europa Moe Project + Bounce" modversion="1.2.3.35" corepackage="False" steamworkshopid="3282923984" gameversion="1.6.17.0">
   <Item file="%ModDir%/Content/Map/Pirates/PirateItems.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/misc.xml" />
   <Item file="%ModDir%/Content/items/Jobgear/Assistant/assistant_talent_items.xml" />
@@ -56,6 +55,7 @@
   <RandomEvents file="%ModDir%/Content/Addons/OutpostEvents.xml" />
   <Missions file="%ModDir%/Content/Addons/Missions.xml" />
   <Corpses file="%ModDir%/Content/NPCPrefabs/Corpses.xml" />
+  <NPCSets file="%ModDir%/Content/NPCPrefabs/SpecialNpcs.xml" />
   <Item file="%ModDir%/Content/Addons/TSM/tsm_gears.xml" />
   <Factions file="%ModDir%/Content/Addons/factions.xml" />
   <UIStyle file="%ModDir%/Content/UI/style.xml" />
@@ -67,5 +67,5 @@
   <Item file="%ModDir%/Content/items/Tools/tools.xml" />
   <EnemySubmarine file="%ModDir%/Camel.sub" />
   <!-- <Item file="%ModDir%/Content/Addons/TEST.xml" /> -->
-  <Submarine file="%ModDir%/[EA-HI]Test.sub" />  
+  <Submarine file="%ModDir%/[EA-HI]Test.sub" />
 </contentpackage>
