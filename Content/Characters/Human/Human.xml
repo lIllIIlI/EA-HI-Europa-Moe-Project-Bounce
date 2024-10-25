@@ -725,11 +725,26 @@
 			<Wearable type="FaceAttachment" commonness="0.01">
 				<sprite name="FaceAttachment 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
 			</Wearable>
-			<!--
-      <Wearable type="FaceAttachment" commonness="1.0">
-        <sprite name="FaceAttachment 16" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="3,3" />
-      </Wearable>
-      -->
+			<Wearable type="FaceAttachment" commonness="0.01">
+				<sprite name="FaceAttachment 16" texture="ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories" sourcerect="720,1440,240,480" origin="0.6125,0.3229"/>
+			</Wearable>
+			<!-- page 2 face attachment -->
+			<Wearable type="FaceAttachment" commonness="0.02">
+				<sprite name="FaceAttachment 17" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
+			</Wearable>
+			<Wearable type="FaceAttachment" commonness="0.01">
+				<sprite name="FaceAttachment 18" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
+			</Wearable>
+			<Wearable type="FaceAttachment" commonness="0.02">
+				<sprite name="FaceAttachment 19" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
+			</Wearable>
+			<Wearable type="FaceAttachment" commonness="0.02">
+				<sprite name="FaceAttachment 20" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
+			</Wearable>
+			<Wearable type="FaceAttachment" commonness="0.02">
+				<sprite name="FaceAttachment 21" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
+			</Wearable>
+
 			<Wearable type="Husk">
 				<sprite name="Husk" texture="%ModDir:3282923984%/Content/Characters/Human/Human_husk.png" sheetindex="0,0" />
 			</Wearable>

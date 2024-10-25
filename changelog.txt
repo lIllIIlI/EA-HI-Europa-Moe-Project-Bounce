@@ -77,3 +77,23 @@ Feet offset changes:
 
 10/19/24
 - Pulled latest unstable changes
+
+10/21/24
+-added a bat for baseball
+-adjusted exoticmatter
+-exosuit fuel is broken till tuesday update , since exosuits use divingfuel instead of reactorfuel tags now
+-adjusted npc commoner clothing, still no male sprites for some clothing so im keeping them out of outpostnpc pool
+
+10/22/24
+-adjust multi sprayer/multitool particles
+-adjust bat range and damage
+
+10/23/24-10/24/24
+-fix husk appendages finally
+-since we moved to new hair style setup...have to override all unique npcs to use beard/moustaches
+-fix husk appendages, finally learned how to do it
+-forgot to add spasm animation
+-add experimental proximity landmines/grenades, WIP
+-adjusted EPSP
+-backpack/rigging restrictions, about time
+-revert to old toolbelt sprite
