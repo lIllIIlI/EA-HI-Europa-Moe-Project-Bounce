@@ -102,8 +102,8 @@
   <entitydescription.Wf_SaltedFish>"I'm not salted fish after all!"</entitydescription.Wf_SaltedFish>
   <entityname.mosquito_swatter>Mosquito Swatter</entityname.mosquito_swatter>
   <entitydescription.mosquito_swatter>No mosquito here, but maybe you can use this shit as a pacemaker after turning up the voltage?</entitydescription.mosquito_swatter>
-  <entityname.masksmanrifle>Marksman Rifle</entityname.masksmanrifle>
-  <entitydescription.masksmanrifle>Designed assault rifle. Slower firing rate with higher accuracy and damage.</entitydescription.masksmanrifle>
+  <entityname.marksmanrifle>Marksman Rifle</entityname.marksmanrifle>
+  <entitydescription.marksmanrifle>Designed assault rifle. Slower firing rate with higher accuracy and damage.</entitydescription.marksmanrifle>
   <entityname.404uniform>Taskforce "404"</entityname.404uniform>
   <entitydescription.404uniform>404 not found</entitydescription.404uniform>
   <entityname.GKuniform>Operation Group "Griffin"</entityname.GKuniform>

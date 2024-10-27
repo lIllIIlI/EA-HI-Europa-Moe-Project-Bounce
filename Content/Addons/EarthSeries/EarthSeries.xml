@@ -368,7 +368,7 @@
       <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
     </Item>
 		<!--射手步枪-->
-		<Item name="Marksman rifle" identifier="masksmanrifle" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+		<Item name="Marksman rifle" identifier="marksmanrifle" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
 			<PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
 			<Price baseprice="750" sold="false">
 				<Price storeidentifier="merchantoutpost" multiplier="1.5" />
@@ -378,7 +378,7 @@
 				<Price storeidentifier="merchantmine" multiplier="1.25" />
 			</Price>
 			<Fabricate suitablefabricators="fabricator" requiredtime="75">
-				<RequiredSkill identifier="weapons" level="65" />
+				<RequiredSkill identifier="weapons" level="75" />
 				<RequiredItem identifier="physicorium" amount="1" />
 				<RequiredItem identifier="titaniumaluminiumalloy" amount="1" />
 				<RequiredItem identifier="assaultrifle" />
@@ -426,7 +426,7 @@
 			</ItemContainer>
 			<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 			<Quality>
-				<QualityStat stattype="FirepowerMultiplier" value="0.15" />
+				<QualityStat stattype="FirepowerMultiplier" value="0.2" />
 			</Quality>
 			<SkillRequirementHint identifier="weapons" level="50" />
 		</Item>
@@ -490,7 +490,7 @@
 			</ItemContainer>
 			<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 			<Quality>
-				<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+				<QualityStat stattype="FirepowerMultiplier" value="0.15" />
 			</Quality>
 			<SkillRequirementHint identifier="weapons" level="50" />
 		</Item>

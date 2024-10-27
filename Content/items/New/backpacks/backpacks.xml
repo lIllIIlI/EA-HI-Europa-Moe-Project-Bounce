@@ -31,7 +31,7 @@
     </Wearable>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="25">
-      <Containable items="smallitem,mediumitem" excludeditems="toolbox,toolbelt,backpack,mobilecontainer,toolbelt,rigging,bandolier" />
+      <Containable items="smallitem,mediumitem" excludeditems="toolbox,toolbelt,backpack,mobilecontainer,cargoscooter,rigging,bandolier" />
     </ItemContainer>
   </Item>
   <!--腰包-->

@@ -244,6 +244,7 @@
 			<Price storeidentifier="merchantresearch" multiplier="1.0" sold="false" />
 			<Price storeidentifier="merchantmilitary" multiplier="1" />
 			<Price storeidentifier="merchantmine" multiplier="1.1" sold="false" />
+			<Price storeidentifier="MerchantEAHI" sold="true"/>
 		</Price>
 		<Deconstruct time="5">
 			<Item identifier="ballisticfiber" />
@@ -320,7 +321,7 @@
 		</Wearable>
 	</Item>
 	<!--棒球棍-->
-	<Item name="Bat" identifier="bat" category="misc" tags="smallitem,misc" variantof="crowbar">
+	<Item name="Bat" identifier="bat" category="misc" tags="smallitem,misc,provocativetohumanai" variantof="crowbar">
 		<!-- Experimental -->
 		<PreferredContainer primary="outpostengcab" spawnprobability="0.1" />
 		<Price baseprice="135" sold="false" />
@@ -334,19 +335,21 @@
 		<InventoryIcon texture="%ModDir:3282923984%/Content/items/New/bat.png" sourcerect="0,0,204,24" origin="0.5,0.5" />
 		<Sprite texture="%ModDir:3282923984%/Content/items/New/bat.png" sourcerect="0,0,204,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="204" height="24" density="30" />
-		<MeleeWeapon slots="RightHand+LeftHand,Any" range="175" reload="2.0" controlpose="true" aimpos="20,0" handle1="-32,0" handle2="-27,0.5" holdangle="56" combatpriority="20">
+		<MeleeWeapon slots="RightHand+LeftHand,Any" range="175" reload="3.0" controlpose="true" aimpos="20,0" handle1="-32,0" handle2="-27,0.5" holdangle="56" combatpriority="20">
 			<StatusEffect type="OnFailure" target="This" reload="3.5" setvalue="true" />
 			<StatusEffect type="OnUse" target="This" reload="2.0" setvalue="true" />
-			<Attack targetimpulse="15" structuredamage="2" itemdamage="2">
+			<Attack targetimpulse="15" structuredamage="5" itemdamage="5">
 				<Affliction identifier="stun" strength="3" />
-				<Affliction identifier="blunttrauma" strength="1" />
+				<Affliction identifier="blunttrauma" strength="5" />
 				<!-- <StatusEffect type="OnUse" target="UseTarget"> -->
 				<!-- <Conditional entitytype="eq Character" /> -->
 				<!-- <Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/钢管落地.ogg" range="1000" volume="1.5" /> -->
 				<!-- </StatusEffect> -->
 				<StatusEffect type="OnUse" target="This">
-					<!-- <Conditional entitytype="eq Character" /> -->
 					<Explosion range="200.0" force="420" shockwave="true" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0"/>
+				</StatusEffect>
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Conditional entitytype="eq Character" />
 					<Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/homerun.ogg" range="1000" volume="1.5" />
 				</StatusEffect>
 			</Attack>

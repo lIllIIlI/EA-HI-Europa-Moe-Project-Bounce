@@ -97,3 +97,8 @@ Feet offset changes:
 -adjusted EPSP
 -backpack/rigging restrictions, about time
 -revert to old toolbelt sprite
+
+10/27/24
+-fix toolbelt, epsp ,husk mask sprites
+-adjust sleep nade
+-update outpost events

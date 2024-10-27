@@ -39,6 +39,7 @@
         <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
     </Item>
     <!-- COMBAT EPSP -->
@@ -78,6 +79,7 @@
         <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
 
       </Wearable>
     </Item>
@@ -119,6 +121,7 @@
         <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
     </Item>
     <!-- SPECIAL OPERATION EPSP -->
@@ -158,6 +161,7 @@
         <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
     </Item>
   </Items>

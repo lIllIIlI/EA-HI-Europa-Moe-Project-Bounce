@@ -18,8 +18,8 @@
   <entitydescription.Wf_SaltedFish>"Я НЕ СОЛЁНОЙ РЫБЫ!"</entitydescription.Wf_SaltedFish>
   <entityname.mosquito_swatter>Мухобойка комаров</entityname.mosquito_swatter>
   <entitydescription.mosquito_swatter>Здесь нет комаров, но, может быть, можно использовать его в качестве кардиостимулятора после увеличения напряжения?</entitydescription.mosquito_swatter>
-  <entityname.masksmanrifle>Снайперская винтовка</entityname.masksmanrifle>
-  <entitydescription.masksmanrifle>Разработана штурмовая винтовка. Более медленная скорострельность с более высокой точностью и уроном.</entitydescription.masksmanrifle>
+  <entityname.marksmanrifle>Снайперская винтовка</entityname.masksmanrifle>markssmanriflemarksmanrifle
+  <entitydescription.marksmanrifle>Разработана штурмовая винтовка. Более медленная скорострельность с более высокой точностью и уроном.</entitydescription.masksmanrifle>markssmanriflemarksmanrifle
   <entityname.404uniform>Целевая группа "404"</entityname.404uniform>
   <entitydescription.404uniform>404 не найдено</entitydescription.404uniform>
   <entityname.GKuniform>Оперативная группа «Гриффин»</entityname.GKuniform>

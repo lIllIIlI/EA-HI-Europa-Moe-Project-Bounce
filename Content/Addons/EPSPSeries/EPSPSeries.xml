@@ -68,7 +68,7 @@
         <sprite name="Wf pucs Left Leg" texture="Wf_pucs_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs hideboob" texture="Wf_pucs_[GENDER].png" limb="Tail" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs hideboob" texture="Wf_pucs_[GENDER].png" limb="Tail" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <!-- MOD FEATURE Water Flow Ressitance -->
         <StatValue stattype="FlowResistance" value="0.25"/>
         <!-- MOD FEATURE Speed&hearing Change, Remove triggerAnimation -->
@@ -381,7 +381,7 @@
         <sprite name="wf pucs Right Boobs" texture="wf_pucs_B_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.1" PropulsionSpeedMultiplier="1.5" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true"></StatusEffect>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="" deflectprojectiles="true"/>
         <!-- MOD FEATURE IMMUNITY TO RADIATION -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor"/>
