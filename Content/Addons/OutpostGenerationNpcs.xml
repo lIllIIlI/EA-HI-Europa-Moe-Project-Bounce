@@ -4,89 +4,88 @@
     <npc identifier="EAHInpc_1" job="engineer" faction="EAHI" spawnpointtags="admin" healthmultiplier="5" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
       <Character name="Loafer" speciesname="human" gender="female" race="Asian" headspriteid="8" hairindex="0" beardindex="9" moustacheindex="7" aimspeed="3.0" aimaccuracy="1.0" faceattachmentindex="3" healthmultiplier="5" personality="Fearful">
         <job name="Engineer" identifier="engineer">
-          <skill identifier="electrical" level="100" />
-          <skill identifier="mechanical" level="40" />
-          <skill identifier="weapons" level="55" />
-          <skill identifier="medical" level="33" />
-          <skill identifier="helm" level="44" />
+          <skill identifier="electrical" level="100"/>
+          <skill identifier="mechanical" level="40"/>
+          <skill identifier="weapons" level="55"/>
+          <skill identifier="medical" level="33"/>
+          <skill identifier="helm" level="44"/>
         </job>
       </Character>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" />
-        <Item identifier="EAHI_autoinjectorheadset" noninteractable="true" equip="true">
-          <Item identifier="teleportine" />
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="EAHI_autoinjectorheadset" nonplayerteaminteractable="true" equip="true">
+          <Item identifier="teleportine"/>
         </Item>
-        <Item identifier="Wf_pucs_B" equip="true" noninteractable="true"/>
-        <Item identifier="RO635uniform1" equip="true" />
+        <Item identifier="Wf_pucs_B_locked" equip="true" nonplayerteaminteractable="true"/>
+        <Item identifier="RO635uniform1" equip="true"/>
         <Item identifier="shotgununique" equip="true">
-          <Item identifier="shotgunslugexplosive" />
-          <Item identifier="shotgunslugexplosive" />
+          <Item identifier="shotgunslugexplosive"/>
+          <Item identifier="shotgunslugexplosive"/>
         </Item>
-        <Item identifier="shotgunslugexplosive" amount="12" />
-        <Item identifier="divingknifeunique" equip="false" />
+        <Item identifier="shotgunslugexplosive" amount="12"/>
+        <Item identifier="divingknifeunique" equip="false"/>
       </ItemSet>
     </npc>
     <npc identifier="EAHInpc_2" job="engineer" faction="EAHI" spawnpointtags="admin" healthmultiplier="5" behavior="Passive" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
       <Character name="Brynhild" speciesname="human" gender="male" race="Asian" headspriteid="8" hairindex="0" beardindex="6" moustacheindex="0" faceattachmentindex="0" personality="Fearful">
         <job name="Engineer" identifier="engineer">
-          <skill identifier="electrical" level="65" />
-          <skill identifier="mechanical" level="40" />
-          <skill identifier="weapons" level="100" />
-          <skill identifier="medical" level="100" />
-          <skill identifier="helm" level="81" />
+          <skill identifier="electrical" level="65"/>
+          <skill identifier="mechanical" level="40"/>
+          <skill identifier="weapons" level="100"/>
+          <skill identifier="medical" level="100"/>
+          <skill identifier="helm" level="81"/>
         </job>
       </Character>
       <ItemSet commonness="1">
-		<Item identifier="idcard" equip="true" />
-        <Item identifier="EAHI_autoinjectorheadset" noninteractable="true" equip="true">
-          <Item identifier="teleportine" />
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="EAHI_autoinjectorheadset" nonplayerteaminteractable="true" equip="true">
+          <Item identifier="teleportine"/>
         </Item>
-        <Item identifier="bulletproofsuit" equip="true" noninteractable="true"/>
+        <Item identifier="bulletproofsuit" equip="true" nonplayerteaminteractable="true"/>
         <Item identifier="marksmanrifle" equip="true">
-          <Item identifier="assaultriflemagazine" />
-          </Item>
-        <Item identifier="assaultriflemagazine" amount="2" />
-        <Item identifier="divingknifeunique" equip="false" />
+          <Item identifier="assaultriflemagazine"/>
+        </Item>
+        <Item identifier="assaultriflemagazine" amount="2"/>
+        <Item identifier="divingknifeunique" equip="false"/>
       </ItemSet>
     </npc>
-
-<!-- Custom -->
-  <npc identifier="EAHInpc_3" job="Securityofficer" faction="EAHI" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule" healthmultiplier="5">
-    <Character name="Shade" speciesname="human" gender="female" race="Asian" headspriteid="2" hairindex="36" beardindex="15" moustacheindex="11" faceattachmentindex="0" skincolor="202,167,132,255" haircolor="139,126,108,255" personality="Fearful">
-      <job name="Securityofficer" identifier="securityofficer">
-        <skill identifier="electrical" level="65" />
-        <skill identifier="mechanical" level="40" />
-        <skill identifier="weapons" level="100" />
-        <skill identifier="medical" level="75" />
-        <skill identifier="helm" level="45" />
-      </job>
-    </Character>
-    <ItemSet commonness="1">
-  <Item identifier="idcard" equip="true" />
-      <Item identifier="EAHI_autoinjectorheadset" noninteractable="true" equip="true">
-        <Item identifier="teleportine" />
-      </Item>
-      <Item identifier="Wf_pucs_D" equip="true" noninteractable="true"/>
-      <Item identifier="securityuniform2" equip="true" />
-      <Item identifier="divingknifeunique" equip="false" />
-      <Item identifier="deusizine" />
-      <Item identifier="deusizine" />
-    </ItemSet>
-  </npc>
+    <!-- Custom -->
+    <npc identifier="EAHInpc_3" job="Securityofficer" faction="EAHI" spawnpointtags="admin" behavior="Patrol" preferredoutpostmoduletypes="admin,adminmodule,researchmodule" healthmultiplier="5">
+      <Character name="Shade" speciesname="human" gender="female" race="Asian" headspriteid="2" hairindex="36" beardindex="15" moustacheindex="11" faceattachmentindex="0" skincolor="202,167,132,255" haircolor="139,126,108,255" personality="Fearful">
+        <job name="Securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="65"/>
+          <skill identifier="mechanical" level="40"/>
+          <skill identifier="weapons" level="100"/>
+          <skill identifier="medical" level="75"/>
+          <skill identifier="helm" level="45"/>
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="EAHI_autoinjectorheadset" nonplayerteaminteractable="true" equip="true">
+          <Item identifier="teleportine"/>
+        </Item>
+        <Item identifier="Wf_pucs_D_locked" equip="true" nonplayerteaminteractable="true"/>
+        <Item identifier="securityuniform2" equip="true"/>
+        <Item identifier="divingknifeunique" equip="false"/>
+        <Item identifier="deusizine"/>
+        <Item identifier="deusizine"/>
+      </ItemSet>
+    </npc>
     <!-- EAHI Merchant -->
     <npc identifier="MerchantEAHI" job="watchman" spawnpointtags="shop" healthmultiplier="3" campaigninteractiontype="Store" behavior="StayInHull" preferredoutpostmoduletypes="admin,adminmodule,researchmodule">
-      <Character name="EA-HI Merchant" speciesname="human" gender="female" race="Asian" headspriteid="8" hairindex="9" beardindex="14" moustacheindex="8" haircolor="52,48,48,255" faceattachmentindex="6" personality="Fearful" />
+      <Character name="EA-HI Merchant" speciesname="human" gender="female" race="Asian" headspriteid="8" hairindex="9" beardindex="14" moustacheindex="8" haircolor="52,48,48,255" faceattachmentindex="6" personality="Fearful"/>
       <ItemSet commonness="1">
-        <Item identifier="EAHI_autoinjectorheadset" noninteractable="true" equip="true">
-          <Item identifier="teleportine" />
+        <Item identifier="EAHI_autoinjectorheadset" nonplayerteaminteractable="true" equip="true">
+          <Item identifier="teleportine"/>
         </Item>
-        <Item identifier="UMP9uniform1" equip="true" />
+        <Item identifier="UMP9uniform1" equip="true"/>
         <Item identifier="shotgununique" equip="false">
-          <Item identifier="shotgunslugexplosive" />
-          <Item identifier="shotgunslugexplosive" />
+          <Item identifier="shotgunslugexplosive"/>
+          <Item identifier="shotgunslugexplosive"/>
         </Item>
-        <Item identifier="shotgunslugexplosive" amount="12" />
-        <Item identifier="divingknifeunique" equip="false" />
+        <Item identifier="shotgunslugexplosive" amount="12"/>
+        <Item identifier="divingknifeunique" equip="false"/>
       </ItemSet>
     </npc>
   </npcset>

@@ -726,9 +726,10 @@
 			<Wearable type="FaceAttachment" commonness="0.01">
 				<sprite name="FaceAttachment 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
 			</Wearable>
-			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 16" texture="ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories" sourcerect="720,1440,240,480" origin="0.6125,0.3229"/>
-			</Wearable>
+			<!-- Why the hell does this Index not work? Reserved for no attachments maybe? -->
+			<!-- <Wearable type="FaceAttachment" commonness="0.01">
+				<sprite name="FaceAttachment 16" texture="ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229"/>
+			</Wearable> -->
 			<!-- page 2 face attachment -->
 			<Wearable type="FaceAttachment" commonness="0.02">
 				<sprite name="FaceAttachment 17" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />

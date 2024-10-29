@@ -340,7 +340,7 @@
 			<StatusEffect type="OnUse" target="This" reload="2.0" setvalue="true" />
 			<Attack targetimpulse="15" structuredamage="5" itemdamage="5">
 				<Affliction identifier="stun" strength="3" />
-				<Affliction identifier="blunttrauma" strength="5" />
+				<Affliction identifier="blunttrauma" strength="10" />
 				<!-- <StatusEffect type="OnUse" target="UseTarget"> -->
 				<!-- <Conditional entitytype="eq Character" /> -->
 				<!-- <Sound file="%ModDir:3282923984%/Content/Items/Tools/loudspeaker/钢管落地.ogg" range="1000" volume="1.5" /> -->
@@ -354,6 +354,8 @@
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
+		<aitarget sightrange="1000" soundrange="500" fadeouttime="1" />
+
 	</Item>
 	<Rum name="Vodka" identifier="vodka" category="Medical,Misc" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<PreferredContainer secondary="wreckmedcab,abandonedmedcab" amount="1" spawnprobability="0.05" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Jobs>
   <Override>
-    <Job identifier="captain" minnumber="0" maxnumber="1" minkarma="45" initialcount="1" uicolor="0.65,0.73,0.84" vitalitymodifier="0" pricemultiplier="1.3" idlebehavior="StayInHull">
+    <Job identifier="captain" minnumber="0" maxnumber="1" initialcount="1" uicolor="0.65,0.73,0.84" vitalitymodifier="0" pricemultiplier="1.3" idlebehavior="StayInHull">
       <Jobicon>
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
       </Jobicon>
@@ -91,7 +91,7 @@
         <Order identifier="steer"/>
       </AppropriateOrders>
     </Job>
-    <Job identifier="medicaldoctor" maxnumber="2" minkarma="30" uicolor="0.81,0.31,0.19" vitalitymodifier="0" pricemultiplier="1.15" idlebehavior="Active">
+    <Job identifier="medicaldoctor" maxnumber="2" uicolor="0.81,0.31,0.19" vitalitymodifier="0" pricemultiplier="1.15" idlebehavior="Active">
       <Jobicon>
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
       </Jobicon>

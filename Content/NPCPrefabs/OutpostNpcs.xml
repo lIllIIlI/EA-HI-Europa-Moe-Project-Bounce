@@ -259,7 +259,7 @@
           </Item>
         </ItemSet>
       </npc>
-      <npc identifier="merchantnightclub" spawnpointtags="nightclubcounter" campaigninteractiontype="Store" behavior="StayInHull">
+      <npc identifier="merchantnightclub" spawnpointtags="nightclubcounter" RequireSpawnPointTag="true" campaigninteractiontype="Store" behavior="StayInHull">
         <ItemSet commonness="1">
           <Item identifier="vipclothes1" equip="true"/>
           <Item identifier="idcard" equip="true"/>

@@ -47,8 +47,8 @@
       </CustomInterface>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" alphaclipotherwearables="false" sourcerect="429,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="1" IsOn="false" allowingameediting="false">
-            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
+          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="0.1" IsOn="false" allowingameediting="false">
+            <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false"/>
             </StatusEffect>
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
@@ -286,8 +286,8 @@
       <ContainedSprite name="Wf_PUCS_R In Horizontal Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png"/>
       <Wearable>
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="474,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="1" IsOn="false">
-            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+          <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="0.1" IsOn="false">
+            <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false"/>
             </StatusEffect>
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
@@ -316,11 +316,6 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
       </Wearable>
-      <ItemContainer>
-        <Containable/>
-        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
-        <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5"/>
-      </ItemContainer>
     </Item>
     <Item name="" identifier="Wf_pucs_B" variantof="Wf_pucs">
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
@@ -357,8 +352,8 @@
       <ContainedSprite name="Wf_PUCS_B In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png"/>
       <Wearable>
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="519,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="150,124,200,255" powerconsumption="1" IsOn="false">
-            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+          <LightComponent range="300.0" lightcolor="150,124,200,255" powerconsumption="0.1" IsOn="false">
+            <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false"/>
             </StatusEffect>
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
@@ -387,10 +382,6 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
       </Wearable>
-      <ItemContainer>
-        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
-        <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5"/>
-      </ItemContainer>
     </Item>
     <!-- Cannot use inheritance efectively here due to ordering of status effects being inconsistent with prior 3 suits -->
     <Item name="" identifier="Wf_pucs_D" subcategory="EPSP" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving" allowasextracargo="False" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false" botpriority="5">
@@ -437,8 +428,8 @@
       </CustomInterface>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="564,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="1" IsOn="false" allowingameediting="true">
-            <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
+          <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="0.1" IsOn="false" allowingameediting="true">
+            <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false"/>
             </StatusEffect>
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
@@ -657,6 +648,25 @@
         </SubContainer>
       </ItemContainer>
       <aitarget maxsightrange="1500"/>
+    </Item>
+
+    <Item identifier="Wf_pucs_B_locked" subcategory="EPSP" hideinmenus="true" nonplayerteaminteractable="True" allowdroppingonswapwith="" variantof="Wf_pucs_B">
+      <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
+      <Price/>
+      <Deconstruct time="1">
+        <Item/>
+      </Deconstruct>
+      <Fabricate suitablefabricators="Null"/>
+      <Fabricate suitablefabricators="Null"/>
+    </Item>
+    <Item identifier="Wf_pucs_D_locked" subcategory="EPSP" hideinmenus="true" nonplayerteaminteractable="True" allowdroppingonswapwith="" variantof="Wf_pucs_D">
+      <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
+      <Price/>
+      <Deconstruct time="1">
+        <Item/>
+      </Deconstruct>
+      <Fabricate suitablefabricators="Null"/>
+      <Fabricate suitablefabricators="Null"/>
     </Item>
   </Items>
 </Override>
