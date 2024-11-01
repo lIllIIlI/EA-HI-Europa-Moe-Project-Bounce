@@ -25,7 +25,7 @@
                 BackwardsMovementMultiplier="0.75"
                 MovementSpeed="1.7448974"
                 CycleSpeed="2.8549519"
-                HeadAngle="17"
+                HeadAngle="33.3"
                 TorsoAngle="-5"
                 HeadTorque="20"
                 TorsoTorque="15"
