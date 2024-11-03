@@ -93,8 +93,8 @@
 					<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" range="2000"/>
 					<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" range="2000"/>
 					<Explosion range="150" ballastfloradamage="0" itemdamage="0" force="0.5" sparks="false" shockwave="false" flames="false" smoke="true" flash="true">
-						<Affliction identifier="electricshockwearoff" amount="100"/>
-						<Affliction identifier="incrementalstun" amount="25"/>
+						<Affliction identifier="concussion" amount="100"/>
+						<Affliction identifier="incrementalstun" amount="65"/>
 						<Affliction identifier="stun" amount="25"/>
 					</Explosion>
 					<Remove/>
@@ -120,9 +120,9 @@
 					<Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
 				</StatusEffect>
 				<StatusEffect type="Always" target="NearbyCharacters" range="150" delay="0.5" stackable="true" disabledeltatime="true">
-					<Affliction identifier="electricshockwearoff" amount="25"/>
+					<Affliction identifier="concussion" amount="25"/>
 					<Affliction identifier="slow" amount="50"/>
-					<Affliction identifier="incrementalstun" amount="55"/>
+					<Affliction identifier="incrementalstun" amount="70"/>
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
 					<Remove/>
@@ -442,14 +442,15 @@
 				</StatusEffect>
 			</Projectile>
 		</Item>
-		<!-- Prox Mine launcher attempt -->
+
+		<!-- Explosives playground -->
 		<Item name="Proximity Mine" identifier="proxmine" category="weapon" maxstacksize="8" cargocontaineridentifier="explosivecrate" tags="smallitem,explosive,grenade,demolitionsexpert" Scale="0.5" impactsoundtag="impact_soft">
 			<PreferredContainer secondary="armcab"/>
-			<Price baseprice="50" canbespecial="false" sold="false">
+			<Price baseprice="250" canbespecial="false" sold="false">
 				<Price storeidentifier="merchantmilitary" minavailable="1" maxavailable="8" sold="true"> </Price>
 			</Price>
 			<Deconstruct time="1"/>
-			<Fabricate suitablefabricators="fabricator" requiredtime="20" amount="4">
+			<Fabricate suitablefabricators="fabricator" requiredtime="15" amount="1">
 				<RequiredSkill identifier="weapons" level="70"/>
 				<RequiredSkill identifier="electrical" level="40"/>
 				<RequiredItem identifier="c4block"/>
@@ -460,7 +461,7 @@
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,0,72,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="72" height="24" density="25"/>
 			<MotionSensor range="5" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="1" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" delay="0.3" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -471,11 +472,11 @@
 					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500"/>
 					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500"/>
 					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500"/>
-					<Explosion range="150.0" ballastfloradamage="100" structuredamage="10" itemdamage="20" force="25" severlimbsprobability="0.75" debris="true" decal="explosion" decalsize="0.5" penetration="0.25">
-						<Affliction identifier="explosiondamage" amount="55" dividebylimbcount="true"/>
-						<Affliction identifier="lacerations" amount="25" probability="0.5" dividebylimbcount="false"/>
-						<Affliction identifier="bleeding" amount="25" probability="0.2" dividebylimbcount="false"/>
-						<Affliction identifier="stun" amount="3"/>
+					<Explosion range="150.0" ballastfloradamage="250" structuredamage="20" itemdamage="100" force="25" severlimbsprobability="0.75" debris="true" decal="explosion" decalsize="0.5" penetration="0.25">
+						<Affliction identifier="explosiondamage" amount="255" dividebylimbcount="true"/>
+						<Affliction identifier="lacerations" amount="50" probability="0.5" dividebylimbcount="false"/>
+						<Affliction identifier="bleeding" amount="50" probability="0.2" dividebylimbcount="false"/>
+						<Affliction identifier="stun" amount="6"/>
 					</Explosion>
 					<RemoveItem/>
 				</StatusEffect>
@@ -495,11 +496,18 @@
 			</Quality>
 		</Item>
 		<Item name="Sticky Proximity Mine" identifier="proxminespiked" variantof="proxmine">
+			<Fabricate suitablefabricators="fabricator" requiredtime="15" amount="4">
+				<RequiredSkill identifier="weapons" level="70"/>
+				<RequiredSkill identifier="electrical" level="40"/>
+				<RequiredItem identifier="c4block"/>
+				<RequiredItem identifier="motiondetector"/>
+				<RequiredItem identifier="steel"/>
+			</Fabricate>
 			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" origin="0.5,0.5"/>
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="25" height="24" density="25"/>
 			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="1" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" delay="0.3" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -511,7 +519,7 @@
 					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500"/>
 					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500"/>
 					<Explosion range="70.0" ballastfloradamage="100" structuredamage="15" itemdamage="50" force="15" severlimbsprobability="0.75" debris="true" decal="explosion" decalsize="0.5" penetration="0.25">
-						<Affliction identifier="explosiondamage" amount="30" dividebylimbcount="true"/>
+						<Affliction identifier="explosiondamage" amount="50" dividebylimbcount="true"/>
 						<Affliction identifier="lacerations" amount="30" probability="0.5" dividebylimbcount="false"/>
 						<Affliction identifier="bleeding" amount="30" probability="0.2" dividebylimbcount="false"/>
 						<Affliction identifier="stun" amount="2"/>
@@ -524,16 +532,63 @@
 			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
 				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
 			</Throwable>
 			<Projectile characterusable="false" launchimpulse="30.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
 				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
 				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
 			</Projectile>
 			<Quality>
-				<QualityStat stattype="ExplosionRadius" value="0.1"/>
-				<QualityStat stattype="ExplosionDamage" value="0.1"/>
+				<QualityStat stattype="ExplosionRadius" value="0.15"/>
+				<QualityStat stattype="ExplosionDamage" value="0.15"/>
 			</Quality>
 		</Item>
+		<Item name="Sticky Impulse Grenade" identifier="proximpulsemine" variantof="proxmine" spritecolor="255,255,0,255">
+			<Fabricate suitablefabricators="fabricator" requiredtime="15" amount="4">
+				<RequiredSkill identifier="weapons" level="70"/>
+				<RequiredSkill identifier="mechanical" level="40"/>
+				<RequiredItem identifier="oxygentank" amount="2"/>
+				<RequiredItem identifier="sodium" amount="2"/>
+				<RequiredItem identifier="potassium" amount="2"/>
+			</Fabricate>
+			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" origin="0.5,0.5"/>
+			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" depth="0.55" origin="0.5,0.5"/>
+			<Body width="25" height="24" density="25"/>
+			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" delay="0.3" conditionalcomparison="And">
+					<Conditional Speed="lt 0.1"/>
+					<Conditional IsContained="false"/>
+				</StatusEffect>
+				<StatusEffect type="OnBroken" target="This">
+					<!-- <sound file="Content/Items/Tools/FlareIgnite.ogg" range="500"/> -->
+					<ParticleEmitter particle="shockwave" anglemin="0" anglemax="360" particleamount="1" velocitymin="10" velocitymax="100" scalemin="1" scalemax="2" colormultiplier="255,250,0"/>
+					<ParticleEmitter particle="smoke" anglemin="0" anglemax="360" particleamount="10" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="100,100,100"/>
+					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500"/>
+					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500"/>
+					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500"/>
+					<Explosion range="150.0" shockwave="true" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="150" severlimbsprobability="0" decal="explosion" decalsize="0.5">
+						<Affliction identifier="stun" amount="6"/>
+						<Affliction identifier="blunttrauma" amount="25"/>
+						<Affliction identifier="internaldamage" amount="30" dividebylimbcount="false"/>
+						<Affliction identifier="slow" amount="50"/>
+					</Explosion>
+					<RemoveItem/>
+				</StatusEffect>
+			</MotionSensor>
+			<LightComponent characterusable="false" LightColor="175,175,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
+			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+			</Throwable>
+			<Projectile characterusable="false" launchimpulse="30.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+			</Projectile>
+		</Item>
+
 		<!-- not needed -->
 		<!-- <Item name="Mine Launcher" identifier="proxminelauncher" category="weapon" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_soft">
 			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,831,64,64" origin="0.5,0.5"/>
