@@ -28,7 +28,7 @@
         <RequiredItem identifier="fpgacircuit" amount="2"/>
       </Fabricate>
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
-        <RequiredSkill identifier="electrical" level="60"/>
+        <!-- <RequiredSkill identifier="electrical" level="60"/> -->
         <RequiredItem identifier="i_Wf_pucs"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5"/>
@@ -271,12 +271,13 @@
         <Item identifier="Wf_pucs"/>
       </Deconstruct>
       <Fabricate requiredtime="30">
+        <RequiredSkill identifier="electrical" level="60"/>
         <RequiredItem identifier="Wf_pucs"/>
         <RequiredItem identifier="redpaint"/>
         <RequiredItem identifier="ballisticfiber" amount="4"/>
       </Fabricate>
       <Fabricate>
-        <RequiredSkill identifier="electrical" level="60"/>
+        <!-- <RequiredSkill identifier="electrical" level="60"/> -->
         <RequiredItem identifier="i_Wf_pucs_R"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_R_icon.png"/>
@@ -342,7 +343,7 @@
         <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
       </Fabricate>
       <Fabricate>
-        <RequiredSkill identifier="electrical" level="60"/>
+        <!-- <RequiredSkill identifier="electrical" level="60"/> -->
         <RequiredItem identifier="i_Wf_pucs_B"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_B_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5"/>
@@ -374,7 +375,7 @@
         <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_B_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
         <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_B_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
         <sprite name="wf pucs Right Boobs" texture="wf_pucs_B_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
-        <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.1" PropulsionSpeedMultiplier="1.5" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.1" PropulsionSpeedMultiplier="1.5" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="" deflectprojectiles="true"/>
@@ -410,7 +411,7 @@
         <RequiredItem identifier="fpgacircuit"/>
       </Fabricate>
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
-        <RequiredSkill identifier="electrical" level="60"/>
+        <!-- <RequiredSkill identifier="electrical" level="60"/> -->
         <RequiredItem identifier="EAHI_pucs"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_D_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5"/>
@@ -577,9 +578,9 @@
         <!-- MOD FEATURE -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,explosiondamage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations,bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="" deflectprojectiles="true"/>
         <!-- MOD FEATURE IMMUNITY TO RADIATION -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor"/>
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
         <ItemComponent IsActiveConditionalComparison="Or">
           <IsActive HullOxygenPercentage="lt 50"/>

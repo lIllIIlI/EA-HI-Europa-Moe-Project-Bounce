@@ -6,7 +6,7 @@
 
       <Fabricate />
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
-        <RequiredSkill identifier="electrical" level="60" />
+        <!-- <RequiredSkill identifier="electrical" level="60" /> -->
         <RequiredItem identifier="Wf_pucs" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
@@ -46,7 +46,7 @@
     <Item name="" identifier="i_Wf_pucs_R" variantof="Wf_pucs_R">
       <Fabricate />
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
-        <RequiredSkill identifier="electrical" level="60" />
+        <!-- <RequiredSkill identifier="electrical" level="60" /> -->
         <RequiredItem identifier="Wf_pucs_R" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
@@ -88,7 +88,7 @@
     <Item name="" identifier="i_Wf_pucs_B" variantof="Wf_pucs_B">
       <Fabricate />
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
-        <RequiredSkill identifier="electrical" level="60" />
+        <!-- <RequiredSkill identifier="electrical" level="60" /> -->
         <RequiredItem identifier="Wf_pucs_B" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
@@ -128,7 +128,7 @@
     <Item name="" identifier="EAHI_pucs" variantof="Wf_pucs_D">
       <Fabricate />
       <Fabricate suitablefabricators="fabricator" requiredtime="2" displayname="ChangeMode">
-        <RequiredSkill identifier="electrical" level="60" />
+        <!-- <RequiredSkill identifier="electrical" level="60" /> -->
         <RequiredItem identifier="Wf_pucs_D" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
