@@ -60,14 +60,10 @@
   </limb>
   <joint name="Head to Huskappendage 1" limb1="1" limb2="18" limb1anchor="14.5,-9.2" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage 1" limb1="18" limb2="19" limb1anchor="7,0" limb2anchor="-7,0" UpperLimit="0" LowerLimit="-90" canbesevered="False" limitenabled="True"/>
-
   <joint name="Head to Huskappendage 2" limb1="1" limb2="20" limb1anchor="13.6,-6.6" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage 2" limb1="20" limb2="21" limb1anchor="6,0" limb2anchor="-6,0" UpperLimit="-90" LowerLimit="-180" canbesevered="False" limitenabled="True"/>
-
   <joint name="Head to Huskappendage 3" limb1="1" limb2="22" limb1anchor="11.6,-13" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage 3" limb1="22" limb2="23" limb1anchor="6,0" limb2anchor="-6,0" UpperLimit="-90" LowerLimit="-180" canbesevered="False" limitenabled="True"/>
-
   <joint name="Head to Huskappendage 4" limb1="1" limb2="24" limb1anchor="13.4,-9.8" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage 4" limb1="24" limb2="25" limb1anchor="6,0" limb2anchor="-6,0" UpperLimit="-90" LowerLimit="-180" canbesevered="False" limitenabled="True"/>
-
 </huskappendage>

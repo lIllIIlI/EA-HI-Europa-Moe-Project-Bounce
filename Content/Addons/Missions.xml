@@ -229,7 +229,7 @@
 		<message header="missionheader0.EAHI_Mission_HMLK" text="missionmessage0.EAHI_Mission_HMLK"/>
 	</MonsterMission>
 	<!-- <MonsterMission name="非法试验"  -->
-	<MonsterMission identifier="EAHI_Mission_XFFSY_1" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="20000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+	<MonsterMission identifier="EAHI_Mission_XFFSY_1" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="25000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
 		<monster character="doomworm" min="2" max="2"/>
 		<Reputation identifier="EAHI" amount="10"/>
 		<Reputation identifier="coalition" amount="-5"/>
@@ -238,7 +238,7 @@
 		<message header="missionheader0.EAHI_Mission_XFFSY_1" text="missionmessage0.EAHI_Mission_XFFSY_1"/>
 	</MonsterMission>
 	<!-- <MonsterMission name="非法试验"  -->
-	<MonsterMission identifier="EAHI_Mission_XFFSY_2" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="10000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+	<MonsterMission identifier="EAHI_Mission_XFFSY_2" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="15000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
 		<Reputation identifier="EAHI" amount="5"/>
 		<Reputation identifier="coalition" amount="-5"/>
 		<Reputation identifier="separatists" amount="-5"/>
@@ -247,19 +247,19 @@
 		<message header="missionheader0.EAHI_Mission_XFFSY_2" text="missionmessage0.EAHI_Mission_XFFSY_2"/>
 	</MonsterMission>
 	<!-- <MonsterMission name="非法试验"  -->
-	<MonsterMission identifier="EAHI_Mission_XFFSY_3" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="15000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
+	<MonsterMission identifier="EAHI_Mission_XFFSY_3" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="22222" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
 		<monster character="Endworm" min="2" max="4"/>
 		<monster character="Charybdis" min="1" max="2"/>
 		<Reputation identifier="EAHI" amount="5"/>
 		<Reputation identifier="coalition" amount="-5"/>
 		<Reputation identifier="separatists" amount="-5"/>
 		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
-		<message header="Hunt Ended" text="You watch the massive body of the worm sink into the abyss, letting out a long sigh of relief."/>
+		<message header="missionheader0.EAHI_Mission_XFFSY_3" text="missionmessage0.EAHI_Mission_XFFSY_3"/>
 	</MonsterMission>
 	<MonsterMission name="‘Calm’ly Watch the Show" identifier="EAHI_Mission_JGHX" type="Monster" tags="FFSY,EAHI_H" description="" commonness="100" reward="4000" sonarlabel="target" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="4">
 		<monster character="Charybdis" min="1" max="1"/>
 		<monster character="Hammerheadgold_m" min="4" max="8"/>
 		<Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
-		<message header="Spectacular Show" text="It was quite a show, too bad someone has to clean up the mess."/>
+		<message header="missionheader0.EAHI_Mission_JGHX" text="missionmessage0.EAHI_Mission_JGHX"/>
 	</MonsterMission>
 </Missions>

@@ -109,12 +109,12 @@
 			</Quality>
 		</Item>
 		<Item name="" identifier="sleepmistemitter" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="10" depth="0.1" isdangerous="true" noninteractable="true">
-			<Sprite texture="%ModDir:3282923984%/Content/items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" Color="255,55,255,100"/>
+			<Sprite texture="%ModDir:3282923984%/Content/items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" Color="200,40,200,55"/>
 			<!-- Without a body, the item wouldn't stay inside the sub, and could go through sub walls from the outside -->
 			<Body radius="50" density="15" gravityscale="0.1" lineardamping="0.5"/>
 			<ItemComponent>
 				<StatusEffect type="OnSpawn" target="This" duration="10">
-					<ParticleEmitter particle="sleepmistgrenade" particlespersecond="5" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="0" velocitymax="25" copyentityangle="false"/>
+					<ParticleEmitter particle="sleepmistgrenade" colormultiplier="100,25,100,55" particlespersecond="3" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="0" velocitymax="25" copyentityangle="false"/>
 				</StatusEffect>
 				<StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
 					<Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
@@ -444,7 +444,7 @@
 		</Item>
 
 		<!-- Explosives playground -->
-		<Item name="Proximity Mine" identifier="proxmine" category="weapon" maxstacksize="8" cargocontaineridentifier="explosivecrate" tags="smallitem,explosive,grenade,demolitionsexpert" Scale="0.5" impactsoundtag="impact_soft">
+		<Item name="Proximity Mine" desc="A landmine that explodes upon detecting movement, be it friend or foe." identifier="proxmine" category="weapon" maxstacksize="8" cargocontaineridentifier="explosivecrate" tags="smallitem,explosive,grenade,demolitionsexpert" Scale="0.5" impactsoundtag="impact_soft">
 			<PreferredContainer secondary="armcab"/>
 			<Price baseprice="250" canbespecial="false" sold="false">
 				<Price storeidentifier="merchantmilitary" minavailable="1" maxavailable="8" sold="true"> </Price>
@@ -461,7 +461,7 @@
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,0,72,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="72" height="24" density="25"/>
 			<MotionSensor range="5" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" delay="0.3" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -469,16 +469,16 @@
 					<sound file="Content/Items/Tools/FlareIgnite.ogg" range="500"/>
 					<ParticleEmitter particle="weldspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="10" velocitymax="50" scalemin="1" scalemax="1" colormultiplier="255,150,0"/>
 					<ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="30" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="200,255,0"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500"/>
+					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500" volume="1.5"/>
+					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500" volume="1.5"/>
+					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500" volume="1.5"/>
 					<Explosion range="150.0" ballastfloradamage="250" structuredamage="20" itemdamage="100" force="25" severlimbsprobability="0.75" debris="true" decal="explosion" decalsize="0.5" penetration="0.25">
 						<Affliction identifier="explosiondamage" amount="255" dividebylimbcount="true"/>
 						<Affliction identifier="lacerations" amount="50" probability="0.5" dividebylimbcount="false"/>
 						<Affliction identifier="bleeding" amount="50" probability="0.2" dividebylimbcount="false"/>
 						<Affliction identifier="stun" amount="6"/>
 					</Explosion>
-					<RemoveItem/>
+					<Remove/>
 				</StatusEffect>
 			</MotionSensor>
 			<LightComponent characterusable="false" LightColor="175,0,0,255" range="10" IsOn="false" BlinkFrequency="2"/>
@@ -495,7 +495,7 @@
 				<QualityStat stattype="ExplosionDamage" value="0.1"/>
 			</Quality>
 		</Item>
-		<Item name="Sticky Proximity Mine" identifier="proxminespiked" variantof="proxmine">
+		<Item name="Sticky Proximity Mine" desc="A weaker but sticky explosive. Useful for setting up ambushes." identifier="proxminespiked" variantof="proxmine">
 			<Fabricate suitablefabricators="fabricator" requiredtime="15" amount="4">
 				<RequiredSkill identifier="weapons" level="70"/>
 				<RequiredSkill identifier="electrical" level="40"/>
@@ -506,8 +506,21 @@
 			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" origin="0.5,0.5"/>
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="25" height="24" density="25"/>
+			<LightComponent characterusable="false" LightColor="175,0,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
+			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+			</Throwable>
+			<Projectile characterusable="false" launchimpulse="15.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
+					<Conditional entitytype="eq Character"/>
+				</StatusEffect>
+			</Projectile>
 			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" delay="0.3" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -515,9 +528,9 @@
 					<sound file="Content/Items/Tools/FlareIgnite.ogg" range="500"/>
 					<ParticleEmitter particle="weldspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="10" velocitymax="50" scalemin="1" scalemax="1" colormultiplier="255,150,0"/>
 					<ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="30" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="200,255,0"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500"/>
+					<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="2500" volume="1.5"/>
+					<sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="2500" volume="1.5"/>
+					<sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="2500" volume="1.5"/>
 					<Explosion range="70.0" ballastfloradamage="100" structuredamage="15" itemdamage="50" force="15" severlimbsprobability="0.75" debris="true" decal="explosion" decalsize="0.5" penetration="0.25">
 						<Affliction identifier="explosiondamage" amount="50" dividebylimbcount="true"/>
 						<Affliction identifier="lacerations" amount="30" probability="0.5" dividebylimbcount="false"/>
@@ -525,26 +538,16 @@
 						<Affliction identifier="stun" amount="2"/>
 						<Affliction identifier="slow" amount="50"/>
 					</Explosion>
-					<RemoveItem/>
+					<Remove/>
 				</StatusEffect>
 			</MotionSensor>
-			<LightComponent characterusable="false" LightColor="175,0,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
-			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-			</Throwable>
-			<Projectile characterusable="false" launchimpulse="30.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-			</Projectile>
+
 			<Quality>
 				<QualityStat stattype="ExplosionRadius" value="0.15"/>
 				<QualityStat stattype="ExplosionDamage" value="0.15"/>
 			</Quality>
 		</Item>
-		<Item name="Sticky Impulse Grenade" identifier="proximpulsemine" variantof="proxmine" spritecolor="255,255,0,255">
+		<Item name="Sticky Impulse Grenade" identifier="proximpulsemine" variantof="proxmine" inventoryiconcolor="255,255,0" spritecolor="255,255,0">
 			<Fabricate suitablefabricators="fabricator" requiredtime="15" amount="4">
 				<RequiredSkill identifier="weapons" level="70"/>
 				<RequiredSkill identifier="mechanical" level="40"/>
@@ -555,8 +558,21 @@
 			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" origin="0.5,0.5"/>
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="25" height="24" density="25"/>
+			<LightComponent characterusable="false" LightColor="175,175,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
+			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+			</Throwable>
+			<Projectile characterusable="false" launchimpulse="15.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
+					<Conditional entitytype="eq Character"/>
+				</StatusEffect>	
+			</Projectile>
 			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" delay="0.3" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -564,59 +580,21 @@
 					<!-- <sound file="Content/Items/Tools/FlareIgnite.ogg" range="500"/> -->
 					<ParticleEmitter particle="shockwave" anglemin="0" anglemax="360" particleamount="1" velocitymin="10" velocitymax="100" scalemin="1" scalemax="2" colormultiplier="255,250,0"/>
 					<ParticleEmitter particle="smoke" anglemin="0" anglemax="360" particleamount="10" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="100,100,100"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="2500"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="2500"/>
-					<sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="2500"/>
+					<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="2500" volume="1.5"/>
+					<sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="2500" volume="1.5"/>
+					<sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="2500" volume="1.5"/>
 					<Explosion range="150.0" shockwave="true" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="150" severlimbsprobability="0" decal="explosion" decalsize="0.5">
 						<Affliction identifier="stun" amount="6"/>
-						<Affliction identifier="blunttrauma" amount="25"/>
-						<Affliction identifier="internaldamage" amount="30" dividebylimbcount="false"/>
+						<Affliction identifier="blunttrauma" amount="5"/>
+						<Affliction identifier="internaldamage" amount="5" dividebylimbcount="false"/>
 						<Affliction identifier="slow" amount="50"/>
 					</Explosion>
-					<RemoveItem/>
+					<Remove/>
 				</StatusEffect>
 			</MotionSensor>
-			<LightComponent characterusable="false" LightColor="175,175,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
-			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-			</Throwable>
-			<Projectile characterusable="false" launchimpulse="30.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-			</Projectile>
+
 		</Item>
 
-		<!-- not needed -->
-		<!-- <Item name="Mine Launcher" identifier="proxminelauncher" category="weapon" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_soft">
-			<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,831,64,64" origin="0.5,0.5"/>
-			<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,244,186,65" depth="0.55" origin="0.5,0.5"/>
-			<Body width="170" height="40" density="25"/>
-			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="45,-10" handle1="-33,-15" handle2="26,5" holdangle="-25"/>
-			<RangedWeapon barrelpos="80,11" reload="0.25" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
-				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
-				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256"/>
-				<Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="All"/>
-				<ParticleEmitter particle="explosionsmoke" particleamount="5" velocitymin="0" velocitymax="0"/>
-				<StatusEffect type="OnUse" target="This">
-					<Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0"/>
-				</StatusEffect>
-				<RequiredItems items="proxmine,proxminespiked" type="Contained" msg="ItemMsgAmmoRequired"/>
-			</RangedWeapon>
-			<ItemContainer capacity="1" maxstacksize="8" hideitems="true">
-				<Containable items="proxmine,proxminespiked"/>
-				<SubContainer capacity="1" maxstacksize="1">
-					<Containable items="flashlight" hide="false" itempos="22,-1" setactive="true"/>
-				</SubContainer>
-			</ItemContainer>
-			<aitarget sightrange="500" soundrange="500" fadeouttime="3"/>
-			<Quality>
-				<QualityStat stattype="ExplosionRadius" value="0.1"/>
-				<QualityStat stattype="ExplosionDamage" value="0.1"/>
-			</Quality>
-			<SkillRequirementHint identifier="weapons" level="60"/>
-		</Item> -->
+
 	</Override>
 </Items>

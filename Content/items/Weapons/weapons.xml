@@ -6,7 +6,7 @@
       <PreferredContainer secondary="wreckweaponholder" spawnprobability="0.05"/>
       <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" amount="1" spawnprobability="0.1"/>
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="2" spawnprobability="1" notcampaign="true"/>
+      <PreferredContainer secondary="respawncontainer_kingofthehull" amount="2" spawnprobability="1" notcampaign="true"/>
       <Price baseprice="170" minavailable="1">
         <Price storeidentifier="merchantoutpost" multiplier="1.5"/>
         <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false"/>
@@ -42,7 +42,7 @@
         <RequiredSkill identifier="weapons" level="30"/>
       </RangedWeapon>
       <ItemContainer itempos="27,10" iteminterval="0,-4" hideitems="false" capacity="1" maxstacksize="6" containedstateindicatorslot="0" containedstateindicatorstyle="spear" containedspritedepths="0.551,0.552,0.553,0.554,0.555,0.556">
-      <Containable items="harpoonammo"/>
+        <Containable items="harpoonammo"/>
         <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="0,448,64,64" origin="0.5,0.5"/>
         <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5"/>
         <SubContainer capacity="1" maxstacksize="1">
@@ -109,11 +109,11 @@
     <!-- 冲锋枪弹匣:修改贴图,容量加到45发,回收配方匹配其他弹匣 -->
     <Item name="" identifier="smgmagazine" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo,handheldammo" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="smg,smgunique,machinepistol" amount="1" spawnprobability="1"/>
-    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true"/>
+      <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true"/>
       <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
       <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2"/>
       <PreferredContainer secondary="secarmcab"/>
-    <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true"/>
+      <PreferredContainer secondary="respawncontainer_kingofthehull" amount="8" spawnprobability="1" notcampaign="true"/>
       <Price baseprice="100" displaynonempty="true" minleveldifficulty="15">
         <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5"/>
         <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false"/>
@@ -152,8 +152,8 @@
       <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect"/>
       <Upgrade gameversion="0.10.0.0" scale="0.5"/>
     </Item>
-  <Item name="" identifier="smg" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true"/>
+    <Item name="" identifier="smg" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true"/>
       <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
       <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.25"/>
       <PreferredContainer secondary="armcab,weaponholder"/>
@@ -276,7 +276,7 @@
     </Item>
     <!-- 防暴霰弹枪:修改贴图,修改上膛音效延迟时间 -->
     <Item name="" identifier="shotgun" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true"/>
+      <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" notpvp="true"/>
       <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
       <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" amount="1" spawnprobability="0.2"/>
       <PreferredContainer secondary="wreckweaponholder" amount="1" spawnprobability="0.03"/>
@@ -314,12 +314,12 @@
         <StatusEffect type="OnUse" target="This">
           <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0"/>
         </StatusEffect>
-      <!-- Cocking sound, delayed by 1.0 seconds. -->
-      <StatusEffect type="OnUse" target="This" delay="1.0">
-        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="500" selectionmode="Random"/>
-        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="500"/>
-        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="500"/>
-        <ParticleEmitter particle="casingfirearm" colormultiplier="0.5,0.5,0.5,1" ScaleMultiplier="1.5,1.5" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true"/>
+        <!-- Cocking sound, delayed by 1.0 seconds. -->
+        <StatusEffect type="OnUse" target="This" delay="1.0">
+          <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="500" selectionmode="Random"/>
+          <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="500"/>
+          <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="500"/>
+          <ParticleEmitter particle="casingfirearm" colormultiplier="0.5,0.5,0.5,1" ScaleMultiplier="1.5,1.5" particleamount="1" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true"/>
         </StatusEffect>
         <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired"/>
         <RequiredSkill identifier="weapons" level="50"/>
@@ -339,7 +339,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5"/>
       <SkillRequirementHint identifier="weapons" level="50"/>
     </Item>
-
     <Item name="" identifier="divingknifeunique" category="Weapon" Tags="smallitem,weapon,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" allowasextracargo="true" RequireAimToUse="True">
       <PreferredContainer primary="secarmcab" secondary="armcab"/>
       <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.05"/>

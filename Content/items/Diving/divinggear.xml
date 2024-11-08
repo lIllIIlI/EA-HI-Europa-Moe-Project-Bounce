@@ -3,7 +3,7 @@
   <!--修改：更改光照贴图；可充 refillableoxygensource-->
   <Items>
     <!--修改：在hull内不消耗氧气；hull含氧量大于50缓慢回复氧气-->
-    <Item name="" identifier="divingmask" scale="0.5" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="divingmask" scale="0.5" category="Diving" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
       <Price baseprice="100">
         <Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="5"/>
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="7"/>
@@ -79,8 +79,7 @@
         </Containable>
       </ItemContainer>
     </Item>
-
-    <Item name="" identifier="divingsuit" category="Diving,Equipment" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="1" cargocontaineridentifier="">
+    <Item name="" identifier="divingsuit" category="Diving" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="1" cargocontaineridentifier="">
       <Price baseprice="250">
         <Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="2"/>
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="4"/>
@@ -210,9 +209,8 @@
         </StatusEffect>
       </ItemContainer>
       <aitarget maxsightrange="1500"/>
-
     </Item>
-    <Item name="" identifier="abyssdivingsuit" category="Diving,Equipment" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.9" cargocontaineridentifier="">
+    <Item name="" identifier="abyssdivingsuit" category="Diving" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.9" cargocontaineridentifier="">
       <Price baseprice="550" minleveldifficulty="35">
         <Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="1"/>
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="2"/>
@@ -283,7 +281,6 @@
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
-        <StatValue stattype="PropulsionSpeed" value="-0.5"/>
         <StatValue stattype="SwimmingSpeed" value="-0.2"/>
         <StatValue stattype="WalkingSpeed" value="-0.2"/>
       </Wearable>
@@ -343,7 +340,7 @@
       </ItemContainer>
       <aitarget maxsightrange="1500"/>
     </Item>
-    <Item name="" identifier="combatdivingsuit" category="Diving,Equipment" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2" cargocontaineridentifier="">
+    <Item name="" identifier="combatdivingsuit" category="Diving" tags="diving,deepdiving,human" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2" cargocontaineridentifier="">
       <Price baseprice="560" minleveldifficulty="35">
         <Price storeidentifier="merchantoutpost" sold="false" multiplier="0.9"/>
         <Price storeidentifier="merchantcity" multiplier="0.85" minavailable="2" sold="false"/>
@@ -411,73 +408,73 @@
         </StatusEffect>
         <!-- Refill oxygen when the suit is contained. -->
         <StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
-        <Conditional Voltage="gt 0.01" TargetContainer="true" TargetGrandparent="true" targetitemcomponent="Powered"/>
-        <RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" excludefullcondition="true"/>
+          <Conditional Voltage="gt 0.01" TargetContainer="true" TargetGrandparent="true" targetitemcomponent="Powered"/>
+          <RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" excludefullcondition="true"/>
         </StatusEffect>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
-      <StatValue stattype="SwimmingSpeed" value="-0.1"/>
-      <StatValue stattype="PropulsionSpeed" value="0.4"/>
-    </Wearable>
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use"/>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
-      <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank"/>
-      <Containable items="oxygensource">
-        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0"/>
-        <StatusEffect type="OnWearing" target="Contained" Condition="-0.3" comparison="And">
-          <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
-          <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
-          <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true"/>
-        </StatusEffect>
-        <StatusEffect type="OnWearing" target="Contained">
-          <Conditional condition="lt 5.0"/>
-          <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true"/>
-        </StatusEffect>
-      </Containable>
-      <Containable items="oxygenitetank">
-        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" targetslot="0" comparison="And">
-          <Conditional IsDead="false"/>
-          <Conditional DecreasedOxygenConsumption="lt 99"/>
-          <Conditional NeedsAir="true"/>
-        </StatusEffect>
-      </Containable>
-      <Containable items="weldingfueltank" blameequipperfordeath="true">
-        <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
-          <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
-          <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
-          <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true"/>
-        </StatusEffect>
-        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" Oxygen="-5.0" comparison="And">
-          <Conditional IsDead="false"/>
-          <Conditional DecreasedOxygenConsumption="lt 99"/>
-          <Conditional NeedsAir="true"/>
-        </StatusEffect>
-      </Containable>
-      <Containable items="incendiumfueltank" blameequipperfordeath="true">
-        <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
-          <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
-          <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
-          <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true"/>
-        </StatusEffect>
-        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" comparison="And" targetlimb="Torso">
-          <Affliction identifier="burn" amount="20.0"/>
-          <Conditional IsDead="false"/>
-          <Conditional DecreasedOxygenConsumption="lt 99"/>
-          <Conditional NeedsAir="true"/>
-        </StatusEffect>
-      </Containable>
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true"/>
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor"/>
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
+        <StatValue stattype="SwimmingSpeed" value="-0.1"/>
+        <StatValue stattype="PropulsionSpeed" value="0.4"/>
+      </Wearable>
+      <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use"/>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
+        <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank"/>
+        <Containable items="oxygensource">
+          <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0"/>
+          <StatusEffect type="OnWearing" target="Contained" Condition="-0.3" comparison="And">
+            <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
+            <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
+            <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true"/>
+          </StatusEffect>
+          <StatusEffect type="OnWearing" target="Contained">
+            <Conditional condition="lt 5.0"/>
+            <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true"/>
+          </StatusEffect>
+        </Containable>
+        <Containable items="oxygenitetank">
+          <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" targetslot="0" comparison="And">
+            <Conditional IsDead="false"/>
+            <Conditional DecreasedOxygenConsumption="lt 99"/>
+            <Conditional NeedsAir="true"/>
+          </StatusEffect>
+        </Containable>
+        <Containable items="weldingfueltank" blameequipperfordeath="true">
+          <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
+            <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
+            <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
+            <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true"/>
+          </StatusEffect>
+          <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" Oxygen="-5.0" comparison="And">
+            <Conditional IsDead="false"/>
+            <Conditional DecreasedOxygenConsumption="lt 99"/>
+            <Conditional NeedsAir="true"/>
+          </StatusEffect>
+        </Containable>
+        <Containable items="incendiumfueltank" blameequipperfordeath="true">
+          <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
+            <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false"/>
+            <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99"/>
+            <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true"/>
+          </StatusEffect>
+          <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" comparison="And" targetlimb="Torso">
+            <Affliction identifier="burn" amount="20.0"/>
+            <Conditional IsDead="false"/>
+            <Conditional DecreasedOxygenConsumption="lt 99"/>
+            <Conditional NeedsAir="true"/>
+          </StatusEffect>
+        </Containable>
         <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
           <RequiredItem items="oxygensource" type="Contained" matchonempty="true"/>
           <Conditional condition="lte 0.0"/>
-        <Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true"/>
+          <Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true"/>
         </StatusEffect>
       </ItemContainer>
       <aitarget maxsightrange="1500"/>
     </Item>
-  <Item name="" identifier="respawndivingsuit" category="Diving,Equipment" tags="diving,deepdiving,human,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="3" cargocontaineridentifier="">
+    <Item name="" identifier="respawndivingsuit" category="Diving" tags="diving,deepdiving,human,respawnsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="3" cargocontaineridentifier="">
       <Deconstruct time="1"/>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,832,128,128" origin="0.5,0.5"/>
       <Sprite name="Respawn Diving Suit Item" texture="%ModDir:3282923984%/Content/Items/Diving/RespawnSuit_Items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5"/>
@@ -518,7 +515,7 @@
         <sprite name="Respawn Diving Suit Right Shoe" texture="RespawnSuit_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
         <sprite name="Respawn Diving Suit Boobs" texture="RespawnSuit_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
         <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false"/>
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVisionAmount="0.5" setvalue="true" disabledeltatime="true">
+        <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVisionAmount="0.5" setvalue="true" disabledeltatime="true">
           <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human"/>
           <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human"/>
         </StatusEffect>
@@ -550,16 +547,14 @@
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" damagesound="" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
-      <StatValue stattype="PropulsionSpeed" value="-0.5"/>
         <StatValue stattype="SwimmingSpeed" value="-0.2"/>
         <StatValue stattype="WalkingSpeed" value="-0.2"/>
       </Wearable>
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use"/>
       <aitarget maxsightrange="1500"/>
     </Item>
-
-  <Item name="" identifier="brokendivingsuit" category="Diving,Equipment" tags="deepdiving,human" scale="0.5" fireproof="false" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="">
-    <!-- lesser yield than regular diving suit, can't be sold -->
+    <Item name="" identifier="brokendivingsuit" category="Diving" tags="deepdiving,human" scale="0.5" fireproof="false" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="">
+      <!-- lesser yield than regular diving suit, can't be sold -->
       <PreferredContainer primary="wreckdivingsuitcontainer" spawnprobability="0.1" maxleveldifficulty="100"/>
       <Deconstruct time="15" chooserandom="true" amount="1">
         <Item identifier="titanium" commonness="60"/>

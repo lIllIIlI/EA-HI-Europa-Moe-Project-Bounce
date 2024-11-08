@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
   <Override>
-  <npcset identifier="customnpcs1">
+    <npcset identifier="customnpcs1">
       <npc identifier="artiedolittle" job="assistant" moduleflags="none" behavior="Passive">
         <Character speciesname="human" gender="male" headspriteid="3" hairindex="0" beardindex="2" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="Fearful">
           <job name="Assistant" identifier="assistant">
@@ -521,7 +521,7 @@
     </npcset>
   </Override>
   <Override>
-  <npcset identifier="tutorialnpcs">
+    <npcset identifier="tutorialnpcs">
       <npc identifier="receptiondude" job="assistant" moduleflags="none" behavior="Passive">
         <Character name="Todd Burdock" speciesname="human" tags="male,head6" hairindex="1" beardindex="1" moustacheindex="0" faceattachmentindex="12" skincolor="74,50,25,255" haircolor="52,48,48,255" facialhaircolor="52,48,48,255">
           <job name="Commoner" identifier="commoner">

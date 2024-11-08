@@ -404,7 +404,7 @@
   <missionsuccess.EAHI_Mission_HMLK>The Black Moloch group has been cleared</missionsuccess.EAHI_Mission_HMLK>
   <missionfailure.EAHI_Mission_HMLK>Black Moloch group not cleared</missionfailure.EAHI_Mission_HMLK>
   <missionname.EAHI_Mission_XFFSY_1>Illegal experiment</missionname.EAHI_Mission_XFFSY_1>
-  <missiondescription.EAHI_Mission_XFFSY_1>East Asia Heavy Industries' illegal experiment in the abyss alarmed the Destruction Worm. The liaison officer hopes that you can defeat the Worm before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_1>
+  <missiondescription.EAHI_Mission_XFFSY_1>East Asia Heavy Industries' illegal experiment in the abyss alarmed the Doomworm. The liaison officer hopes that you can defeat the Worm before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_1>
   <missionsuccess.EAHI_Mission_XFFSY_1>The Worm has been killed</missionsuccess.EAHI_Mission_XFFSY_1>
   <missionfailure.EAHI_Mission_XFFSY_1>The Worm was not killed</missionfailure.EAHI_Mission_XFFSY_1>
   <missionname.EAHI_Mission_XFFSY_2>Illegal experiment</missionname.EAHI_Mission_XFFSY_2>
@@ -412,11 +412,11 @@
   <missionsuccess.EAHI_Mission_XFFSY_2>Charybdis has been killed</missionsuccess.EAHI_Mission_XFFSY_2>
   <missionfailure.EAHI_Mission_XFFSY_2>Charybdis not killed</missionfailure.EAHI_Mission_XFFSY_2>
   <missionname.EAHI_Mission_XFFSY_3>Illegal experiment</missionname.EAHI_Mission_XFFSY_3>
-  <missiondescription.EAHI_Mission_XFFSY_3>[Warning! High-risk] East Asia Heavy Industries' illegal experiment in the abyss has alarmed the doomsday worm. The liaison officer hopes that you can defeat the worm before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_3>
+  <missiondescription.EAHI_Mission_XFFSY_3>[Warning! High-risk] East Asia Heavy Industries' illegal experiment in the abyss has alarmed the Doomworm. The liaison officer hopes that you can defeat the worm before it is discovered by the Coalition, otherwise East Asia Heavy Industries will face a large fine.</missiondescription.EAHI_Mission_XFFSY_3>
   <missionsuccess.EAHI_Mission_XFFSY_3>The worm has been killed</missionsuccess.EAHI_Mission_XFFSY_3>
   <missionfailure.EAHI_Mission_XFFSY_3>The worm was not killed</missionfailure.EAHI_Mission_XFFSY_3>
   <missionname.EAHI_Mission_JGHX>'Calm'ly Watch the Show</missionname.EAHI_Mission_JGHX>
-  <missiondescription.EAHI_Mission_JGHX>The Liaison invites you to a good show, the showdown of the century between Hammerhead and the Sea Eater. "Remember to remain silent," said the liaison officer.</missiondescription.EAHI_Mission_JGHX>
+  <missiondescription.EAHI_Mission_JGHX>The Liaison invites you to a good show, the showdown of the century between Hammerheads and a Charybdis. "Remember to remain silent," said the liaison officer.</missiondescription.EAHI_Mission_JGHX>
   <missionsuccess.EAHI_Mission_JGHX>It was brilliant, it's a pity someone has to clean up the mess.</missionsuccess.EAHI_Mission_JGHX>
   <missionfailure.EAHI_Mission_JGHX>You failed to keep silent and got caught up in the fray</missionfailure.EAHI_Mission_JGHX>
   <missionheader0.EAHI_Mission_XML>Target Eliminated</missionheader0.EAHI_Mission_XML>
@@ -432,10 +432,10 @@
   <missionheader0.EAHI_Mission_XFFSY_1>Hunt Concluded</missionheader0.EAHI_Mission_XFFSY_1>
   <missionmessage0.EAHI_Mission_XFFSY_1>You have surpassed the abyss.</missionmessage0.EAHI_Mission_XFFSY_1>
   <missionheader0.EAHI_Mission_XFFSY_2>Hunt Concluded</missionheader0.EAHI_Mission_XFFSY_2>
-  <missionmessage0.EAHI_Mission_XFFSY_2>You watch the massive body of the Charybdis die. You wonder why something so ugly is called a Siren.</missionmessage0.EAHI_Mission_XFFSY_2>
+  <missionmessage0.EAHI_Mission_XFFSY_2>The siren has sung its last song.</missionmessage0.EAHI_Mission_XFFSY_2>
   <missionheader0.EAHI_Mission_XFFSY_3>Hunt Concluded</missionheader0.EAHI_Mission_XFFSY_3>
-  <missionmessage0.EAHI_Mission_XFFSY_3>You watch the massive body of the Endworm sink into the abyss, and breathe a sigh of relief.</missionmessage0.EAHI_Mission_XFFSY_3>
-  <missionheader0.EAHI_Mission_JGHX>Epic Drama</missionheader0.EAHI_Mission_JGHX>
+  <missionmessage0.EAHI_Mission_XFFSY_3>You watch the massive bodies of the abyssals sink back to the depths below, breathing a sigh of relief.</missionmessage0.EAHI_Mission_XFFSY_3>
+  <missionheader0.EAHI_Mission_JGHX>Spectacular Show</missionheader0.EAHI_Mission_JGHX>
   <missionmessage0.EAHI_Mission_JGHX>Quite a show, but someone has to clean up the mess.</missionmessage0.EAHI_Mission_JGHX>
   <!-- Custom -->
   <entityname.gravpistol>Gravitational-Beam Emitter</entityname.gravpistol>

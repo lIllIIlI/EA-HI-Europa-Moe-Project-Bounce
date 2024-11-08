@@ -63,7 +63,6 @@
           <Sound file="%ModDir:3282923984%/Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random"/>
           <Sound file="%ModDir:3282923984%/Content/Sounds/HUMAN_chokeFemale2.ogg"/>
           <Sound file="%ModDir:3282923984%/Content/Sounds/HUMAN_chokeFemale3.ogg"/>
-
         </StatusEffect>
         <StatusEffect target="Character" duration="2">
           <TriggerAnimation Type="Walk" filename="Vomit" priority="10" ExpectedSpecies="Human"/>

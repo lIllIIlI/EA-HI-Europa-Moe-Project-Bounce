@@ -106,7 +106,8 @@
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
       <sprite name="kep cap Wearable" texture="%ModDir:3282923984%/Content/Addons/TSM/kepsuit.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" scale="1.5" hidelimb="false" sourcerect="666,6,113,72" origin="0.47,1.0" />
     </Wearable>
-    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="syringe" containedstateindicatorslot="1" containedspritedepths="0.551,0.552">
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="" containedspritedepths="0.551,0.552">
+      <SlotIcon slotindex="0" texture="%ModDir:3282923984%/Content/items/weapons/Waifu_UI.png" sourcerect="120,0,120,120" origin="0.5,0.5" />
       <Containable items="healthscanner,thermalgoggles,electriciansgoggles">
         <!-- 每隔1秒执行一次，停用配件效果，延迟生效 -->
         <StatusEffect type="OnRemoved" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" thermalgoggles="false" showtexts="false" showdeadcharacters="false" debugwiring="false" />
@@ -200,7 +201,7 @@
   </Item>
   <!-- 治疗效果生成器 -->
   <Item name="Anti-Bleed-Burn Emitter" identifier="antibleedburnemitter" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="true" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3282923984%/Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" bodytype="kinematic" />
     <ItemComponent>
       <StatusEffect type="Always" target="This" condition="0" setvalue="true" />

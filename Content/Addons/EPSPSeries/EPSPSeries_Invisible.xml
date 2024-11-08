@@ -10,7 +10,7 @@
         <RequiredItem identifier="Wf_pucs" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="PUCS Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
+        <sprite name="EPSP_i Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
           <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="0.1" IsOn="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -18,28 +18,28 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="PUCS Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
-          <LightComponent range="100.0" lightcolor="255,255,255,150" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
+        <sprite name="EPSP_i Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hideotherwearables="false" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
+          <LightComponent range="0.0" lightcolor="255,255,255,150" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
             <sprite texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/EAHI_pucs_light.png" depth="0.025" sourcerect="13,16,103,180" origin="0.5,0.661" alpha="1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="pucs Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
     </Item>
     <!-- COMBAT EPSP -->
@@ -50,7 +50,7 @@
         <RequiredItem identifier="Wf_pucs_R" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="PUCS Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
+        <sprite name="EPSP_i Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
           <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="0.1" IsOn="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -58,28 +58,28 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="PUCS Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
-          <LightComponent range="100.0" lightcolor="255,255,255,50" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
+        <sprite name="EPSP_i Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
+          <LightComponent range="0.0" lightcolor="255,255,255,50" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
             <sprite texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/EAHI_pucs_light.png" depth="0.025" sourcerect="13,16,103,180" origin="0.5,0.661" alpha="1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="pucs Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
 
       </Wearable>
     </Item>
@@ -92,7 +92,7 @@
         <RequiredItem identifier="Wf_pucs_B" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="PUCS Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
+        <sprite name="EPSP_i Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
           <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="0.1" IsOn="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -100,28 +100,28 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="PUCS Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
-          <LightComponent range="100.0" lightcolor="255,255,255,50" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
+        <sprite name="EPSP_i Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hideotherwearables="false" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
+          <LightComponent range="0.0" lightcolor="255,255,255,50" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
             <sprite texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/EAHI_pucs_light.png" depth="0.025" sourcerect="13,16,103,180" origin="0.5,0.661" alpha="1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="pucs Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
     </Item>
     <!-- SPECIAL OPERATION EPSP -->
@@ -132,7 +132,7 @@
         <RequiredItem identifier="Wf_pucs_D" />
       </Fabricate>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-        <sprite name="PUCS Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
+        <sprite name="EPSP_i Helmet Wearable" texture="EAHI_pucs.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.53,0.55">
           <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="0.1" IsOn="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
@@ -140,28 +140,28 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="PUCS Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
-          <LightComponent range="100.0" lightcolor="255,255,255,255" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
+        <sprite name="EPSP_i Vest Wearable" texture="EAHI_pucs.png" limb="Torso" hideotherwearables="false" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.661" inheritsourcerect="false" sourcerect="13,16,103,180">
+          <LightComponent range="0.0" lightcolor="255,255,255,255" powerconsumption="0.1" IsOn="false" castshadows="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false" />
             </StatusEffect>
             <sprite texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/EAHI_pucs_light.png" depth="0.025" sourcerect="13,16,103,180" origin="0.5,0.661" alpha="1.0" />
           </LightComponent>
         </sprite>
-        <sprite name="pucs Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="pucs boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Hand" texture="EAHI_pucs.png" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Hand" texture="EAHI_pucs.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Lower Arm" texture="EAHI_pucs.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Lower Arm" texture="EAHI_pucs.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Upper Arm" texture="EAHI_pucs.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Upper Arm" texture="EAHI_pucs.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Waist" texture="EAHI_pucs.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Thigh" texture="EAHI_pucs.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Thigh" texture="EAHI_pucs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Leg" texture="EAHI_pucs.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Leg" texture="EAHI_pucs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Left Shoe" texture="EAHI_pucs.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i Right Shoe" texture="EAHI_pucs.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="EPSP_i boobi" texture="EAHI_pucs.png" limb="tail" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
     </Item>
   </Items>

@@ -17,7 +17,7 @@
           <Item identifier="teleportine"/>
         </Item>
         <Item identifier="Wf_pucs_B_locked" equip="true" nonplayerteaminteractable="true"/>
-        <Item identifier="RO635uniform1" equip="true"/>
+        <Item identifier="securitypatrolclothes" equip="true"/>
         <Item identifier="shotgununique" equip="true">
           <Item identifier="shotgunslugexplosive"/>
           <Item identifier="shotgunslugexplosive"/>
@@ -79,7 +79,7 @@
         <Item identifier="EAHI_autoinjectorheadset" nonplayerteaminteractable="true" equip="true">
           <Item identifier="teleportine"/>
         </Item>
-        <Item identifier="UMP9uniform1" equip="true"/>
+        <Item identifier="securityuniform8" equip="true"/>
         <Item identifier="shotgununique" equip="false">
           <Item identifier="shotgunslugexplosive"/>
           <Item identifier="shotgunslugexplosive"/>

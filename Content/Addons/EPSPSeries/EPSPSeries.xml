@@ -54,21 +54,21 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
           </LightComponent>
         </sprite>
-        <sprite name="Wf pucs Torso" texture="Wf_pucs_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Hand" texture="Wf_pucs_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="pucs Left Hand" texture="Wf_pucs_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Lower Arm" texture="Wf_pucs_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Lower Arm" texture="Wf_pucs_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Upper Arm" texture="Wf_pucs_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Upper Arm" texture="Wf_pucs_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Waist" texture="Wf_pucs_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Thigh" texture="Wf_pucs_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Thigh" texture="Wf_pucs_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Leg" texture="Wf_pucs_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Leg" texture="Wf_pucs_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs hideboob" texture="Wf_pucs_[GENDER].png" limb="Tail" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+        <sprite name="Wf_pucs Torso" texture="Wf_pucs_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Right Hand" texture="Wf_pucs_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Left Hand" texture="Wf_pucs_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Right Lower Arm" texture="Wf_pucs_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Left Lower Arm" texture="Wf_pucs_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Right Upper Arm" texture="Wf_pucs_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Left Upper Arm" texture="Wf_pucs_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Waist" texture="Wf_pucs_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Right Thigh" texture="Wf_pucs_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Left Thigh" texture="Wf_pucs_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Right Leg" texture="Wf_pucs_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Left Leg" texture="Wf_pucs_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Left Shoe" texture="Wf_pucs_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs Right Shoe" texture="Wf_pucs_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf_pucs hideboob" texture="Wf_pucs_[GENDER].png" limb="Tail" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <!-- MOD FEATURE Water Flow Ressitance -->
         <StatValue stattype="FlowResistance" value="0.25"/>
         <!-- MOD FEATURE Speed&hearing Change, Remove triggerAnimation -->
@@ -281,7 +281,7 @@
         <RequiredItem identifier="i_Wf_pucs_R"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_R_icon.png"/>
-      <Sprite texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png"/>
+      <Sprite name="Wf_PUCS_R Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png"/>
       <ContainedSprite name="Wf_PUCS_R In Vertical Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png" sourcerect="164,0,87,190"/>
       <ContainedSprite name="Wf_PUCS_R Behind Window" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_female.png"/>
       <ContainedSprite name="Wf_PUCS_R In Horizontal Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_R_Items.png"/>
@@ -294,28 +294,29 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
           </LightComponent>
         </sprite>
-        <sprite name="Wf pucs Torso" texture="Wf_pucs_R_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Hand" texture="Wf_pucs_R_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="pucs Left Hand" texture="Wf_pucs_R_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Lower Arm" texture="Wf_pucs_R_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Lower Arm" texture="Wf_pucs_R_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Upper Arm" texture="Wf_pucs_R_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Upper Arm" texture="Wf_pucs_R_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Waist" texture="Wf_pucs_R_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Thigh" texture="Wf_pucs_R_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Thigh" texture="Wf_pucs_R_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Leg" texture="Wf_pucs_R_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Leg" texture="Wf_pucs_R_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_R_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_R_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="wf pucs Right Boobs" texture="wf_pucs_R_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+        <sprite name="Wf pucs_R Torso" texture="Wf_pucs_R_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Right Hand" texture="Wf_pucs_R_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Left Hand" texture="Wf_pucs_R_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Right Lower Arm" texture="Wf_pucs_R_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Left Lower Arm" texture="Wf_pucs_R_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Right Upper Arm" texture="Wf_pucs_R_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Left Upper Arm" texture="Wf_pucs_R_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Waist" texture="Wf_pucs_R_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Right Thigh" texture="Wf_pucs_R_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Left Thigh" texture="Wf_pucs_R_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Right Leg" texture="Wf_pucs_R_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Left Leg" texture="Wf_pucs_R_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Left Shoe" texture="Wf_pucs_R_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_R Right Shoe" texture="Wf_pucs_R_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="wf pucs_R Right Boobs" texture="wf_pucs_R_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <!-- MOD FEATURE Speed&hearing Change, Remove triggerAnimation -->
-        <StatusEffect SpeedMultiplier="1.05" PropulsionSpeedMultiplier="1.45"> </StatusEffect>
+        <StatValue stattype="MovementSpeed" value="0.05"/>
+        <StatValue stattype="PropulsionSpeed" value="0.45"/>
         <!-- MOD FEATURE Damage Modifier -->
         <!-- MOD FEATURE INCREASE DEFEND -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds,lacerations,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.05" damagesound="LimbArmor"/>
       </Wearable>
     </Item>
     <Item name="" identifier="Wf_pucs_B" variantof="Wf_pucs">
@@ -347,7 +348,7 @@
         <RequiredItem identifier="i_Wf_pucs_B"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_B_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5"/>
-      <Sprite name="Wf_PUCS Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5"/>
+      <Sprite name="Wf_PUCS_B Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5"/>
       <ContainedSprite name="Wf_PUCS_B In Vertical Locker" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png"/>
       <ContainedSprite name="Wf_PUCS_B Behind Window" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_female.png"/>
       <ContainedSprite name="Wf_PUCS_B In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_B_Items.png"/>
@@ -360,21 +361,21 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
           </LightComponent>
         </sprite>
-        <sprite name="Wf pucs Torso" texture="Wf_pucs_B_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Hand" texture="Wf_pucs_B_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="pucs Left Hand" texture="Wf_pucs_B_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Lower Arm" texture="Wf_pucs_B_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Lower Arm" texture="Wf_pucs_B_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Upper Arm" texture="Wf_pucs_B_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Upper Arm" texture="Wf_pucs_B_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Waist" texture="Wf_pucs_B_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Thigh" texture="Wf_pucs_B_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Thigh" texture="Wf_pucs_B_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Leg" texture="Wf_pucs_B_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Leg" texture="Wf_pucs_B_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_B_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_B_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="wf pucs Right Boobs" texture="wf_pucs_B_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+        <sprite name="Wf pucs_B Torso" texture="Wf_pucs_B_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Right Hand" texture="Wf_pucs_B_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Left Hand" texture="Wf_pucs_B_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Right Lower Arm" texture="Wf_pucs_B_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Left Lower Arm" texture="Wf_pucs_B_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Right Upper Arm" texture="Wf_pucs_B_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Left Upper Arm" texture="Wf_pucs_B_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Waist" texture="Wf_pucs_B_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Right Thigh" texture="Wf_pucs_B_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Left Thigh" texture="Wf_pucs_B_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Right Leg" texture="Wf_pucs_B_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Left Leg" texture="Wf_pucs_B_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Left Shoe" texture="Wf_pucs_B_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_B Right Shoe" texture="Wf_pucs_B_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="wf pucs_B hideBoobs" texture="wf_pucs_B_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.1" PropulsionSpeedMultiplier="1.5" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
@@ -415,7 +416,7 @@
         <RequiredItem identifier="EAHI_pucs"/>
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_Pucs_D_icon.png" sourcerect="0,0,88,120" origin="0.5,0.5"/>
-      <Sprite name="Wf_PUCS Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5"/>
+      <Sprite name="Wf_PUCS_D Item" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,0,154,134" depth="0.55" origin="0.5,0.5"/>
       <ContainedSprite name="Wf_pucs_D In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5"/>
       <ContainedSprite name="Wf_pucs_D Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_female.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13"/>
       <ContainedSprite name="Wf_pucs_D In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3282923984%/Content/Addons/EPSPSeries/Wf_PUCS_D_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5"/>
@@ -436,21 +437,21 @@
             <LightTexture texture="%ModDir:3282923984%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0"/>
           </LightComponent>
         </sprite>
-        <sprite name="Wf pucs Torso" texture="Wf_pucs_D_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Hand" texture="Wf_pucs_D_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="pucs Left Hand" texture="Wf_pucs_D_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Lower Arm" texture="Wf_pucs_D_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Lower Arm" texture="Wf_pucs_D_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Upper Arm" texture="Wf_pucs_D_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Upper Arm" texture="Wf_pucs_D_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Waist" texture="Wf_pucs_D_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Thigh" texture="Wf_pucs_D_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Thigh" texture="Wf_pucs_D_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Leg" texture="Wf_pucs_D_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Leg" texture="Wf_pucs_D_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Left Shoe" texture="Wf_pucs_D_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Wf pucs Right Shoe" texture="Wf_pucs_D_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="wf pucs Right Boobs" texture="Wf_pucs_D_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+        <sprite name="Wf pucs_D Torso" texture="Wf_pucs_D_[GENDER].png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Right Hand" texture="Wf_pucs_D_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Left Hand" texture="Wf_pucs_D_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Right Lower Arm" texture="Wf_pucs_D_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Left Lower Arm" texture="Wf_pucs_D_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Right Upper Arm" texture="Wf_pucs_D_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Left Upper Arm" texture="Wf_pucs_D_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Waist" texture="Wf_pucs_D_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Right Thigh" texture="Wf_pucs_D_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Left Thigh" texture="Wf_pucs_D_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Right Leg" texture="Wf_pucs_D_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Left Leg" texture="Wf_pucs_D_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Left Shoe" texture="Wf_pucs_D_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Wf pucs_D Right Shoe" texture="Wf_pucs_D_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="wf pucs_D Right Boobs" texture="Wf_pucs_D_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <!-- MOD FEATURE Water Flow Ressitance -->
         <StatValue stattype="FlowResistance" value="0.25"/>
         <!-- MOD FEATURE Speed&hearing Change, Remove triggerAnimation -->

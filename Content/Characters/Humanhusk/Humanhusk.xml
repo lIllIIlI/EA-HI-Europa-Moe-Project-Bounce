@@ -49,7 +49,6 @@
         <VitalityMultiplier type="burn" multiplier="1.0"/>
       </Limb>
     </health>
-
     <sound file="Content/Characters/Husk/HUSK_attack1.ogg" state="Attack" range="1000" volume="1"/>
     <sound file="Content/Characters/Husk/HUSK_attack2.ogg" state="Attack" range="1000" volume="1"/>
     <sound file="Content/Characters/Husk/HUSK_attack3.ogg" state="Attack" range="1000" volume="1"/>
@@ -63,7 +62,6 @@
     <sound file="Content/Characters/Husk/HUSK_damage3.ogg" state="Damage" range="1000" volume="1"/>
     <sound file="Content/Characters/Husk/HUSK_death1.ogg" state="Die" range="1000" volume="1"/>
     <sound file="Content/Characters/Husk/HUSK_death2.ogg" state="Die" range="1000" volume="1"/>
-
     <ai combatstrength="50" sight="0.5" hearing="1" aggressiveboarding="True" attackwhenprovoked="True" aggressiongreed="5" aggressionhurt="150" canopendoors="True" targetouterwalls="False" fleehealththreshold="0" avoidgunfire="False" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" randomattack="False" avoidabyss="True" stayinabyss="True" startaggression="0" maxaggression="100" aggressioncumulation="0">
       <target tag="decoy" state="Attack" priority="100" ignoreifnotinsamesub="True"/>
       <target tag="provocative" state="Attack" priority="100" ignoreifnotinsamesub="True"/>
@@ -79,7 +77,6 @@
       <target tag="huskinfected" state="Idle" priority="0" ignoreinside="True" ignoreoutside="True" ignoreifnotinsamesub="True" ignoreincapacitated="True" threshold="1"/>
     </ai>
     <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" accessiblewhenalive="True" commonness="1"/>
-
     <names path="%ModDir:3282923984%/Content/Characters/Human/names.xml"/>
     <Vars>
       <Var var="GENDER" tags="female,male"/>

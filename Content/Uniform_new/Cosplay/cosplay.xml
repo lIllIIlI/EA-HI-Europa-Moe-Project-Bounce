@@ -149,7 +149,7 @@
         <sprite name="Security Officer's Uniform 6 Left Leg" texture="%ModDir:3282923984%/Content/Uniform_new/Cosplay/SecurityOfficer6.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 6 Right Shoe" texture="%ModDir:3282923984%/Content/Uniform_new/Cosplay/SecurityOfficer6.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 6 Left Shoe" texture="%ModDir:3282923984%/Content/Uniform_new/Cosplay/SecurityOfficer6.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Boob" texture="%ModDir:3282923984%/Content/Uniform_new/Cosplay/SecurityOfficer6.png" limb="tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Boob" texture="%ModDir:3282923984%/Content/Uniform_new/Cosplay/SecurityOfficer6.png" limb="tail" depthlimb="jaw" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
         <SkillModifier skillidentifier="weapons" skillvalue="20" />

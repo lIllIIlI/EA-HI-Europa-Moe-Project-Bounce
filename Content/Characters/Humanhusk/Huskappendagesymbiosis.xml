@@ -46,13 +46,10 @@
     <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1"/>
     <sprite texture="%ModDir:3282923984%/Content/Characters/Humanhusk/Husk_Injector.png" sourcerect="88,42,40,22" depth="0.11" origin="0.4,0.5" ignoretint="true"/>
   </limb>
-
   <joint name="Head to Huskappendage symbiosis 1" limb1="1" limb2="18" limb1anchor="16,-14" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage symbiosis 1" limb1="18" limb2="19" limb1anchor="8,0" limb2anchor="-8,0" UpperLimit="-45" LowerLimit="-180" canbesevered="False" limitenabled="True"/>
-
   <joint name="Head to Huskappendage symbiosis 2" limb1="1" limb2="20" limb1anchor="14,-15" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage symbiosis 2" limb1="20" limb2="21" limb1anchor="7,0" limb2anchor="-7,0" UpperLimit="-45" LowerLimit="-90" canbesevered="False" limitenabled="True"/>
-
   <joint name="Head to Huskappendage symbiosis 3" limb1="1" limb2="22" limb1anchor="17,-12" limb2anchor="-3,0" UpperLimit="0" LowerLimit="0" canbesevered="False" limitenabled="True"/>
   <joint name="Huskappendage symbiosis 3" limb1="22" limb2="23" limb1anchor="6,0" limb2anchor="-6,0" UpperLimit="-45" LowerLimit="-90" canbesevered="False" limitenabled="True"/>
 </huskappendage>

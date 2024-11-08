@@ -91,12 +91,11 @@
       <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
         <Item identifier="exotic_matter"/>
       </Fabricate>
-      <Sprite name="mudraptorshell_head hats" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_new.png" depth="0.6" sourcerect="100,0,100,100" origin="0.5,0.5" scale="0.5"/>
+      <Sprite name="mudraptorshell_head hats" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_new.png" depth="0.6" sourcerect="100,0,100,100" origin="0.5,0.5" scale="0.35"/>
       <Body width="40" radius="30" density="15"/>
       <Deconstruct time="10"/>
       <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
         <sprite name="mudraptorshell_head Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears_new.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="100,0,100,100" origin="0.65,0.75"/>
-        <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="1.1"/>
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
       </Wearable>
@@ -137,7 +136,7 @@
         <sprite name="crawlersuit Left Lower Arm" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" sourcerect="384,0,64,96" origin="0.5,0.5" canbehiddenbyotherwearables="false" hideotherwearables="true" />
         <sprite name="crawlersuit Right Upper Arm" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" sourcerect="304,96,64,72" origin="0.5,0.444" canbehiddenbyotherwearables="false" hideotherwearables="true" />
         <sprite name="crawlersuit Left Upper Arm" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" sourcerect="384,96,64,72" origin="0.5,0.444" canbehiddenbyotherwearables="false" hideotherwearables="true" />
-        <sprite name="crawlersuit Waist" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" canbehiddenbyotherwearables="false" hideotherwearables="true" sourcerect="448,0,124,128" origin="0.548,0.25" />
+        <sprite name="crawlersuit Waist" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" canbehiddenbyotherwearables="false" hideotherwearables="true" sourcerect="448,0,124,128" inheritorigin="true" />
         <!-- MOD FEATURE Change depth -->
         <sprite name="crawlersuit Right Thigh" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"  canbehiddenbyotherwearables="false" hideotherwearables="true" />
         <sprite name="crawlersuit Left Thigh" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/crawler_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"  canbehiddenbyotherwearables="false" hideotherwearables="true" />
@@ -150,7 +149,16 @@
         <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="1.2" />
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="false" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="false" />
-        <StatusEffect type="OnWearing" target="Character" SwimmingSpeed="0.5" BleedingReduction="25" BurnReduction="0.5" HealthRegenerationWhenEating="100" />
+        <StatusEffect type="OnWearing" target="Character" interval="1">
+          <ReduceAffliction identifier="bloodloss" amount="1"/>
+          <ReduceAffliction identifier="bleeding" amount="1"/>
+          <Conditional bleeding="gt 0.1"/>
+       </StatusEffect>
+        <StatValue stattype="PropulsionSpeed" value="0.2"/>
+        <StatValue stattype="SwimmingSpeed" value="0.2"/>
+        <StatValue stattype="WalkingSpeed" value="0.2"/>
+        <StatValue stattype="HoldBreathMultiplier" value="2"/>
+        <StatValue stattype="FlowResistance" value="1"/>
       </Wearable>
     </Item>
     <Item name="Veteran Raptorshell" identifier="wf_mudraptorshell" descriptionidentifier="mudraptorshellmod" category="Misc" tags="smallitem,clothing" impactsoundtag="impact_metal_light" scale="0.5" allowasextracargo="true">
@@ -189,10 +197,16 @@
         <sprite name="veteran mudraptorshell Left Shoe" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/mudraptorshell_1_[GENDER].png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" canbehiddenbyotherwearables="false" hideotherwearables="true" sourcerect="384,216,80,48" origin="0.384,0.55" />
         <sprite name="veteran mudraptorshell Right Shoe" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/mudraptorshell_1_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" canbehiddenbyotherwearables="false" hideotherwearables="true" sourcerect="304,216,80,48" origin="0.384,0.55" />
         <sprite name="veteran mudraptorshell boob" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/mudraptorshell_1_[GENDER].png" limb="tail" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="443,0,50,50" origin="0.5,0.5" />
-        <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+        <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.8" />
         <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
-        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" BleedingReduction="50" disabledeltatime="true" />
+        <StatusEffect type="OnWearing" target="Character" interval="1">
+          <ReduceAffliction identifier="bleeding" amount="4"/>
+          <ReduceAffliction identifier="bloodloss" amount="4"/>
+          <Conditional bleeding="gt 0.1"/>
+        </StatusEffect>
+        <StatValue stattype="HoldBreathMultiplier" value="2"/>
+        <StatValue stattype="FlowResistance" value="1"/>
       </Wearable>
     </Item>
     <Item name="Veteran Headpiece" identifier="wf_mudraptorshell_head" category="Misc" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" description="" hideinmenus="false" scale="0.50">
