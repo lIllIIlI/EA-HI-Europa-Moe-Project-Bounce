@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Randomevents>
+<Override>
   <EventSprites>
     <!--以后再说吧-->
   </EventSprites>
@@ -903,4 +904,5 @@
     </EventSet>
   </EventSet>
   <!--EVENT SETS-->
+</Override>
 </Randomevents>

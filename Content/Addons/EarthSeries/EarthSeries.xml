@@ -230,7 +230,7 @@
         <QualityStat stattype="StrikingPowerMultiplier" value="0.33"/>
       </Quality>
     </item>
-    <!--电基鱼叉发�?器-->
+    <!--电基鱼叉发�?器-->
     <Item name="" identifier="Wf_Blame_harpoongun" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="armcab"/>
       <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.08"/>
@@ -290,7 +290,7 @@
       </Quality>
       <SkillRequirementHint identifier="weapons" level="60"/>
     </Item>
-    <!--电基鱼�?-->
+    <!--电基鱼�?-->
     <Item name="" identifier="Wf_Blame_spear" category="Weapon" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="Wf_Blame_harpoongun" minamount="6" maxamount="10" spawnprobability="1"/>
       <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.05"/>
@@ -337,7 +337,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-    <!--电基鱼叉发�?器电�?-->
+    <!--电基鱼叉发�?器电�?-->
     <Item name="" identifier="Wf_Blame_batterycell" category="Electrical" maxstacksize="4" tags="smallitem,Blame_mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" health="625">
       <PreferredContainer primary="Wf_Blame_harpoongun" minamount="1" maxamount="1" spawnprobability="1"/>
       <PreferredContainer secondary="abandonedsupplycab,abandonedengcab" minamount="0" maxamount="1" spawnprobability="0.01"/>
@@ -368,7 +368,7 @@
       <Body width="20" height="32" density="30"/>
       <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
     </Item>
-    <!--�?手步枪-->
+    <!--�?手步枪-->
     <Item name="Marksman rifle" identifier="marksmanrifle" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
       <Price baseprice="750" sold="false">
