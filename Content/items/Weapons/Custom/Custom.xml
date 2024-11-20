@@ -442,7 +442,6 @@
 				</StatusEffect>
 			</Projectile>
 		</Item>
-
 		<!-- Explosives playground -->
 		<Item name="Proximity Mine" desc="A landmine that explodes upon detecting movement, be it friend or foe." identifier="proxmine" category="weapon" maxstacksize="8" cargocontaineridentifier="explosivecrate" tags="smallitem,explosive,grenade,demolitionsexpert" Scale="0.5" impactsoundtag="impact_soft">
 			<PreferredContainer secondary="armcab"/>
@@ -515,7 +514,7 @@
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" >
+				<StatusEffect type="OnBroken" target="This">
 					<sound file="Content/Items/Tools/FlareIgnite.ogg" range="500"/>
 					<ParticleEmitter particle="weldspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="10" velocitymax="50" scalemin="1" scalemax="1" colormultiplier="255,150,0"/>
 					<ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="30" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="200,255,0"/>
@@ -535,14 +534,10 @@
 			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
 				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
 			</Throwable>
 			<Projectile characterusable="false" launchimpulse="10.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
 				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
 				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
-					<Conditional entitytype="eq Character"/>
-				</StatusEffect>
 			</Projectile>
 			<Quality>
 				<QualityStat stattype="ExplosionRadius" value="0.15"/>
@@ -562,7 +557,7 @@
 			<Body width="25" height="24" density="25"/>
 			<LightComponent characterusable="false" LightColor="175,175,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
 			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" disabledeltatime="true" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -585,17 +580,11 @@
 			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
 				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
 			</Throwable>
 			<Projectile characterusable="false" launchimpulse="10.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
 				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
 				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
-					<Conditional entitytype="eq Character"/>
-				</StatusEffect>	
 			</Projectile>
 		</Item>
-
-
 	</Override>
 </Items>
