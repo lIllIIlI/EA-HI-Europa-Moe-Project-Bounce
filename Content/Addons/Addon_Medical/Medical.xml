@@ -57,7 +57,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="100" />
-      <StatusEffect tags="medical" type="OnUse" target="Character" duration="3.0">
+      <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="3.0">
         <Affliction identifier="psychosis" amount="5" />
         <Affliction identifier="internaldamage" amount="5" probability="0.20"/>
         <Affliction identifier="organdamage" amount="5" probability="0.20"/>
@@ -67,7 +67,7 @@
         <Affliction identifier="stun" amount="5" probability="0.20"/>
         <Affliction identifier="slowparalysis" amount="5" probability="0.20"/>
       </StatusEffect>
-      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="1.0">
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1.0">
         <Affliction identifier="psychosis" amount="5" />
         <Affliction identifier="internaldamage" amount="5" probability="0.10"/>
         <Affliction identifier="organdamage" amount="5" probability="0.10"/>

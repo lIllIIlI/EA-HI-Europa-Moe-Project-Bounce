@@ -138,7 +138,7 @@
       </Wearable>
     </Item>
     <!--异星装甲潜水服-->
-    <Item name="" identifier="Exotic_Armored_suit" subcategory="waifu_wip" category="Equipment" tags="smallitem,deepdiving,diving,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="" identifier="Exotic_Armored_suit" subcategory="waifu_wip" category="Equipment" tags="smallitem,deepdiving,diving,clothing,divinggear_wearableindoors" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <!--<PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
       <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
       <Price baseprice="1145">
@@ -229,17 +229,18 @@
           <Conditional oxygenlow="gt 0.0"/>
           <ReduceAffliction type="oxygenlow" amount="10" />
         </StatusEffect>
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.05" damagesound="LimbArmor" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.05" probabilitymultiplier="0.05" damagesound="LimbArmor" />
       </Wearable>
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
         <Upgrade gameversion="0.1401.0.0" msg="ItemMsgPickUpUse" />
       </Holdable>
       <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="syringe" autoinject="True">
         <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
-        <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />        <Containable items="medical,syringe" />
+        <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
+        <Containable items="medical,syringe" />
           <SubContainer capacity="1" maxstacksize="1">
             <Containable items="medical,syringe" />
           </SubContainer>

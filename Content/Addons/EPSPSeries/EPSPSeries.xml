@@ -4,7 +4,7 @@
     <!-- EPSP: Experimental Pressure Stablizing PUCS -->
     <Item name="" identifier="Wf_pucs" subcategory="EPSP" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving" allowasextracargo="False" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false" botpriority="5" cargocontaineridentifier="">
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
-      <Price baseprice="850">
+      <Price baseprice="850" sold="false">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false"/>
         <Price storeidentifier="merchantcity" multiplier="2.0" maxavailable="2" sold="false">
           <Reputation faction="coalition" min="70"/>
@@ -377,9 +377,13 @@
         <sprite name="Wf pucs_B Right Shoe" texture="Wf_pucs_B_[GENDER].png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true"/>
         <sprite name="wf pucs_B hideBoobs" texture="wf_pucs_B_[GENDER].png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
         <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="10000.0" SpeedMultiplier="1.1" PropulsionSpeedMultiplier="1.5" LowPassMultiplier="1.0" setvalue="true" disabledeltatime="true"/>
+        <damagemodifier/>
+        <damagemodifier/>
+        <damagemodifier/>
+        <damagemodifier/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="" deflectprojectiles="true"/>
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.01" damagesound="" deflectprojectiles="true"/>
         <!-- MOD FEATURE IMMUNITY TO RADIATION -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>

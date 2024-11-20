@@ -487,11 +487,9 @@
   <firstname tags="male" value="Osamu" />
   <firstname tags="male" value="Oscar" />
   <firstname tags="male" value="Owen" />
-  <firstname tags="male" value="Pedro" />
   <firstname tags="male" value="Pete" />
   <firstname tags="male" value="Peter" />
   <firstname tags="male" value="Quincy" />
-  <firstname tags="male" value="Ramon" />
   <firstname tags="male" value="Randall" />
   <firstname tags="male" value="Raphael" />
   <firstname tags="male" value="Raymon" />
@@ -506,13 +504,11 @@
   <firstname tags="male" value="Roland" />
   <firstname tags="male" value="Romeo" />
   <firstname tags="male" value="Ronnie" />
-  <firstname tags="male" value="Rosendo" />
   <firstname tags="male" value="Roy" />
   <firstname tags="male" value="Rupert" />
   <firstname tags="male" value="Ryo" />
   <firstname tags="male" value="Saki" />
   <firstname tags="male" value="Sammie" />
-  <firstname tags="male" value="Santiago" />
   <firstname tags="male" value="Satoshi" />
   <firstname tags="male" value="Saul" />
   <firstname tags="male" value="Sebastian" />
@@ -672,7 +668,6 @@
   <lastname value="Gay" />
   <lastname value="Gears" />
   <lastname value="Geist" />
-
   <lastname value="Goodin" />
   <lastname value="Gordon" />
   <lastname value="Gotou" />
@@ -836,11 +831,9 @@
   <lastname value="Oshima" />
   <lastname value="Ota" />
   <lastname value="Ouellette" />
-  <lastname value="Palmieri" />
   <lastname value="Parchman" />
   <lastname value="Parker" />
   <lastname value="Parks" />
-  <lastname value="Patel" />
   <lastname value="Pearson" />
   <lastname value="Petersen" />
   <lastname value="Phillips" />

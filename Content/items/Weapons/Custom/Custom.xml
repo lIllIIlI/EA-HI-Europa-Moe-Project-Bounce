@@ -461,7 +461,7 @@
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,0,72,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="72" height="24" density="25"/>
 			<MotionSensor range="5" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" disabledeltatime="true" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
@@ -478,7 +478,7 @@
 						<Affliction identifier="bleeding" amount="50" probability="0.2" dividebylimbcount="false"/>
 						<Affliction identifier="stun" amount="6"/>
 					</Explosion>
-					<Remove/>
+					<Removeitem/>
 				</StatusEffect>
 			</MotionSensor>
 			<LightComponent characterusable="false" LightColor="175,0,0,255" range="10" IsOn="false" BlinkFrequency="2"/>
@@ -496,6 +496,9 @@
 			</Quality>
 		</Item>
 		<Item name="Sticky Proximity Mine" desc="A weaker but sticky explosive. Useful for setting up ambushes." identifier="proxminespiked" variantof="proxmine">
+			<Price baseprice="50" canbespecial="false" sold="false">
+				<Price storeidentifier="merchantmilitary" minavailable="1" maxavailable="16" sold="true"> </Price>
+			</Price>
 			<Fabricate suitablefabricators="fabricator" requiredtime="15" amount="4">
 				<RequiredSkill identifier="weapons" level="70"/>
 				<RequiredSkill identifier="electrical" level="40"/>
@@ -507,24 +510,12 @@
 			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="25" height="24" density="25"/>
 			<LightComponent characterusable="false" LightColor="175,0,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
-			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true" msg="ItemMsgPickUpSelect">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-			</Throwable>
-			<Projectile characterusable="false" launchimpulse="15.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
-					<Conditional entitytype="eq Character"/>
-				</StatusEffect>
-			</Projectile>
 			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
-				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
+				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" disabledeltatime="true" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
 					<Conditional IsContained="false"/>
 				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This">
+				<StatusEffect type="OnBroken" target="This" >
 					<sound file="Content/Items/Tools/FlareIgnite.ogg" range="500"/>
 					<ParticleEmitter particle="weldspark" anglemin="0" anglemax="360" particleamount="20" velocitymin="10" velocitymax="50" scalemin="1" scalemax="1" colormultiplier="255,150,0"/>
 					<ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="30" velocitymin="200" velocitymax="300" scalemin="0.4" scalemax="0.5" colormultiplier="200,255,0"/>
@@ -538,10 +529,21 @@
 						<Affliction identifier="stun" amount="2"/>
 						<Affliction identifier="slow" amount="50"/>
 					</Explosion>
-					<Remove/>
+					<RemoveItem/>
 				</StatusEffect>
 			</MotionSensor>
-
+			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+			</Throwable>
+			<Projectile characterusable="false" launchimpulse="10.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
+					<Conditional entitytype="eq Character"/>
+				</StatusEffect>
+			</Projectile>
 			<Quality>
 				<QualityStat stattype="ExplosionRadius" value="0.15"/>
 				<QualityStat stattype="ExplosionDamage" value="0.15"/>
@@ -555,22 +557,10 @@
 				<RequiredItem identifier="sodium" amount="2"/>
 				<RequiredItem identifier="potassium" amount="2"/>
 			</Fabricate>
-			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" origin="0.5,0.5"/>
-			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="0,40,25,24" depth="0.55" origin="0.5,0.5"/>
+			<InventoryIcon texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="25,40,25,24" origin="0.5,0.5"/>
+			<sprite texture="%ModDir:3282923984%/Content/Items/Weapons/Custom/mine.png" sourcerect="25,40,25,24" depth="0.55" origin="0.5,0.5"/>
 			<Body width="25" height="24" density="25"/>
 			<LightComponent characterusable="false" LightColor="175,175,0,255" range="5" IsOn="false" BlinkFrequency="2"/>
-			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
-			</Throwable>
-			<Projectile characterusable="false" launchimpulse="15.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
-				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
-				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
-					<Conditional entitytype="eq Character"/>
-				</StatusEffect>	
-			</Projectile>
 			<MotionSensor range="3" target="Human,Monster" minimumvelocity="1" detectownmotion="false" canbeselected="false">
 				<StatusEffect type="OnUse" target="This" DontCleanUp="true" Condition="-100.0" duration="0.3" conditionalcomparison="And">
 					<Conditional Speed="lt 0.1"/>
@@ -589,10 +579,21 @@
 						<Affliction identifier="internaldamage" amount="5" dividebylimbcount="false"/>
 						<Affliction identifier="slow" amount="50"/>
 					</Explosion>
-					<Remove/>
+					<RemoveItem/>
 				</StatusEffect>
 			</MotionSensor>
-
+			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+			</Throwable>
+			<Projectile characterusable="false" launchimpulse="10.0" impulsespread="0.5" sticktocharacters="false" sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="true">
+				<StatusEffect type="OnNotContained" target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+				<StatusEffect type="OnContained" target="This" targetitemcomponent="LightComponent" setvalue="false" IsOn="false"/>
+				<StatusEffect type="OnImpact" target="This" Condition="-100.0">
+					<Conditional entitytype="eq Character"/>
+				</StatusEffect>	
+			</Projectile>
 		</Item>
 
 
