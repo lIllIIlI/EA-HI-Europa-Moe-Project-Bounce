@@ -178,8 +178,6 @@
       <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
       <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
         <!-- FIX delete the test sprite here -->
-        <!-- <sprite name="mudraptorshell_head Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="0,644,178,112" origin="0.668,0.949" /> -->
-        <!-- depthlimb=""可以用来遮挡本在上方的肢体 -->
         <sprite name="veteran mudraptorshell Torso" texture="mudraptorshell_1_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" sourcerect="160,0,144,192" origin="0.611,0.5" canbehiddenbyotherwearables="false" hideotherwearables="false" />
         <sprite name="veteran mudraptorshell Right Hand" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/mudraptorshell_1_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" sourcerect="304,168,64,48" origin="0.44,0.4" canbehiddenbyotherwearables="false" hideotherwearables="false" />
         <sprite name="veteran mudraptorshell Left Hand" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/mudraptorshell_1_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" sourcerect="384,168,64,48" origin="0.44,0.4" canbehiddenbyotherwearables="false" hideotherwearables="false" />
@@ -221,6 +219,9 @@
         <!-- MOD FEATURE Sellable in Merchant EAHI -->
         <Price storeidentifier="MerchantEAHI" sold="true" />
       </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+        <Item identifier="exotic_matter" />
+      </Fabricate>
       <!-- TODO -->
       <Sprite name="vmudraptorshell_head hats" texture="%ModDir:3282923984%/Content/Items/CreatureLoot/muddie_v_female.png" depth="0.6" sourcerect="0,644,178,112" origin="0.5,0.5" scale="0.5" />
       <Body width="40" radius="30" density="15" />

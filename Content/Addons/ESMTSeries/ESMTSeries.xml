@@ -12,7 +12,7 @@
       </Wearable>
     </Item>
     <!-- 高级自注射耳机 -->
-    <Item name="" identifier="EAHI_autoinjectorheadset" scale="0.5" subcategory="EAHI" category="Misc" tags="mobileradio,smallitem,idcard,id_captain,id_security,id_engineer,id_medic,id_assistant,id_mechanic,id_pirate,wreck_secureid,wreck_id,wreck_engineer,wreck_mechanic,wreck_medic,wreck_security,wreck_captain,wreck_admin,id_reactor,id_outpostsecurity" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="EAHI_autoinjectorheadset" scale="0.5" subcategory="EAHI" category="Misc" tags="wf_items,mobileradio,smallitem,idcard,id_captain,id_security,id_engineer,id_medic,id_assistant,id_mechanic,id_pirate,wreck_secureid,wreck_id,wreck_engineer,wreck_mechanic,wreck_medic,wreck_security,wreck_captain,wreck_admin,id_reactor,id_outpostsecurity" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
       <InventoryIcon texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" sourcerect="671,303,64,64" origin="0.5,0.5"/>
       <Sprite name="Headset" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="622,301,49,66" origin="0.5,0.470"/>
       <Body radius="20" height="20" density="30"/>
@@ -40,7 +40,7 @@
         <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45"/>
         <Containable items="antibloodloss1,antibloodloss2,alienblood"/>
         <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="antidama1,antidama2,deusizine,teleportine"/>
+          <Containable items="antidama1,antidama2,deusizine,pomegrenadeextract,teleportine"/>
           <Containable items="teleportine">
             <!-- Inject Teleportine -->
             <StatusEffect type="OnWearing" target="Character,Contained,This" targetitemcomponent="ItemContainer" autoinject="true" comparison="Or">
@@ -123,11 +123,25 @@
           <Conditional bloodloss="gt 5.0"/>
           <Conditional oxygenlow="gt 50.0"/>
         </StatusEffect>
+        <!-- Inject Pomegrenade Extract -->
+        <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-50" targetslot="1" interval="0.2" disabledeltatime="true">
+          <ReduceAffliction type="damage" amount="0.32"/>
+          <ReduceAffliction type="burn" amount="0.32"/>
+          <RequiredItem items="pomegrenadeextract" type="Contained" targetslot="2"/>
+          <Conditional internaldamage="gt 0.0"/>
+          <Conditional blunttrauma="gt 0.0"/>
+          <Conditional lacerations="gt 0.0"/>
+          <Conditional bitewounds="gt 0.0"/>
+          <Conditional gunshotwound="gt 0.0"/>
+          <Conditional organdamage="gt 0.0"/>
+          <Conditional explosiondamage="gt 0.0"/>
+          <Conditional concussion="gt 0.0"/>
+        </StatusEffect>
       </Wearable>
       <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0"/>
     </Item>
     <!--扩容包-->
-    <Item name="" description="" identifier="EAHI_kuorongbag" subcategory="EAHI" category="Misc" Tags="smallitem,mobilecontainer,revolverammo,pistolammoitem,handcannonammo,shotgunammo,harpoonammo,stungunammo,grenade,Blame_harpoonammo" showcontentsintooltip="true" fireproof="true" waterproof="true" scale="0.5">
+    <Item name="" description="" identifier="EAHI_kuorongbag" subcategory="EAHI" category="Misc" Tags="wf_items,smallitem,mobilecontainer,revolverammo,pistolammoitem,handcannonammo,shotgunammo,harpoonammo,stungunammo,grenade,Blame_harpoonammo" showcontentsintooltip="true" fireproof="true" waterproof="true" scale="0.5">
       <PreferredContainer primary="storagecab" spawnprobability="0.05"/>
       <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.09"/>
       <Sprite texture="%ModDir:3282923984%/Content/Addons/gfx.png" sourcerect="512,64,64,64" depth="0.55" origin="0.5,0.5" scale="0.5"/>
@@ -142,7 +156,7 @@
       </ItemContainer>
     </Item>
     <!--高级声纳-->
-    <Item name="" description="" identifier="EAHI_handheldsonar" subcategory="EAHI" category="Misc" Tags="smallitem,sonar,provocative" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Item name="" description="" identifier="EAHI_handheldsonar" subcategory="EAHI" category="Misc" Tags="smallitem,sonar,provocative,wf_items" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
       <Price baseprice="200" minavailable="2" sold="false">
         <Price storeidentifier="merchantoutpost"/>
         <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3"/>
@@ -194,7 +208,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5"/>
     </Item>
     <!--多功能工具：一个就够了-->
-    <Item name="" description="" identifier="EAHI_duogongnengtool" subcategory="EAHI" category="Misc" Tags="smallitem,tool,mountableweapon" cargocontaineridentifier="metalcrate" HideConditionBar="true" HideConditionInTooltip="true" Scale="0.4" impactsoundtag="impact_metal_light" addedrepairspeedmultiplier="0.3">
+    <Item name="" description="" identifier="EAHI_duogongnengtool" subcategory="EAHI" category="Misc" Tags="smallitem,tool,mountableweapon,wf_items" cargocontaineridentifier="metalcrate" HideConditionBar="true" HideConditionInTooltip="true" Scale="0.4" impactsoundtag="impact_metal_light" addedrepairspeedmultiplier="0.3">
       <PreferredContainer primary="storagecab" spawnprobability="0.02"/>
       <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.02"/>
       <Price baseprice="350" minavailable="2" sold="false">
@@ -271,16 +285,16 @@
         <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
         <Containable items="weldingtoolfuel,oxygensource" itempos="15,-14" rotation="-15"/>
         <Containable items="weldingtoolfuel">
-          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="2.5" levelwallfixamount="-1" condition="98.0" setvalue="true" Tags="weldingequipment"/>
+          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="4" levelwallfixamount="-1" condition="98.0" setvalue="true" Tags="weldingequipment"/>
         </Containable>
         <Containable items="oxygensource">
-          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="-0.75" levelwallfixamount="-7.5" condition="99.0" setvalue="true" Tags="cuttingequipment"/>
+          <StatusEffect type="OnContaining" targettype="This" targetitemcomponent="RepairTool" structurefixamount="-1" levelwallfixamount="-7.5" condition="99.0" setvalue="true" Tags="cuttingequipment"/>
         </Containable>
       </ItemContainer>
       <AiTarget sightrange="3000"/>
     </Item>
     <!-- Laser Pointer -->
-    <Item identifier="EAHI_laserpointer" subcategory="EAHI" category="Misc" Tags="smallitem,tool,provocative,flashlight" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Item identifier="EAHI_laserpointer" subcategory="EAHI" category="Misc" Tags="smallitem,tool,provocative,flashlight,wf_items" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
       <Price baseprice="200" minavailable="2" sold="false">
         <Price storeidentifier="merchantoutpost"/>
         <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3"/>
@@ -324,8 +338,8 @@
       </ItemContainer>
       <AiTarget sightrange="2500"/>
     </Item>
-    <!-- Wrench Scredriver 2 in 1 -->
-    <Item name="" identifier="otfx_wrenchscrewdrivertwoinone" subcategory="EAHI" category="Misc" tags="smallitem,tool,simpletool,mountableweapon" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" requireaimtouse="true">
+    <!-- WrenchScrewbar 3 in 1 -->
+    <Item name="" identifier="EAHI_multifunctionTool" subcategory="EAHI" category="Misc" tags="smallitem,tool,simpletool,mountableweapon,wf_items" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" requireaimtouse="true" HideConditionBar="true" HideConditionInTooltip="true">
       <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="0.1" notcampaign="true"/>
       <PreferredContainer primary="engcab" secondary="reactorcab"/>
       <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.02"/>
@@ -355,6 +369,7 @@
       </Fabricate>
       <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/gfx.png" sourcerect="512,0,64,64"/>
       <Sprite texture="%ModDir:3282923984%/Content/Addons/gfx.png" sourcerect="28,480,100,32" depth="0.55" origin="0.5,0.5"/>
+      <BrokenSprite texture="%ModDir:3282923984%/Content/Addons/gfx.png" sourcerect="128,484,124,28" depth="0.55" origin="0.5,0.5" maxcondition="99.1"/>
       <Body width="80" height="15" density="25"/>
       <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" reload="1.0" range="50" combatpriority="9" msg="ItemMsgPickUpSelect">
         <Attack structuredamage="0" itemdamage="4" targetimpulse="4">
@@ -375,19 +390,19 @@
             <Sound file="Content/Items/Weapons/Smack2.ogg" range="500"/>
           </StatusEffect>
         </Attack>
-        <StatusEffect type="OnSpawn" target="This" targetitemcomponent="MeleeWeapon" tags="mechanicalrepairtool,wrenchitem,wrench" holdangle="240" setvalue="true"/>
+        <StatusEffect type="OnSpawn" target="This" targetitemcomponent="MeleeWeapon" tags="mechanicalrepairtool,wrenchitem,wrench,electricalrepairtool,screwdriveritem,screwdriver" holdangle="240" setvalue="true"/>
         <StatusEffect type="OnSecondaryUse" target="This" tags="dblclick_trigger" duration=".016" comparison="And">
           <Conditional hasstatustag="! dblclick_timingdelaymin"/>
           <Conditional hasstatustag="dblclick_timingdelaymax"/>
           <Conditional hasstatustag="! dblclick_disallowtrigger"/>
           <Conditional hasstatustag="! dblclick_longpressed"/>
         </StatusEffect>
-        <StatusEffect type="OnSecondaryUse" target="This" targetitemcomponent="MeleeWeapon" tags="electricalrepairtool,screwdriveritem,screwdriver" holdangle="60" setvalue="true" delay=".016" comparison="And">
+        <StatusEffect type="OnSecondaryUse" target="This" targetitemcomponent="MeleeWeapon" tags="dooropeningtool,crowbaritem,crowbar" condition="99" holdangle="60" setvalue="true" delay=".016" comparison="And">
           <Conditional hastag="wrench"/>
           <Conditional hasstatustag="dblclick_trigger"/>
         </StatusEffect>
-        <StatusEffect type="OnSecondaryUse" target="This" targetitemcomponent="MeleeWeapon" tags="mechanicalrepairtool,wrenchitem,wrench" holdangle="240" setvalue="true" delay=".016" comparison="And">
-          <Conditional hastag="screwdriver"/>
+        <StatusEffect type="OnSecondaryUse" target="This" targetitemcomponent="MeleeWeapon" tags="mechanicalrepairtool,wrenchitem,wrench,electricalrepairtool,screwdriveritem,screwdriver" condition="100" holdangle="240" setvalue="true" delay=".016" comparison="And">
+          <Conditional hastag="crowbar"/>
           <Conditional hasstatustag="dblclick_trigger"/>
         </StatusEffect>
         <StatusEffect type="OnSecondaryUse" target="This" tags="dblclick_longpressed" duration="0.133" stackable="false">

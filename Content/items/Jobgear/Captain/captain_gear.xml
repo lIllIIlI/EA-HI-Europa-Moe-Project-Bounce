@@ -212,25 +212,25 @@
       <Deconstruct time="10">
         <Item identifier="organicfiber"/>
       </Deconstruct>
-      <InventoryIcon name="Captain's Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5"/>
-      <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5"/>
+      <InventoryIcon name="Captain's Sep Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5"/>
+      <Sprite name="Captain's Sep Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5"/>
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01"/>
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="Captain's Uniform 1 Torso" texture="captain_1_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,0,117,216" origin="0.5214,0.4444"/>
-        <sprite name="Captain's Uniform 1 Right Hand" texture="captain_1_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Left Hand" texture="captain_1_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Right Lower Arm" texture="captain_1_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Left Lower Arm" texture="captain_1_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Right Upper Arm" texture="captain_1_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Left Upper Arm" texture="captain_1_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Waist" texture="captain_1_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,216,112,64" origin="0.5,0.5"/>
-        <sprite name="Captain's Uniform 1 Right Thigh" texture="captain_1_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Left Thigh" texture="captain_1_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Right Leg" texture="captain_1_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,128,80,128"/>
-        <sprite name="Captain's Uniform 1 Left Leg" texture="captain_1_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="87,128,66,128" origin="0.5,0.5"/>
-        <sprite name="Captain's Uniform 1 Left Shoe" texture="captain_1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Right Shoe" texture="captain_1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 1 Boobs" texture="captain_1_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Torso" texture="captain_1_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,0,117,216" origin="0.5214,0.4444"/>
+        <sprite name="Captain's Sep Uniform 1 Right Hand" texture="captain_1_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Left Hand" texture="captain_1_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Right Lower Arm" texture="captain_1_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Left Lower Arm" texture="captain_1_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Right Upper Arm" texture="captain_1_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Left Upper Arm" texture="captain_1_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Waist" texture="captain_1_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,216,112,64" origin="0.5,0.5"/>
+        <sprite name="Captain's Sep Uniform 1 Right Thigh" texture="captain_1_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Left Thigh" texture="captain_1_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Right Leg" texture="captain_1_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,128,80,128"/>
+        <sprite name="Captain's Sep Uniform 1 Left Leg" texture="captain_1_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="87,128,66,128" origin="0.5,0.5"/>
+        <sprite name="Captain's Sep Uniform 1 Left Shoe" texture="captain_1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Right Shoe" texture="captain_1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 1 Boobs" texture="captain_1_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9"/>
       </Wearable>
@@ -247,25 +247,25 @@
       <Deconstruct time="10">
         <Item identifier="organicfiber"/>
       </Deconstruct>
-      <InventoryIcon name="Captain's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,27,128,101" origin="0.5,0.5"/>
-      <Sprite name="Captain's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,225,124,61" depth="0.6" origin="0.5,0.5"/>
+      <InventoryIcon name="Captain's Sep Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,27,128,101" origin="0.5,0.5"/>
+      <Sprite name="Captain's Sep Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,225,124,61" depth="0.6" origin="0.5,0.5"/>
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01"/>
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="Captain's Uniform 2 Torso" texture="captain_2_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Right Hand" texture="captain_2_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Left Hand" texture="captain_2_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="captain_2_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="captain_2_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Right Upper Arm" texture="captain_2_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Left Upper Arm" texture="captain_2_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Waist" texture="captain_2_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Right Thigh" texture="captain_2_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Left Thigh" texture="captain_2_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Right Leg" texture="captain_2_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Left Leg" texture="captain_2_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Left Shoe" texture="captain_2_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Right Shoe" texture="captain_2_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 2 Boobs" texture="captain_2_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Torso" texture="captain_2_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Right Hand" texture="captain_2_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Left Hand" texture="captain_2_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Right Lower Arm" texture="captain_2_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Left Lower Arm" texture="captain_2_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Right Upper Arm" texture="captain_2_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Left Upper Arm" texture="captain_2_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Waist" texture="captain_2_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Right Thigh" texture="captain_2_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Left Thigh" texture="captain_2_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Right Leg" texture="captain_2_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Left Leg" texture="captain_2_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Left Shoe" texture="captain_2_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Right Shoe" texture="captain_2_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 2 Boobs" texture="captain_2_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9"/>
       </Wearable>
@@ -282,25 +282,25 @@
       <Deconstruct time="10">
         <Item identifier="organicfiber"/>
       </Deconstruct>
-      <InventoryIcon name="Captain's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="255,27,128,101" origin="0.5,0.5"/>
-      <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5"/>
+      <InventoryIcon name="Captain's Sep Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="255,27,128,101" origin="0.5,0.5"/>
+      <Sprite name="Captain's Sep Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5"/>
       <Body width="100" height="50" density="15" friction="0.8" restitution="0.01"/>
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-        <sprite name="Captain's Uniform 3 Torso" texture="captain_3_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,0,117,216" origin="0.5214,0.4444"/>
-        <sprite name="Captain's Uniform 3 Right Hand" texture="captain_3_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Left Hand" texture="captain_3_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="captain_3_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="captain_3_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Right Upper Arm" texture="captain_3_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Left Upper Arm" texture="captain_3_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Waist" texture="captain_3_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,216,112,64" origin="0.5,0.5"/>
-        <sprite name="Captain's Uniform 3 Right Thigh" texture="captain_3_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Left Thigh" texture="captain_3_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Right Leg" texture="captain_3_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,128,80,128"/>
-        <sprite name="Captain's Uniform 3 Left Leg" texture="captain_3_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="87,128,66,128" origin="0.5,0.5"/>
-        <sprite name="Captain's Uniform 3 Left Shoe" texture="captain_3_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Right Shoe" texture="captain_3_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
-        <sprite name="Captain's Uniform 3 Boobs" texture="captain_3_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Torso" texture="captain_3_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,0,117,216" origin="0.5214,0.4444"/>
+        <sprite name="Captain's Sep Uniform 3 Right Hand" texture="captain_3_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Left Hand" texture="captain_3_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Right Lower Arm" texture="captain_3_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Left Lower Arm" texture="captain_3_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Right Upper Arm" texture="captain_3_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Left Upper Arm" texture="captain_3_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Waist" texture="captain_3_[GENDER].png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,216,112,64" origin="0.5,0.5"/>
+        <sprite name="Captain's Sep Uniform 3 Right Thigh" texture="captain_3_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Left Thigh" texture="captain_3_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Right Leg" texture="captain_3_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,128,80,128"/>
+        <sprite name="Captain's Sep Uniform 3 Left Leg" texture="captain_3_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="87,128,66,128" origin="0.5,0.5"/>
+        <sprite name="Captain's Sep Uniform 3 Left Shoe" texture="captain_3_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Right Shoe" texture="captain_3_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+        <sprite name="Captain's Sep Uniform 3 Boobs" texture="captain_3_[GENDER].png" limb="Tail" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9"/>
       </Wearable>

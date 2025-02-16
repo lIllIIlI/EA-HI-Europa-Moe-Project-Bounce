@@ -2,9 +2,9 @@
 <Override>
   <Items>
     <!-- EPSP: Experimental Pressure Stablizing PUCS -->
-    <Item name="" identifier="Wf_pucs" subcategory="EPSP" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving" allowasextracargo="False" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false" botpriority="5" cargocontaineridentifier="">
+    <Item name="" identifier="Wf_pucs" subcategory="EPSP" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,Wf_diving,wf_items" allowasextracargo="False" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" HideConditionBar="false" botpriority="5" cargocontaineridentifier="">
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
-      <Price baseprice="850" sold="false">
+      <Price baseprice="850">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false"/>
         <Price storeidentifier="merchantcity" multiplier="2.0" maxavailable="2" sold="false">
           <Reputation faction="coalition" min="70"/>
@@ -178,6 +178,20 @@
           <Conditional concussion="gt 0.0"/>
           <Conditional bloodloss="gt 5.0"/>
           <Conditional oxygenlow="gt 50.0"/>
+        </StatusEffect>
+        <!-- Inject Pomegrenade Extract -->
+        <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-50" targetslot="2" interval="0.2" disabledeltatime="true">
+          <ReduceAffliction type="damage" amount="0.32"/>
+          <ReduceAffliction type="burn" amount="0.32"/>
+          <RequiredItem items="pomegrenadeextract" type="Contained" targetslot="2"/>
+          <Conditional internaldamage="gt 0.0"/>
+          <Conditional blunttrauma="gt 0.0"/>
+          <Conditional lacerations="gt 0.0"/>
+          <Conditional bitewounds="gt 0.0"/>
+          <Conditional gunshotwound="gt 0.0"/>
+          <Conditional organdamage="gt 0.0"/>
+          <Conditional explosiondamage="gt 0.0"/>
+          <Conditional concussion="gt 0.0"/>
         </StatusEffect>
         <!-- MOD FEATURE Damage Modifier -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding,explosiondamage" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true"/>
@@ -434,7 +448,7 @@
       </CustomInterface>
       <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
         <sprite name="PUCS Helmet Wearable" texture="%ModDir:3282923984%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.605" hidelimb="false" hideotherwearables="false" sourcerect="564,0,45,103" origin="0.54,0.64">
-          <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="0.1" IsOn="false" allowingameediting="true">
+          <LightComponent range="300.0" lightcolor="200,200,200,255" powerconsumption="0.1" IsOn="false" allowingameediting="false">
             <StatusEffect type="OnWearing" target="This,Character" Voltage="2.0" setvalue="true">
               <Conditional IsDead="false"/>
             </StatusEffect>
@@ -579,6 +593,20 @@
           <Conditional bloodloss="gt 5.0"/>
           <Conditional oxygenlow="gt 50.0"/>
         </StatusEffect>
+        <!-- Inject Pomegrenade Extract -->
+        <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-50" targetslot="2" interval="0.2" disabledeltatime="true">
+          <ReduceAffliction type="damage" amount="0.32"/>
+          <ReduceAffliction type="burn" amount="0.32"/>
+          <RequiredItem items="pomegrenadeextract" type="Contained" targetslot="2"/>
+          <Conditional internaldamage="gt 0.0"/>
+          <Conditional blunttrauma="gt 0.0"/>
+          <Conditional lacerations="gt 0.0"/>
+          <Conditional bitewounds="gt 0.0"/>
+          <Conditional gunshotwound="gt 0.0"/>
+          <Conditional organdamage="gt 0.0"/>
+          <Conditional explosiondamage="gt 0.0"/>
+          <Conditional concussion="gt 0.0"/>
+        </StatusEffect>
         <!-- MOD FEATURE Damage Modifier -->
         <!-- MOD FEATURE -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,explosiondamage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
@@ -650,12 +678,11 @@
           <Containable items="antibloodloss1,antibloodloss2,alienblood"/>
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="antidama1,antidama2,deusizine"/>
+          <Containable items="antidama1,antidama2,deusizine,pomegrenadeextract"/>
         </SubContainer>
       </ItemContainer>
       <aitarget maxsightrange="1500"/>
     </Item>
-
     <Item identifier="Wf_pucs_B_locked" subcategory="EPSP" hideinmenus="true" nonplayerteaminteractable="True" allowdroppingonswapwith="" variantof="Wf_pucs_B">
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
       <Price/>

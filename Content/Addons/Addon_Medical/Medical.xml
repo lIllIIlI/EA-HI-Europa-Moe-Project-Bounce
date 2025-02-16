@@ -39,16 +39,21 @@
     </MeleeWeapon>
   </Item>
   <!--异星物质-->
-  <Item name="" identifier="exotic_matter" subcategory="EAHI" category="Material" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" >
+  <Item name="" identifier="exotic_matter" subcategory="EAHI" category="Material" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,medical,syringe,wf_items" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" >
     <PreferredContainer primary="locker" />
     <Price baseprice="120" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="0.85" />
       <Price storeidentifier="merchantcity" multiplier="0.85" />
-      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="1" />
       <Price storeidentifier="merchantmilitary" multiplier="0.9" />
       <Price storeidentifier="merchantmine" multiplier="0.85" />
     </Price>
-    <Deconstruct />
+    <Deconstruct time="3" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" amount="1" displayname="lowefficiency" >
+      <RequiredSkill identifier="medical" level="40" />
+      <RequiredItem identifier="EAHI_serum" />
+      <RequiredItem identifier="mudraptorshell" />
+    </Fabricate>
     <Sprite texture="%ModDir:3282923984%/Content/Addons/Addon_Medical/Medical.png" sourcerect="160,0,32,128" depth="0.6" origin="0.5,0.5" />
     <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/Addon_Medical/Medical.png" sourcerect="64,0,64,64" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="50" density="20" />
@@ -56,7 +61,7 @@
     <MeleeWeapon canbecombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-      <RequiredSkill identifier="medical" level="100" />
+      <RequiredSkill identifier="medical" level="60" />
       <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="3.0">
         <Affliction identifier="psychosis" amount="5" />
         <Affliction identifier="internaldamage" amount="5" probability="0.20"/>
@@ -84,7 +89,7 @@
     </MeleeWeapon>
   </Item>
   <!--传送药水 以后删除-->
-  <Item name="" identifier="teleportine" subcategory="EAHI" category="Material" maxstacksize="1" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" impacttolerance="8" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" hideinmenus="true">
+  <Item name="" identifier="teleportine" subcategory="EAHI" category="Material" maxstacksize="1" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe,wf_items" impacttolerance="8" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" hideinmenus="true">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Sprite texture="%ModDir:3282923984%/Content/Addons/Addon_Medical/Medical.png" sourcerect="192,0,32,128" depth="0.6" origin="0.5,0.5" />
     <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/Addon_Medical/Medical.png" sourcerect="0,64,64,64" depth="0.6" origin="0.5,0.5" />
