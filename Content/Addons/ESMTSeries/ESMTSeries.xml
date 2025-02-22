@@ -339,7 +339,7 @@
       <AiTarget sightrange="2500"/>
     </Item>
     <!-- WrenchScrewbar 3 in 1 -->
-    <Item name="" identifier="EAHI_multifunctionTool" subcategory="EAHI" category="Misc" tags="smallitem,tool,simpletool,mountableweapon,wf_items" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" requireaimtouse="true" HideConditionBar="true" HideConditionInTooltip="true">
+    <Item name="WrenchScrewBar" identifier="EAHI_multifunctionTool" subcategory="EAHI" category="Misc" tags="smallitem,tool,simpletool,mountableweapon,wf_items" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" requireaimtouse="true" HideConditionBar="true" HideConditionInTooltip="true">
       <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="0.1" notcampaign="true"/>
       <PreferredContainer primary="engcab" secondary="reactorcab"/>
       <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.02"/>

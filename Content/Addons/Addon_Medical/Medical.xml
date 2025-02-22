@@ -39,7 +39,7 @@
     </MeleeWeapon>
   </Item>
   <!--异星物质-->
-  <Item name="" identifier="exotic_matter" subcategory="EAHI" category="Material" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,medical,syringe,wf_items" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" >
+  <Item name="Exotic Matter" identifier="exotic_matter" subcategory="EAHI" category="Material" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,medical,syringe,wf_items" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" >
     <PreferredContainer primary="locker" />
     <Price baseprice="120" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="0.85" />
