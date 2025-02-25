@@ -31,7 +31,7 @@
           <ConversationAction targettag="triggerer_player" text="EventText.DRF.o1.c1">
             <Option text="EventText.DRF.o2">
               <ConversationAction targettag="triggerer_player" text="EventText.DRF.o2.c1" continueconversation="true"/>
-              <!-- <Label name="waiting" /> -->
+              <Label name="waiting" />
               <ConversationAction targettag="triggerer_player" text="EventText.DRF.o2.c2">
                 <Option text="EventText.DRF.o3">
                   <CheckMoneyAction amount="12000">

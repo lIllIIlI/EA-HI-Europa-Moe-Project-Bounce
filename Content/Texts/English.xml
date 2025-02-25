@@ -327,8 +327,8 @@
   <entitydescription.EAHI_licence_oneoff>Put the blueprint and corresponding items into the 3D printer of East Asia Heavy Industries, you can improve the production level of the corresponding items</entitydescription.EAHI_licence_oneoff>
   <entityname.EAHI_laserpointer>Laser Pointer</entityname.EAHI_laserpointer>
   <entitydescription.EAHI_laserpointer>Slightly reduces weapon spread when activated.</entitydescription.EAHI_laserpointer>
-  <entityname.otfx_wrenchscrewdrivertwoinone>WrenchDriver</entityname.otfx_wrenchscrewdrivertwoinone>
-  <entitydescription.otfx_wrenchscrewdrivertwoinone>When equipped, double right-click to switch between wrench and screwdriver modes.</entitydescription.otfx_wrenchscrewdrivertwoinone>
+  <entityname.EAHI_multifunctionTool>WrenchScrewBar</entityname.EAHI_multifunctionTool>
+  <entitydescription.EAHI_multifunctionTool>When equipped, double right-click to switch between wrench, screwdriver, and crowbar modes.</entitydescription.EAHI_multifunctionTool>
   <!--AFF-->
   <Builder.Msg.Detach>[[use]] Detatch</Builder.Msg.Detach>
   <!--eventtext-->
