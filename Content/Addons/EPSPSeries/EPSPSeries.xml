@@ -262,7 +262,7 @@
           <Containable items="antibloodloss1,antibloodloss2,alienblood"/>
         </SubContainer>
         <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="antidama1,antidama2,deusizine"/>
+        <Containable items="antidama1,antidama2,deusizine,pomegrenadeextract"/>
         </SubContainer>
       </ItemContainer>
       <aitarget maxsightrange="1500"/>
@@ -395,9 +395,9 @@
         <damagemodifier/>
         <damagemodifier/>
         <damagemodifier/>
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.01" damagesound="" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds,bleeding" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage,gunshotwound" damagemultiplier="0.7" damagesound="" deflectprojectiles="true"/>
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.01" damagesound="" deflectprojectiles="true"/>
         <!-- MOD FEATURE IMMUNITY TO RADIATION -->
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor"/>
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor"/>
@@ -420,6 +420,7 @@
       <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0"/>
       <Deconstruct time="15">
         <Item identifier="Wf_pucs"/>
+        <Item identifier="slipsuit"/>
       </Deconstruct>
       <Fabricate suitablefabricators="fabricator" requiredtime="30">
         <RequiredSkill identifier="electrical" level="60"/>

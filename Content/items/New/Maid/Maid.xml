@@ -178,13 +178,8 @@
 			  <Affliction identifier="disguisedashusk" amount="1.0" />
 			</StatusEffect>
 			<StatusEffect target="Character" type="OnWearing" setvalue="true">
-			  <Affliction identifier="husktransformimmunitytemporary" amount="100" />
-			</StatusEffect>
-			<StatusEffect target="Character" type="OnWearing">
-			  <Conditional huskinfection="gt 0" />
-			  <Conditional husksymbiosis="gt 0" />
-			  <ReduceAffliction type="damage" amount="0.25" />
-			  <ReduceAffliction type="bleeding" amount="0.1" />
+				<Affliction identifier="disguisedashusk" amount="1.0" />
+				<Affliction identifier="huskstabilizer_temporary" amount="100" />
 			</StatusEffect>
 		  </Wearable>
 		  <ItemContainer capacity="3">

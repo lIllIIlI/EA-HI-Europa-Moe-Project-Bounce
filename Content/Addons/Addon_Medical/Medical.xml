@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="" identifier="EAHI_serum" subcategory="EAHI" category="Material" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,waifu_items" useinhealthinterface="true" scale="0.5" RequireAimToUse="True">
+  <Item name="" identifier="EAHI_serum" subcategory="EAHI" category="Material" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,wf_items" useinhealthinterface="true" scale="0.5" RequireAimToUse="True">
     <PreferredContainer primary="locker" />
     <Price baseprice="60" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="0.85" />
@@ -12,7 +12,7 @@
     </Price>
     <Deconstruct time="10" requireddeconstructor="EAHI_ProcessBrench">
       <!-- MOD FEATURE Serum + Shell = Exotic Matter -->
-      <Item identifier="exotic_matter" requiredotheritem="mudraptorshell,shellshield,molochbone,hammerheadribs,endwormshell,watchershell" amount="2" activatebuttontext="EAHI_ProcessBrench.extract" infotext="EAHI_ProcessBrench.Process.infotext" infotextonotheritemmissing="EAHI_ProcessBrench.missingitem" />
+      <Item identifier="exotic_matter" requiredotheritem="mudraptorshell,shellshield,molochbone,hammerheadribs,endwormshell,watchershell" amount="3" activatebuttontext="EAHI_ProcessBrench.extract" infotext="EAHI_ProcessBrench.Process.infotext" infotextonotheritemmissing="EAHI_ProcessBrench.missingitem" />
     </Deconstruct>
     <Sprite texture="%ModDir:3282923984%/Content/Addons/Addon_Medical/Medical.png" sourcerect="128,0,32,128" depth="0.6" origin="0.5,0.5" />
     <InventoryIcon texture="%ModDir:3282923984%/Content/Addons/Addon_Medical/Medical.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />

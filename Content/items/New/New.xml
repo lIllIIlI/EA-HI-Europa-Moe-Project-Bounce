@@ -225,10 +225,8 @@
 			<SkillModifier skillidentifier="weapons" skillvalue="10" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
 			<StatusEffect target="Character" type="OnWearing">
-				<Conditional huskinfection="gt 0" />
-				<Conditional husksymbiosis="gt 0" />
-				<ReduceAffliction type="damage" amount="0.25" />
-				<ReduceAffliction type="bleeding" amount="0.1" />
+				<Affliction identifier="disguisedashusk" amount="1.0" />
+				<Affliction identifier="huskstabilizer_temporary" amount="100" />
 			</StatusEffect>
 			<ItemContainer capacity="3">
 				<Containable items="chem,medical" />
