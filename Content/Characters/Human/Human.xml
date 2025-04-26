@@ -8,82 +8,71 @@
 		<bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False"/>
 		<gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False"/>
 		<gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False"/>
-		<!-- 受伤声音 -->
-		<StatusEffect type="OnDamaged" target="Character" comparison="and" checkconditionalalways="true">
-			<RequiredAffliction identifier="damage" minstrength="1"/>
-			<Conditional isunconscious="false"/>
-			<Conditional isdead="false"/>
-			<Conditional hasspecifiertag="male"/>
-			<sound file="Content/Characters/Human/male_damage1.ogg" range="500" volume="1" Tags="Male" selectionmode="Random"/>
-			<sound file="Content/Characters/Human/male_damage2.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage3.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage4.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage5.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage6.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage7.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage8.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage9.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage10.ogg" range="500" volume="1" Tags="Male"/>
-			<sound file="Content/Characters/Human/male_damage11.ogg" range="500" volume="1" Tags="Male"/>
-		</StatusEffect>
-		<StatusEffect type="OnDamaged" target="Character" comparison="and" checkconditionalalways="true">
-			<RequiredAffliction identifier="damage" minstrength="1"/>
-			<Conditional isunconscious="false"/>
-			<Conditional isdead="false"/>
-			<Conditional hasspecifiertag="female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage1.ogg" range="500" volume="1" Tags="Female" selectionmode="Random"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage2.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage3.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage4.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage5.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage6.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage7.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage8.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage9.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage10.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage11.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage12.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage13.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage14.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage15.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage16.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage17.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage18.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage19.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage20.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage21.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage22.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage23.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage24.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage25.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage26.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage27.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage28.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage29.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage30.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage31.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage32.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage33.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage34.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage35.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage36.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage37.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage38.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage39.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage40.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage41.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage42.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage43.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage44.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage45.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage46.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage47.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage48.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage49.ogg" range="500" volume="1" Tags="Female"/>
-			<sound file="%ModDir:3282923984%/Content/Sounds/female_damage50.ogg" range="500" volume="1" Tags="Female"/>
-		</StatusEffect>
+		<!-- Male Sounds -->
+		<sound file="Content/Characters/Human/male_damage1.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage2.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage3.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage4.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage5.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage6.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage7.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage8.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage9.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage10.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<sound file="Content/Characters/Human/male_damage11.ogg" State="Damage" range="500" volume="1" Tags="Male"/>
+		<!-- Female Sounds -->
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage1.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage2.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage3.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage4.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage5.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage6.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage7.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage8.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage9.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage10.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage11.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage12.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage13.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage14.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage15.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage16.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage17.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage18.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage19.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage20.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage21.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage22.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage23.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage24.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage25.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage26.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage27.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage28.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage29.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage30.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage31.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage32.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage33.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage34.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage35.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage36.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage37.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage38.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage39.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage40.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage41.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage42.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage43.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage44.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage45.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage46.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage47.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage48.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage49.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
+		<sound file="%ModDir:3282923984%/Content/Sounds/female_damage50.ogg" State="Damage" range="500" volume="1" Tags="Female"/>
 		<!-- 失去意识声音 -->
-		<StatusEffect type="always" target="Character" lifetime="15" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="always" target="Character" lifetime="15" comparison="and" checkconditionalalways="true" interval="3">
 			<conditional isdead="false"/>
 			<conditional isunconscious="true"/>
 			<conditional hasspecifiertag="female"/>
@@ -99,7 +88,7 @@
 			<sound file="%ModDir:3282923984%/Content/Sounds/female_unconscious9.ogg" tags="Female" range="300" volume="0.6"/>
 			<sound file="%ModDir:3282923984%/Content/Sounds/female_unconscious10.ogg" tags="Female" range="300" volume="0.6"/>
 		</StatusEffect>
-		<StatusEffect type="always" target="Character" lifetime="15" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="always" target="Character" lifetime="15" comparison="and" checkconditionalalways="true" interval="3">
 			<conditional isdead="false"/>
 			<conditional isunconscious="true"/>
 			<conditional hasspecifiertag="male"/>
@@ -111,14 +100,14 @@
 			<sound file="%ModDir:3282923984%/Content/Sounds/male_unconscious5.ogg" tags="Male" range="300" volume="0.6"/>
 		</StatusEffect>
 		<!-- 溺水声音 -->
-		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true" interval="3">
 			<Conditional hasspecifiertag="female"/>
 			<conditional isdead="false"/>
 			<conditional isunconscious="false"/>
 			<Conditional oxygenlow="gt 15"/>
 			<sound file="%ModDir:3282923984%/Content/Sounds/DrownFemale.ogg" range="300" volume="3"/>
 		</StatusEffect>
-		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true" interval="3">
 			<Conditional hasspecifiertag="male"/>
 			<conditional isdead="false"/>
 			<conditional isunconscious="false"/>
@@ -126,14 +115,14 @@
 			<sound file="%ModDir:3282923984%/Content/Sounds/DrownMale.ogg" range="300" volume="3"/>
 		</StatusEffect>
 		<!-- 画皮转化声音 -->
-		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true" interval="3">
 			<Conditional hasspecifiertag="female"/>
 			<conditional isdead="false"/>
 			<Conditional huskinfection="gte 100"/>
 			<sound file="%ModDir:3282923984%/Content/Sounds/female_husktransformation1.ogg" range="300" volume="0.5" selectionmode="Random"/>
 			<sound file="%ModDir:3282923984%/Content/Sounds/female_husktransformation2.ogg" range="300" volume="0.5"/>
 		</StatusEffect>
-		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="always" target="Character" comparison="and" checkconditionalalways="true" interval="3">
 			<Conditional hasspecifiertag="male"/>
 			<conditional isdead="false"/>
 			<Conditional huskinfection="gte 100"/>
@@ -141,7 +130,7 @@
 			<sound file="%ModDir:3282923984%/Content/Sounds/male_husktransformation2.ogg" range="300" volume="0.5"/>
 		</StatusEffect>
 		<!-- 烧伤声音 -->
-		<StatusEffect type="OnFire" target="Character" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="OnFire" target="Character" comparison="and" checkconditionalalways="true" interval="1">
 			<Conditional hasspecifiertag="female"/>
 			<conditional isdead="false"/>
 			<conditional isunconscious="false"/>
@@ -168,7 +157,7 @@
 			<sound file="%ModDir:3282923984%/Content/Sounds/female_fire19.ogg" range="1250" volume="1.2"/>
 			<sound file="%ModDir:3282923984%/Content/Sounds/female_fire20.ogg" range="1250" volume="1.2"/>
 		</StatusEffect>
-		<StatusEffect type="OnFire" target="Character" delay="4" lifetime="7" comparison="and" checkconditionalalways="true">
+		<StatusEffect type="OnFire" target="Character" delay="4" lifetime="7" comparison="and" checkconditionalalways="true" interval="1">
 			<Conditional hasspecifiertag="male"/>
 			<conditional isdead="false"/>
 			<conditional isunconscious="false"/>
@@ -282,300 +271,266 @@
 			<!-- Hair serves as Decoration -->
 			<!-- Hair, but overriden as Beard (back hair) for male, since no front/back hair configuration for males for now-->
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 1" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 1" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 2" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 2" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 3" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 3" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 4" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 4" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 5" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 5" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 6" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 6" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 7" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 7" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 8" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 8" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 9" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 9" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 10" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 10" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 11" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 11" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 12" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 12" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 13" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 13" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 14" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 14" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 15" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 15" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="2,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 16" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 16" texture="%ModDir:3282923984%/Content/Characters/Human/hmh.png" sheetindex="3,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 17" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 17" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 18" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 18" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 19" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 19" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 20" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 20" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 21" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 21" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 22" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 22" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 23" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 23" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 24" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 24" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 25" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 25" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 26" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 26" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 27" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 27" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 28" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 28" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 29" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 29" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 30" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 30" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 31" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 31" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="2,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 32" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 32" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_2.png" sheetindex="3,3"/>
 			</Wearable>
 			<!-- Custom Male Hair-->
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 33" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 33" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 34" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 34" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 35" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 35" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 36" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 36" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 37" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 37" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 38" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 38" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 39" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 39" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 40" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 40" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 41" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 41" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 42" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 42" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 43" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 43" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 44" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 44" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 45" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 45" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 46" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 46" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 47" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 47" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="2,3"/>
 			</Wearable>
 			<Wearable type="Beard" tags="male" commonness="100">
-				<sprite name="Hair 48" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 48" texture="%ModDir:3282923984%/Content/Characters/Human/hmh_3.png" sheetindex="3,3"/>
 			</Wearable>
 			<!-- Custom Male Hair End -->
 			<!-- type Hair (decorations)-->
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="2,3"/>
 			</Wearable>
 			<Wearable type="Hair" commonness="0.05">
-				<sprite name="Hair 16" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Hair 16" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_decor.png" replacewhenwearinghat="16" sheetindex="3,3"/>
 			</Wearable>
 			<!-- Beard Serves as back hair -->
 			<!-- female -->
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="2,3"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 16" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 16" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair.png" sheetindex="3,3"/>
 			</Wearable>
 			<!-- Page 2 -->
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 17" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 17" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 18" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 18" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 19" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 19" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 20" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 20" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="Beard" commonness="100" tags="female">
-				<sprite name="Beard 21" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="Beard 21" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sheetindex="0,1"/>
 			</Wearable>
-			<!-- 
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 22" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 23" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 24" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 25" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 26" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 27" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 28" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 29" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 30" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 31" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable>
-      <Wearable type="Beard" commonness="100" tags="female">
-        <sprite name="Beard 32" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_backhair_2.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false" />
-      </Wearable> -->
 			<!-- moustache serves as front hair -->
 			<Wearable type="moustache" commonness="100" tags="male">
 				<sprite name="moustache 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="0,0,1,1" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
@@ -634,117 +589,117 @@
 			</Wearable> -->
 			<!-- female -->
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="2,3"/>
 			</Wearable>
 			<Wearable type="moustache" commonness="100" tags="female">
-				<sprite name="moustache 16" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="moustache 16" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_fronthair.png" sheetindex="3,3"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 1" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 2" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 3" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 4" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 5" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="240,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 6" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="1,1"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="480,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 7" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="2,1"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="720,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 8" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="3,1"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.05">
-				<sprite name="FaceAttachment 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="0,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 9" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="0,2"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="240,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 10" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="1,2"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.03">
-				<sprite name="FaceAttachment 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="480,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 11" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="2,2"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="720,960,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 12" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="3,2"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="0,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 13" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="0,3"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="240,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 14" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="1,3"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="480,1440,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 15" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sheetindex="2,3"/>
 			</Wearable>
-			<!-- Why the hell does this Index not work? Reserved for no attachments maybe? -->
-			<!-- <Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 16" texture="ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories.png" sourcerect="720,1440,240,480" origin="0.6125,0.3229"/>
-			</Wearable> -->
-			<!-- page 2 face attachment -->
+			<!--
+      <Wearable type="FaceAttachment" commonness="1.0">
+        <sprite name="FaceAttachment 16" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="3,3" />
+      </Wearable>
+      -->
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 17" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="0,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 17" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sheetindex="0,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.01">
-				<sprite name="FaceAttachment 18" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="240,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 18" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sheetindex="1,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 19" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="480,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 19" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sheetindex="2,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 20" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="720,0,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 20" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sheetindex="3,0"/>
 			</Wearable>
 			<Wearable type="FaceAttachment" commonness="0.02">
-				<sprite name="FaceAttachment 21" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sourcerect="0,480,240,480" origin="0.6125,0.3229" inheritorigin="false" inheritsourcerect="false"/>
+				<sprite name="FaceAttachment 21" texture="%ModDir:3282923984%/Content/Characters/Human/Headattachments/Human_head_accessories_2.png" sheetindex="0,1"/>
 			</Wearable>
 			<Wearable type="Husk">
 				<sprite name="Husk" texture="%ModDir:3282923984%/Content/Characters/Human/Human_husk.png" sheetindex="0,0"/>
