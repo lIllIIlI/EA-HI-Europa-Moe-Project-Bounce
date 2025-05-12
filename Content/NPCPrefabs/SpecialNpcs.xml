@@ -191,7 +191,7 @@
           </job>
         </Character>
         <ItemSet commonness="1">
-          <Item identifier="idcard" equip="true"/>
+          <Item identifier="idcard" equip="true" tags="id_medic"/>
           <Item identifier="headset" equip="true"/>
           <Item identifier="banditclothes1" equip="true"/>
           <Item identifier="divingmask">
@@ -202,7 +202,7 @@
           <Item identifier="toolbelt" equip="true"/>
         </ItemSet>
         <ItemSet commonness="1">
-          <Item identifier="idcard" equip="true"/>
+          <Item identifier="idcard" equip="true" tags="id_medic"/>
           <Item identifier="headset" equip="true"/>
           <Item identifier="banditclothes2" equip="true"/>
           <Item identifier="divingmask">
@@ -216,7 +216,7 @@
           </Item>
         </ItemSet>
         <ItemSet commonness="1">
-          <Item identifier="idcard" equip="true"/>
+          <Item identifier="idcard" equip="true" tags="id_medic"/>
           <Item identifier="headset" equip="true"/>
           <Item identifier="banditclothes1" equip="true"/>
           <Item identifier="divingmask">
@@ -227,7 +227,7 @@
           <Item identifier="toolbelt" equip="true"/>
         </ItemSet>
         <ItemSet commonness="1">
-          <Item identifier="idcard" equip="true"/>
+          <Item identifier="idcard" equip="true" tags="id_medic"/>
           <Item identifier="headset" equip="true"/>
           <Item identifier="banditclothes2" equip="true"/>
           <Item identifier="divingmask">
@@ -242,7 +242,7 @@
           </Item>
         </ItemSet>
         <ItemSet commonness="1">
-          <Item identifier="idcard" equip="true"/>
+          <Item identifier="idcard" equip="true" tags="id_medic"/>
           <Item identifier="headset" equip="true"/>
           <Item identifier="banditclothes1" equip="true"/>
           <Item identifier="divingmask">
@@ -518,6 +518,39 @@
           <Item identifier="commonerclothes2" equip="true"/>
         </ItemSet>
       </npc>
+    <npc identifier="associate1" commonness="0" moduleflags="none" job="assistant" behavior="Passive">
+      <Character name="" speciesname="human" gender="male" tags="head7,male" experiencepoints="0" unlockedtalents="" additionaltalentpoints="0" hairindex="1" beardindex="4" moustacheindex="0" faceattachmentindex="13" skincolor="214,154,112,255" haircolor="67,48,46,255" facialhaircolor="59,49,49,255" startitemsgiven="false" ragdoll="" personality="professional" missionscompletedsincedeath="0">
+        <job identifier="assistant"/>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="commonerclothes3" equip="true"/>
+        <Item identifier="screwdriver"/>
+      </ItemSet>
+    </npc>
+    <npc identifier="associate2" commonness="0" moduleflags="none" job="captain" behavior="Passive">
+      <Character name="" speciesname="human" gender="female" tags="head11,female" experiencepoints="0" unlockedtalents="" additionaltalentpoints="0" hairindex="2" beardindex="15" moustacheindex="15" faceattachmentindex="0" skincolor="154,79,48,255" haircolor="155,117,114,255" startitemsgiven="false" ragdoll="" personality="professional" missionscompletedsincedeath="0">
+        <job identifier="captain"/>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="commonerclothes5" equip="true"/>
+        <Item identifier="screwdriver"/>
+      </ItemSet>
+    </npc>
+    <npc identifier="lostinruinscorpse" job="assistant">
+      <ItemSet>
+        <Item identifier="datapad" equip="true"/>
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="assistantclothes" equip="true"/>
+        <Item identifier="brokendivingsuit" equip="true">
+          <Item identifier="oxygentank"/>
+        </Item>
+        <Item identifier="revolver" equip="true">
+          <Item identifier="revolverround" amount="2"/>
+        </Item>
+      </ItemSet>
+    </npc>
     </npcset>
   </Override>
   <Override>
